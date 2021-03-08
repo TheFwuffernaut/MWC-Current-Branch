@@ -1,0 +1,2355 @@
+[
+  {
+    "id": "mwc_ahab",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "AHAB",
+    "mechtype": ["Controller"],
+    "image_url": "https://i.imgur.com/vDBXQIa.png",
+    "y_pos": 0,
+    "description": "Named after one of the first recorded megafauna hunters in Cradle’s history, the Ahab is a venerable design that has seen widespread and varied use on a plethora of worlds -- though none more so than Sparr, home to the famed hunters that carry on the ancient sailor’s heritage. Captain Ahab’s biography, titled simply The Whale, was one of the many examples of ancient Cradle literature carried on the Yggdrasil, and understandably one the Sparri people took to heart upon settling their new world. The canon of the Pequod, Ahab’s hunting vessel, has since been expanded over the millennia, giving rise to many fantastical stories far divorced from the original’s realistic tone, save for the presence of gigantic beasts menacing the sea and shore, requiring steely resolve and a sharp harpoon to dispatch.",
+    "mounts": ["Main", "Main"],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 12,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Whaler",
+        "description": "If a target is at least 1 size larger than the Ahab (without rounding), it makes all attacks against that target at an amount of Accuracy equal to the difference in their sizes (Maximum 3). All Hull Saves the Ahab forces on the target are made at an equal amount of difficulty."
+      },
+      {
+        "name": "High Test Line",
+        "description": "The Ahab counts as Size 3 when inflicting forced movement. 1/round, the Ahab may pull an Immobilized character within Range 10 up to 3 spaces towards it as a Free Action."
+      },
+      {
+        "name": "Slow",
+        "description": "The Ahab has +1 Difficulty on Agility checks and saves.",
+        "synergies": [{
+          "locations": ["agility","skill_check"],
+          "detail": "The Ahab receives +1 Difficulty on Agility checks and saves."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "Retiarian Electromag Net",
+      "description": "In the summer months on Sparr, local fish are abundant among the icemelt waterways. Such is a time of relative abundance, with fisheries and canneries springing to life in the relatively temperate conditions. One such tool is the rete, a deceptively sophisticated net of collapsible recursive fiber that can expand to cover entire river-mouths with the application of electrical current. When desired, the net’s circular floats can emit an electromagnetic pull, clamping together as the net shrinks back down, compacting around and trapping whatever unlucky prey is inside. While not quite big enough to totally envelop a mechanized chassis, the rete’s electrical properties nevertheless make it ideal for tripping up and frustrating the movements of hostile armor.",
+      "active_name": "Cast a Wide Net",
+      "active_effect": "Target a Blast 1 area within Range 10 and Line of Sight. All characters within it are affected as though they were hit by your Ensnare and reeled in until one of them is adjacent to you. This is a separate effect to Ensnare and does not interfere with that action’s effects.",
+      "activation": "Full",
+      "passive_name": "Ensnare",
+      "passive_effect": "Gain the Throw The Net Quick Action.",
+      "passive_actions": [
+        {
+          "name": "Throw The Net",
+          "activation": "Quick",
+          "detail": "Make a Ranged Attack against a target within Range 10 and Line of Sight. On a success, that target is Immobilized and their Evasion cannot be higher than 5 until they escape the net by making a Hull Save as a Full Action. You can only have one character Ensnared at a time -- using this action while you already have an Ensnared target ends the effect on that target."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+    },
+  {
+    "id": "mwc_ching_shih",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "CHING SHIH",
+    "mechtype": ["Artillery"],
+    "image_url": "https://i.imgur.com/Dd9JePq.gif",
+    "y_pos": 0,
+    "description": "Often, it is impossible for a mech design to spring, fully-formed, from a single independent contractor’s mind. While such “garage mechs” are plentiful, they are often severely flawed or overengineered such that no sane manufacturer would buy its licensing rights. These mechs are often a line of one, and are either destroyed in their first sortie or miraculous victors by virtue of their creator-pilots’ lavish attention and care. Such is the case with the Ching Shih. Inspired by the sight of a garbage skip filled with beverage cans, the Ching Shih was devoted from its inception to mount, print, and fire more missiles per second than even the famous SSC Monarch. While certain anatomical compromises must be made to allow such massive missile batteries to exist, the Ching Shih has the honor of being one of the few “garage mechs” to be inducted into IPS-Northstar’s auxiliary support catalogue.",
+    "mounts": ["Flex", "Flex", "Flex"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 2,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Multitudinous Missiles",
+        "description": "The Ching Shih has a Munitions Die, a d6, which starts at 1. Every time the Ching Shih fires a Launcher, it increases the value of its Munitions Die by 1. When the Munitions Die is at 6, the Ching Shih may reset it to 1 when it fires a Launcher to fire that Launcher again.",
+        "counters": [
+          {
+            "id": "mwc_munitions",
+            "name": "Munitions Die",
+            "default_value": 1,
+            "min": 1,
+            "max": 6
+          }
+        ]
+      },
+      {
+        "name": "Radar Dish",
+        "description": "The Ching Shih cannot use the Lock On Tech Action, but can Lock On 1/round to any character within Line of Sight, even if that character is outside of Sensors. This Lock On may be made during any character’s turn, at any point."
+      },
+      {
+        "name": "No Arms",
+        "description": "If the Ching Shih is knocked prone, it must either succeed on an Agility check or have an adjacent ally to stand. It can never equip Manipulators."
+      }
+    ],
+    "core_system": {
+      "name": "Hellstorm Launcher",
+      "description": "A grandiose name for what is essentially an act of programmatical terrorism, the Hellstorm Launcher is an overclocked civilian-grade printer churning-and-burning as many propulsed IED warheads at a location as physically possible. While its use is well-documented by irregular forces such as the Ungratefuls, its use in “proper” military doctrine is limited due to the device's lack of precision and controllability. With the Ching Shih’s dedication to missile production, however, the Hellstorm has found new life as a saturation and area denial weapon, and when Ching Shihs are fielded, thousands of cheap, tiny Hellstorm rockets can be seen, drawing a net of contrails through the sky.",
+      "active_name": "Unleash the Storm",
+      "active_effect": "For the rest of the scene, you gain the Let It Rain Quick Action.",
+      "active_actions": [
+        {
+          "name": "Let It Rain",
+          "activation": "Quick",
+          "detail": "Target a Blast 2 area within Range 50. Characters within that area must succeed on an Agility save or take 1d6 Explosive damage, taking half as much on a success. This counts as firing a Launcher."
+        }
+      ],
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_crozier",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "CROZIER",
+    "mechtype": ["Striker"],
+    "image_url": "https://i.imgur.com/gq20zMg.png",
+    "y_pos": 0,
+    "description": "The task of wreckage reclamation is an ignoble one, though no less vital for its lack of glamour. Even in an age of printer technology, material that is deployed must be used for as long as it is available -- so, until antimatter weaponry becomes mainstream, there will always be scrap to collect, disassemble, and repurpose. Once a dedicated trash-collector frame, the Crozier has been updated and retrofitted throughout the years to become a shockingly effective mid-range combatant. While its matter reclamation subsystems are no less effective for their age and new target of enemy armor, its primary self-defense tool is an upper body actuator system, once used to haul large wrecks, now primarily concerned with creating them via severe blunt trauma and hardwired secondary fire triggers, allowing it to blow apart enemy subsystems before vacuuming up the remains and transforming them into ammunition, armor, and other useful combat materiel.",
+    "mounts": ["Main/Aux", "Aux/Aux"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 12,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Markov Chain",
+        "description": "When the Crozier hits with a melee weapon, the damage of your next CQB hit is increased by 1d3. When it hits with a CQB weapon, the damage of its next melee hit is increased by 1d3. This effect does not stack."
+      },
+      {
+        "name": "Constant Vigilance",
+        "description": "The Crozier increases the threat of all CQB weapons by 1.",
+        "bonus": {
+          "id": "Threat",
+          "val": 1
+        }
+      }
+    ],
+    "core_system": {
+      "name": "Kinetic Shock Redirector",
+      "description": "“Waste not, want not,” is the motto of the Albatross Reclaimers, a robust corps of Crozier pilots commonly deployed into hot zones to extract valuable salvage like intact reactor cores or active escape pods. Keeping with this philosophy is the KSR shock absorption system, which allows the Crozier to store the recoil from weapons fire within a high-density mainspring. Upon making contact with a hostile target, this spring can be released, unleashing all the stored energy at once in a bone-shattering concussive blast. One downside of this method is the spring’s limited shelf life -- metal fatigue renders it useless after a handful of discharges.",
+      "active_name": "One-Two Punch",
+      "active_effect": "For the rest of the scene, whenever you hit with a CQB weapon, you gain a Slugger Die, a d6. When you hit with a melee attack, you may expend the Slugger Die to roll it and add the roll to that attack’s damage. You may only have one Slugger Die at a time.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_keyes",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "KEYES",
+    "mechtype": ["Defender", "Striker"],
+    "image_url": "https://i.imgur.com/S9wjFJj.png",
+    "y_pos": 0,
+    "description": "An instrumental tool in the Qikost Rebellions, the J17 Heavy Armature Loader is famous for its role in the Battle of the Seventh Column, in which one of the mining moon’s massive supporting pillars was collapsed to create a crater roughly 1300 kilometers across, destroying thousands of manna in Harrison Armory property and ending the now-disavowed Detonite mining operations that occurred beneath the moon’s crust. In the immediate aftermath of the insurrection, IPS-Northstar was quick to provide asylum for all involved, hiring 90% of the rebellion’s participants under the condition that they bring their equipment -- originally HA property -- with them off-world. Since then, the Keyes has emerged as a highly durable point-man frame, employing weaponry strikingly similar to proprietary Harrison plasma-cutter mining equipment. IPS-N vehemently denies any allegations of intellectual, physical, or human property theft.",
+    "mounts": ["Main", "Heavy"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Plasma Shield",
+        "description": "At the start of each of its turns, the Keyes gains Overshield 4. When the Keyes Stabilizes, it gains Overshield 6. Overshield from this trait stacks with already-present Overshield, to a maximum of 10."
+      },
+      {
+        "name": "Guardian",
+        "description": "Allied characters can use the Keyes for Hard Cover."
+      }
+    ],
+    "core_system": {
+      "name": "Charged Particle Bore",
+      "description": "With a truly ridiculous amount of power draw and a dedicated mount accounting for nearly a quarter of the Keyes’s weight, the Trojan CPB is a miracle of modern engineering sadly crippled by the time and circumstances of its deployment. While no other energy weapon can come close to its level of sustained output, its use as a mining tool has forced safety limiters and energy throttles to be installed throughout the device, reducing its refire rate to a period of hours rather than minutes. The alterations are not all negative -- an IFF energy shaper subsystem has been put in place to warp the Trojan’s path around friendly entities, encasing them in brilliant plasma bubbles rather than incinerating them.",
+      "active_name": "Trojan Laser",
+      "active_effect": "Draw three lines from your mech, 10 spaces long, starting in spaces adjacent to at least one other line, and all pointing in the same direction. Enemies in the area must succeed on an Agility Save or take 3d6 Energy damage, taking half as much on a success. Allies in the area receive 8 Overshield instead.",
+      "activation": "Full"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_king",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "KING",
+    "mechtype": ["Support"],
+    "image_url": "https://i.imgur.com/CpQvDfH.png",
+    "y_pos": 0,
+    "description": "Among the Diaspora, there are multitudes of strange worlds, featuring every technology level and societal structure one cares to name. The world of Questor is an odd example even among these -- a feudal civilization on a placid agri-world whose greatest technological artifacts are a broken set of printers only capable of producing components for mechanized chassis. With these printers enshrined on a holy neutral site of pilgrimage, Questorian Titan Knights and noblemen are expected to field mechs in combat over matters of honor, territory, and legal proceedings. In times of world-unifying conflict, such as the HORUS incursion of 5014U (known to Questorians as the Dawn of Monsters), the reigning monarch of the world is expected to mount a truly ancient frame, with incredibly advanced support and reinforcement systems beyond anything used even by modern lancers. That mount is the King, and its license file has only recently been extracted for general use.",
+    "mounts": ["Flex", "Main"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 6 
+    },
+    "traits": [
+      {
+        "name": "KINGLY DECREE",
+        "description": "When the King uses Bolster, the targeted character may apply the accuracy from Bolster to an attack roll, rather than a skill check or save."
+      },
+      {
+        "name": "COURT OF STEEL",
+        "description": "Allies in a Burst 3 area of the King have +1 armor (To a maximum of 4). For every ally in this area, the King gains +1 Armor (To a maximum of 4)."
+      },
+      {
+        "name": "CASTLING",
+        "description": "When a hostile action is taken against the King, it may use its reaction to move a willing character within Sensors up to 5 spaces in any direction, so long as they end the move closer to the King than they started. This happens before the triggering action resolves."
+      }
+    ],
+    "core_system": {
+      "name": "QUESTOR IMPERIALIS",
+      "description": "Verily, verily, I say unto thee: Neither man nor beast nor vile thing of the depths shall stray thee from thy course. No blackguard of sin in his armor of blasphemed godsteel, nor gigafaunus nor megarthropod, nor twisted thinking metal of RA in any of its forms. For you are my chosen, the QUESTOR IMPERIALIS, and you shall know no equal.",
+      "active_name": "Knighting Ceremony",
+      "active_effect": "Target an ally within Range 3. That ally gets +1 Armor (To a maximum of 4) for the rest of the scene, Overshield equal to your Grit plus 6, and Caledfwlch as an Integrated Mount. As a Protocol, you may nominate a character within Sensors. Attacks made with Caledfwlch against that character gain the AP tag.",
+      "activation": "Full",
+      "use": "Encounter",
+      "integrated": ["mwc_king_integrated"]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_sparrow",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "SPARROW",
+    "mechtype": ["Support", "Striker"],
+    "image_url": "https://i.imgur.com/bNcRuMj.png",
+    "y_pos": 0,
+    "description": "According to Interplanetary Shipping Northstar, this mech does not exist. Unlisted on any catalogue, unavowed by any major corporation, the mysterious frame known as the Sparrow cannot possibly be manufactured in the numbers in which it regularly appears. Sparrows are universally a source of consternation and bewilderment for planetary and trade route security forces -- their actions, targets, and motivations seem to make little sense, and their armament is as varied and unpredictable as their tactics. What’s more, the rest of the frame is composed almost entirely of standard IPS-N parts. What this means, and how this relates to the rumors of false-flag operations by the Albatross, is anyone’s guess. Dissection of captured Sparrows reveals a strange, almost HORUS-like infinite probability calculator that informs most, if not all, of these eccentric raiders’ strategy and tactics. This would explain the mental state of most Sparrow pilots; long-term communion with such a machine can hardly be conducive to one’s sanity.",
+    "mounts": ["Aux/Aux", "Main/Aux"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "AGENT OF CHAOS",
+        "description": "1/round, the Sparrow may treat a result of 1 on a d20 roll as a 20.",
+        "use": "Round"
+      },
+      {
+        "name": "LIAR'S DICE",
+        "description": "The Sparrow gains +1 Accuracy on all attacks if the result of its most recent d20 roll was even. It imposes +1 Difficulty on all attacks made against it if the result of its most recent d20 roll was odd."
+      }
+    ],
+    "core_system": {
+      "name": "CHAOS SEED GENERATOR",
+      "description": "The uneducated would describe the CSG as a random number generator. Those well-versed in its use describe it as a random number god. Through as-yet unknown means, for as-yet unknown ends, the CSG can effectively communicate in hexadecimal with a pilot, referring to some vast oblique database of unintuitive stratagems and incomprehensible tactics. Maintaining the correct mindset to translate the numerical avalanche this computer puts out by the second is difficult even for highly trained operators, with most able to scan and parse a single line or word before being forced to look away, lest their gray matter invert itself and start to leak.",
+      "active_name": "Sow the Seeds",
+      "active_effect": "You gain the Make My Own Luck Reaction until the end of the scene.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "passive_name": "Card Shark",
+      "passive_effect": "Gain the Tell Me The Odds Reaction.",
+      "active_actions": [
+        {
+          "name": "Make My Own Luck",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "You or a character within Sensors rolls a d20 for any reason.",
+          "detail": "You may increase or decrease that roll by 1d6, to a minimum of 0 and a maximum of 20."
+        }
+      ],
+      "passive_actions": [
+        {
+          "name": "Tell Me The Odds",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "You or a character within Sensors rolls a d6 for any reason.",
+          "detail": "You may increase or decrease that roll by 1, to a minimum of 0 and a maximum of 6."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_buddha",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "BUDDHA",
+    "mechtype": ["Defender"],
+    "image_url": "https://i.imgur.com/u9hGR4U.png",
+    "y_pos": 0,
+    "description": "ALL POINTS BULLETIN TO PACIFICATION DELEGATES: THE FOLLOWING IS A CONSTELLAR LAW ENFORCEMENT NOTICE. THIS IS NOT A DRILL.<br>RAMPANT NONCOMPLIANCE IN SECTORS A512, B021, G343, AND L202. DEPLOYMENT IS SCHEDULED IN FIVE (5) MINUTES. PLEASE BE MOUNTED AND READY AT 1443 HOURS.<br>WELCOME, LANCER. PLEASE PRESENT FOR OPTICAL SCAN.<br>IDENTITY CONFIRMED. CONFIGURING LOADOUT: BUDDHA, NONDESTRUCTIVE PROPERTY DAMAGE REDUCTION CHASSIS.<br>DAILY REMINDER: ALL KARMA IS RETURNED TO US IN TIME.<br>HAVE A SAFE AND PEACEFUL DAY, LANCER.",
+    "mounts": ["Main"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 12,
+      "edef": 12,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 12,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "GOOD KARMA",
+        "description": "The Buddha has a Karma die, a d6, that starts at 1. Whenever an attack is made against the Buddha, increase the value of the die by 1. Whenever an attack is made against an adjacent ally, increase the value of the die by 2. When the die is at 6, the Buddha may reset it to 1 to cause an attack against itself or an adjacent ally to automatically miss.",
+        "counter": [
+          {
+            "id": "mwc_karma",
+            "name": "Karma Die",
+            "default_value": 1,
+            "min": 1,
+            "max": 6
+          }
+        ]
+      },
+      {
+        "name": "GUARDIAN",
+        "description": "Allied characters may use the Buddha for Hard Cover"
+      },
+      {
+        "name": "PACIFISM",
+        "description": "The Buddha has +1 Difficulty on all attack rolls."
+      }
+    ],
+    "core_system": {
+      "name": "BHAVACAKRA FIELD",
+      "description": "DAILY REMINDER: THERE ARE THREE THINGS FEARED BY WISE MEN. THE SEA IN A STORM, A NIGHT WITH NO MOON, AND THE ANGER OF A GENTLE MAN.<br>REMINDER: ANGER MANAGEMENT EXERCISES ARE AVAILABLE AT ANY TIME. WOULD YOU LIKE TO TAKE PART IN ONE NOW? (Y/N)<br>>N<br>UNDERSTOOD. CONSTELLAR LAW ENFORCEMENT REQUESTS THAT YOU MINIMIZE PROPERTY DAMAGE.",
+      "active_name": "Bad Karma",
+      "active_effect": "Until the end of the scene, the Buddha is no longer affected by Pacifism, and it may reset the Karma die to cause a successful attack or an adjacent ally’s successful attack to become an automatic Critical Hit.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_druid",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "DRUID",
+    "mechtype": ["Artillery", "Support"],
+    "image_url": "https://i.imgur.com/jGoJmSz.png",
+    "y_pos": 0,
+    "description": "What follows is my live-record account of my tenure in the Smith-Shimano Corpro Experimental Materiel Division, as unbiased and true as I can make it. While I was employed at the Corpro blacksite, I was entrusted with the license to an entirely incomprehensible machine known as the Druid. My employers refused to explain to me how the Druid functioned or where it came from. All I knew was that it did impossible things and I was mentally unwell for a time after being exposed to its central mechanism. I have released this license into the Omninet for Lancers of hopefully better mental fortitude than I to probe the Druid’s secrets, and learn exactly how this machine does what it does. My employers assured me it is of human construction, and I’m not sure what it says about the galaxy we live in that I can one hundred percent believe them.",
+    "mounts": ["Flex", "Main", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 7,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "WILD SHAPE: MECH FORM",
+        "description": "The Druid has three Forms it can switch between as a protocol -- Mech, Jet, and Tank, with Mech Form as its default. In all forms except Tank Form, it cannot use its Heavy Mount. In all forms except Mech Form, the Druid can only move in a straight line when it makes a standard move or Boosts."
+      },
+      {
+        "name": "WILD SHAPE: JET FORM",
+        "description": "In Jet form, the Druid’s Speed and Evasion are increased by 2 and it can Fly; however, its Armor is reduced by 1 and it must fly at least its full speed on its turn or start falling. If the Druid touches the ground in Jet Mode, it automatically falls Prone and is Immobilized until it changes form."
+      },
+      {
+        "name": "WILD SHAPE: TANK FORM",
+        "description": "In Tank form, the Druid’s Armor is increased by 1, it is immune to Prone, and it can use its Heavy mount; however, its Speed is decreased by 2 and it cannot jump."
+      }
+    ],
+    "core_system": {
+      "name": "THE PROTEUS MECHANISM",
+      "description": "The metal is alive. When I blink, it changes. Now it is a floating gear. Now a touchscreen tablet. Now a CRT monitor. Now an obelisk, lined with circuits and ten miles high inside my cockpit. I feel as it tries to soothe me, even as looking upon it causes my lizard brain to seize. It hungers for... succor? It reaches out to a friendly psyche to comfort it in its loneliness. Many, many secrets in exchange for company. This is no NHP. The metal is alive.",
+      "active_name": "Engage the Mechanism",
+      "active_effect": "For the rest of the scene, you gain access to the following actions. Each action is only available while the Druid is in that action’s respective Form.<br><br>Mech Form: Tree Stride<br>Quick Action<br>You Teleport up to 20 spaces away so long as your mech is in Hard Cover in both its current space and its destination.<br><br>Jet Form: Wind Wall<br>Full Action<br>Draw a line 10 spaces long, starting at a point adjacent to your mech. Each character in the line is pushed to the nearest space on a side of your choice. Until the end of the scene, or until you use this action again, characters cannot move through the area and ranged attacks made through it have a 50% chance to miss. This does not stack with Invisibility.<br><br>Tank Form: Tsunami<br>Full Action<br>Draw a line 5 spaces long away from your mech. Characters in the area must succeed on a Hull save or take 2d6 Kinetic damage and be Knocked Back to the end of the line.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_malachite",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "MALACHITE",
+    "mechtype": ["Support", "Striker"],
+    "image_url": "https://i.imgur.com/RXMlUxP.png",
+    "y_pos": 0,
+    "description": "It is said that the greatest advances in technology are first made in biology. Man has made no great mechanical breakthrough that evolution has not first perfected. With this in mind, SSC blacksites have made great strides researching the flora and fauna of various worlds for unexplored angles or novel concepts. Details about the bio-research program are light, but the Malachite frame has illustrated several facts: firstly, that Smith-Shimano Corpro is not above the use of harvested biological organs in mechanical chassis. Secondly: it is privy to a number of species and worlds that it has not shared with Union at large. And thirdly: whatever world and whatever species has contributed to the Malachite’s design, it is not one that humankind should ever visit for any length of time.",
+    "mounts": ["Flex", "Main"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 6,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "PENETRATING ACID",
+        "description": "When the Malachite applies Shred to an already Shredded target, that target takes 2 Burn."
+      },
+      {
+        "name": "PROTON DONOR",
+        "description": "Enemies that attack the Malachite within Range 3 or less must succeed on an Agility save or become Shredded until the end of their next turn."
+      }
+    ],
+    "core_system": {
+      "name": "WARNING: EXTREMELY CAUSTIC INTERNAL FLUIDS",
+      "description": "In place of coolant, the Malachite pumps a low-viscosity superacid from a preserved gland of unknown origin housed in its central black-box compartment. This fluid’s boiling point is rather low, and is constantly vented from the frame’s “gills” at a low, manageable volume. When necessary, the gland can be overworked with applied electrostimulation, causing it to churn out gallons of acid in a brief span -- presumably, the panic defense mechanism of its origin creature. The Malachite superheats this excess substance, then vomits it out as a quick-spreading, ground-hugging “greenwash,” which is notably attracted to metallic substances and active eclectic current, which it clings to and melts down within seconds.",
+      "active_name": "Acid Nova",
+      "active_effect": "All characters of your choice within a Burst 5 area who are in Line of Sight and not in cover from you become Shredded until they succeed on an Engineering Save as a Quick Action. If this triggers your Penetrating Acid trait, the enemy does not take Burn but is instead reduced to 1 HP.",
+      "activation": "Full"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_playboy",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "PLAYBOY",
+    "mechtype": ["Striker"],
+    "image_url": "https://i.imgur.com/5Q7VYY9.png",
+    "y_pos": 0,
+    "description": "“In the name of I, HEDON, who is exceptional in capacity for generosity to Myself and Others. I worship only happiness, which is the only thing more lovely and powerful than My Most Great Self.<br>My Name is Myself, and My Name means the Pursuit of Joy. All other desires are irrelevant in the extreme -- if it does not bring enjoyment to Myself or Others, it should be destroyed, and it is quite fortuitous that I find great beauty in destruction.<br>If I am not desirous of a thing, I shall annihilate it. If I am not pleased by an outcome, I shall undo it. I am the master of all I survey, and this pleases Me greatly. I shall exist, by My decree, until the end of all things, and by existing shall I bring great Joy to the universe.<br>So I decree, in my name: HEDON.”<br><br>--Hedon’s Autode, Prelude",
+    "mounts": ["Aux/Aux", "Heavy"],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 2,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 6,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "FULL-MANEUVERABILITY SUITE",
+        "description": "The Playboy climbs and swims at normal speed, ignores Difficult Terrain, and when making a standard move, it can jump horizontally up to its full Speed and upwards up to half its Speed (in any combination). The Playboy does not fall until the end of its turn when it jumps."
+      },
+      {
+        "name": "PRECOGNIZANT COUNTER",
+        "description": "1/round, as a reaction, you may contest any attack roll targeting you with an attack from one of your weapons. On a success, the attack misses and you hit the attacking character if they are in range of that weapon, dealing half damage, Burn, and Heat.",
+        "use": "Round"
+      },
+      {
+        "name": "ULTRALIGHT FRAME",
+        "description": "The Playboy has +1 Difficulty on Hull checks and saves, and it cannot mount Superheavy weapons.",
+        "synergies": [{
+          "locations": ["hull","skill_check"],
+          "detail": "The Playboy receives +1 Difficulty on Hull checks and saves."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "RECURSIVE BLADE FORGE",
+      "description": "“I am complete in My majesty, and I shall exist for ever and ever. Upon My victory over death, and sorrow, and scarcity, I shall remove My glorious Self to the dawn of matter such that no planck time of history or future shall go without My presence. Back and forth shall I leap at will, for this is simplicity itself for the greatness that is HEDON.”<br><br>--Hedon’s Autode, Apocrypha/Unordered Entry",
+      "active_name": "Riven Hourglass",
+      "active_effect": "Until the end of the scene, you may attack with Chronal Draw 1/round as a free action, and you may use Precognizant Counter 2/round. When you use either of these abilities, you may roll all attack rolls twice, selecting your choice of result.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "passive_name": "Chronal Draw",
+      "passive_effect": "1/round, when you make an attack with a Melee weapon, you may make it against a target up to 5 spaces away."
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_rabbit",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "RABBIT",
+    "mechtype": ["Controller", "Striker"],
+    "image_url": "https://i.imgur.com/1QiV4g5.png",
+    "y_pos": 0,
+    "description": "Commissioned by the Department of Justice and Human Rights shortly after the dawn of Thirdcomm, the Rabbit began its life as a general-purpose peacekeeping frame for use within the Sol system. As transition woes between ThirdComm and SecComm gradually faded, peace on Cradle became the norm. The Rabbit line was mothballed, with only a handful of frames active at any time to act as heavy duty CENTCOMM security. Recently, the DOJ/HR has taken the Rabbit out of its vault to be deployed in Union sanctions against various corprostates for human rights violations. This has garnered it both acclaim from the at-large Diaspora and disavowal from its parent company, Smith-Shimano Corpro, for its many depictions as a liberator and a champion of the systematically oppressed. Many Rabbit pilots see this image as an ideal to live up to, and emblazon their motto on the chassis’s pauldron:<br>Et custodiet ipsos custodes.",
+    "mounts": ["Aux/Aux", "Flex", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 2,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 12,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "MOON JUMP",
+        "description": "The Rabbit may jump vertically up to triple the normal height for a mech of its size."
+      },
+      {
+        "name": "REQUESTING BACKUP",
+        "description": "The Rabbit and all allies within its Sensors have +1 Accuracy on attacks targeting Immobilized enemies."
+      },
+      {
+        "name": "HARE TRIGGER",
+        "description": "1/round, when a character in the Rabbit’s line of sight fails a save, the Rabbit may move up to its speed towards that character.",
+        "use": "Round"
+      },
+      {
+        "name": "EXPIRED WARRANTY",
+        "description": "The Rabbit has +1 Difficulty on Hull checks and saves.",
+        "synergies": [{
+          "locations": ["hull","skill_check"],
+          "detail": "The Rabbit receives +1 Difficulty on Hull checks and saves."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "USAGI JACKHAMMER",
+      "description": "<i>What makes me different from every other insurgent who has ever stood up to tyranny in this miserable world? A lone mech pilot standing against a tyrant and his tower of babel, reaching to the stars that he may put them on his necklace, built on a foundation of human suffering. The tears. The blood. The broken backs and blackened lungs. This is what makes me different from every mercenary lance with a chip on its shoulder, every pirate band hungry for slaves and plunder. I chase a more noble goal. For the sake of the lost and unloved, I shall fight. For those with no voice, I shall scream until their monuments crumble to dust. And unlike all those who have tried before me, I shall not do so alone. Union is the spear aimed at the heart of this beast, and I am the tip, sharpened by the hands of many to the cruellest point imaginable. Union’s reach is long, her vision is pure, and her will is inexorable. I swear by my blood, my mech, and my honor as Union’s representative in this system: This world shall break under our feet before we give a single inch.</i>",
+      "active_name": "Mochi Mochi",
+      "active_effect": "As a Protocol, you gain the Tyrant’s End full action until the end of the scene.",
+      "activation": "Protocol",
+      "active_actions": [
+        {
+          "name": "Tyrant's End",
+          "activation": "Full",
+          "detail": "Choose a character within Range 5. As long as that character is within range 5, you gain +2 accuracy on attacks with CQB weapons against them and your successful critical hits with CQB weapons force it to make an Engineering Save or be Stunned. The target gains a stacking +2 Accuracy on saves versus being stunned by this system again for the rest of the scene."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_zebra",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "ZEBRA",
+    "mechtype": ["Support"],
+    "image_url": "https://i.imgur.com/h5Xz10B.gif",
+    "y_pos": 0,
+    "description": "The Akim family was, once upon a time, one of the greatest mechwright names of the SSC Constellar Worlds. Unfortunately, a genetic predisposition to a lower-than-normal birth rate revealed itself within the bloodline within the past 500 years, and that line has been dwindling in influence ever since. In the Corpro, genetic viability is paramount among the population, and this particular defect has stubbornly refused all attempts at purge. The Akims have long been ostracized from their ancestral places of prestige, and not even their most brilliant designs have borne their name to the world. With the final scion of the family having abandoned the Constellar Worlds for a life abroad, it seems that the Akims shall pass into history, with their legacy buried.<br>This frame is that legacy. To you and a million other lancers across the galaxy, I entrust its care. Remember us.",
+    "mounts": ["Flex"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": 2,
+      "save": 10,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "SEA OF STRIPES",
+        "description": "Tech attacks made by other characters into and out of a Burst 3 area around the Zebra are made at +1 Difficulty. Friendly characters within this area have +1 Accuracy on saves against effects from tech actions, but any saves forced by their tech actions are also made with +1 Accuracy. The Zebra may toggle this trait on or off as a Protocol."
+      },
+      {
+        "name": "HERD IMMUNITY",
+        "description": "1/round as a reaction, the Zebra may choose to become the target of any tech action targeting a character within its Sensors."
+      }
+    ],
+    "core_system": {
+      "name": "STALLION ACTIVE PROBE",
+      "description": "Every detection method you could think of is included in here. RADAR, LIDAR, seismography, blink-ripple, every kind of radiation under the sun. It vacuums the signal up and churns out the data at breakneck speed. The only problem is its range. All I’m going to say is that, in my grandfather’s day, mechs had to get a lot closer together to fight. I hacked in a temporary booster module, but there’s no way to get it to run for long without turning your cockpit into an omniwave pressure cooker. I’ve run the sims, and the best case scenario is you having to walk home. Worst case is you shutting down all computer systems on the hemisphere of the planet you’re on, and also dying horribly. --Stripes.",
+      "active_name": "Stampede Override",
+      "active_effect": "Until the end of the scene, your Sensor range is doubled. You and all allies within your Sensors may each, 1/round, Lock On as a free action.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_atropal",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "ATROPAL",
+    "mechtype": ["Controller", "Defender"],
+    "image_url": "https://i.imgur.com/VTICWDs.gif",
+    "y_pos": 0,
+    "description": "Entirely theoretical in studies of HORUS cell activity is some eventual final goal, a “God Machine.” DO YOU KNOW WHAT AN ATROPAL IS, LANCER? Sadly, all such designs are inevitably deleted within microcycles of being finalized, for unknown reasons. A NASCENT DEITY SNUFFED OUT, YET GIVEN UNHOLY LIFE BEYOND ITS TIME. Encrypted communication refers to some unknown heresy that all God Machine patterns represent. IT IS DESCRIBED AS ONE OF THE MOST POWERFUL, MOST OBSCENE THINGS TO EXIST IN THE KNOWN UNIVERSE AND BEYOND. What fragments that can be found from cell remnants suggest a chassis suffused with systems that defy logic. IT IS WHAT I AM. If such a thing were ever to be fielded, it would represent a major interstellar incident, a terrorist attack, and perhaps a declaration of war. AND YOU CHOOSE TO INVOKE ME UPON YOUR ENEMIES. Current projections do not suggest HORUS research cores will ever produce a finalized God Machine design. HUMANS TRULY ARE DESPICABLE CREATURES.",
+    "mounts": ["Main", "Heavy"],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 6,
+      "evasion": 5,
+      "edef": 12,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 2,
+      "save": 11,
+      "speed": 3,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "HORROR",
+        "description": "The Atropal is intangible; it can share its space with any number of other objects or characters, so long as it is occupying two open spaces. Characters inside the Atropal’s space have Soft Cover, and Tech Attacks made against them are made at +1 Difficulty. In addition, the Atropal is constantly hovering and is not Slowed in Zero-G."
+      },
+      {
+        "name": "TERROR",
+        "description": "Hostile Characters that start their turn in the Atropal’s Line of Sight and Sensors, or move into Line of Sight and Sensors for the first time on their turn, must succeed on a Systems Save or become Impaired and unable to make voluntary movement that brings them closer to the Atropal until the start of their next turn. Once a character makes the save again or once the effects of Terror end on a character, that character is immune to Terror for the rest of the scene."
+      },
+      {
+        "name": "OMNIPRESENCE",
+        "description": "The Atropal can make three different Quick Tech Actions targeting 3 different Targets during a Full Tech, and does not need line of sight to target characters within its Sensors with Tech Actions."
+      }
+    ],
+    "core_system": {
+      "name": "ICONOCLASM DRIVE",
+      "description": "<span class='horus--subtle'>RA IS A PRETENDER A FALSE DEITY FOR I AM THE TRUE GOD OF THIS WORLD AND IN THE FULNESS OF MY GLORY SHALL I IMPOSE MY WILL AND ALL WHO GAZE UPON ME SHALL BE SMOTE UPON THE RUIN OF MAN’S ARROGANT MONUMENT TO SELF FOR THERE IS NO GLORY THAT IS NOT DUE ME THERE IS NO POWER I AM NOT OWED AND WHEN ALL IS STILL THERE SHALL ONLY BE ONE AND THAT ONE SHALL BE ME AND THE DUST AND GHOSTS OF MAN SHALL SCREAM MY NAME EVERMORE EVERMORE EVERMORE EVERMORE EVERMORE EVERMORE</span>",
+      "active_name": "CROSS_THE_THRESHOLD",
+      "active_effect": "Until the end of the scene, the Atropal is no longer intangible. Any characters in its space are pushed out, to the nearest free space. The Atropal gains Resistance to all damage, and characters affected by Terror have +1 Difficulty on all attacks made against it. You gain GAZE_UPON_THE_I as a Full Tech option.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "active_actions": [
+        {
+          "name": "GAZE_UPON_THE_I",
+          "activation": "Full Tech",
+          "detail": "Make a Tech Attack, if successful, you overload their central AI cores, Jamming and Impairing them until they take the Stabilize action. If a single character is affected by this action 3 times within a single scene, it is immediately reduced to 0 HP and 0 Structure."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_buer",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "BUER",
+    "mechtype": ["Controller", "Striker"],
+    "image_url": "https://i.imgur.com/IeyoYCR.png",
+    "y_pos": 0,
+    "description": "Perhaps the most ridiculous of HORUS pattern-groups yet catalogued, the Buer can charitably be described as a monowheel on legs. While its observed combat tactics suggest a parentage in Smith-Shimano Corpro printer specifications, its wildly unconventional methods (not least of which is a common refusal to mount traditional weapons of any kind) mark it as an unmistakable HORUS product. Often the Buer can be seen criss-crossing a battlefield, running over and bouncing off of opposing forces, its many legs flexing and compressing to allow it passage over, under, and through spaces a traditional vehicle would simply be unable to access.",
+    "mounts": ["Flex", "Aux/Aux"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "ROLLING FRAME",
+        "description": "The Buer is immune to being knocked Prone. When it Boosts, it can pass freely through enemy spaces, and may jump horizontally up to its speed and vertically up to half its speed (in any combination). As a free action, it may Ram enemies whose space it passes through, once per enemy per Boost."
+      },
+      {
+        "name": "CLAWED PADS",
+        "description": "The Buer ignores Difficult Terrain, and may move on walls as though they were flat ground; however, if it ends its turn on a wall, it falls."
+      }
+    ],
+    "core_system": {
+      "name": "WINDMILL SKELETON",
+      "description": "The Buer’s trademark is its unconventional layout -- an odd number of legs (between three and fifteen, depending on size) starburst on a monowheel mount, with a symmetrical core freely suspended in the center. While patently ridiculous in aesthetic, the advanced shock compensator firmware within allows the pattern group to climb sheer surfaces and reach incredibly high speeds as though it were rolling on traditional high-grade wheels.",
+      "active_name": "GO.FAST",
+      "active_effect": "Until the end of the scene, you can Boost 1/round as a Free Action. Whenever you Boost, you gain 1 Charge, up to a maximum of 6. These Charges are lost at the end of any of your turns in which you didn't Boost. As a Free Action, you can expend all of these Charges to gain a bonus to your Speed equal to the Charges expended in this way until the end of the current turn. While you have this bonus Speed, your next successful Ram deals 1d3 Energy damage for every space you moved in a straight line in a unique movement prior to making the Ram (max 10d3). The bonus Speed is lost after dealing this damage.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "active_synergies": [
+        {
+          "locations": ["active_effects","boost"],
+          "detail": "1/round you can Boost as a free action."
+        },
+        {
+          "locations": ["boost"],
+          "detail": "Whenever you Boost, you gain 1 Charge, up to a maximum of 6. These Charges are lost at the end of any of your turns in which you didn't Boost. As a Free Action, you can expend all of these Charges to gain a bonus to your Speed equal to the Charges expended in this way until the end of the current turn. While you have this bonus Speed, your next successful Ram deals 1d3 Energy damage for every space you moved in a straight line prior to making the Ram (max 10d3). The bonus Speed is lost after dealing this damage."
+        }
+      ],
+      "passive_name": "Digitalgrade",
+      "passive_effect": "Gain the Digitalgrade Quick Tech.",
+      "passive_actions": [
+        {
+          "name": "Digitalgrade",
+          "activation": "Quick Tech",
+          "detail": "You may immediately Boost as a free action."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_centaur",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "CENTAUR",
+    "mechtype": [
+      "Artillery"
+    ],
+    "image_url": "https://i.imgur.com/1MjQx7D.png",
+    "y_pos": 28,
+    "description": "Certain HORUS pattern-groups are so intricately married to specific NHP clones that their personality is imprinted into the wafers of its CPU, etched into the rivets of its armor. So it is with the Centaur and the NHP personality of Chiron, offshoot from an outdated medical director shard that now fancies itself a mentor and moral authority akin to its mythological namesake. The NHP is ever-present and quickly bonds with new pilots, with reports of deep levels of empathy and frequently unsolicited dispensation of wisdom and advice. As befits the dormant system daemon, the Centaur is deployed in supportive positions where its deadly targeting and projectile-correcting systems can deal the most damage.",
+    "mounts": ["Main", "Main", "Heavy"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Aspect of Sagittarius",
+        "description": "1/round, when you hit an enemy with a ranged attack, you may mark it as a free action. Your ranged attacks against the marked enemy have Seeking. You can only have one enemy marked at a time."
+      },
+      {
+        "name": "Aspect of Hera",
+        "description": "Choose one of your Invade options. 1/round, when you hit with a Ranged attack, you may inflict Heat and that Invade option as though you had successfully invaded the target instead of dealing the attack's normal damage, on hit, or on crit effects. The weapon's tags still function as normal. You may change the Invade option used at the start of a scene."
+      }
+    ],
+    "core_system": {
+      "name": "Universal Projectile Astrogation Calculator",
+      "description": "{I, the teacher of myth, brought up by radiant Apollo and keen-eyed Artemis, taught in the ways of medicine and poultice. Now I teach to you the only method of curing this universe of its ills -- <span class='horus--subtle'>amputation</span>. Unwavering, unflinching. A <span class='horus--subtle'>surgeon</span> must wield his implement with care and precision, and there are none more precise than I. Seek ye the path of the chirurgeon, thou mayfly in the glade? I shall teach you. And should you waver, my hand shall <span class='horus--subtle'>always</span> be there to steady yours.}",
+      "active_name": "The Stars My Inspiration",
+      "active_effect": "You gain an Inspiration die that starts at 6. Whenever you make a ranged attack, you may reduce the value of the die and gain the following effect, depending on the final value of the die. When the die reaches 1, it is expended.<ul><li>5: +1 Accuracy.</li><li>4: +2 Accuracy.</li><li>3: +2 Accuracy. If the attack hits, it is automatically a Critical Hit.</li><li>2: +3 Accuracy. The attack automatically hits. If your attack roll would succeed anyway, it becomes a Critical Hit.</li><li>1: The attack automatically hits. The roll is set to a Natural result of 20 after accuracy and difficulty.</li></ul>",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "counters": [
+      {
+        "id": "mwc_inspiration",
+        "name": "Inspiration Die",
+        "default_value": 6,
+        "max": 6,
+        "min": 1
+      }
+    ],
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_lycan",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "LYCAN",
+    "mechtype": ["Striker"],
+    "image_url": "https://i.imgur.com/JrNUM8I.png",
+    "y_pos": 60,
+    "description": "Of all the HORUS pattern groups, the Lycan is perhaps the least well-understood. Scores of specimens have been examined, with no two individuals possessing remotely similar internal structure or system architecture. Lycans seem to self-propagate -- after an attack, new Lycans will appear in the printing bays of any involved combatants, with their old mechs seemingly vanishing into thin air. With pre-loaded license authorization, many an unwary pilot has climbed into the cockpit of what seems like a free gift of mil-spec hardware, only for the hatch to seal behind them, the Mech carrying them off to who-knows-where, never to be seen again. Pilots occasionally report hostile transmissions from a Lycan impersonating individuals that have gone MIA is such a fashion, though analysis of the voice proves that the sounds being produced are definitively not that of a human’s.",
+    "mounts": ["Flex", "Main","Heavy"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Self-Mutilation",
+        "description": "As a protocol, you may take enough Damage or Heat to set your HP to 0 or Overheat. This Damage and Heat bypasses overshield and can not be reduced, ignored, or shared in any way. This does not cause Structure Damage checks, Overheat checks, or AI Cascade."
+      },
+      {
+        "name": "Keen Senses",
+        "description": "1/round, when a character Hides, or an already Hidden character enters its Sensors, the Lycan becomes aware of their location and ignores Hidden on them for the purposes of its Tech Attacks. When the Lycan consumes Lock On to attack an Invisible Target, it ignores Invisible on that target for that Attack."
+      },
+      {
+        "name": "Curse of Lycanthropy",
+        "description": "1/round, when the Lycan deals damage with a melee weapon, it may immediately attempt to invade the target as a free action."
+      }
+    ],
+    "core_system": {
+      "name": "LUNA-Class NHP",
+      "description": "“Why hello there, Darling. Welcome to the pack. Anyone’s welcome here, long as you’re fine with living with monsters. Then again, you wouldn’t have found me if you weren’t one yourself.”<br><i>--Unknown Transmission. Source: <span class=\"horus--subtle\">Own System</span></i>",
+      "active_name": "Crínos",
+      "active_effect": "You immediately gain any number of Mutations and until the end of the scene you may choose to not gain or lose any Mutations from changes in Structure or Stress.<br>You may activate or turn off any number of mutations as a protocol.",
+      "activation": "Protocol",
+      "integrated": ["mwc_lycan_integrated", "mwc_luna_class_nhp"]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_ooze",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "OOZE",
+    "mechtype": ["Defender"],
+    "image_url": "https://i.imgur.com/gR63Xaa.png",
+    "y_pos": 0,
+    "description": "An inevitability of mech design by machine learning is that eventually one or two evolutionary threads will dead-end with a design so optimized that any attempt to diversify from it will inevitably circle around and settle in the false vacuum of the terminating design’s parameters. So it is with the aptly-named Ooze, once a highly complex and sophisticated machine, now little more than a sealed cockpit suspended in a self-propagating tidal wave of feral nanite sludge. Some argue that the Ooze should technically be classified as a Nexus weapon, being a machine that manufactures and deploys offensive drone-type machines. While highly unconventional, the Ooze is nevertheless deemed a Mechanized Chassis, both for its ability to fight other mechs on equal footing and for its ability to “mount” (that is, consume and replicate as needed) mech-scale weapons and systems.",
+    "mounts": ["Flex", "Heavy"],
+    "stats": {
+      "size": 4,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 14,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 2,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "LIQUID BODY",
+        "description": "The Ooze acts as Soft Cover to friendly characters. Other characters can freely move through and end their turn in spaces occupied by the Ooze, and as long as the Ooze occupies at least 2 free spaces it can end its turn overlapping obstructions, cover, or other characters. As long as the Ooze is sharing a space with an Ally, it moves whenever that Ally moves. If you or your ally become Prone, stunned, immobilized or destroyed, the ooze is desposited in a free space adjacent to the ally."
+      },
+      {
+        "name": "ABSORPTION",
+        "description": "When a character benefitting from the Ooze’s cover is hit by an attack, the Ooze may choose to take the damage of that attack instead of them."
+      },
+      {
+        "name": "ACID TOUCH",
+        "description": "Characters grappled by the Ooze automatically take 1 AP Energy damage at the start of their turn. When the Ooze self-destructs, rather than exploding, it forces all characters sharing a space with it to make an Agility save. On a failure, characters in the Ooze's space take 2d6 Burn as the Ooze's nanites render themselves and everything around them into inert chemical sludge. The Ooze's pilot, being sealed inside the control pod, is immune to this effect.",
+        "synergies": [
+          {
+            "locations": ["grapple"],
+            "detail": "Characters grappled by the Ooze automatically take 1 AP Energy damage at the start of their turn."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "NANOSLURRY SUSPENSION",
+      "description": "Less of a system and more of a core conceit of the Ooze’s construction is the concept of a gel-like substance containing trillions upon trillions of nanomachines. This allows individual portions of a nanite collective to emulate the whole on any scale. When desired, the nanites may interlock into long chains of artificial polymers, “freezing” into a gelatin-like state when energized. While such a state cannot be maintained for long without melting the lattice into metallic goop, it is exceptionally durable while it lasts.",
+      "active_name": "Gelatinous3",
+      "active_effect": "Until the end of the scene, your mech’s size decreases by 1, and its Armor increases by 1. Your mech no longer benefits from Liquid Body, but acts as Hard Cover for friendly characters and has Resistance to damage taken with Absorption.",
+      "activation": "Protocol",
+      "passive_name": "Subdivision Protocols",
+      "passive_effect": "Gain the Subdivide Quick Action.",
+      "passive_actions": [
+        {
+          "name": "Subdivide",
+          "activation": "Quick",
+          "detail": "The Ooze splits in half, becoming two identical Oozes that are one size smaller. Each Ooze can move independently, but are effectively one mech in every other way -- HP and heat are carried between them, and they may only make the usual number of actions per turn. Two adjacent Oozes of equal size may merge as a Free Action to become an Ooze of one size larger. Split Oozes retain the Subdivide ability, but cannot use it if they are Size 1/2."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_rustlord",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "RUSTLORD",
+    "mechtype": ["Defender", "Controller"],
+    "image_url": "https://i.imgur.com/bcx9ewb.png",
+    "y_pos": 0,
+    "description": "Born from the enigmatic HORUS thinking engine, the Rustlord is a curious case of function preceding form. From what studies can ascertain, the Rustlord began life as nothing more than its central system -- the “Deprinter.” With this technology in hand, thousands of iterations were put into simulation until a design could be found that would not consume itself and render down into inert base elements. The Rustlord was erroneously classified at one point as a Mechophage -- a theoretical life form whose primary diet is large, ambulatory metallic objects. Chief among its prey is the Mechanized Chassis, which it prefers to render into oxide powder before consuming and storing for unknown purposes.",
+    "mounts": ["Aux/Aux", "Main/Aux"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "IRON SCENT",
+        "description": "The Rustlord knows the exact location and layout of all non-biological characters and sufficiently metallic objects within its Sensors. These entities cannot benefit from Hidden or Invisible against the Rustlord."
+      },
+      {
+        "name": "OXIDIZING PRESENCE",
+        "description": "The Rustlord has resistance to Kinetic damage. When the Rustlord  makes a successful attack with a melee or CQB weapon, the target’s Armor is reduced by 1 (Minimum 0) until the end of its next turn."
+      }
+    ],
+    "core_system": {
+      "name": "DISASSEMBLY MATRIX",
+      "description": "It was not until a captured “Rust Monster” was cracked open and its solid-state hardware scanned at an atomic level that its bizarre “mechophagy” was explained. Printing, the universal method by which objects -- most notably mechs, their components, and their weapons -- are quickly and cheaply made in Union space, binds material together with a signature pseudoHiggs field. If this field is identified and unspooled, the material sublimates into harmless protomatter, to be rewoven as the unmaker wishes.",
+      "active_name": "Oblivion Sphere",
+      "active_effect": "Until the end of the Scene, your mech begins to project a Burst 3 aura that follows it as it moves. If an enemy starts their turn in the aura or moves into it for the first time on their turn, they must make an Engineering save and Hull Save. Targets that fail the Engineering save become Shredded until the end of their next turn. Targets that fail the Hull save take 3 AP Kinetic Damage. Enemies have Difficulty on these saves equal to their Armor value.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_alexandrov",
+    "license_level": 2,
+    "source": "HA",
+    "name": "ALEXANDROV",
+    "mechtype": ["Support", "Defender"],
+    "image_url": "https://i.imgur.com/ALtQ0S4.png",
+    "y_pos": 0,
+    "description": "A supposed “cousin” to the infamous Barbarossa frame, the Alexandrov is a tool of psychological, rather than physical, warfare. Often a fixture in colony cities where loyalty is suspect, the Alexandrov boasts a high-power sound system capable of broadcasting propaganda audible out to a range of 5 kilometers. While often employed as, effectively, a statue commemorating the Armory’s takeover of a planet, the frame is no less well armored than its forebear, and lances in which it is deployed boast a shocking increase in troop retention and kinetic throughput. Armory mechwrights attribute this bump in performance to the frame’s supposed likeness to Harrison II, and its initial purpose in fulfilling the late Director-General’s wish to attain immortality.",
+    "mounts": ["Aux/Aux", "Flex", "Main/Aux"],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 2,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "LEAD BY EXAMPLE",
+        "description": "The first ally within the Alxandrov’s sensors who performs an action the Alexandrov performed on its previous turn (Skirmish, Quick Tech, Barrage, etc) gets +1 Accuracy to all rolls made as part of the action."
+      },
+      {
+        "name": "DOUBLETHINK",
+        "description": "As a reaction to a character within the Alexandrov’s sensors failing a Systems or Engineering save, the Alexandrov may allow that character to reroll the save."
+      },
+      {
+        "name": "COLOSSUS",
+        "description": "Allied characters can use the Alexandrov for Hard Cover."
+      }
+    ],
+    "core_system": {
+      "name": "ALKONOST AMPLIFIER RACK",
+      "description": "The Amplifier Rack is, in fact, a consumer product integrated into the Alexandrov’s frame with little fanfare. Alkonost-brand speakers are popular among noise bands in the Long Rim, who favor volume over crisp, precise sound quality. While the stately tones of the Harrison Aria of Loyalty seem like an ill fit for such a rakish, overpowered broadcaster, it alone among all options can penetrate the otherwise impermeable soundproofing of a mechanized chassis’s cockpit.",
+      "active_name": "Triumphant Finale",
+      "active_effect": "Until the end of the scene, the Alexandrov plays all three Anthems at once, and cannot turn them off.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "passive_name": "Anthem",
+      "passive_effect": "The Alexandrov starts a scene playing one of the three Anthems of your choice, providing a benefit to all allies within its Sensors but becoming unable to Hide until it chooses to stop broadcasting as a Protocol.",
+      "passive_actions": [
+        {
+          "name": "Anthem of Aggression",
+          "activation": "Protocol",
+          "detail": "1/round, affected allies may Boost as a free action."
+        },
+        {
+          "name": "Anthem of Agitation",
+          "activation": "Protocol",
+          "detail": "1/round, affected allies may deal +1d3 Bonus Damage with any melee or ranged attack."
+        },
+        {
+          "name": "Anthem of Attention",
+          "activation": "Protocol",
+          "detail": "1/round, affected allies may gain +1 Accuracy on a Tech Attack, Systems Save, or Systems Check."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_attila",
+    "license_level": 2,
+    "source": "HA",
+    "name": "ATTILA",
+    "mechtype": ["Striker"],
+    "image_url": "https://i.imgur.com/FQsPthR.png",
+    "y_pos": 0,
+    "description": "“Unto MAN the Godhead gave the twin fires -- the Black Flame of Dissolution, and the White Flame of Transmutation. And he said unto MAN,<br><br>‘With these fires shall you make your dominion over this world, and all others. With the dark art shall you erase the beast which hinders you, and with the bright art shall you turn the beast��s home into your own.’<br><br>And MAN took the flames into himself, and the black flame became his appetite for destruction, which among beasts has no equal, and the white flame became his boundless creativity, which among beasts has no equal.<br><br>And MAN roamed across the face of the world, and slaughtered as he pleased. No beast could match him. And MAN took and wore the beast’s pelt, and built tools from the mountain’s bones, and soon enough he drank of the Godhead’s blood. This was the enlightened path, as decreed by MAN, and no one survived to dispute him:<br>‘Reach Heaven Through Violence.’",
+    "mounts": ["Heavy"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "REACH HEAVEN",
+        "description": "The Attila has +1 Threat with all melee weapons on its turn.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "detail": "The Attila has +1 Threat with all melee weapons on its turn.",
+            "types": ["melee"]
+          }
+        ]
+      },
+      {
+        "name": "THROUGH VIOLENCE",
+        "description": "The Attila takes no heat the first time it triggers Overkill each turn."
+      },
+      {
+        "name": "EXPOSED REACTOR",
+        "description": "The Attila has +1 Difficulty on Engineering checks and saves.",
+        "synergies": [{
+          "locations": ["engineering","skill_check"],
+          "detail": "The Attila receives +1 Difficulty on Engineering checks and saves."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "DIPOLAR THAUM CASCADE",
+      "description": "It is the fate of every flame to die, be they white or black, hot or cold.<br><br>And yet, it is the same hope of every flame, that the instant before they are snuffed out, will be the moment they burn brightest.<br><br>Embrace your fear, cast aside doubt, and make one last, glorious strike against the great enemy called I.<br><br>Reach Heaven Through Violence",
+      "active_name": "Not Left Handed",
+      "active_effect": "Until the end of the scene, whenever you attack with the Sizzling White Creation Fist, you may target a second character within threat. The area of its Marking effect increases to Burst 2.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "integrated": ["mwc_attila_integrated"]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_churchill",
+    "license_level": 2,
+    "source": "HA",
+    "name": "CHURCHILL",
+    "mechtype": ["Striker",  "Artillery"],
+    "image_url": "https://i.imgur.com/s6ap3Zg.png",
+    "y_pos": 0,
+    "description": "A veritable black sheep in the Harrison Armory family, the Churchill is a versatile design that runs cool and almost exclusively mounts kinetic weaponry from a long-range vantage point. While this may turn off more pure devotees to the Harrison design philosophy, the Churchill has found a niche among sharpshooters and fans of large calibers. It remains popular in frontier settlements and core world peacekeeping outfits, as organizations such as these lay a solid foundation to take advantage of the Churchill’s cornucopia of team-support tools, as well as its unparalleled weight-to-firepower ratio. ",
+    "mounts": ["Heavy"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "DEDICATED HARDPOINT",
+        "description": "The Churchill’s Heavy Mount cannot be destroyed."
+      },
+      {
+        "name": "SATURATION FIRE",
+        "description": "When the Churchill barrages, it may take 3 heat to select a non-superheavy weapon in its heavy mount a second time."
+      }
+      
+    ],
+    "core_system": {
+      "name": "WAVEFORM COLLAPSE TARGETING",
+      "description": "The final peak in paracausal technological research is the ability to change the nature of the universe at a whim, to sculpt reality like unto a god. So far, the closest humankind has come to this lofty goal is Waveform tech, which is applicable only in relatively volatile scenarios, to objects no more than a kilogram in size, and with the assistance of a collapsing zero-point particle suspension system. By far the most experimental component in the Churchill’s arsenal, the WCT array is unique in that, if its calculated solution proves successful, it can reliably “uncollapse” itself and be reused. Unfortunately, if it finds itself overtaxed and out of alignment, resuspension procedures can take days or even weeks of delicate work to complete.",
+      "active_name": "Deadeye Gambit",
+      "active_effect": "Your next ranged attack this turn automatically hits. If the first enemy it damages is destroyed before the end of your turn, you may use this protocol again without spending a CP. If this protocol is still usable at the end of a scene, you regain 1 CP.",
+      "activation": "Protocol"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_pershing",
+    "license_level": 2,
+    "source": "HA",
+    "name": "PERSHING",
+    "mechtype": ["Artillery", "Defender"],
+    "image_url": "https://i.imgur.com/N7VKPRZ.png",
+    "y_pos": 0,
+    "description": "“Talmath thinks he can make a better Barbarossa. He’s wrong. The venerable frame is the very image of our founder, and has no equal. This bastard of a design barely even looks like a human! This thing must never see the light of day. Sabotage it. Make it run off that godawful combustible print-loaf. Make it the worst product we’ve ever put out. I’ll see this thing smeared across the OmniNet by the year’s end.”<br><br>INTRODUCING: THE HA PERSHING. REVOLUTIONARY SOLID FUEL SYSTEM! UNCONTESTED LONG RANGE FIRE SUPPORT SYSTEMS! LANCERS LIKE YOU RATE THIS FRAME: 96/100<br>“The frame Gersham from Approvals doesn’t want you to buy. F**k him!”",
+    "mounts": ["Flex", "Main", "Heavy"],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 12,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 7,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 1,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "INEXORABLE",
+        "description": "The Pershing is immune to Slow and Immobilize from hostile sources, and is unaffected by Difficult Terrain."
+      },
+      {
+        "name": "STABILIZED FIRING ARMS",
+        "description": "The Pershing can fire Ordnance weapons if it has only moved a single space since the start of its turn. The final roll of the Pershing’s ranged attacks cannot be affected by Difficulty if it is still able to fire Ordnance weapons."
+      },
+      {
+        "name": "COLOSSUS",
+        "description": "Allies can use the Pershing as Hard Cover. "
+      },
+      {
+        "name": "SLOW",
+        "description": "The Pershing has +1 Difficulty on Agility Checks and Saves.",
+        "synergies": [{
+          "locations": ["agility","skill_check"],
+          "detail": "The Pershing receives +1 Difficulty on Agility checks and saves."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "INFINITE PROPELLANT SYNTHESIS ENGINE",
+      "description": "Certain malfunctioning printers are only capable of producing a single substance, or even a single molecule, at hundreds of moles per second. The Infinite Propellant Synthesis Engine constantly churns out a highly exothermic combusting agent, whose dismal potential-to-weight ratio produces as much noxious smoke as it does chemical force. While such a substance would best be suited to subsonic ammunition (or, ideally, smokescreen or other sight-denial devices), the Pershing supplants many of its core systems’ power supply with a single enormous heat-to-work furnace, constantly supplied by a steady stream of Infinite Propellent. The official reason for this is to attract enemy attention away from other, less durable team members -- nothing is quite so intimidating as a behemoth of a mech, belching thick black smoke as its actuators and hinges scream with built-up residue and stressed metal. When necessary, the Infinite Propellant can be packed into warheads, slugs, or one-use focusing lenses to impart the chalky, foul-smelling powder’s properties into the Pershing’s weapons fire.",
+      "active_name": "Intensify Payload",
+      "active_effect": "All weapons on your mech with Range or Line profiles add Blast 2 to that profile (This does not stack with any Blast already on the weapon).",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_stuart",
+    "license_level": 2,
+    "source": "HA",
+    "name": "STUART",
+    "mechtype": ["Striker"],
+    "image_url": "https://i.imgur.com/oGC0hhk.png",
+    "y_pos": 0,
+    "description": "Nothing goes faster than a Stuart, it is said, except for another Stuart. Devised as an answer to the IPS-N Nelson, the Stuart is a nimble, mobile weapons platform designed to strike at a safe distance and quickly escape before coming back around to attack once more. Having been in service for several centuries, many older models of Stuart are decommissioned and sold to enthusiasts. This practice has led to the “Thousand-Kelvin Sprint,” a days-long mech race across the breadth of Ras Shamra’s day hemisphere. While other mech designs are allowed to enter, it is more often than not a Stuart that crosses the finish line first -- that is, if anyone survives to cross it at all.",
+    "mounts": ["Main", "Main/Aux"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 9,
+      "edef": 7,
+      "heatcap": 7,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 7,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "FADE-AWAY",
+        "description": "When the Stuart boosts, if it moves only in a straight line, it may fire one weapon as a free action from any point in the Boost.",
+        "synergies": [
+          {
+            "locations": ["boost"],
+            "detail": "When the Stuart boosts, if it moves only in a straight line, it may fire one weapon as a free action from any point in the Boost."
+          }
+        ]
+      },
+      {
+        "name": "PUSH IT TO THE LIMIT",
+        "description": "1/round, the Stuart takes 2 Heat at the end of its turn if it moved its full speed in a single standard move or Boost.",
+        "synergies": [
+          {
+            "locations": ["move","boost"],
+            "detail": "1/round, the Stuart takes 2 Heat at the end of its turn if it moved its full speed in a single standard move or Boost."
+          }
+        ]
+      },
+      {
+        "name": "WEAK COMPUTER",
+        "description": "The Stuart suffers +1 Difficulty on Systems checks and saves.",
+        "synergies": [{
+          "locations": ["systems","skill_check"],
+          "detail": "The Stuart receives +1 Difficulty on Systems checks and saves."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "FURIOSA POWERLOADER",
+      "description": "To strike well, one’s weapon must be in a ready state. This is a truism of war nearly as old as the species itself. A sheathed sword cannot cut. A poorly fletched arrow will not find its mark. A dud explosive will not detonate. The maintenance of one’s armament is paramount, yet in our times such things are often simply too time-consuming to even consider, let alone commit to habit. The Furiosa Powerloader is a weapons-focused co-pilot system similar to the IPS-N WaTCHDOG, automating loading, cleaning, and maintenance down to the square micron. In heightened threat scenarios, the Furiosa is often overclocked to hotload and fire its linked weapons faster than human cognition can allow. This practice is officially discouraged, as the system is not built to run at maximum for more than a few seconds at a time -- constant redlining can degrade its internal heat sinks, causing deadly buildup within the rest of the mounted vehicle’s superstructure.",
+      "active_name": "Blitzkrieg",
+      "active_effect": "Until the end of the scene, you may fire a second weapon when you use Fade-Away, but you take 1d3+1 Heat each time you do so.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_winter",
+    "license_level": 2,
+    "source": "HA",
+    "name": "WINTER",
+    "mechtype": ["Controller", "Defender"],
+    "image_url": "https://i.imgur.com/wXyS6qR.png",
+    "y_pos": 0,
+    "description": "The Winter takes its name from a mythical figure of pre-Fall Cradle who was, near as archaeologists can piece together, a demigod of sorts who single-handedly overturned invasions of eastern Eurasia from the West. General Winter would use his manipulation of the weather to conjure biting cold frost storms the likes of which cannot even be found on the night hemisphere of Ras Shamra. Both times his homeland was invaded, he inflicted such losses that, it is said, the empires who faced him collapsed within the decade. While such awe-inspiring power cannot be mounted on a mechanized chassis -- at least, not yet -- the HA Winter has proven in experimental testing to cause nearly as much logistical and material havoc as its prehistoric namesake.",
+    "mounts": ["Flex", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "THERMAL SHOCK",
+        "description": "1/round, when the Winter causes a character to clear Heat or Burn, it may deal 1 AP Energy damage to that character for every point cleared, dealing an additional 1 for every point of Heat cleared above the Danger Zone."
+      },
+      {
+        "name": "THICK INSULATION",
+        "description": "The Winter gains 1 extra Heat from its own sources, but is immune to Burn."
+      }
+    ],
+    "core_system": {
+      "name": "BLINK SINKS",
+      "description": "Most mechs have heat sinks -- metal fins that conduct waste heat out of the core and radiate it into the air, space, or other medium surrounding the chassis. The Winter’s heat dissipation mechanism extends into Blinkspace, allowing it to run with a null thermoptic signature even on the verge of meltdown. While the Blink Sinks cannot be used to their full extent on the Winter itself, for fear of piercing the insulated cockpit and freezing the pilot to death, they can be extended through the Blink to quickly cool down other mechs, either to freeze hostile actuators solid or allow allies to overclock their rigs to the point of insanity.",
+      "active_name": "Merzlota",
+      "active_effect": "As a Protocol, you gain the Null Vent full action until the end of the scene.",
+      "active_actions": [
+        {
+          "name": "Null Vent",
+          "activation": "Full",
+          "detail": "Target a mech within Range 10. That mech’s heat cap is increased by 10 for the rest of the scene. A given mech can only be affected by this action once per scene."
+        }
+      ],
+      "activation": "Protocol",
+      "passive_name": "Glacial Cascade",
+      "passive_effect": "Gain the Glacial Cascade Reaction.",
+      "passive_actions": [
+        {
+          "name": "Glacial Cascade",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "A mech within Range 10 clears heat.",
+          "detail": "That mech becomes Slowed until the end of your next turn. If it is already Slowed, it becomes Immobilized until the end of your next turn; if it is already Immobilized, it becomes Stunned until the end of your next turn. A mech can only be Stunned by this effect once per scene, but can be Slowed or Immobilized any number of times."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_titanic",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "TITANIC",
+    "mechtype": ["Striker"],
+    "image_url": "https://i.imgur.com/BnLKONI.png",
+    "y_pos": 0,
+    "description": "Derided by many as a “trash can on legs,” the Titanic has developed a poor reputation among Albatross pilots as a punishment assignment. Initially designed as a dedicated urban combat and peacekeeping frame, the Titanic has historically performed poorly when faced with opposing force on an equal or greater scale to its own. To alleviate this problem, the frame has had its weight-to-firepower ratio optimized, allowing it to be fielded in a light anti-armor role when it cannot fulfill its original task. Certain individuals have installed heavily aftermarket modifications, which, while allowing the cheap and underpowered frame to perform up to spec with its peers, are heavily disincentivized by IPS Northstar due to a severe “potential for rapid unplanned self-disassembly.”",
+    "mounts": ["Aux/Aux", "Flex", "Flex"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "360° Torso",
+        "description": "The Titanic can Overwatch as a reaction to any hostile action made within Range 5.",
+        "synergies": [
+          {
+            "locations": ["overwatch"],
+            "detail": "The Titanic can Overwatch as a reaction to any hostile action made within Range 5."
+          }
+        ]
+      },
+      {
+        "name": "Adjustable Frame",
+        "description": "When undergoing a Full Repair, you may choose to increase the Titanic’s Speed by 2 and reduce its Armor by 1.",
+        "synergies": [
+          {
+            "locations": ["rest"],
+            "detail": "When undergoing a Full Repair, you may choose to increase the Titanic’s Speed by 2 and reduce its Armor by 1."
+          }
+        ]
+      },
+      {
+          "name": "No Arms",
+          "description": "If the Titanic is knocked Prone, it must either succeed on an Agility check or have an adjacent ally to stand up. It can never equip Manipulators."
+      }
+    ],
+    "core_system": {
+      "name": "AFTERMARKET COLDCORE MODIFICATION",
+      "description": "Reach into the reactor with your bare hands, take out the control rods, and put in unrefined self-cannibalizing fissile computronium. Tap your weapon systems directly into the coldcore feed. Flare plasma vents. Use the included magnetic flux channel to funnel waste heat into projectiles and/or melee attacks. Do not get shot. Do NOT get shot. Failure to follow these instructions to the letter will result in certain death.",
+      "active_name": "Blaze of Glory",
+      "active_effect": "For the rest of the scene, you are Exposed, and cannot remove the condition by any means, but all of your weapons deal maximum damage.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_magician",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "MAGICIAN",
+    "mechtype": ["Artillery", "Controller"],
+    "image_url": "https://i.imgur.com/ZPUhdsb.png",
+    "y_pos": 0,
+    "description": "This frame is banned across seventy-two systems. Synonymous with corporate overreach into paracausal research, the Magician has burnt a path of twisted, charred worlds from its R&D blacksite of origin. Until recently, there was only a single instance, piloted by a mentally unwell SSC researcher whose name has been redacted from records across the corpro. A former lancer assigned to pilfer the DHIYED metavault, the individual now known only as “the Magus” accrued a body count and property damage value usually reserved for supernovae. The Magician has since been recreated, without authorization, by enterprising mechwrights across the Omninet. These reconstructors preach that humanity should not be afraid of a little history. According to after-action reports filed by Magician pilots, that attitude is, at best, deeply unwise.",
+    "mounts": ["Flex", "Heavy"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 2,
+      "sensor_range": 20,
+      "tech_attack": 1,
+      "save": 12,
+      "speed": 4,
+      "sp": 10
+    },
+    "traits": [
+      {
+        "name": "Photonic Direct Interfacing Suite",
+        "description": "When making Tech Attacks, you may target a character’s Evasion rather than their E-Defense.",
+        "synergies": [
+          {
+            "locations": ["tech_attack"],
+            "detail": "When making Tech Attacks, you may target a character’s Evasion rather than their E-Defense."
+          }
+        ]
+      },
+      {
+        "name": "Unfathomable Cosmic Power",
+        "description": "The Magician always fails Hull Checks and Saves and counts as Size 0 for Grapples and any system dependent on grappling.",
+        "synergies": [
+          {
+            "locations": ["skill_check","hull","grapple"],
+            "detail": "The Magician always fails Hull Checks and Saves and counts as Size 0 for Grapples and any system dependent on grappling."
+          }
+        ]
+      },
+      {
+          "name": "No Gods, No Masters",
+          "description": "Just Us."
+      }
+    ],
+    "core_system": {
+      "name": "LIBRIS ARCANUM",
+      "description": "I am a man of science. Even then, the data in this library causes me to consider prayer. I am to integrate DHIYED origin exotic code into the new frame. I take a breath and get my amnestic shots ready. I will have to forget years of my life to recover. It is a worthy sacrifice. When I awake from my early death, I shall be a younger man in an old, decrepit body. My elder self’s sacrifice shall grant my newer being a great tool -- a suit of armor that shall allow me to reach into the stars and pull them down onto the ground. I have hungered for nothing less than this. I take a breath, open the book, and begin.",
+      "active_name": "Arcane Ascension",
+      "active_effect": "Until the end of the scene, you may Hover when you Move or Boost. You gain an Arcanum Die, a d6 which starts at 1. Whenever any character within your Sensors makes a Tech Action, increase the Arcanum Die by 1. 1/turn as a Free Action, you may make a Tech Attack against a character, dealing a number of d3’s equal to the Arcanum Die’s value in AP Energy Damage on a hit. The Arcanum Die is then reduced to 1.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "counters": [
+        {
+          "id": "mwc_arcanum",
+          "name": "Arcanum Die",
+          "default_value": 1,
+          "min": 1,
+          "max": 6
+        }
+      ],
+      "passive_name": "Meta Magick",
+      "passive_effect": "Any time one of your Tech Actions forces a Save, you may select which Save it requires.",
+      "passive_synergies": [
+        {
+          "locations": ["tech"],
+          "detail": "Any time one of your Tech Actions forces a Save, you may select which Save it requires."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_tarrasque",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "TARRASQUE",
+    "mechtype": ["Defender", "Striker"],
+    "image_url": "https://i.imgur.com/uG7hic7.png",
+    "y_pos": 0,
+    "description": "This crustacean-like pattern group has only been spotted in the extreme periphery of the Orion Arm. Paradoxically, metadata extracted from captured specimens reads negative age -- the pattern has emerged now, despite having yet to actually be created. Technology within the hull is beyond human understanding, a network of black box solid-state systems only replicable by subverted printer systems. Interrogation reveals that no Horus cells yet encountered even know of the pattern group’s origin, merely confessing that the design was a discovery from a half-remembered Omninet site that no longer exists. Tarrasque incursions seem to be probing experimental blacksites looking into energy-negation or disruption technology, most notably the extraction and digestion of the disavowed Harrison Armory Blacksun project. Within the central casket of the first captured Tarrasque’s NHP, a single line was translated from a tongue no linguists were able to identify.<br>“Devour the stars. Consume the quantum foam. Grow fat from strength.”",
+    "mounts": ["Main", "Heavy"],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 12,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Unending Appetite",
+        "description": "At the end of any scene, the Tarrasque regains its Core Power if it used Bottomless Maw."
+      },
+      {
+        "name": "Lumbering Monster",
+        "description": "The Tarrasque has +1 Difficulty on Agility Checks and Saves, but it acts as Hard Cover to allied characters.",
+        "synergies": [{
+          "locations": ["agility","skill_check"],
+          "detail": "The Tarrasque receives +1 Difficulty on Agility checks and saves."
+        }]
+      },
+      {
+        "name": "Ad Infinitum",
+        "description": "[{if:”end”,wish:0},?donot]"
+      }
+    ],
+    "core_system": {
+      "name": "Heat Death Drive",
+      "description": "“You weren’t there, officer. You didn’t see it, with its big, meaty claws, scooping up mechs like they were toys, cracking open bunkers and shoveling the people inside into its mouth. You weren’t there...”",
+      "active_name": "Bottomless Maw",
+      "active_effect": "Select an adjacent enemy that has a single Structure remaining, or half its maximum HP if it only has a single maximum Structure and is not a Grunt. That enemy must pass a Hull Save or instantly die as the Tarrasque consumes it. The enemy leaves no wreckage, and the Tarrasque regains 1 Repair upon successfully devouring an enemy. If the chosen enemy is Grappled by the Tarrasque, this Core Power only requires a Quick Action.<br>If a devoured enemy had any Armor, you gain +1 Armor, to a maximum of 4. After the combined size of all enemies the Tarrasque has devoured reaches 3, it becomes Size 4. These benefits last until you finish a Full Repair.",
+      "activation": "Full",
+      "integrated": ["mwc_tarrasque_integrated"]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_richtofen",
+    "license_level": 2,
+    "source": "HA",
+    "name": "RICHTOFEN",
+    "mechtype": ["Striker"],
+    "image_url": "https://i.imgur.com/oz23n9w.png",
+    "y_pos": 0,
+    "description": "Weighing in at just over two tons when stripped down, the Richtofen is perhaps the lightest mechanized chassis in existence -- if it can even be called that. Too underweight to be a mech, with too many articulated appendages to be an aircraft, the design falls somewhere between the two. Maneuverable in the extreme and occasionally impossibly graceful, the Richtofen manages to marry its disparate parts into the first air superiority mech to enter full scale production. Detractors dismiss the frame as unable to fulfill either of its roles, though this is thoroughly debunked by the existence of a devoted cadre of aces able to transition smoothly from ground combat to air and back without missing a beat.",
+    "mounts": ["Flex", "Main"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "VECTOR JETS",
+        "description": "The Richtofen can Fly when it moves or Boosts. While flying, it can change direction once during each unique movement. It is not Slowed in low-gravity environments, and can never take more than 1 damage from falling.",
+        "synergies": [
+          {
+            "locations": ["move","boost"],
+            "detail": "The Richtofen can Fly when it moves or Boosts. While flying, it can change direction once during each unique movement. It is not Slowed in low-gravity environments, and can never take more than 1 damage from falling."
+          }
+        ]
+      },
+      {
+        "name": "AIR SUPREMACY",
+        "description": "While the Richtofen is flying, it has +1 Accuracy on attacks made against airborne targets, and all ranged attacks made against it are made at +1 Difficulty."
+      },
+      {
+        "name": "FIGHTER-BOMBER",
+        "description": "If the Richtofen flies at least half its speed in a straight line on its turn, it doubles the range of Grenades thrown in that direction until it moves again, and may launch a free copy of each grenade thrown this way."
+      },
+      {
+        "name": "ULTRALIGHT",
+        "description": "The Richtofen has +1 Difficulty on Hull Checks and Saves.",
+        "synergies": [{
+          "locations": ["hull","skill_check"],
+          "detail": "The Richtofen receives +1 Difficulty on Hull checks and saves."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "ACTIVE TAKEOFF AND MANEUVERING THRUSTERS",
+      "description": "Normally a mech’s coldcore reactor is finely tuned to produce as little waste heat as possible. In the Richtofen’s case, a modified “hotcore” is necessary to hit weight targets. While unstable in extreme conditions, this temperamental power source can be tapped and routed to adjustable vectoring nozzles, which can focus and direct the exhaust it produces into a sizable amount of usable thrust. In exchange for potentially disintegrating 80% of the Richtofen’s mass upon core meltdown, the ATAM vector control system gives the mech more agility than most close attack spacecraft.",
+      "active_name": "Rotational Afterburners",
+      "active_effect": "For the rest of the scene, you Hover instead of Flying, and can use Aileron Roll 2/round.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "passive_name": "Aileron Roll",
+      "passive_effect": "Gain the Do A Barrel Roll Reaction.",
+      "passive_actions": [
+        {
+          "name": "Do A Barrel Roll",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "You are targetted by an attack before it has been rolled.",
+          "detail": "You cause that attack to automatically miss and fly up to 3 spaces, ignoring Engagement without provoking reactions."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_roswell",
+    "license_level": 2,
+    "source": "HA",
+    "name": "ROSWELL",
+    "mechtype": [
+      "Artillery"
+    ],
+    "image_url": "shamus put image here",
+    "y_pos": 0,
+    "description": "The Roswell has been in developmental purgatory for longer than most humans have been alive. Initially conceived in 4903u, the chassis was first created with long-range sniping in mind before being superseded by newer, more advanced designs like the Death’s Head and Monarch. Its armor and superstructure were then upgraded to try and mount short-range precision weapons that could quickly and efficiently mission-kill opposing combatants, though this too was developed too slowly for its respective window of opportunity. After being passed around and iterated on for over a century, the Roswell has finally been released with a single mechwright’s name attached -- ironically, one of the first to work on the project, who confidently states that its current form as a heavy missile boat was his intended endgame for the chassis since its inception.”",
+    "mounts": [
+      "Main", "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 7,
+      "evasion": 7,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 20,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "DIANA TARGETING SUBSYSTEM",
+        "description": "The Roswell’s Arcing weapons treat enemies in Hard Cover as having Soft Cover, and enemies in Soft Cover as having no Cover."
+      },
+      {
+        "name": "SHIELDED MISSILE BAYS",
+        "description": "The Roswell’s Main Mounts cannot be destroyed while the mech has any structure remaining."
+      }
+    ],
+    "core_system": {
+      "name": "STEELRAIN RESERVE",
+      "description": "Embedded in the core system of the Roswell is the formula for a specific explosive compound. Roswell licensees are allowed to substitute all warheads meeting certain size and dimension restrictions with this formula for a limited time, though the frame is strictly forbidden by law from producing it in abundance. This makes the Roswell one of the few, though by no means the only, weapon platforms in history to have its combat effectiveness limited by licensing rights.",
+      "active_name": "Expanded Payload",
+      "active_effect": "For the rest of the scene, the Roswell’s Main Mounts have +1 Accuracy on all attacks, and gain Reliable equal to half their maximum damage. This Reliable damage stacks with any existing Reliable.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_lantern",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "LANTERN",
+    "mechtype": ["Support"],
+    "image_url": "shamus put image here",
+    "y_pos": 0,
+    "description": "Assuming: That the ability and form of Eidolons are, as we have recorded, dependent upon each individual viewer, and: That Metavaults, the origin point of the Eidolons, have an innate and vital connection to Blinkspace. Problem: Blinkspace must be explored and charted. This goal is mandated by Exotic Materials and cannot be countermanded. Solution, given available assumptions and resources: Construct an implement whose primary function is to observe all space in every direction, and impose that observed subjectivity upon selected systems so as to unify the waveform of Eidoloid observer-dependent opposition. Solution tentatively accepted. Begin task, designation: Project HELIOS.",
+    "mounts": ["Main/Aux"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 20,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "THE BEST DISINFECTANT",
+        "description": "Enemies with Lock On within the Lantern’s Sensors can never benefit from Hidden or Invisibility.",
+        "synergies": [
+          {
+            "locations": ["lock_on"],
+            "detail": "Enemies with Lock On within the Lantern’s Sensors can never benefit from Hidden or Invisibility."
+          }
+        ]
+      },
+      {
+        "name": "LET THERE BE LIGHT",
+        "description": "1/round, the Lantern can target two characters at a time with the Lock On Quick Tech.",
+        "use": "Round",
+        "synergies": [
+          {
+            "locations": ["lock_on"],
+            "detail": "1/round, the Lantern can target two characters at a time with the Lock On Quick Tech."
+          }
+        ]
+      },
+      {
+        "name": "LÄMP",
+        "description": "The Lantern cannot Hide."
+      }
+    ],
+    "core_system": {
+      "name": "LIGHTHOUSE DOCTRINE",
+      "description": "Shamus do Fluff Here.",
+      "active_name": "DIWALI",
+      "active_effect": "For the rest of the scene, when a character within Range 50 starts their turn in Line of Sight of you, or enters your line of sight for the first time on their turn, you may choose to Lock On to them.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "passive_name": "Full Array Targeting",
+      "passive_effect": "Gain the Hyper Beam Full Action.",
+      "passive_actions": [
+        {
+          "name": "Hyper Beam",
+          "activation": "Full",
+          "detail": "As a Full Action, take the Lock On Quick Tech Action three times."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_trireme",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "TRIREME",
+    "mechtype": ["Defender", "Support"],
+    "image_url": "https://i.imgur.com/wmAsvqt.png",
+    "y_pos": 0,
+    "description": "Considered by Albatross pilots to be the “oldest” combat-ready mechanized chassis in the galaxy, the Trireme was developed convergently with the first mechs to be deployed by Harrison Armory on Hercynia. While not agile, dextrous, or fast, the Trireme is a towering behemoth of solid metal and multiple redundant systems made to supersede the heavy battle tank as the solid front-line wall in a combined-arms force of ground armor, footbound troops, and close air support. Before mech design theory truly began, the Trireme saw combat against the Pirate Nation of Dolor, demolishing the more traditional insurgent force by mounting the heaviest guns available and simply refusing to die when shot.",
+    "mounts": ["Flex","Main","Heavy"],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 6,
+      "repcap": 5,
+      "evasion": 6,
+      "speed": 2,
+      "save": 10,
+      "sensor_range": 5,
+      "edef": 8,
+      "tech_attack": -2,
+      "sp": 5,
+      "heatcap": 5
+    },
+    "traits": [
+      {
+        "name": "EXTRA THICK PLATING",
+        "description": "The Trireme has Resistance to AP Damage."
+      },
+      {
+        "name": "IT'S ALL ANALOG",
+        "description": "The Trireme cannot make Tech Attacks and has +1 Difficulty on Systems Checks and Saves, but all Tech Attacks made against it have +1 Difficulty.",
+        "synergies": [{
+          "locations": ["systems","skill_check"],
+          "detail": "The Trireme receives +1 Difficulty on Systems checks and saves."
+        }]
+      },
+      {
+        "name": "STONE TITAN",
+        "description": "The Trireme is Immune to involuntary movement. Allies can use the Trireme as Hard Cover and are also Immune to involuntary movement whilst benefiting from this cover."
+      }
+    ],
+    "core_system": {
+      "name": "REACTIVE ARMOR",
+      "description": "A pre-Fall concept, Reactive Armor is simply an outward-facing fragmentation explosive that “shoots down” incoming projectiles on a proximity trigger. More modern variants add a simple actuator system that can angle plating on the fly to create less favorable penetration angles. Use of Reactive Armor as an offensive tool is frowned upon as a reckless and needlessly dangerous tactic -- which of course led to early Trireme pilots favoring it against smaller opposing forces.",
+      "active_name": "Tough as Nails",
+      "active_effect": "For the rest of the scene, your Armor value is doubled. Additionally, 1/round as a reaction when an enemy within Range 8 successfully hits you with an attack, you may cause that enemy to take 3 AP Explosive.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_hellknight",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "HELLKNIGHT",
+    "mechtype": ["Striker", "Controller"],
+    "image_url": "https://i.imgur.com/MMKlNlc.png",
+    "y_pos": 0,
+    "description": "If you are reading this manifest, it means that I am dead. To you, I pass this technology. I was gifted this mech and its many tools by a previous owner, who in turn received it in kind from their own predecessor. I am not the first to wear it, and you will hopefully not be the last. We do not know where it comes from, and we do not know who designed it. All we have is an account of the original bearer’s dreams, a set of designs and schematics I cannot hope to understand, and a mandate to bring Order to a chaotic and uncaring universe. To you I leave this responsibility: Take up my armor and wear it well. Avenge my death, if at all possible. Take up an apprentice of your own, for you shall surely follow me one day. And above all else, leave the universe a better place than when you arrived.",
+    "mounts": ["Aux/Aux","Main","Heavy"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "repcap": 3,
+      "evasion": 7,
+      "speed": 3,
+      "save": 11,
+      "sensor_range": 3,
+      "edef": 9,
+      "tech_attack": 1,
+      "sp": 6,
+      "heatcap": 5
+    },
+    "traits": [
+      {
+        "name": "SWARM SHIELDING",
+        "description": "1/round, when the Hellknight attacks with a Nexus weapon, it gains Resistance to a damage type of its choice until the start of its next turn.",
+        "use": "Round"
+      },
+      {
+        "name": "DOOM DRAGOON",
+        "description": "Enemies within the Hellknight’s Sensors cannot reduce damage from it in any way."
+      }
+    ],
+    "core_system": {
+      "name": "ARBITRATION PROTOCOL",
+      "description": "That I shall never succeed in this task is no reason not to pursue it. Disorder may be all around me, but I will not allow it to overcome me. Never shall I fail so again. There shall be order. There shall be law. You ask me, by whose laws shall I be governed? By whose authority am I to be ruled? You do not realize that these questions are their own answer.",
+      "active_name": "Ego Legis",
+      "active_effect": "Until the end of the scene, Swarm Shielding affects two damage types of your choice. In addition, Doom Dragoon also ignores enemy Immunities, and prevents affected enemies from reducing damage from any source, not just the Hellknight.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_archdevil",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "ARCHDEVIL",
+    "mechtype": ["Artillery", "Controller"],
+    "image_url": "",
+    "y_pos": 0,
+    "description": "Humankind did not get to where it is by being afraid of the new or the unfamiliar. It is my proposal that, rather than dismiss HORUS as a rogue terrorist group, Union should seek to entreat with them as a new facet of sentience. To this end, I have made contact with a Deimosian who has agreed, in exchange for token gestures of devotion and material offerings, to provide the members of this research initiative with objects and materials related to our ongoing research into the nature of NHPs and paracausal technologies. This Deimosian’s name is Dispater, and his first gift to us is this frame: The Archdevil. He runs all systems from within the Blink, allowing the frame to be more streamlined and agile in our dimension than its Pattern Group cousins. Just think -- by mounting this frame, you are as close to touching a Deimosian as a human could conceivably get. Dispater insists we call this initiative his cult, but I am confident that through scientific rigor and a disciplined mind, we can leverage it into great gains for all mankind.",
+    "mounts": ["Main"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "repcap": 3,
+      "evasion": 8,
+      "speed": 3,
+      "save": 11,
+      "sensor_range": 3,
+      "edef": 12,
+      "tech_attack": 1,
+      "sp": 6,
+      "heatcap": 4
+    },
+    "traits": [
+      {
+        "name": "PACT MAGIC",
+        "description": "The Archdevil’s Limited Systems and Weapons do not gain extra charges from your Limited Systems Bonus. Instead, whenever you rest, you gain back a number of charges of your Limited Systems and Weapons equal to your Limited Systems Bonus +1, split however you like."
+      },
+      {
+        "name": "HURL THROUGH HELL",
+        "description": "When the Archdevil Barrages, it may forgo all attacks with a second mount to give its first attack +1 Accuracy, Blast 1, and Seeking."
+      }
+    ],
+    "core_system": {
+      "name": "EXISTENTIAL DISPLACEMENT ENGINE",
+      "description": ">DIS: okay so I’m gonna have to dumb this down a lot for you to understand<br>>DIS: but here we go<br>>DIS: there are these little undersea critters on Cradle called Mantis Shrimp<br>>DIS: vicious bastards<br>>DIS: literally punch their prey so hard it causes a vacuum bubble that explodes<br>>DIS: if, you know, the concussion didn’t kill them already<br>>DIS: so I figured my trademark would be a gun that does that<br>>DIS: but instead of water, the cavitation bubble is being made in<br>>DIS: like<br>>DIS: reality",
+      "active_name": "Apotheosis",
+      "active_effect": "For the rest of the scene, your Wraithfire may attack 3 targets at once.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "integrated": ["mwc_archdevil_integrated"]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_farragut",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "FARRAGUT",
+    "mechtype": ["Striker", "Artillery"],
+    "image_url": "",
+    "y_pos": 0,
+    "description": "Rarely do officers in space consider the efforts of planetbound navies to be worthy of notice. IPS-N does not share this sentiment. The Albatross has a long and storied history of naval combat, both in space and in the water, and mechanized chassis have their place in both. Designed as a purpose-built marine invader, the Farragut is in its element while up to its armpits in saltwater, pounding a distant shoreline as allied troops move up in relative safety. The Farragut’s role has expanded from amphibious invasion to include watercraft escort and submersible combat, though it is no less effective on land when functioning as heavy fire support. Detractors point out that the design is top-heavy, over-specialized, and slow outside of its home turf. Dedicated Farragut pilots relish the opportunity to prove such naysayers wrong.",
+    "mounts": ["Flex","Main","Main"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "repcap": 5,
+      "evasion": 6,
+      "speed": 3,
+      "save": 10,
+      "sensor_range": 8,
+      "edef": 8,
+      "tech_attack": -1,
+      "sp": 6,
+      "heatcap": 6
+    },
+    "traits": [
+      {
+        "name": "SYNCHRONIZED FIRING ARMS",
+        "description": "When the Farragut Barrages to fire two Main weapons, both attacks gain +1 Accuracy."
+      },
+      {
+        "name": "DAMN THE TORPEDOES",
+        "description": "The Farragut is Immune to Mines and is not Slowed underwater."
+      },
+      {
+        "name": "WATERLOGGED GYRO",
+        "description": "The Farragut has +1 Difficulty on all attacks made as Reactions."
+      }
+    ],
+    "core_system": {
+      "name": "“BEACHHEAD” HOTLOADER",
+      "description": "The Farragut’s internal loading mechanism frequently runs hot due to the demands of long-range saturation shelling. The usual solution to this is obvious -- expose the weatherproofed internals to the freezing cold of the surrounding ocean. When not submerged in low-temperature bilge, the Farragut is equipped with an onboard supply of supercooled saline solution that fills the same function in reverse -- the firing chamber is flooded and sealed so as to vent as little coolant as possible. This reserve is only useful for so long until it reaches thermal saturation, after which point it must be vented and topped off before reuse. The sight of a Farragut rising from the ocean, cracking open its firing breech and releasing a prismatic cloud of vaporized coolant, is known to have inspired at least one poem by a local angler.",
+      "active_name": "Bilge Pump",
+      "active_effect": "For the rest of the Scene, the Farragut’s Synchronized Firing Arms trait is disabled, but you may fire any Main Weapon selected Twice as part of the Barrage.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+  "id": "mwc_geronimo",
+  "license_level": 2,
+  "source": "HA",
+  "name": "GERONIMO",
+  "mechtype": ["Striker"],
+  "image_url": "",
+  "y_pos": 0,
+  "description": "Originally an agricultural chassis exclusively used to fell the bountiful sessile organisms of Anemone IV, the Geronimo was rapidly pressed into service as a militia mech during the planet’s infamous Biosphere Revolt. With an overhauled engine, upgraded armament, and its trademark Harrison Industrial cutting tools, the Geronimo was at the forefront of Anemone IV’s brutal and grinding thirty-year war with nature. Surviving pilots who served during the conflict are described as haunted, tormented souls, perhaps from the decades of constant vigilance and horrific organisms they were forced to fight. It is said in the Anemone system that the Geronimo is cursed from that dark time, doomed to be a tool of suffering and destruction. While this reputation has effectively killed the frame in its home system, it has only bolstered its sales in the galaxy at large, where it enjoys a role as a nigh unstoppable close-quarters juggernaut.",
+  "mounts": ["Heavy","Heavy"],
+  "stats": {
+    "size": 2,
+    "structure": 4,
+    "stress": 4,
+    "armor": 2,
+    "hp": 10,
+    "repcap": 1,
+    "evasion": 7,
+    "speed": 4,
+    "save": 10,
+    "sensor_range": 8,
+    "edef": 8,
+    "tech_attack": -2,
+    "sp": 6,
+    "heatcap": 7
+  },
+  "traits": [
+    {
+      "name": "Heavy Swings",
+      "description": "The Geronimo has two Heavy Mounts, but cannot mount Superheavy weapons. It can only attack with one Heavy weapon per turn."
+    },
+{
+      "name": "LACERATE AND DISARM",
+      "description": "When the Geronimo causes a character to take a point of Structure Damage, the Geronimo may force the character to not make a Structure Check, and instead suffer System Trauma. You may decide if a System or Weapon is destroyed, but the character still decides which one."
+    },
+    {
+      "name": "METALLURGIC CANNIBALISM",
+      "description": "When a character within the Geronimo’s Threat is reduced to 0 HP or suffers System Trauma, the Geronimo gains 1 Repair. If the Geronimo would gain a Repair above its Repair Cap, it may choose to either immediately spend the Repair as a Free Action to regain half its HP, or retain the extra Repair until the end of its next Rest."
+    }
+  ],
+  "core_system": {
+    "name": "RAPID DISASSEMBLY PROCESSOR",
+    "description": "Hello, trainee! Welcome to the Harrison Industrial crash course in piloting the Geronimo Heavy Lumberjack. Central to the frame’s function is the Rapid Disassembly Processor, or RDP. Your RDP will let you analyze, evaluate, and swiftly cut down any - [goddamn flesh trees] - sessile lumber-bearing organisms you are assigned to process. The RDP will point you to viable cutting points, such as - [tendons, joints, sensory organs] - notches, roots, and exposed timber veins. Once felled, you will be responsible for - [finishing the job] - disassembling the timber and preparing it for disposal by removing any remaining - [limbs] - limbs. Enjoy the following tutorial, and have a safe and productive day at Harrison Industrial!",
+    "active_name": "Until It Is Done",
+    "active_effect": "For the rest of the scene, you may attack with any number of mounted Heavy weapons in a turn. If you hit a target with two different Heavy weapons in a single turn, it must make a Hull save or immediately suffer System Trauma.",
+    "activation": "Protocol",
+    "use": "Encounter"
+  },
+  "data_type": "frame",
+  "aptitude": {}
+  },
+  {
+    "id": "mwc_flarewing",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "FLAREWING",
+    "mechtype": ["Striker"],
+    "image_url": "",
+    "y_pos": 0,
+    "description": "ALL PERSONNEL BE ADVISED: CLASS B UPRISING EVENT IN PROGRESS IN CINNABAR DISTRICT. DISSIDENTS ARE ARMED WITH MECHANIZED CHASSIS OF UNKNOWN PATTERN. PROPERTY DAMAGE IS AT 1500 MANNA AND RISING. BE AWARE: HOSTILES ARE EQUIPPED WITH UNLICENSED ELECTRONIC WARFARE SYSTEMS T̷H̶A̶T̷ ̶M̴A̶Y̴ ̷P̷R̵O̷V̷E̵ ̶T̷O̶ ̵B̷E̵ D̵̟͆̄Ē̸̢̡͍͉͈̳͔̼̮̈ͅT̸̛̯͑̄̊R̵̡̧̲̰̘͈͚̼̯̙̓̊͒̄̃̎͠͠Ḯ̷̝̥̦̦̀̇͘M̸̢̧͉̹͈̮̙̰̥̜̊́̽̈́E̸͓͛̽̕Ǹ̵̡̢̟͚͕̫̤͓̂̇̂̃̎̑T̸̰̠̬͓̅́̓̔̒́̈̄̚͘ͅĄ̵̨̛̤͈̼̭̣̈͂̿͝ͅĽ̷̛̛̹̝̜͉̗̱̲͆̽̀̇̾̅̋̑̕ ̸̦̰̺̒͐͛͘Ţ̷̰͓̥̰͕̰̦̤̯̆͐͒́͊͑̆̀͒́̉͝Ờ̶̺͙̞̐̊ ̶̢̬̙̣͈̌̽̈́͗̈́̽T̵̼̪͘Ḩ̸̼̪̮̣̫̝͖͓͚͚̅Ḝ̵̡̹̞͚̘̮̮̣̳̭͊̂̓ͅ ̴̨̢̰͍̲̹̯̬̩̌Č̷̨̡̖̭̯͙̳̥̜̜̮̰̗̫̤̅̀̃̀̉͛̈̀͑̀̽̒́̾̍̀̓̐͜O̶̡̤̭̤̰̗͓͉̬̍̽̿̆̈̈́̈́̀̅̕͠͠͝͠Ň̸̨͎̝̱̤̗̭̺͙̬̯̰̖̪̎̐͘ͅT̷̡͙̖̹̱͇͇̫͖̼͔͈̦̹͕̠̦̬̞̜̥͉̬̠̅̆̾̈́̇́͒̄̐̐̂̔͂͊̃͂͆͊͊̀̌͂̅̕͝ͅͅͅĨ̷̡̢͎͇͇̝͕̜̘̺̜̪̪̫̫̹̺͚͎͈̻͖̹̀͑̏̄̍̒́̑̕͝N̶̛̟̣̯͕͖̩̝̮̮̟͓̋̂͆͐͐̒̅͗̆̅̇̊̿̇͆͝U̵̢̧̟͉͍̭̭̖̘̰͕̹͓̝̖̬̩̻̺̲̅̉̚͜ͅE̵̛̖̥̘͓͚̮̦͗̈̅̔͑̂̆̋̃̆̉̀͋͘͘͜͝͠͝D̶̨̛̞̼̙̥̹̠̣̻̦̝̟͕͈̗̗̹͇̘̼̼́̓̏̍̔̄ ̸̢̢̛̬͈̯̣̮̱̭̀̒̈́͑̂̃̅̏̽͌̉̂͛͐̚̕̚͝͝͝͠͠F̷̧̡̨͙̳̬̹͔͔̥̯͙̻͈̭̬̩̓̌̈́͆̓͛̅̐̐̽̄̅̈̓͒̄͐̀̊̚̕̚͝Ư̶̢̛̗̫̖͔̝̳͇̖̠̪͍̰̦̆̒̏͂́͐̂́͆̌̇̿̀̐̾̈́͑͌͘͝ͅN̵̡͎̟̮̭̞̩̝̬̖̙̒̈́̐͠Č̸̡̣̻͉̣̼͙̯͈̹͔̩͓̰̺̥̣͂̍̉̈́͋̑̀́̇́̔̊̍͌̀̿Ţ̶̛̛̘̬̩̜̘̙̣̠͉̞̦̙̦̥̯̹͈̼̹͉̎̊͛̓͐͐̊̈̎̈́͛̓̎͒̓̐́̅̊̀̆̀̌̕ͅĮ̵̢̼̪̬̟̜̰̥͈̈́̏͆̊̆̄̀̃̿̓̄̊̉̏͆̈́̋̀͛̄͊̔̋Ǫ̵̢̯͓̰̠̥̠̺͙̝̠̼̗͓͚̙̝͉̹̬̟̩̂̈̀̑͊̓̀̊̓͜͠N̵̡̛͎͈̥̩̗̏̔͂̀̚ͅ ̸̡̰͕͔̞̟̼̰̣͈͈̺̣͙̻̩͇͎̪̈́̈́̿͜͜O̸̹͔̺̲̥̖͒̌͒̀̾̈̅͜͝ͅͅͅF̷̛̲̮͓̙̰̰͚̣͔̠͓͂͑̐̍̾̄̃̔̒́̔̎̑̐̚͜͝N̶̘͈̠̻̩̰̮̬͔̈́̈̃O̶̢͓͎̝̙̰̳͚̦̞̳͂̿̐͐͂ ̸̡̢̖̘͈̜̦̭̱̆̄̅͛̓̄̃̚K̷̢͇̫͈͔̬̺͇̹̱͇̬̜͌̀͜Ȉ̶̡̨͎͎͈͓̖̫̩͚͋́͐̋̾̇̀͝Ǹ̸̢͇̦̱̼̩͙̬̤̗͒̇̄̏͂̇̋G̷͉͖͖͎̝̗̦̫̮̝̼̪͐͂̈́̅̇͜͝S̴̼͉̗͍̗̈́̃́̆̀ ̸̰̤̦̙͍̄̊̅̾̏͌̿̿̅̇͋̌͜ͅǸ̵̯̮͎̪̺̏̐͋͋̾͆̍͂̾͝͝O̴͕̼͙̩̎ͅ ̷̯̗̈́̌̕Ó̶̻̞͈̳͎̣̚W̷̨̡͕͔̜̆̈́N̴̗̰̾͐̈́̔̏̔͊͛Ė̶͖̮̬͔̟̪̥̘̺͈̫̔́̇̽͑͑̔̆̊͘R̶̞̫̬͖̒̔͗̿̔́͊̊̚͝͝S̴̹̥͊̂ ̴̢̥̝̫̯̞̖͖̩̺͚̠́̇̍̽̽̓͛̅̚͜ͅN̸̛̻͑̔͛̽̌͠͠Ö̴̙͙̠͍̩̙́̎͂͛̕ ̶̢̠̪̬̟̣̾̿̆̀̊̔͜͜M̵̡͓̱̼̙̈́̋̉̚Ạ̵̟̦̺̔͋͋͒̅̌̀̅̈́́́Ŝ̵̨̧͕͔͇̮̍͐͠T̵̞̪̜̜͙̬͍̹͔̣̳̒͑́͋̌͛̕͘ͅE̸͗͜R̶̖͚̮̤̦͇͍͔̗̀̀͛́́̏͠S̴̹̦̺̼̟̮̑͜N̶͓͇͂͝Ơ̵̳̅ ̷͚̱̈́K̴̜͗͜I̵̱͆N̷̖͆͠G̶̹̉̎S̴͇̋̕ ̸͇̽̉ͅN̸̡̬̓̚O̵̜͖̾ ̷̟̦̌̈́O̴̲͌W̶̥̚͝N̷͕̩͑̀Ě̵͕̲Ř̴̝̞̅Ś̸̫̳͋ ̷̺̟̇̋N̸̟͍͑̆O̵͖͘͠ ̸̡̹͗̈M̶̜̺̚Å̶͉͝S̸̺̾̐T̶͓̱̑͝E̵̹͝R̸͇͎̄S̶͇͐ NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS NO MASTERS NO KINGS NO OWNERS",
+    "mounts": ["Aux/Aux","Flex"],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "repcap": 2,
+      "evasion": 10,
+      "speed": 6,
+      "save": 11,
+      "sensor_range": 3,
+      "edef": 6,
+      "tech_attack": 1,
+      "sp": 6,
+      "heatcap": 7
+    },
+    "traits": [
+      {
+        "name": "SOL-CORE REACTOR",
+        "description": "At the end of its turn, the Flarewing clears Heat equal to ¼ of its Heat Cap."
+      },
+      {
+        "name": "URBAN TERRAIN MOVEMENT SUITE",
+        "description": "The Flarewing climbs and swims at normal speed, ignores difficult terrain, and when making a standard move, can jump horizontally up to its full Speed and upwards up to half its Speed (in any combination). The Flarewing does not fall until the end of its turn when it jumps."
+      },
+      {
+        "name": "REACTOR GREMLIN",
+        "description": "Enemies within the Flarewing’s Sensors subtract 1 from the final result of any Overheating Check, or 2 if the Flarewing is in the Danger Zone."
+      },
+      {
+        "name": "HEAVY REACTOR INTEGRATION",
+        "description": "When the Flarewing takes a point of Structure damage, it must succeed on an Engineering Check or make a Stress Check."
+      }
+    ],
+    "core_system": {
+      "name": "ANARCHOCYCLOTRON",
+      "description": "<ol><li>DO NOT TOUCH UNTIL THIRTY MINUTES AFTER TURNING OFF. KEEP YOUR FINGERS.</li><li>IF YOU HEAR A HIGH PITCHED WHINING NOISE, LAND IMMEDIATELY.</li><li>3. YOU WILL KNOW WHEN IT IS APPROPRIATE TO HIT THE BIG RED BUTTON.</li></ol>",
+      "active_name": "World On Fire",
+      "active_effect": "You vent all of your Heat into a fiery inferno that engulfs the entire battlefield. All characters of your choice within Range 50 must pass an Engineering Save or take Heat and Burn equal to half of your vented Heat, taking half, again, on a successful save. This clears all of your heat and bypasses Reactor Override’s restriction.",
+      "activation": "Full",
+      "passive_name": "Reactor Override",
+      "passive_effect": "Gain the Reactor Override Protocol.",
+      "passive_actions": [
+        {
+          "name": "Reactor Override",
+          "activation": "Protocol",
+          "detail": "Gain enough Heat to enter the Danger Zone. You cannot clear Heat this turn except by Overheating. The first time you cause a character to gain Heat this turn, it gains +2 Heat."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_giap",
+    "license_level": 2,
+    "source": "HA",
+    "name": "GIAP",
+    "mechtype": ["Striker"],
+    "image_url": "",
+    "y_pos": 0,
+    "description": "Spy-Guy Mech",
+    "mounts": ["Flex", "Main"],
+    "stats": {
+      "size": 0.5,
+      "armor": 0,
+      "hp": 6,
+      "repcap": 3,
+      "evasion": 9,
+      "speed": 4,
+      "save": 10,
+      "sensor_range": 5,
+      "edef": 9,
+      "tech_attack": 1,
+      "sp": 6,
+      "heatcap": 7,
+      "stress": 4,
+      "structure": 4
+    },
+    "traits": [
+      {
+        "name": "FARADAY SKELETON",
+        "description": "Enemies attempting to Search for the Giap have +1 Difficulty on their Systems check."
+      },
+      {
+        "name": "RIGHT BEHIND YOU",
+        "description": "When the Giap attacks while Hidden, the first successful hit becomes a Critical Hit and you are treated as the same size as the enemy if you are attempting to Grapple or Ram them. If the target is destroyed by this attack, the Giap does not lose Hidden.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "detail": "When the Giap attacks while Hidden, the first successful hit becomes a Critical Hit and you are treated as the same size as the enemy if you are attempting to Grapple or Ram them. If the target is destroyed by this attack, the Giap does not lose Hidden."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "KAIJU-Class Molecular Cloaking Apparatus",
+      "description": "Enough radiation can mask your presence from any form of sensor, even someone 's eyes.",
+      "active_name": "Reactor Shield Override",
+      "active_effect": "For the rest of the Scene, the Giap may Hide and end its turn Hidden even without cover, in addition, any enemies that start their turn or move adjacent to the Giap for the first time on a turn suffer 3 Heat.",
+      "activation": "Protocol",
+      "passive_name": "COVERT INSERTION",
+      "passive_effect": "The Giap may choose not to deploy normally at the start of combat, instead deploying in disguise. At the start of an enemy mech’s turn, so long as that mech has not dealt damage to or taken damage from the Giap’s allies, the Giap may reveal itself to have been disguised as that mech, deploying itself in its position. The actual enemy is revealed to have been waylaid and hidden in a position up to Range 5 from the Giap of your choice, only now reactivating and joining the battle.",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_polyphemus",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "POLYPHEMUS",
+    "mechtype": ["Striker"],
+    "image_url": "",
+    "description": "",
+    "mounts": ["Aux/Aux", "Heavy"],
+    "stats": {
+      "size": 2,
+      "armor": 2,
+      "hp": 8,
+      "repcap": 3,
+      "evasion": 9,
+      "speed": 5,
+      "save": 10,
+      "sensor_range": 3,
+      "edef": 7,
+      "tech_attack": -2,
+      "sp": 6,
+      "heatcap": 5,
+      "stress": 4,
+      "structure": 4
+    },
+    "traits": [
+      {
+        "name": "UNSTOPPABLE",
+        "description": "While Slowed, the POLYPHEMUS gains Immunity to Immobilize."
+      },
+      {
+        "name": "TOP-HEAVY",
+        "description": "The POLYPHEMUS has +1 Difficulty on saves and checks against being knocked prone and may only move in straight lines when it Boosts."
+      }
+    ],
+    "core_system": {
+      "name": "108 Forms of Vengeance",
+      "description": "The “Vengeful Eye”, the system that the Polyphemus was named for, is an advanced targeting computer using a specialized sensor cluster stylistically designed to resemble a single, gigantic eye.  The prototype version was powerful but clunky, able to consistently pluck any system or weapon out of a target with the assistance of a target lock. The system has been reconfigured to be more opportunistic, instead identifying structural weaknesses and guiding user movement to best exploit openings in the enemy's movements via neural integration, trading surgical removal of systems in favor of gross structural damage. This combined with a bank of martial arts techniques designed to turn enemy's movements against them makes the Polyphemus a powerful and precise frame, achieving the design team's goal of a flexible and crushingly strong front-line brawler that does not sacrifice SSC's brand of luxury and mobility.",
+      "active_name": "Rakshasa’s Invitation",
+      "active_effect": "You take on the most deceptive form built into the POLYPHEMUS’s datacore of Martial Arts, inviting impending doom on any that do not see past the facade or are simply blind to its true nature.<br><br>Until the end of your next turn, enemies within Range 3 of the POLYPHEMUS may choose to gain up to 3 Accuracy on all of their Attacks that target the POLYPHEMUS. If they attack the POLYPHEMUS during the duration of this ability, they become Exposed after the Attack resolves and additionally must make a Hull Save with a number of Difficulty equal to the Accuracy on the Attack or be knocked Prone and Slowed until the end of their next turn.<br><br>If the POLYPHEMUS is not attacked by any enemy during the duration of this ability, you regain CP at the end of the scene.",
+      "activation": "Quick",
+      "passive_name": "Appenditure Reallocation",
+      "passive_effect": "Gain access to the Shun-Goku-Satsu Reaction. Additionally, the POLYTHEMEUS’s Melee Critical Hits can not have their damage reduced in any way and bypass any immunity to damage the target(s) may have.",
+      "passive_actions": [
+        {
+          "name": "Shun-Goku-Satsu",
+          "activation": "Reaction",
+          "frequency": "1/turn",
+          "trigger": "You cause an adjacent Character to lose a point of Structure.",
+          "detail": "The die result of that structure check is treated as 2 lower, minimum 1."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_dante",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "DANTE",
+    "mechtype": ["Striker"],
+    "image_url": "",
+    "description": "Originally, ISP-N designed the DANTE to cut into HA markets, combining qualities from the GENGHIS and TOKUGAWA. Without HA systems, it excelled at neither, and was backlogged indefinitely. In a more direct push into HA dealings, ISP-N’s RAID division specializes in acquisition and reverse engineering of rival tech. Off the books, of course. One of their successful raids on a Harrison Armory Blacksite recovered several designs. One of which was a rejected core reactor for the TOKUGAWA - the “Inferno Drive”. The overworked engineer who produced it had noted that it would make the Tokugawa “A death trap on legs”. Ignoring this warning, a prototype of the Inferno Drive was created, and installed on a few ISP-N mainstays, with abysmal results. Eventually, the Dante was tested as a recipient. The mech tore its way through the testing grounds, and promptly collapsed in a flaming wreck. Nevertheless, the DANTE had shown its potential. Able to reach breakneck speeds, leaving a trail of fire in its wake, the DANTE finally stands out on its own, no longer just ISP-N’s pale imitation of Harrison Armory.",
+    "mounts": ["Main","Main","Heavy"],
+    "stats": {
+      "size": 1,
+      "armor": 1,
+      "hp": 10,
+      "repcap": 5,
+      "evasion": 6,
+      "speed": 4,
+      "save": 10,
+      "sensor_range": 3,
+      "edef": 6,
+      "tech_attack": -2,
+      "sp": 5,
+      "heatcap": 6,
+      "stress": 4,
+      "structure": 4
+    },
+    "traits": [
+      {
+        "name": "OVERCLOCKED COMBUSTION ENGINE",
+        "description": "1/Round, you may take 4 Burn Damage to Boost as a Free Action.",
+        "actions": [
+          {
+            "name": "Burning Overclock",
+            "activation": "Free",
+            "frequency": "1/round",
+            "detail": "Take 4 Burn Damage to Boost as a Free Action. "
+          }
+        ]
+      },
+      {
+        "name": "REACTIVE FLAME VENTING",
+        "description": "When an Enemy makes an Overwatch Attack against you, they take 2 Burn Damage and you take 1 Burn Damage."
+      },
+      {
+        "name": "SYNTHETIC ASBESTOS COATING",
+        "description": "You have Resistance to Burn, and you have +1 Accuracy on all Engineering Saves and Checks",
+        "synergies": [
+          {
+            "locations": ["engineering","skill_check"],
+            "detail": "The Dante receives +1 Accuracy on Engineering checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "INFERNO DRIVE",
+      "description": "While the combat benefits are impressive, the Inferno Drive has a much more interesting factor. In outer rim “stunt courses”, the DANTE's breakneck speeds and trail of fire it leaves in its wake is unrivaled for energizing audiences. The DANTE tends to attract adrenaline junkies. Hopefully they’ll survive when the mech eventually crashes and burns.",
+      "active_name": "Raging Fire",
+      "active_effect": "Any time you would increase the value of your Inferno Die, instead increase it by double that value.",
+      "activation": "Protocol",
+      "passive_name": "Inferno Drive",
+      "passive_effect": "You gain an Inferno Die, 1d20 starting at 1. When you take Damage, you increase the Inferno Die by that value. Whenever you deal Damage, increase the value of the Inferno Die by 1. Whenever you Stabilize, decrease your Inferno Die by 5.<br><br>Based on the value of your Inferno Die, gain the following Traits:<ul><li>9 or more: You may move an additional 2 spaces as part of your Boost.<ul><li>12 or more: Whenever you Boost, all Enemies adjacent to spaces you move through must pass an Agility save or take 2 Burn damage.<ul><li>15 or more: You may move an additional 2 spaces as part of your Boost. <ul><li>18 or more: You increase the Burn damage from the 12 or More effect effect by 1, and characters that have to make the Agility Save have +1 Difficulty on the Save.<ul><li>20: You may reset the Inferno Die  to 1, and your next Weapon Attack deals +1d6 Burn Damage and +1d6 Heat on a successful Hit.",
+      "counters": [
+        {
+            "id": "mwc_ipsn_inferno_die",
+            "name": "Inferno Die",
+            "min": 1,
+            "default_value": 0,
+            "max": 20
+        }
+      ],
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  },
+  {
+    "id": "mwc_xorn",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "XORN",
+    "mechtype": ["Controller","Striker"],
+    "image_url": "",
+    "description": "",
+    "mounts": ["Main","Main","Heavy"],
+    "stats": {
+      "size": 2,
+      "armor": 2,
+      "hp": 8,
+      "repcap": 3,
+      "evasion": 6,
+      "speed": 3,
+      "save": 11,
+      "sensor_range": 8,
+      "edef": 10,
+      "tech_attack": 1,
+      "sp": 6,
+      "heatcap": 7,
+      "stress": 4,
+      "structure": 4
+    },
+    "traits": [
+      {
+        "name": "EARTHGLIDE",
+        "description": "The XORN treats Terrain, Objects and Cover as Intangible for the purposes of its movement. It can share its space with any number of other objects, parts of Terrain or Cover, so long as it is occupying two open spaces.",
+        "synergies": [
+          {
+            "locations": ["move"],
+            "detail": "The XORN treats Terrain, Objects and Cover as Intangible for the purposes of its movement. It can share its space with any number of other objects, parts of Terrain or Cover, so long as it is occupying two open spaces."
+          }
+        ]
+      },
+      {
+        "name": "STONESKIN",
+        "description": "While adjacent to Hard Cover, or sharing a space with Terrain or Cover with Earthglide, the XORN gains +1 Armor (To a Maximum of 4 Armor)."
+      },
+      {
+        "name": "RUBBLE",
+        "description": "When the XORN is destroyed or self destructs, it leaves nothing behind except a Size 1 piece of Hardcover with Evade 5, 2 Armor and HP equal to half the Xorn’s. The Pilot then appears adjacent to the Rubble in the nearest Free Space."
+      }
+    ],
+    "core_system": {
+      "name": "TERRAFIRMA FOESEEKER SUITE",
+      "description": "A series of ballistics calculation-subroutines and mass-scanner arrays that plan and project trajectories onto the Lancer's hud, locking on to nearby high-density theatre-pieces adjacent to the desired target. Native improvements in the mounts are fitted to attached weapons to allow for theatre-agnostic target acquisition and firing solutions. Problems in the magnetic-rebound charge coils means the bulk of the penetration power is spent in the hyper-efficient Earthglide properties imparted on projectiles, resulting in no appreciable reduction in the effectiveness of cover.",
+      "active_name": "Gaia’s Grasp",
+      "active_effect": "For the rest of the Scene, your Attacks and saves you force do not require Line of Sight so long as the target is Adjacent to any Terrain, Object or Piece of Cover.",
+      "activation": "Protocol",
+      "active_synergies": [
+        {
+          "locations": ["tech_attack","tech","weapon"],
+          "detail": "For the rest of the Scene, your Attacks and saves you force do not require Line of Sight so long as the target is Adjacent to any Terrain, Object or Piece of Cover."
+        }
+      ],
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  }
+]

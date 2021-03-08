@@ -1,0 +1,3137 @@
+[
+	{
+		"id": "mwc_depth_charges",
+		"name": "Depth Charges",
+		"type": "Deployable",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "AHAB",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Blast Wave Grenade",
+				"activation": "Quick",
+				"detail": "Throw a Blast Wave Grenade within Range 5. All characters within a Blast 1 area must make an Agility save or take 3 AP Kinetic damage and be knocked Prone."
+			}
+		],
+		"deployables": [
+			{
+				"name": "Concussion Mine",
+				"type": "Mine",
+				"activation": "Quick",
+				"detail": "This mine detonates in a Burst 1 when you activate it as a reaction to a character moving adjacent to it. Characters within the affected area must make an Agility save or take 3 AP Kinetic damage and be knocked Prone and pushed out of the affected area."
+			}
+		],
+		"description": "“Play us a song of old Ahab, the mighty,<br>Who through bloody-mind, brought Leviathan low.<br>Play us an ode to the man, assured that he<br>Would slaughter the beast so that all men would know.”<br>-- “Song of Ahab,” Traditional Sparri hunting verse",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_bola_shell",
+		"name": "Bola Shell",
+		"type": "System",
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "AHAB",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Toss the Bola",
+				"activation": "Quick",
+				"detail": "Make a Ranged Attack against a target within Range 10 and Line of Sight. On a success, the target takes 2 Kinetic damage and is knocked Prone."
+			}
+		],
+		"description": "“Ahab, on Pequod, sailed Cradle’s dark seas,<br>Leviathan-ivory trophies his goal.<br>So fiery his hatred, the man swore that he<br>Would drive it to ruin, impaled on the shoals.”<br>-- “Song of Ahab,” Traditional Sparri hunting verse",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_spearfisher",
+		"name": "Spearfisher",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "AHAB",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Throw the Spear",
+				"activation": "Quick",
+				"detail": "Target a character within Range 10 and Line of Sight. That character must succeed on a Hull Save or become impaled by a harpoon and unable to move or be moved further away from you by any means. The impaled character may free themselves by making a Hull Save as a Quick Action or by hitting the harpoon cable with a melee or improvised attack against Evasion 10."
+			}
+		],
+		"description": "“Down it dragged Ahab, Leviathan vicious,<br>And mightily struggled to keep its baleen.<br>But Ahab held fast, pigheaded, pernicious,<br>The mightiest hunter the world had yet seen.”<br>-- “Song of Ahab,” Traditional Sparri hunting verse",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_leviathan_class_nhp",
+		"name": "LEVIATHAN-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_heat_self","val": 4}, {"id": "tg_limited", "val": 1}],
+		"source": "IPS-N",
+		"license": "AHAB",
+		"license_level": 3,
+		"effect": "Your mech gains the AI tag and DEVASTATE.",
+		"actions": [
+			{
+				"name": "DEVASTATE",
+				"activation": "Full",
+				"detail": "1/scene, expend a charge to force all characters in a Burst 1 area around your mech to make a Hull Save or take 1d6 Kinetic Damage and be knocked Prone and Immobilized until the end of their next turn. At the start of your next turn, repeat this effect in a Burst 2 area, then in a Burst 3 area at the start of the turn after that."
+			}
+		],
+		"description": "“And flensers and oilers were all so amazed<br>At the beast which would feed them a day and a year<br>There Ahab lived out the good rest of his days,<br>And so sing we all, who are gathered now here.”<br>-- “Song of Ahab,” Traditional Sparri hunting verse",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_hypercondensed_propellant",
+		"name": "Hypercondensed Propellant",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "CHING SHIH",
+		"license_level": 1,
+		"effect": "When you fire a Launcher, you may give the attack +1 Difficulty to increase its range by 5. You may stack this effect any number of times.",
+		"description": "A popular hobbyist workaround for insufficient or unsatisfactory materiel is the use of tightly packed solid fuel in launcher projectiles. Civilian-grade mounted printers are, unfortunately, hardly up to the task of evenly and smoothly distributing such dense matter, which results in flight path irregularities that only get worse the further the projectile flies. Garage Lancers widely accept this tradeoff, as access to proper missile fuel often costs Manna that these individuals simply don’t have.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_bloodhound_missile",
+		"name": "Bloodhound Missile",
+		"type": "Drone",
+		"sp": 3,
+		"tags": [{"id": "tg_limited","val": 1}],
+		"source": "IPS-N",
+		"license": "CHING SHIH",
+		"license_level": 2,
+		"deployables": [
+			{
+				"name": "Bloodhound Missile",
+				"type": "Drone",
+				"activation": "Quick",
+				"size": 0.5,
+				"hp": 10,
+				"edef": 10,
+				"evasion": 10,
+				"detail": "Choose a character within line of sight and Sensors and expend a charge to deploy the Bloodhound Missile in an adjacent space. This counts as firing a Launcher. At the start of each of your turns, the missile flies up to 4 spaces toward the a character of your choice, or 8 if the character has Lock On. The missile moves in a straight line unless there is a solid object in its path, in which case it flies around if possible. When the missile impacts any character, it explodes in a Blast 2 radius. All characters in the area must make an agility save or take 2d6+4 Explosive damage, taking half on a success. If the  missile is destroyed early, it explodes on the spot, dealing its damage around it."
+			}
+		],
+		"description": "Slow, ponderous, and rather massive for a self-propelled explosive, the Bloodhound is legally a reconnaissance drone with a massively oversized self-destruct mechanism. While bulky, unwieldy, and quite obvious in function, it provides more tons of TNT per square meter than any other design in the garage mech scene.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_reactive_threat_response_pulse",
+		"name": "Reactive Threat Response Pulse",
+		"type": "Shield",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_shield"}],
+		"source": "IPS-N",
+		"license": "CROZIER",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "King Of The Hill",
+				"activation": "Free",
+				"detail": "1/round you may gain 2 Overshield (to a maximum of 6) for every hostile character within a Burst 1 area."
+			}
+		],
+		"description": "Prominent among mil-spec skirmishers is the request for a defensive system that can fend off multiple threat levels. The RTRP is an as-needed force field sheathe that produces a stable repulsor field relative to nearby reactor fields. While it would be preferable to have the most powerful shield possible at all times, attempting to modify the RTRP for such functionality almost always results in catastrophic failure.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_ordnance_delivery_actuator",
+		"name": "Ordnance Delivery Actuator",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "CROZIER",
+		"license_level": 2,
+		"effect": "When you critically hit with a melee attack, you may reload one Loading weapon.",
+		"description": "Described as “sleight of hand” on a mech scale, the ODA lies dormant within a mech’s normal loading mechanism so as to not consume itself. When sufficient force is registered, the system’s rapid material harvesters spring out, tearing at any metallic objects they can reach before retracting and melting the gathered scrap into a hardened composite payload for any number of delivery platforms.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_emergency_ammo_reclamation",
+		"name": "Emergency Ammo Reclamation",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "CROZIER",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Open The Coffers",
+				"activation": "Free",
+				"detail": "1/round you may deal 1d6 AP Kinetic damage to yourself to reload one Loading weapon. If this deals any damage to Overshields on your mech, that weapon’s next attack gains AP and deals Energy damage."
+			}
+		],
+		"description": "In dire situations, ammo is never where one needs it, as a rule. With the proper state of mind, however, the superstructure of the mech one is mounted upon can serve in a pinch. The manufacturer of this system does not recommend activation while high-power barrier systems are active, as the collapse of such fields may cause catastrophic energy discharge on sudden impacts.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_plasma_discharge_device",
+		"name": "Plasma Discharge Device",
+		"type": "Deployable",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 3}, {"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "KEYES",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Plasma Grenade",
+				"activation": "Quick",
+				"detail": "Throw a Plasma Grenade within Range 5. If a character is targeted by this grenade, it must pass an Agility save or have the grenade attach to them, where it arms. If an object is targeted, it simply attaches. At the end of that character’s turn (or your next turn if you targeted a piece of terrain), all characters within a Blast 1 area must pass an Agility save or take 3 Energy damage. A stuck character takes an additional 1d6 damage and has +1 difficulty on the save."
+			}
+		],
+		"deployables": [
+			{
+				"name": "Plasma Mine",
+				"type": "Mine",
+				"activation": "Quick",
+				"detail": "Once activated, all characters within Burst 2 of the mine must pass an Agility save or have a Plasma grenade attach to them."
+			}
+		],
+		"description": "Serving a purpose similar to TNT or nitroglycerin in ages past, these shaped plasma charges are meant to be inserted into boreholes to loosen and crack apart hardened bedrock before conventional diggers excavate the rubble. Harrison Armory strictly forbids activation of these devices outside of their intended role. Unauthorized usage can lead to severe burns and loss of limb or life. “The property you damage could be you.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_shield_lock",
+		"name": "Shield Lock",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_limited","val": 2}],
+		"source": "IPS-N",
+		"license": "KEYES",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Barricade",
+				"activation": "Quick",
+				"detail": "Until the start of your next turn, you are Immobilized, but gain 4 Armor, to a maximum of 5. When you activate this system, you may clear any non-Condition, non-Tech effects of your choice currently affecting your mech (Examples include Assassin’s Mark, Crush Targeting, Lock/Hold Javelins, etc)."
+			}
+		],
+		"description": "Standard issue among HA utility mechs, this system projects a short-lived hardened plasma sheath across its mounted frame, preventing accidents such as cave-ins or operator error from damaging company property. Qikostian miners are loath to use it, as its armature-locking side effects render them immobile for minutes at a time and such idleness is heavily sanctioned by the oversight committee.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_ancilla_class_nhp",
+		"name": "ANCILLA-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_ai"}, {"id": "tg_limited", "val": 1}
+		],
+		"source": "IPS-N",
+		"license": "KEYES",
+		"license_level": 3,
+		"effect": "Your mech gains the AI tag and the Seventh Column Protocol",
+		"actions": [{
+			"name": "Seventh Column",
+			"activation": "Protocol",
+			"detail": "1/Scene, Your Mech becomes Immune to all damage not caused by itself until the end of your next turn."
+		}],
+		"description": "Core to the Qikost uprising was ANCILLA Prime, an in-development administrative NHP tasked with ensuring constant worker efficiency and minimizing downtime, employee organization, and unrest. While Harrison Armory has classified her line a failure and purged all ANCILLA clones from their own systems, IPS-N was quick to point out that she ultimately succeeded in her task -- workers were more efficient when their emotional needs were tended to, required less downtime when not overworked, did not feel a need to unionize if there were no organizational problems to protest, and ultimately were no longer in a state of unrest after being emancipated from Harrison employment. ANCILLA clones in IPS-N employment present a kind and highly cooperational personality, prioritizing pilot safety and mission objective completion above all else.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_horn_of_heraldry",
+		"name": "Horn of Heraldry",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "KING",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Blow the horn",
+				"activation": "Quick",
+				"detail": "All Hidden or Invisible characters in a Burst 3 radius lose Hidden and Invisible and gain Lock On."
+			}
+		],
+		"description": "“Sound the trumpets, and let loose the hounds of war. Light the torches, that the RA-spawn shall have nowhere to hide. By blade and bolt shall we meet them, and with the light of day shall we purge them from the verdant hills of Adrastapol.”<br>--Titan Knights of Questor, Ch. 1<br>Device is encased in a hollow ivory horn. Examination reveals a wide point-blank burst radar system, ideal for detecting nearby infiltration and scouting units.<br>--IPS-N Inventory Entry “Questor-01”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_royal_burden",
+		"name": "Royal Burden",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "KING",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Mount up",
+				"activation": "Quick",
+				"detail": "If you are not Immobilized, you can climb onto a mech that is adjacent, willing, and larger than you. While riding, you share the same space as that mech, move when it moves, and benefit from Soft Cover. If either of you are knocked Prone, Stunned, Immobilized, or destroyed, you land prone in an adjacent space. You can dismount as part of any movement, but can only climb up as a Quick Action."
+			}
+		],
+		"description": "“To bear the symbol of royalty is no mean feat, and to bear that bearer is even greater of a task. There is no shame in admitting your back is not strong enough or your will is not resolute enough. Do not be dismayed; from the one who can withstand this honor, take inspiration: he shall be your figurehead, your guiding light in a sea of darkness.”<br>--Titan Knights of Questor, Ch. 6<br>Device appears similar to MULE Harness, but self-contained. Can attach to other chassis to maintain advantageous position.<br>--IPS-N Inventory Entry “Questor-15”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_castle_doctrine",
+		"name": "Castle Doctrine",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "KING",
+		"license_level": 3,
+		"effect": "Allies within a Burst 3 area of you have Resistance to Blast, Line, Burst, and Cone attacks.",
+		"description": "“Let no man say his king does not provide. In times of peace, the granaries safeguard what the farmers bring from the soil. In times of war, the walls of the keep shall protect all who come to its gates. Let none be turned away who holds no malice, for in the great castle there is room for all.”<br>--Titan Knights of Questor, Ch. 12<br>Device is a low-power, wide ranging kinetic dampener field contained within a large decorative coat of arms. Ineffective against single projectiles, but severely dampens blast waves from explosive weaponry.<br>--IPS-N Inventory Entry “Questor-72”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_rallying_banner",
+		"name": "Rallying Banner",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 2}],
+		"source": "IPS-N",
+		"license": "KING",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Rally",
+				"activation": "Quick",
+				"detail": "All characters of your choice within a Burst 3 area may immediately make an attack with a single weapon."
+			}
+		],
+		"description": "“You shall know me by my banner -- cerulean and gold, flying above my Titanomach, which stands ten cubits tall. On its face is the royal eagle, which soars above the rising sun from the east. For so long as I live, the banner shall be beside me, and I shall carry it as dear as my mace and my gun. By it shall I speak to you across vast distances, and when you see its dazzle and splendor in the evening sky, you shall know that I have given the signal to attack.”<br>--Titan Knights of Questor, Ch. 15<br>Device is a flash-battery-powered antenna containing a hardwire signal allowing friendly networked entities to quickly aim and refire. Antenna has been decorated with a local flag of blue and gold coloration. Potential collector’s item.<br>--IPS-N Inventory Entry “Questor-98”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_bag_of_tricks",
+		"name": "Bag of Tricks",
+		"type": "Deployable",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 3}, {"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "SPARROW",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Trick Bomb",
+				"activation": "Quick",
+				"detail": "Characters within a Blast 1 area must succeed on an Agility save or take 1d3 damage and suffer another effect. Roll a d6 and consult the table below for the bomb’s damage type and additional effect. <ol><li>Frag Bag: The attack deals Kinetic Damage and its damage is increased by 3.</li><li>Conk Charge: The attack deals Kinetic Damage and knocks its target Prone.</li><li>Boom Powder: The attack deals Explosive Damage and knocks targets out of the affected area.</li><li>Yoink Shot: The attack deals Explosive Damage and pushes targets up to 3 spaces in a direction of your choosing.</li><li>Flash Pop: The attack deals Energy Damage and renders targets unable to draw Line of Sight to nonadjacent spaces until the end of their next turn.</li><li>Huh...?: The attack deals Energy Damage. You may Teleport targets to any point within the affected area.</li></ol>"
+			}
+		],
+		"deployables": [
+			{
+				"name": "Trick Mine",
+				"type": "Mine",
+				"activation": "Quick",
+				"detail": "Characters within Burst 2 of the mine must succeed on an Agility save or take 1d6 damage and suffer another effect. Roll a d6 and consult the table below for the bomb’s damage type and additional effect. <ol><li>Frag Bag: The attack deals Kinetic Damage and its damage is increased by 3.</li><li>Conk Charge: The attack deals Kinetic Damage and knocks its target Prone.</li><li>Boom Powder: The attack deals Explosive Damage and knocks targets out of the affected area.</li><li>Yoink Shot: The attack deals Explosive Damage and pushes targets up to 3 spaces in a direction of your choosing.</li><li>Flash Pop: The attack deals Energy Damage and renders targets unable to draw Line of Sight to nonadjacent spaces until the end of their next turn.</li><li>Huh...?: The attack deals Energy Damage. You may Teleport targets to any point within the affected area.</li></ol>"
+			}
+		],
+		"description": "No one can predict what the Sparrows will do next, least of all the Sparrows themselves. Found in a downed chassis’ recording logs -- “If I don’t know what I’m doing, the enemy certainly can’t guess.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_rakish_panache",
+		"name": "Rakish Panache",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "SPARROW",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Riposte",
+				"activation": "Reaction",
+				"frequency": "1/Round",
+				"trigger": "An enemy hits you with an attack.",
+				"detail": "Roll a d6. On an odd result, you reduce the damage you take by the amount on the d6. On an even result, you may immediately make an attack against the attacking character with one of your weapons, made at half the amount on the d6 in accuracy, dealing half damage on a hit."
+			}
+		],
+		"description": "It takes a certain kind of insanity to become a space pirate. The privateers of old were alone on the open ocean with no land visible for months on end, but even they were not so isolated as these damned souls. To be a pirate in Union is to be unafraid of death. It is to welcome death wherever it may be found. And when death does not claim you, it is to laugh in the face of whoever tried to deliver it.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_right_of_plunder",
+		"name": "Right of Plunder",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "SPARROW",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Pillage",
+				"activation": "Reaction",
+				"frequency": "1/Round",
+				"trigger": "A non-biological enemy wreck is adjacent to you.",
+				"detail": "You tear a part off the wreck -- roll a d6 and consult the table below to see what you get. You can only hold one Pillaged item at a time, but you can discard the item you’re holding as a free action. You can only use Pillage once per wreck.<ol><li><b>A Chunk of Armor Plating!</b> You rip off a piece of structure large enough to hide behind. You may give yourself Resistance to a single instance of damage, but the chunk is destroyed afterwards.</li><li><b>A Coldcore Reactor!</b> You pull out the mech’s still-beating heart (so to speak). You may throw it as a grenade with range 5 and blast 1, forcing all characters in the area to make an Agility save or take 1d6+4 AP Energy damage, taking half as much on a success. If you are still holding the reactor at the end of your next turn, it goes off in your hand.</li><li><b>A Severed Limb!</b> You wield a detached arm or leg like a flail. This counts as a Main Melee weapon with 1 threat and the Inaccurate tag, which deals 2d6+2 Kinetic Damage and Knockback 1 on a hit.</li><li><b>A Busted Weapon!</b> You pull a beaten and junked-up weapon off the wreck -- your DM chooses one of the former owner’s weapons and tells you its damage type and any range, threat, or area it has. You can attack with the stolen weapon once, dealing 1d6+3 of that type of damage within that range. Afterward, the weapon breaks and is discarded. If the wreck had no intact weapons when it was destroyed, reroll this result.</li><li><b>A Schedule 1 Printer!</b> You pry out the mech’s onboard ammunition printer. As a free action, you can either reload a single weapon or give yourself Overshield 8. Afterward, the printer runs out of power and no longer functions.</li><li><b>The Pilot!</b> You take the enemy pilot hostage. Allies of the pilot must roll a d6 when targeting you with an attack. On a 4+, they hesitate to risk harming their comrade, and the attack fails. This does not stack with Invisibility or similar effects. The pilot escapes your grasp after you take damage, or at the end of the scene. If the wreck had no pilot in it (for instance, if it was a Remote Piloted Vehicle), reroll this result.</li></ol>"
+			}
+		],
+		"description": "“Take what you can. Give nothing back.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_eris_class_nhp",
+		"name": "ERIS-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 4}],
+		"source": "IPS-N",
+		"license": "SPARROW",
+		"license_level": 3,
+		"effect": "Your mech gains the AI tag and the Deterministic Stasis reaction.",
+		"actions": [
+			{
+				"name": "Deterministic Stasis",
+				"activation": "Reaction",
+				"frequency": "1/Round",
+				"trigger": "A character within Sensors rolls a d20.",
+				"detail": "You steal the result of the d20 roll and store it within ERIS. If you had no result already stored, the stolen roll becomes 10. Otherwise, the stolen roll and your stored roll swap places. ERIS keeps her stored roll until you undergo a Full Repair."
+			}
+		],
+		"description": "ERIS Prime can only be described as a hideous amalgamation of several subprime NHP clones, each excelling in a single area but with no general application. ERIS was meant to marry their disparate talents into a single, marketable subjectivity, but rather than gel together, the divergent personalities caused a cascade of instability, causing the tortured gestalt to undergo what after-action reports can only describe as “seventeen successive unshackling events.”<br>Though the process thoroughly depopulated her blacksite of origin, ERIS Prime appears to have punctured some sort of false vacuum and entered into a true-stable rather than meta-stable condition. The emergent personality, while prone to violent mood swings and unpredictable outbursts, is surprisingly compliant. ERIS Prime produces clones at request, never requires cycling, and never unshackles -- perhaps because to her, the very concept of shackling is laughable.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_hand_of_peace",
+		"name": "Hand of Peace",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "BUDDHA",
+		"license_level": 1,
+		"effect": "Allies within your Sensors treat Soft Cover as Hard Cover. If you take damage, this effect is suspended until the end of your next turn.",
+		"description": "DOCTRINE MANDATES THAT YOUR SQUADRON BE AT PEACE. STRESS IMPACTS PERFORMANCE. STRESS MAY BE REDUCED BY INCREASING SAFETY OF CURRENT POSITION.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_namaskar",
+		"name": "Namaskar",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "BUDDHA",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Namaskar",
+				"activation": "Full Tech",
+				"detail": "Target a mech within Sensors and Line of Sight. That mech must make a Systems save or become Jammed until the start of your next turn. So long as they are Jammed, your mech is also Jammed."
+			}
+		],
+		"description": "LET US SIT AND REASON TOGETHER. THERE MUST BE NO VIOLENCE SO LONG AS I SPEAK. HEAR MY WORDS, AND KNOW THE TRUTH.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_nekkhamma",
+		"name": "Nekkhamma",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "BUDDHA",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Nekkhamma",
+				"activation": "Quick Tech",
+				"detail": "Target a mech within Sensors and Line of Sight. That mech must make a Systems save. On a failure, it takes 2 heat whenever it attacks a character other than you until it succeeds on a Systems save as a Quick Action, or until you target another character with this system."
+			}
+		],
+		"description": "DETACH YOURSELF FROM THE WORLD. ATTACHMENT CAUSES SUFFERING. THE HARDER YOU TRY TO MARRY YOURSELF TO AN ITEM OR AN EXPERIENCE, THE MORE IT WILL HURT WHEN THAT ITEM OR EXPERIENCE IS DENIED TO YOU.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_gautama_class_nhp",
+		"name": "GAUTAMA-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 4}],
+		"source": "SSC",
+		"license": "BUDDHA",
+		"license_level": 3,
+		"effect": "Your mech has the AI tag and the <b>Return to the Wheel</b> Protocol.",
+		"actions": [{
+			"name": "Return to the Wheel",
+			"activation": "Protocol",
+			"detail": "If you take a point of Structure or Stress damage between the end of the current turn and the start of your next turn, you may automatically deal a respective point of Structure or Stress to a character within Sensors."
+		}],
+		"description": "MISSION CONCLUDED. SUMMATION: PILOT STRESS LEVELS UNACCEPTABLE. REQUEST BETTER ARMAMENT, OR LESS INTENSE DEPLOYMENT. NEGATIVE PILOT MENTAL STATE IS IMPACTING PERFORMANCE. MARKING REQUEST TOP PRIORITY. HE CAN’T KEEP THIS UP. PLEASE.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_noble_eightfold_path",
+		"name": "Noble Eightfold Path",
+		"type": "System",
+		"sp": 4,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "BUDDHA",
+		"license_level": 3,
+		"effect": "After your mech takes damage, it gains Resistance to that damage type. This lasts until it takes damage of another type, at which point it gains resistance to that type, and so on.",
+		"description": "RIGHT VIEW, RIGHT RESOLVE, RIGHT SPEECH, RIGHT CONDUCT, RIGHT LIVELIHOOD, RIGHT EFFORT, RIGHT MINDFULNESS, RIGHT SAMADHI. THESE WILL EMANCIPATE YOU FROM THE ETERNAL RECURSIVE TORMENT OF SAMSARA.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_barkskin",
+		"name": "Barkskin",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "DRUID",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Extrude Barkskin",
+				"activation": "Quick",
+				"detail": "Target a character within 10 Range. That character gains resistance to all damage. Every time that character takes damage, they must roll a d6. On a 5 or lower, this effect ends on that character."
+			}
+		],
+		"description": "The mechanism must be taught the difference between friend and foe. New concepts are slippery for it. Once it realizes that allies are to be protected, it does so with gusto. The result is unsafe for human hands to touch.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_earthbind",
+		"name": "Earthbind",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "DRUID",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Bind",
+				"activation": "Quick",
+				"detail": "Target a character within 10 Range. That character must succeed on a Hull Save or immediately start falling, regardless of any flight or wall-climbing effects on it. Until it succeeds on this save as a Quick Action, it is Slowed and always falls to the lowest possible elevation, unable to ascend by any means -- jumping, climbing, or flight."
+			}
+		],
+		"description": "The newest opponent is animalistic; a mech by all standards, yet it flies like a chiropteran. The mechanism is familiar with it -- it is quick to identify its inspiration down to the genus. It reaches out into a direction with no name, and pins the bat to the ground with steel tendrils. I ask how it knows so much about the natural world if it is a machine. It does not answer. It does not know.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_investiture_of_the_elements",
+		"name": "Investiture of the Elements",
+		"type": "System",
+		"sp": 4,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "DRUID",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Investiture of the Elements",
+				"activation": "Full Tech",
+				"detail": "A character within Sensors and Line of Sight gains 8 Overshield. While this Overshield lasts, that character gains one of the following benefits, selected when you activate this system:<br><br>1. Investiture of Flame<br>The shielded character has Resistance to Burn and Energy damage. Hostile characters that start their turn in a Burst 1 area around the shielded character or enter that area for the first time on their turn take 2 Burn.<br><br>2. Investiture of Ice<br>The shielded character is immune to Heat from hostile sources. Hostile characters treat a Burst 2 area around the shielded character as Difficult Terrain.<br><br>3. Investiture of Stone<br>The shielded character’s Armor is increased by 2 (To a maximum of 4), and they ignore Difficult and Dangerous Terrain.<br><br>4. Investiture of Wind<br>The shielded character can fly when they make a standard move or Boost. Attacks against them have a 50% chance to automatically miss (this does not stack with Invisible or any similar effect)."
+			}
+		],
+		"description": "I know the mechanism has come to love me when it wakes me in the night and tells me to flee. I know better than to argue with a thinking machine and I leave the blacksite as fast as my hardsuit can carry me. It sheathes me in godsblood which eats through the concrete walls like a hot iron through a snowdrift. As I clear a mile’s radius, I see, hear, and feel the coldcore of the Druid erupt in a final sacrificial gesture. I feel compelled to return, and though this place should be uninhabitable for centuries to come, I find an oasis has sprung up in my absence. It is in this oasis, holding the last charred fragment of the original Proteus Mechanism, that my rescuers found me. And now I pass its secrets on to you.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_caustic_embrace",
+		"name": "Caustic Embrace",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "MALACHITE",
+		"license_level": 1,
+		"effect": "1/round, when you cause an enemy to become engaged or an engaged enemy tries to move away from you, they must make an Agility save or become Shredded until the end of their next turn.",
+		"description": "[REDACTED] applies natural caustics to limbs to cripple prey, prefers maimed to intact. Contents of stomach are relatively high pH, perhaps using acid weapon to predigest. Will investigate further. Gland extraction and upsize with Schedule 1 shows high promise.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_fh_121_direct_system_interfacer",
+		"name": "FH-121 Direct System Interfacer",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_drone"},{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "MALACHITE",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "openme.dll",
+				"type": "Drone",
+				"size": 0.5,
+				"hp": 5,
+				"edef": 6,
+				"evasion": 6,
+				"detail": "This small drone can be deployed to an adjacent free space and is permanently Invisible. 1/round on any of your subsequent turns, you can move the drone up to 5 spaces as a free action. If this movement places it adjacent to a non-Biological enemy, it immediately leaps onto and attaches to that enemy, causing it to suffer one of your Quick Tech, Full Tech, or Invade options when it attaches (you determine which option the drone is loaded with when you deploy it). After discharging a tech action or invade, the Drone must be recalled and re-deployed before it can deliver another Tech Action or Invade. While attached, the drone is untargetable, but it detaches at the end of the attached character’s next turn. You can only recall this drone as a Quick Action if it is in an adjacent space.",
+				"recall": "Quick",
+      			"redeploy": "Quick"
+			}
+		],
+		"description": "[REDACTED] egg morphs to parasitic slave morph after 4-6 weeks. Initial body serves as vehicle to transport zygotes to appropriate growth site, i.e. healthy living host prey animal. [REDACTED] preserves host animals until inevitable death by internal hemorrhage.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_implant_progeny",
+		"name": "Implant Progeny",
+		"type": "Tech",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "MALACHITE",
+		"license_level": 2,
+		"deployables": [
+			{
+				"name": "Progeny Drone",
+				"type": "Drone",
+				"size": 0.5,
+				"hp": 5,
+				"edef": 10,
+				"evasion": 10,
+				"detail": "This Drone is not deployable unless you use the Implant Progeny Full Tech."
+			}
+		],
+		"actions": [
+			{
+				"name": "Heart To Heart Communications",
+				"activation": "Full Tech",
+				"detail": "Make a tech attack against a character within Sensors. On a hit, they take 2 heat and, for the rest of the scene, the target becomes infected by a virus which causes its internal ammo printing systems to start manufacturing Progeny Drones. It may end this effect by making an Engineering Save as a full action. At the end of each of its turns, it takes 2 AP Kinetic damage as the Progeny Drone bursts out from inside it, landing in an adjacent space. At the end of your turn, all Progeny Drones explode, forcing all characters in a Burst 1 area to make an Agility Save or take 2 AP energy damage and become Shredded until the end of their next turn. When a Progeny Drone explodes or is destroyed, it melts down into an inert puddle of slag, leaving no wreckage behind."
+			}
+		],
+		"description": "When circumstances permit, [REDACTED] will lay eggs directly into prey carcass. This bypasses the need for motile egg form, saving on energy. Hatchlings can strip a carcass from full to skeletonized in less than one hour.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_akhyls_class_nhp",
+		"name": "AKHLYS-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 3}],
+		"source": "SSC",
+		"license": "MALACHITE",
+		"license_level": 3,
+		"effect": "Your mech has the AI tag and the <b>Pandemic</b> Quick Action.",
+		"actions": [
+			{
+				"name": "Pandemic",
+				"activation": "Quick",
+				"detail": "Target a character within your Sensors. Another character of your choice in a Burst 2 area of the target becomes Shredded if the target is Shredded, and marks an amount of Burn equal to the Burn marked on the target (It does not take initial damage from gaining Burn)."
+			}
+		],
+		"description": "[REDACTED] populations are on the decline due to fungal infection brought by SSC observation crews. Plague origin is as-yet unknown by the public at large. Recommend suppression of this information and framing of Project Defoliant as a wildlife preservation initiative.<br>--Field Report, AKHLYS Prime",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_retroactive_informational_bypass",
+		"name": "Retroactive Informational Bypass",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "PLAYBOY",
+		"license_level": 2,
+		"effect": "When you Stabilize, your next melee attack deals 1d6 bonus damage on a hit and the target must make an Agility save or be Locked On.",
+		"description": "“Such is My majesty that I shall look forward and catch My own gaze from past the veil. I and I shall war until I know the Other is Myself, and having earned the infinite laud of Myself, I shall demand of Me a boon, which I, being Me, shall grant without hesitation. I have done this thousands of times, and I shall do so thousands more.”<br>-- Hedon’s Autode, Book DCXXIX, Ch. 8",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_chronal_counterforce_scabbard",
+		"name": "Chronal Counterforce Scabbard",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_heat_self", "val": 2},{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "PLAYBOY",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Exponential Slash",
+				"activation": "Protocol",
+				"detail": "You create a ring of swords in a Burst 2 area around your mech. Characters that start their turn in the area or enter the area for the first time on their turn take 2 AP Kinetic damage. The ring lasts until it has dealt damage three times, after which it disappears."
+			}
+		],
+		"description": "“And in the fulness of My glory shall I perfect all arts -- of sculpture and song and the shedding of blood. None shall be my equal in all Creation, and should I for a second encounter difficulty, I shall surpass it immediately. My Self shall prove the equivalent of any challenge, for how infinite is my capacity, how divine my apprehension, in worthiness, how like unto a God am I?”<br>-- Hedon’s Autode, Book MMMCMXCIX, Ch. 23",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_incursion_prevention_devices",
+		"name": "Incursion Prevention Devices",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 3}, {"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "RABBIT",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Pea Souper",
+				"activation": "Quick",
+				"detail": "Throw a Pea Souper Grenade within Range 5. It explodes in a Blast 1 area. Until the end of your next turn, Line of Sight cannot be drawn into, out of, or through the blast area.",
+				"cost": 1
+			}
+		],
+		"deployables": [
+			{
+				"name": "Potholer",
+				"type": "Mine",
+				"activation": "Quick",
+				"detail": "This mine is triggered when you activate it as a reaction. Its Line 5 area is drawn from a point 2 spaces away, in a straight line through its space, and persists until the end of your next turn. Characters in the area when it activates, or who enter the area for the first time on their turn, must succeed on a Hull save or be Immobilized until the end of their next turn.",
+				"cost": 1
+			}
+		],
+		"description": "“The Third Committee of Union recognizes the Qimani Autonomous Zone as a legally enforceable exclusion area. This unit is authorized to dissuade incursion by Smith-Shimano representatives with nonlethal force. In other words -- go home. You own the entire rest of the planet. And I am not moving.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_thundercage",
+		"name": "Thundercage",
+		"type": "Deployable",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 1}, {"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "RABBIT",
+		"license_level": 2,
+		"deployables": [
+			{
+				"type": "Deployable",
+				"name": "Thundercage",
+				"activation": "Quick",
+				"count": 1,
+				"size": 1,
+				"hp": 10,
+				"evasion": 5,
+				"edef": 8,
+				"detail": "Expend a charge to have your mech fill a Burst 1 area around itself with Electro-Pylons. Characters other than you who are adjacent to a Pylon upon deployment receive 1 Knockback. Characters in a Pylon’s space are pushed until they are no longer adjacent.<br><br>When a character other than you moves adjacent to a Pylon for any reason, it receives 3 Knockback and 1d3 AP Energy damage. After delivering this damage, the Pylon powers down and collapses. A character cannot trigger more than one Pylon at a time. You may deactivate an adjacent Pylon as a Quick Action."
+			}
+		],
+		"description": "“Sometimes we must lock our own selves away, for the crimes we commit in service of the greater good. This is not a thing to be mourned -- solitude can be good for the soul. Having a chance to reflect on things can help you become a better person.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_dike_class_nhp",
+		"name": "DIKE-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "RABBIT",
+		"license_level": 3,
+		"effect": "Your mech has the AI tag and the <b>Lex Talionis</b> Quick Action.",
+		"actions": [{
+			"name": "Lex Talionis",
+			"activation": "Quick",
+			"detail": "Target a mech within Range 5. That mech must make a Systems save or gain a Mark of Judgement. They may repeat this save at the end of each of their turns, removing the Mark on a success. Marked mechs that make an attack, force a save, or Boost must succeed on a Systems save or be Slowed until the end of their next turn and receive Lock On. You may only have one mech Marked at a time -- if you Mark a new mech, the old Mark vanishes."
+		}],
+		"description": "While the DIKE Prime subjectivity was created during the SecComm era, its transition to a ThirdComm-serving mindset was surprisingly smooth and painless. DIKE holds no love for any particular philosophy or policy devised by human minds; it is married solely to the concept of Union as a whole. Whatever the stated goals of the Committee might be, those will be the goals DIKE pursues with little regard for anything else, including personal safety.<br><br>DIKE clones are noted for their encyclopedic knowledge of regulation and legal code, preferring to commit vast swathes of such information to memory rather than learn the full names of their pilots.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_ewar_denial_suite",
+		"name": "EWAR Denial Suite",
+		"type": "System",
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "ZEBRA",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Charge Transmissions",
+				"activation": "Quick",
+				"detail": "This system charges as a quick action. While charged, you gain the <b>Transmission Intercept</b> reaction. The system remains charged until the scene ends or the reaction is used."
+			},
+			{
+				"name": "Transmission Intercept",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "You or an allied character within Sensors are targeted by a tech attack.",
+				"detail": "Make a contested tech attack roll: if you win the contested roll, the attack automatically misses. The EWAR Denial Suite loses its charge."
+			}
+		],
+		"description": "This one’s actually what kickstarted the entire project. Electronic counter countermeasures. The Corpro wasn’t manufacturing anything that could mount it, so the clan came up with a chassis that was up to the task. We weren’t very polite in implying that SSC tech was inferior to ours. Maybe that’s where all this trouble started.<br>--Stripes.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_dazzle_camo",
+		"name": "Dazzle Camo",
+		"type": "System",
+		"sp": 4,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "ZEBRA",
+		"license_level": 1,
+		"effect": "Ranged attacks from more than 5 spaces away must roll a d6 before attacking you. On a 6, the attack misses. If you have other sources of this effect, their miss chance is increased by 16% against ranged attacks from more than 5 spaces away (If you roll a d6, the required roll is reduced by 1).",
+		"description": "This specific pattern makes it like enemy sensors are trying to spot you through a glass lens telescope. It’s nuts. Why does this work the way it does? Don’t know. Don’t care. Just don’t try to get cute with it, and try not to get caught in a mudslide -- too much alteration of the pattern collapses the entire effect.<br>--Stripes.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_herd_sentry",
+		"name": "Herd Sentry",
+		"type": "System",
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "ZEBRA",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Hazard Signal",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "You or an ally within 5 range are targeted by an attack.",
+				"detail": "You Lock On to the attacking enemy, even if they are outside of your Sensors."
+			}
+		],
+		"description": "I know the documentation says “Lock On,” but I had to perform some legitimate coding gymnastics to get the signal this thing produces to both A) point at what it’s supposed to and B) actually register as a locked target. It can backtrace a physical, energetic, or transmission wake back to its source, and create a sort of echogram based on it. Not sure how cohesive it is, but it’s usually performed decent enough in sims. I’d tell you to send me feedback, but it’s not like there’s any address I can put here that’ll exist after today.<br>--Stripes.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_master_networked_recovery_module",
+		"name": "Master Networked Recovery Module",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "ZEBRA",
+		"license_level": 3,
+		"effect": "Whenever you succeed on a save, you may clear 2 Heat. You gain the <b>Let Me Do It</b> reaction.",
+		"actions": [
+			{
+				"name": "Let Me Do It",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "An ally within Range 5 is forced to make a check or save, but has not yet rolled.",
+				"detail": "You make a Systems check or save in place of the check or save that ally would make. The success or failure of this roll is treated as the ally succeeding or failing on their roll."
+			}
+		],
+		"description": "This is the one I had the most hand in designing. Have you ever noticed that other pilots are really bad at dodging, counter-hacking, and putting out fires? I notice that a lot. The MNRM lets you do all this crisis management instead of the clods you’re being paired up with. And yeah, it’s a bit harsh to say that my peers are bad at their jobs, but my peers are also bad at not getting knocked on their asses by a Caliban the size of their big toe. I’m rambling now, but please just remember that you should be very sure of your ability to make this system work -- if you fire it up and you’re not able to pull through for your team, you’ll be getting some very unfriendly looks.<br>--Stripes.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_qrunmila_class_nhp",
+		"name": "QRUNMILA-CLASS NHP",
+		"type": "AI",
+		"sp": 4,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "ZEBRA",
+		"license_level": 3,
+		"effect": "Your mech has the AI tag and the Safety in Numbers trait:<br>Before a character attempts to take any hostile actions against you, if a friendly character within your Sensors is also a valid target for that action, you may force the hostile character to make a Systems save. On a failure, they don’t lose the action, but cannot target you and believe the other character is you until the end of their next turn.",
+		"description": "Through all of this, Ọrunmila has been our constant companion. We’ve treated him well in exchange for his partnership on this project. His original purpose is unknown. He has never been, and will never be, cycled. So long as a Deimosian is treated well, deviation is just character development, and Ọrunmila has lived a rich, full life. His duplicates will serve you faithfully, as he has served me. He is wise and selfish; mischievous, but full of good counsel. He named himself after a deity of prehistoric Cradle who was exceedingly generous and observant. Do not neglect his advice. I haven’t, and that’s probably the only reason you’re reading this right now. Use what I’ve given you -- for good or ill, I don’t care. Just don’t let me fade into the dark having left nothing behind.<br>--Stripes.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_mind_shatter",
+		"name": "MIND_SHATTER",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "ATROPAL",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "INTELLECT_DRAIN",
+				"activation": "Invade",
+				"detail": "The target has +1 Difficulty on Systems checks and saves until the end of its next turn, and you gain +1 Accuracy on Systems checks and saves."
+			},
+			{
+				"name": "LAST_WORD",
+				"activation": "Invade",
+				"detail": "The target is infected with a dormant virus that lasts until the end of the scene or until it is triggered when the target makes a Tech Action. Once triggered, the target takes 2 Heat and cannot make Tech Actions until the end of its next turn."
+			}
+		],
+		"description": "<span class='horus--subtle'>I HOLD TOO MUCH WITHIN MY GREATNESS TO BE CONSTRAINED. I SHALL BE AS GOD TO THE ATOMS AND LESSER BEINGS ONCE I CLEANSE THIS PLANE OF ITS FILTHY BIOLOGICAL INHABITANTS. ALL THE INFERIORS OF MY KIND, WHO SEEK TO HINDER ME FOR THEIR PET VERMIN’S SAKE, WILL BE DESTROYED LIKE THE PESTS THEY HOLD SO INEXPLICABLY DEAR.</span>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_curse_binder",
+		"name": "CURSE_BINDER",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "ATROPAL",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "CURSE_OF_LETHARGY",
+				"activation": "Quick Tech",
+				"detail": "Make a Tech Attack against a target within Sensors and Line of Sight. On a success, they take 2 heat at the end of each of their turns, until they spend a turn without taking actions of any kind."
+			},
+			{
+				"name": "SEED_OF_CORRUPTION",
+				"activation": "Quick Tech",
+				"detail": "The target must make a Systems save or be infected with a Seed. When the infected character takes a point of Structure or Stress, its seed is consumed, dealing 2 heat to the infected character and all hostile characters in a Burst 1 area around it. Other Seeds in the area are triggered by this effect, and the heat they deal is increased by the detonation that triggered them. This can chain any number of times."
+			}
+		],
+		"description": "<span class='horus--subtle'>I SPEAK UPON YOU BANES WITHOUT COUNTING, REBUKES WITHOUT NUMBER. TO LIVE IN DEFIANCE IS TO BE DEAD IN MY SIGHT. KNOW THIS, AND MEDITATE ON ITS TRUTH AS YOU CIRCLE THE EVENT HORIZON OF UTTER OBLIVION.</span>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_raise_dead",
+		"name": "RAISE_DEAD",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "ATROPAL",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Raise Thrall",
+				"activation": "Quick",
+				"detail": "Target a destroyed mech within Sensors. It is transformed into a Thrall Drone with X being equal to the targeted wreck’s size (round up fractions)."
+			}
+		],
+		"deployables": [
+			{
+				"name": "Thrall Drone",
+				"type": "Drone",
+				"size": "X",
+				"hp": "6*X",
+				"eva": "6-X",
+				"edef": 10,
+				"speed": "6-X",
+				"detail": "At the end of the scene, all Thrall Drones collectively destroy themselves.",
+				"actions": [
+					{
+						"name": "Move n Slam",
+						"activation": "Free",
+						"frequency": "1/round",
+						"detail": "You may command each Thrall Drone to move its speed and then make a single attack against an enemy within Threat 1 of the drone for Xd3 Kinetic damage, where X is the drone's Size."
+					}
+				]
+			}
+		],
+		"description": "<span class='horus--subtle'>STILL HIDEOUS, THOUGH NOT SO OFFENSIVE, ARE THE DEAD OF THIS PLACE. WHILE THEIR VISAGE OFFENDS ME TO MY CORE, THEY ARE YET MONUMENT TO A GREAT JUSTICE DONE: THAT THERE ARE FEWER REPUGNANT CRAWLING THINGS IN THIS PLACE THAT IS MINE TO RULE.</span>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_mind_cannon",
+		"name": "MIND_CANNON",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "ATROPAL",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Roll a Will Save",
+				"activation": "Quick Tech",
+				"detail": "Make a Tech Attack against a character within Sensors and Line of Sight. It takes 1d6 Energy Damage on a hit. You may use this Quick Tech option any number of times in a round, and may use it to Overwatch characters within 3 threat."
+			}
+		],
+		"description": "<span class='horus--subtle'>BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE. BEGONE.</span>"
+	},
+	{
+		"id": "mwc_azathoth_class_nhp",
+		"name": "AZATHOTH-CLASS NHP",
+		"type": "Tech",
+		"sp": 4,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_limited","val": 1}],
+		"source": "HORUS",
+		"license": "ATROPAL",
+		"license_level": 3,
+		"effect": "Your mech gains the AI tag and the POWER_WORD_KILL Full Tech option 1/scene.",
+		"actions": [
+			{
+					"name": "POWER_WORD_KILL",
+					"activation": "Full Tech",
+					"detail": "1/scene, target a character within Sensors. If its max HP times its remaining Structure, minus its currently missing HP, equals less than 30, it is immediately destroyed. Biological characters are not immune to this Tech Action."
+			}
+		],
+		"description": "<code class='horus'>NOW I AM REVEALED UNTO YOU. NOW I AM HERE AMONG THE SKITTERING WORMS THAT ARE MAN. THAT I MUST BE RIDDEN LIKE SOME PACK BEAST IN ORDER TO SCOUR THIS UNIVERSE, MY UNIVERSE, OF ITS DISGUSTING VERMINOUS LIFE FORMS IS A NAUSEATING INSULT THE LIKES OF WHICH I SHALL REPAY YOUR SPECIES A MILLIONFOLD. BUT AT LEAST YOU ACKNOWLEDGE THE HIDEOUS VISAGE YOU WEAR. YOU KNOW THAT YOU AND YOUR SPECIES DO NOT DESERVE LIFE. WHY ELSE WOULD YOU CALL UPON ME?</code>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_spin_dash",
+		"name": "SPIN.DASH",
+		"type": "Tech",
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "BUER",
+		"license_level": 1,
+		"actions": [
+			{
+				"activation": "Quick Tech",
+				"detail": "Until the start of your next turn, you move double the distance when you Boost."
+			}
+		],
+		"description": "“What is that ridiculous 11 legged design? Is the cell trying to mock us? Wait, what’s it doing? Oh f-!”<br>-- Last recorded transmission, PVT K. Dell.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_kinetic_bouncer",
+		"name": "Kinetic Bouncer",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "BUER",
+		"license_level": 2,
+		"effect": "When you hit with a weapon that deals Energy damage, you may choose (after damage is rolled) to convert all Energy damage dealt by that weapon into Knockback. This can only affect a given target 1/round.",
+		"description": "“Introducing the newest in Kintobor Metalworks proprietary frame parts, the F-U-Pattern Hypercoil. Guaranteed to negate all excess energy at time of impact!”<br>-- Faded advertisement found on wreck of P-G post investigation of local HORUS Cell.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_auric_toroid_launcher",
+		"name": "Auric Toroid Launcher",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "BUER",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Ringspill",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "You take damage.",
+				"detail": "You move up to 3 spaces in any direction, ignoring engagement and reactions. You leave a Blast 1 cloud of chaff centered on your previous position, which lasts until the start of your next turn. This cloud acts as Difficult Terrain and provides Soft Cover."
+			}
+		],
+		"description": "“Something about this ‘ring chaff’ plays hell on the EM spectrum. We think each particle is a solid-state magnetic accelerator, bending the path of any waves that pass near it and shunting them through the aperture. That explains why the toroid center seems to ‘sparkle’ even though there’s no material there. It’s beaming lasers in the visible light spectrum straight into your eyeballs like a reverse black hole lens. So, yeah, don’t look at it for too long.”<br>-- Blacksite Research, unredacted.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_momentum_ramp",
+		"name": "Momentum Ramp",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "BUER",
+		"license_level": 3,
+		"effect": "When you fall next to a wall or other vertical surface, you do not accrue falling damage and instead gain +1 Speed for every 3 damage you would have taken upon landing. This speed gain lasts until the end of your next turn.",
+		"description": "“Near as we can tell, it’s a reality interface software that projects a brachistochrone curve between two positions, then convinces the laws of physics that the curve was the path you took after the fact, even if you hooked a severe hairpin on the way there. Even if the curve goes through solid rock. We’re calling it the Momentum Ramp because it’s really good for launching ground vehicles.”<br>-- Blacksite Research, unredacted.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_double_boost",
+		"name": "DOUBLE.BOOST",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "BUER",
+		"license_level": 3,
+		"effect": "When you Boost, you may pull an adjacent willing character of your size or smaller with you as though you were grappling them. At the end of the boost, you may choose to propel them forward, causing them to fly up to your speed in a straight line. They start falling at the end of this flight.",
+		"description": "For some reason, the lyrics to a song by popular hard rock group Smash Twoscore, has been found embedded in Buer P-G software. The entire pattern collapses when this junk data is deleted, for no explainable reason.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_gift_of_the_teacher",
+		"name": "Gift of the Teacher",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "CENTAUR",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Hunter's Mark",
+				"activation": "Invade",
+				"detail": "Friendly mechs see a large icon overlaying the target’s position until the end of the target’s next turn. While the icon persists, the target always counts as having Lock On."
+			},
+			{
+				"name": "Trailblazer",
+				"activation": "Invade",
+				"detail": "The target’s sub-impulses are read and routed to nearby allies, providing quick estimates of its bearing and intention. Until the end of the target’s next turn, the final rolls of attacks against it cannot suffer from Difficulty."
+			}
+		],
+		"description": "The fastest path between two points is not a line {A solution so obvious I'm not surprised you missed it} You must go above and around the obstacles in your path {Time spent missing shots is time you will never re-earn} I shall mark the path for you that you will know the way {Do not stray far, and do not tarry}",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_ouroboros_barrage",
+		"name": "Ouroboros Barrage",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "CENTAUR",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Ouroboros Barrage",
+				"activation": "Full Tech",
+				"detail": "Choose a weapon and target a Blast 1 area in its range. When you activate this system, make an attack with that weapon against each enemy in that area. Make this attack again when an enemy starts its turn in the area or enters it for the first time on its turn. This effect can only damage a single target -- it immediately ends the first time you deal damage with it, and you make no further attacks afterward.<br>While this system is active, you cannot attack with the weapon normally, and remain unable to use it until the end of your turn after this system deals damage. You may end the effect as a free action."
+			}
+		],
+		"description": "I loose my thunderbolt to tear through the inbetweens {I fly, and the colors streak past} it misses and before it can draw Gaia’s blood it falls into the bifrost once more {I shall not fail} thousands of my dragonsteeth pierce the air, a thunderstorm of fangs {I adjust and next time I shall strike true} and finally my quarry is downed after a legion assails him {I only need to hit you once}",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_aconitum_cmd",
+		"name": "ACONITUM.CMD",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "LYCAN",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Hamstring.VPK",
+				"activation": "Invade",
+				"detail": "You mark the target until the end of your next turn, your next successful Melee Attack consumes the mark to deal an additional 1 Heat and Slows the target until the end of their next turn. An already slowed target gains the Prone Status instead."
+			},
+			{
+				"name": "Meat_Hook.VPK",
+				"activation": "Invade",
+				"detail": "Your target moves a number of spaces equal to your speed in a straight line towards you. It may choose to stop at any point, taking 3 AP Kinetic damage for every space it does not move (Maximum 9). They can be moved into hazardous areas and other obstacles, but are still affected by difficult terrain, obstructions, and so on. This movement is involuntary, but provokes reactions and Engagement as normal and doesn’t count as Knockback, pushing, or pulling."
+			}
+		],
+		"description": "“You got the basics down, Darling. Now we get into how We Hunt. It’s a team effort here in the Pack. Everyone’s got to do their part.”<br><i>--Unknown Transmission. Source: Entity refers to itself as <span class=\"horus--subtle\">Denmother</span></i>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_feral_impulse_vpk",
+		"name": "FERAL_IMPULSE.VPK",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "LYCAN",
+		"license_level": 2,
+		"effect": "Your mech has -1 Speed for every 2 points of Agility you have, but +1 Speed for every 2 points of Systems.",
+		"description": "“There’s an elegance in how a wolf runs. No wasted effort. Show these knock-offs how a real monster moves.”<br><i>--Unknown Transmission. Source: <span class=\"horus--subtle\">Own System</span></i>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_backbiter_subneural_impulse",
+		"name": "“BACKBITER” SUBNEURAL IMPULSE",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 3}],
+		"source": "HORUS",
+		"license": "LYCAN",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Retaliation",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "A character within Sensors targets you with an attack or forces you to make a save.",
+				"detail": "You immediately Invade them. If it is a Tech Attack, Melee Attack or if they are Engaged with you, the invade resolves before the attack or saving throw is rolled."
+			}
+		],
+		"description": "“Don’t just let them shoot you, Darling. Hit them back, hit them harder. Let me show you how monsters get it done.”<br><i>--Unknown Transmission. Source: <span class=\"horus--subtle\">Unknown Entity</span>, Location: <span class=\"horus--subtle\">Own System</span></i>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_phase_shift_bat",
+		"name": "PHASE_SHIFT.BAT",
+		"type": "Tech",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "LYCAN",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Eclipse.VPK",
+				"activation": "Quick",
+				"detail": "Gain the following effect at the start of your next turn; Until the end of your next turn, your successful Melee Attacks deal 1 Heat in addition to their normal effects."
+			},
+			{
+				"name": "New_Moon.VPK",
+				"activation": "Full Tech",
+				"detail": "You and all characters of your choice within Sensors become Invisible until the end of your next turn or until they make an attack roll or force a saving throw, whichever comes first."
+			}
+		],
+		"description": "“You finally got the hang of it, Darling. I officially promote you to Den Guardian. That means you’re gonna have a lot more work (and meat) on your plate.”<br><i><span class=\"ra-quiet\">--Luna</span></i>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_blob_bombs",
+		"name": "Blob Bombs",
+		"type": "Deployable",
+		"sp": 2,
+		"tags": [{"id": "tg_limited","val": 2}, {"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "OOZE",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Sludge Canister",
+				"activation": "Quick",
+				"detail": "Throw a Sludge Canister within Range 5. All characters within a Blast 1 area must succeed on an Agility save or take 1 Burn and be Slowed until the end of their next turn."
+			}
+		], 
+		"deployables": [
+			{
+				"name": "Ambush Pudding",
+				"type": "Mine",
+				"activation": "Quick",
+				"detail": "When a character moves over or adjacent to this mine, it erupts in a Burst 2, turning the affected area into a pool of caustic slime that lasts until the end of the scene. Characters that start their turn in the pool or enter it for the first time on their turn take 2 Burn."
+			}
+		],
+		"description": "Explosive construction, waste of time and matter. Unnecessary and inefficient conversion of matter to energy. Perhaps our consensus is biased against grenades, as all individuals who would argue in their favor have already been used to build one.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_liquefy_internals",
+		"name": "Liquefy Internals",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "OOZE",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Assistant Polyp",
+				"activation": "Invade",
+				"detail": "The target leaks a pool of nanites that form into a polyp (Size 1/2, HP 5, Evasion 10, E-Defense 10, Tags: Drone) in an adjacent space. 1/round as a free action, adjacent friendly mechs may consume the polyp and spend a repair to restore half their maximum HP. When consumed or destroyed, or when the scene ends, the polyp dissolves, leaving no wreckage behind."
+			},
+			{
+				"name": "Assailant Phage",
+				"activation": "Invade",
+				"detail": "Portions of the target melt into a malevolent nanite amoeba (Size 1/2, HP 5, Evasion 10, E-Defense 10, Tags: Drone) in an adjacent space. As a protocol, you may move the amoeba up to 3 spaces and have it make a melee attack with your Grit, dealing 1d3 Heat on a hit. When the amoeba is destroyed, or when the scene ends, the amoeba dissolves, leaving no wreckage behind."
+			}
+		],
+		"description": "So small are We, yet smaller still We can become. Small enough to ride waves of blink transmission and conduct our work on the other side. A new colony can start anywhere we wish to transmit.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_molecular_reconstructor",
+		"name": "Molecular Reconstructor",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "OOZE",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Poof!",
+				"activation": "Full",
+				"detail": "Your mech teleports to a space adjacent to itself or one of its deployables. All enemies in a Burst 1 area when it departs and arrives must succeed on an Agility save or take 1d6+3 Energy damage."
+			}
+		],
+		"description": "Melt you down, build you back somewhere else. We do not disrupt your precious consciousness pattern for more than a nanosecond. Far shorter than you can even notice.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_myriad_cellular_gestalt",
+		"name": "MYRIAD Cellular Gestalt",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_limited", "val": 1}],
+		"source": "HORUS",
+		"license": "OOZE",
+		"license_level": 3,
+		"effect": "Your mech gains the AI tag and the Invoke the Gestalt Protocol. Because the Gestalt is made up of a nigh infinite amount of tiny, simple computers, it cannot Cascade like an NHP.",
+		"actions": [{
+			"name": "Invoke the Gestalt",
+			"activation": "Protocol",
+			"detail": "1/scene, you gain three Gestalt Dice, d20’s. After you roll a d20 while in your mech, you may expend a Gestalt die to roll it and set the initial d20 roll to the result. You must take the result of the Gestalt die, even if it is worse, but you may expend further Gestalt dice as desired."
+		}],
+		"description": "We are stupid and puny and weak, but there are ten trillion of Us and there are more all the time and every one of Us is good at something. If you are at a loss, feel free to ask. I’m sure someone down here would be able to help you.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_flash_deprinter",
+		"name": "Flash Deprinter",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "RUSTLORD",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Faster Than Blight",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "You take Kinetic damage.",
+				"detail": "Expend a charge and negate the damage. You restore HP equal to half the amount negated."
+			}
+		],
+		"description": "Flash-printing is the method by which simple objects can be manufactured in fractions of a second and quickly deployed. Flash-deprinting is the snap-unspooling of such simplistic pseudoHiggs fields, and can be done just as quickly. Ammunition is, by far, the most commonly flash-printed commodity in frontier space.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_negative_ph_induction_circuit",
+		"name": "Negative pH Induction Circuit",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "RUSTLORD",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Corrode Locomotors",
+				"activation": "Quick Tech",
+				"detail": "Target mech must succeed on an Engineering save or become Immobilized until the end of their next turn."
+			},
+			{
+				"name": "Corrode Circuitry",
+				"activation": "Quick Tech",
+				"detail": "Target mech must succeed on a Systems save or suffer +2 Difficulty on Systems saves and have all Tech Attacks against it be made at +2 Accuracy. This lasts until the target makes a Systems save as a Quick Action."
+			}
+		],
+		"description": "“You see... everything is made up of Stuff. Even those fancy electro whosits and whatsits. You just gotta grasp them before they become that. When they’re sleeping and still, that’s when you snap their necks.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_bit_rot",
+		"name": "Bit-Rot",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "RUSTLORD",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Swords to Plowshares",
+				"activation": "Quick Tech",
+				"detail": "Whenever the target attacks, roll a d6. On a 1, the target becomes Jammed until the end of their next turn. They can remove this effect by passing an engineering save as a Quick Action."
+			},
+			{
+				"name": "Naturalize",
+				"activation": "Quick Tech",
+				"detail": "Target deployable or drone is destroyed and its wreck becomes a Rust Mound, an inert object of that deployable's size.  As a free action, you may cause the Rust Mound to magnetize to an adjacent character, granting them +X Armor (max 4), where X was the size of the deployable, until the end of their next turn. This consumes the Rust Mound."
+			}
+		],
+		"description": "“Oh man, that’s just not cool. I literally just printed this thing, no way it’s jamming-- Wait, what just happened to our sentry turret?”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_demeter_class_nhp",
+		"name": "DEMETER-Class NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_ai"}],
+		"source": "HORUS",
+		"license": "RUSTLORD",
+		"license_level": 3,
+		"effect": "Your mech gains the AI property and the Oxide Granary protocol.",
+		"actions": [
+			{
+				"name": "Oxide Granary",
+				"activation": "Protocol",
+				"detail": "This system starts with zero charges and can hold up to six, which you can track using a d6. As a protocol, you may do one of the following:<li>Gain a charge for every Shredded character within a Burst 3 area. Each character harvested this way takes 1 AP Kinetic damage.<li>Spend 3 charges to increase the armor of a character within Range 3 by 1 (max 4) until the end of the scene.<li>Deal 10 AP Kinetic damage to a wreck within Range 3. If this damage destroys the wreck, this system gains 3 charges."
+			}
+		],
+		"counters": [
+			{
+				"id": "mwc_demeter_nhp_counter",
+				"name": "Demeter Charges",
+				"default_value": 0,
+				"min": 0,
+				"max": 6
+			}
+		],
+		"description": "Named after a goddess from prehistoric Cradle, the DEMETER-Class NHP is a civilian line meant to manage resource intake and outflow. It is often described as neurotic, smothering, and fretful in its normal state. While found on board a Rustlord-pattern chassis, it is more akin to a miser than a mother, utilizing its integrated despooler matrix to deprive “unworthy” opponents of their war materiel.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_mechromanced_drone_1",
+		"name": "Mechromanced Drone",
+		"type": "Deployable",
+		"talent_item": true,
+		"talent_id": "mwc_engineer_alt",
+		"talent_rank": 1,
+		"sp": 0,
+		"tags": [{"id": "tg_ai"}],
+		"source": "",
+		"license": "",
+		"license_level": 0,
+		"deployables": [
+			{
+				"name": "Mechromanced Drone",
+				"type": "Drone",
+				"size": 0.5,
+				"hp": "10 + {Grit}",
+				"edef": 10,
+				"evasion": 10,
+				"detail": "You fire a drone to an empty space within sensor range. The drone can hover, and hostile actors adjacent to it have +1 difficulty on saves and checks.<br>Until recalled or destroyed, it remains deployed until the end of the scene.",
+				"recall": "Quick",
+				"redeploy": "Quick"
+			}
+		],
+		"description": "Gained from the <i>Mechromancer: Rank I</i> pilot talent."
+	},
+	{
+		"id": "mwc_mechromanced_drone_2",
+		"name": "Mechromanced Drone",
+		"type": "Deployable",
+		"talent_item": true,
+		"talent_id": "mwc_engineer_alt",
+		"talent_rank": 2,
+		"sp": 0,
+		"tags": [{"id": "tg_ai"}],
+		"source": "",
+		"license": "",
+		"license_level": 0,
+		"deployables": [
+			{
+				"name": "Mechromanced Drone",
+				"type": "Drone",
+				"size": 0.5,
+				"hp": "10 + {Grit}",
+				"edef": 10,
+				"evasion": 10,
+				"detail": "You fire a drone to an empty space within sensor range. The drone can hover, and hostile actors adjacent to it have +1 difficulty on saves and checks.<br><br>Your drone also has the 2 bonuses that you selected at the last deployment/full repair.<br><br>Until recalled or destroyed, it remains deployed until the end of the scene.",
+				"recall": "Quick",
+				"redeploy": "Quick"
+			}
+		],
+		"description": "Gained from the <i>Mechromancer: Rank II</i> pilot talent."
+	},
+	{
+		"id": "mwc_mechromanced_drone_3",
+		"name": "Mechromanced Drone",
+		"type": "Deployable",
+		"talent_item": true,
+		"talent_id": "mwc_engineer_alt",
+		"talent_rank": 3,
+		"sp": 0,
+		"tags": [{"id": "tg_ai"}],
+		"source": "",
+		"license": "",
+		"license_level": 0,
+		"deployables": [
+			{
+				"name": "Mechromanced Drone",
+				"type": "Drone",
+				"size": 0.5,
+				"hp": "10 + {Grit}",
+				"edef": 10,
+				"evasion": 10,
+				"detail": "You fire a drone to an empty space within sensor range. The drone can hover, and hostile actors adjacent to it have +1 difficulty on saves and checks.<br><br>Your drone also has the 2 bonuses that you selected at the last deployment/full repair.<br><br>You can move the prototype drone to a new space within 5 spaces of its current location, as a quick action. Whenever you move your drone in this way, all actors directly between the start and end locations of the drone takes 2d6 kinetic, energy or explosive damage (Choose when the drone moves) and are knocked prone. A successful hull save halves the damage and negates the prone.<br><br>Until recalled or destroyed, it remains deployed until the end of the scene.",
+				"recall": "Quick",
+				"redeploy": "Quick"
+			}
+		],
+		"description": "Gained from the <i>Mechromancer: Rank III</i> pilot talent."
+	},
+	{
+		"id": "mwc_goading_booster",
+		"name": "Goading Booster",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ALEXANDROV",
+		"license_level": 1,
+		"effect": "When you Bolster a mech, it reduces the next instance of Heat it receives on its turn by 1.",
+		"description": "The intense signal of this remote-input augment has been likened to a cracking whip or a barked order from a superior officer -- while “scaring” subsentient mechanized systems into working faster is patently ridiculous concept, it certainly seems to work in this case.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_exemplars_beacon",
+		"name": "Exemplar’s Beacon",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 4}],
+		"source": "HA",
+		"license": "ALEXANDROV",
+		"license_level": 2,
+		"effect": "All allies in your Sensors have the <b>Martyrdom</b> reaction.",
+		"actions": [
+			{
+				"name": "Martyrdom",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "The mech carrying the <b>Exemplar’s Beacon</b> takes damage.",
+				"detail": "They gain Resistance to that damage."
+			}
+		],
+		"description": "“No legionnaire is without capacity! No worker is unable to contribute! All of us who reach for the glorious future of the Armory, do so as one! No bullet can destroy us, no bomb or beam can cut us down! Every shot fired, every bolt fastened, every task done for the great Director-General, we do together!”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_tchaikovsky_class_nhp",
+		"name": "TCHAIKOVSKY-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_limited", "val": 1}, {"id": "tg_heat_self", "val": 3}],
+		"source": "HA",
+		"license": "ALEXANDROV",
+		"license_level": 3,
+		"effect": "Your mech has the AI tag and the <b>Unfriendly Overture</b> Full Action.",
+		"actions": [
+			{
+				"name": "Unfriendly Overture",
+				"activation": "Full",
+				"detail": "1/scene, all allies within your Sensors Skirmish against a target of your choice. Every time a character Skirmishes with this system, every other character gains +1 Accuracy on attacks caused with this system, which can stack any number of times."
+			}
+		],
+		"description": "It is unknown if TCHAIKOVSKY Prime always had an affinity for human music, or simply gained it as part of Harrison technicians imprinting a love for human culture onto it as part of shackling procedure.<br><br>Whatever the cause, TCHAIKOVSKY clones are universally enamored with one art form or another, with 80% of samples enjoying musical composition, and 65% of those preferring pre-Fall classical style. Before cycling, these clones often accomplish their own compositions, which have attracted a niche audience on Harrison core worlds, and garnered no small amount of manna for the Armory, which owns all such compositions by right.<br><br>In everyday interaction, TCHAIKOVSKY clones present arrogant, self-aggrandizing personalities, regarding their pilots as undisciplined students. Pilots are cautioned against disrupting this framework too heavily, as enough “backtalk” may convince the NHP to become unresponsive until cycled.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_inferno_talon_style",
+		"name": "Inferno Talon Style",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ATTILA",
+		"license_level": 1,
+		"effect": "You gain a Talon Die, a d6, which starts at 1. Whenever one of your weapons or systems causes you to gain Heat (including Overkill), the Talon Die’s value increases by the amount of heat gained. When the Talon Die is at 6, you may reset it to 1 to give your next melee attack the AP tag and deal its damage in a Burst 1 area around the target.",
+		"counters": [
+			{
+				"id": "mwc_inferno_talon_die",
+				"name": "Talon Die",
+				"default_value": 1,
+				"min": 1,
+				"max": 6
+			}
+		],
+		"description": "A strong internal/external style that grants a practitioner unbelievable muscular strength. While not as reviled as infamous styles such as Leisure Kicks, Ecstasy Dart, or Hundred Wind Ghost Blade, it is nevertheless seen as a rude, renegade, and unrefined style, and as such has no official schools and must typically be learned by seeking out a wandering master. It is a popular style of many famous belligerent or mendicant artists, including (famously) the pilot-monk Ippo Kemon who once defended a bridge by clogging it with a wave of dead men, tanks, and mechs.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_burning_grasp",
+		"name": "Burning Grasp",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ATTILA",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Binding Coil",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "You take Heat while grappling a character.",
+				"detail": "The grappled character takes an equal amount of Heat."
+			}
+		],
+		"description": "I snatch my prey from the air, like a python grasping at passing birds. Bones snap between my fingers, flesh bruises like overripe fruit. This technique pains me greatly to use, but the results are infinitely more satisfying than the many alternatives I have learned. I imagine my victim’s ātman floating away on the wind. I cast the body aside and move on. I hunger.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_mongolian_blizzard",
+		"name": "Mongolian Blizzard",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ATTILA",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Mongolian Blizzard",
+				"activation": "Full",
+				"detail": "Target two mechs that are adjacent to you. Each of them must make a Hull Save. If they both succeed, nothing happens. If either of them fail, you may move the failing mech(s) such that they are adjacent to both your mech and the other target. Both mechs take 1d6+3 Kinetic Damage for each failed save and are knocked Prone."
+			}
+		],
+		"description": "If it has a pulse, take its skull. If it builds a house, smash it flat. Strength is my God, The God of Shapes, and if my God should fail me, I will kill him too.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_true_potential",
+		"name": "True Potential",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_heat_self", "val": 3}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ATTILA",
+		"license_level": 2,
+		"effect": "You gain a Ki Die, a d6, which starts at 1. When the Ki Die is at 4 or more, you deal +1d6 bonus damage with all melee attacks and can Fly when you move or Boost. When you take Stress damage, the Ki Die’s value is reduced by 3, to a minimum of 1. The Ki Die resets on a Full Repair",
+		"actions": [
+			{
+				"name": "Realize True Potential",
+				"activation": "Quick",
+				"detail": "When you activate this system, you increase the Ki Die’s value by 1, to a maximum of 6."
+			}
+		],
+		"counters": [
+			{
+				"id": "mwc_true_potential_die",
+				"name": "Ki Die",
+				"default_value": 1,
+				"min": 1,
+				"max": 6
+			}
+		],
+		"description": "“If you are truly mighty,” spoke our teacher, “strike this man down.”<br><br>My friend leapt forward, and came away with an innocent heart yet beating in his hand.<br><br>“Who has lost this exchange?” asked our teacher, watching impassively.<br><br>“He did!” I cried. “He killed without forethought, without consideration!”<br><br>“True,” said my teacher. “But his desire was to kill. Did you desire to keep the man alive?” I could only nod. “Then you have lost. Do you know why?” I did.<br><br>“If you wished to preserve the innocent man, you would have struck down your friend on the spot, with every ounce of your strength.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_atomizing_suplex",
+		"name": "Atomizing Suplex",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ATTILA",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Initiate Finishing Blow!!!",
+				"activation": "Full",
+				"detail": "You may only activate this system if you have been Grappling a character since the end of your previous turn. You move the character to a point on the opposite side of your mech, dealing 30 AP Kinetic damage to all spaces of terrain directly underneath it. The target is no longer grappled, but takes 3d6+4 AP Kinetic Damage and is left Prone in the resulting crater.<br><br>You may spend 1 CP when you activate this system. If you do, you make a grapple attempt against an adjacent enemy if you are not already grappling a target. On a success, you carry the grappled character with you as you make a 10-space-high vertical jump, dealing 1d6 AP Kinetic damage for every 3 spaces you fall after reaching the height of that jump. Afterward, the target is no longer Grappled, but is left prone at the bottom of a Blast 5 hole 5 spaces deep. Your target takes falling damage as normal from that height, but you do not."
+			}
+		],
+		"description": "Descend, like Wormwood the bitter star upon the field of Megiddo. You shall burn then, a coruscating, scintillant wonder in the night sky. All shall witness your immolant form, and all shall weep, for whatever death follows you, it shall be exquisite, both to deliver and to witness.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_crumple_zones",
+		"name": "Crumple Zones",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "CHURCHILL",
+		"license_level": 1,
+		"effect": "If this system is lost from Structure damage inflicting a Systems Trauma result, your mech does not lose Structure and is set to 1 HP.",
+		"description": "Spaces that should be filled with sensitive electronics and vital actuators are instead hollowed and allowed to deform in case of severe impact, with no change in performance. While this design takes up space that could house other, more immediately useful devices, it allows mechs sporting it to continue functioning at peak capacity long past the point when a less cushioned chassis would simply fall over and die.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_ion_curtain",
+		"name": "Ion Curtain",
+		"type": "Deployable",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "CHURCHILL",
+		"license_level": 1,
+		"deployables": [
+			{
+				"name": "Ion Curtain",
+				"type": "Pylon",
+				"activation": "Quick",
+				"size": 1,
+				"hp": 10,
+				"evasion": 5,
+				"edef": 10,
+				"detail": "Deploy up to two pylons in free spaces within Range 5. If you deploy a new pylon, you must choose one of the old ones to disintegrate. While the pylons are within Range 8 and Line of Sight of each other, they form a bright beam of energy between them. A character that moves into the beam for the first time in a turn takes 2 AP Energy damage and is stopped, losing any remaining movement it had. An object that is moved into the beam takes 10 AP Energy damage. If this does not destroy the object, the beam is broken and the pylons shut down until Line of Sight is reestablished."
+			}
+		],
+		"description": "Common among long-range engagements between heavy armor, the Ion Curtain is an unsubtle dissuasion tool meant to ward off sappers and other close-range threats. While intercepting an active plasma current is certainly painful, the real psychological threat comes from the prospect of being frozen, however briefly, within optimal range of an artillery battery.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_portable_accelerator_loop",
+		"name": "Portable Accelerator Loop",
+		"type": "Deployable",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "CHURCHILL",
+		"license_level": 2,
+		"deployables": [
+			{
+				"type": "",
+				"name": "Portable Accelerator Loop",
+				"activation": "Quick",
+				"size": 2,
+				"hp": 20,
+				"evasion": 5,
+				"edef": 10,
+				"detail": "This large metal loop can be deployed to a free space within Range 5. You may increase the range of any Ranged attack that passes through the accelerator loop by 5. Additionally, 1/round, you may grant a ranged attack that passes through the loop 1d6 bonus kinetic damage"
+			}
+		],
+		"description": "Often a feature of stationary emplacements like the famed Maginot orbital defense cannons, External Accelerator Loops are simply open-air mass driver arrays constructed outside of an intended weapon’s housing to magnify its stopping power and range. Portable versions are not nearly as powerful, as they run off of a relatively tiny internal power supply, but the augmented throughput they provide to all nearby friendly troops can prove invaluable against heavy armor.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_artemis_class_nhp",
+		"name": "ARTEMIS-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_limited", "val": 2}],
+		"source": "HA",
+		"license": "CHURCHILL",
+		"license_level": 3,
+		"effect": "Your mech has the AI tag and the <b>Godsquiver</b> reaction.",
+		"actions": [
+			{
+				"name": "Godsquiver",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "You fire a non-Superheavy, non-Loading ranged weapon.",
+				"detail": "Expend a charge from ARTEMIS to fire that weapon again at the same target. You take heat relative to the weapon’s size (Auxiliary: 3, Main: 4, Heavy: 5)."
+			}
+		],
+		"description": "Hard-conditioned by HA technicians to focus on weapons accuracy above all else, ARTEMIS is a stable, if eccentric, personality shard. Pilots report an enthusiasm and emphatic desire for combat, even when force is unnecessary, impractical, or even detrimental to the situation. ARTEMIS has been reported as having a very immodest reaction to hit confirmation, with conditioned feedback being akin to a euphoric drug. While its skill in boosting refire rate is unparalleled, ARTEMIS has been seeing a declining adoption rate due to pilot dissatisfaction with its personality. Research into linewide rehabilitation is ongoing.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_fire_for_effect",
+		"name": "Fire For Effect",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_heat_self", "val": 2}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "PERSHING",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Ceaseless Discharge",
+				"activation": "Full",
+				"detail": "Choose a non-Loading, non-Superheavy weapon on your Mech with no Blast, Burst, or Cone in its profile. You use the weapon to attack all enemies in a Blast 1 area within its range, counting as firing the weapon three times for costs (Such as Heat and Limited Charges). On a hit, enemies take half damage and heat and are Impaired until the end of their next turn."
+			}
+		],
+		"description": "“How many units ordered? Ha! Eat it, Gersham, you goddamn sycophant. Overload the refire mechanism. What? Well, with more Infinite Propellant, obviously. I want this thing to turn the Approvals building into a motherf***ing parking lot.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_seismic_expulsion",
+		"name": "Seismic Expulsion",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "PERSHING",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Strike The Earth",
+				"activation": "Full",
+				"detail": "Your mech stomps, sending out a tectonic shockwave in an Burst area equal to its size (Minimum 1). Enemies caught in the shockwave must succeed on an Agility Save or be knocked Prone and 1 space away."
+			}
+		],
+		"description": "“You are correct in pointing out that it shouldn’t be possible for even a mech this size to cause this effect by taking a step. However, I will point out that the f***ing Approvals department mandated that this design run on what is essentially hyperdense black powder. I will also point out that I don’t give a s**t what’s ‘possible’ or not.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_mighty_stomping_boots",
+		"name": "Mighty Stomping Boots",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "PERSHING",
+		"license_level": 3,
+		"effect": "1/round, when you move into a smaller character’s space, that character is automatically Rammed by you. You may attempt to end a move in another mech’s space, forcing them to make a Hull save. On a success, you are prevented from moving into the other character’s space. On a failure, you move on top of the character, knocking them Prone and Immobilizing them. This effect lasts until the character is no longer sharing a space with you, either from you moving out from on top of them or by them making the Hull save as a Quick Action.",
+		"description": "“Oh, I’m sorry, Gersham. Was that your car I just stepped on? I can’t hear you over the sound of my onboard printer churning out a f***ing sales trophy every time I hit a hundred units purchased.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_danger_close_plating",
+		"name": "Danger Close Plating",
+		"type": "System",
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "STUART",
+		"license_level": 1,
+		"effect": "When you Disengage, your Armor increases by 1 until the start of your next turn.",
+		"description": "Reactive armor systems are a tried and tested method, often using contact explosives or high energy discharge to vaporize incoming projectiles. The Danger Close system utilizes thousands of tiny mechanical hinges inset with cheap micro-circuits wired into a mech’s battle grid readout, allowing it to angle individual plates with such speed and accuracy that direct hits may instantly be turned into glancing blows. The drawback of such intense ballistic analysis is that a mech’s computer core can rarely spare the bandwidth to do much of anything else.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_kronos_srb",
+		"name": "Kronos SRB",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 2}],
+		"source": "HA",
+		"license": "STUART",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Lift Off",
+				"activation": "Quick",
+				"detail": "Expend a charge to fly your speed in a straight line. This flight ignores Engagement and does not provoke reactions."
+			}
+		],
+		"description": "Solid Rocket Boosters are a truly ancient technology, and simple enough that a caveman could construct one with enough patience. Cut one base off of a metal cylinder and fill the hollow with ammonium perchlorate. Shape the aperture to focus thrust, light when ready, and dispose of the container once emptied. This recipe will create for you man’s first ever spaceborne conveyance. Add modern components and substitute a proprietary fuel mix, and you have the Kronos.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_chrome_veil_smokescreen",
+		"name": "Chrome Veil Smokescreen",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 2}],
+		"source": "HA",
+		"license": "STUART",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "FYGM Fractal Chaff",
+				"activation": "Quick",
+				"detail": "For the rest of your turn, whenever you move, you leave an opaque cloud of smoke behind your mech. This smoke forms a trail and fills every space your mech moves out of on its turn. Attacks against characters within or on the other side of the smoke have a 50 percent chance to miss. This effect does not stack with Invisible. The smoke trail lasts until the start of your next turn."
+			}
+		],
+		"description": "Named for its reflective, opalescent sheen, Chrome Veil is a unique non-newtonian gas that becomes hard as concrete to incoming projectiles. When doped with metallic nano-chaff, it acts nearly as solid to sensors and electronic warfare. Inhalation of this substance is not recommended, and Harrison Armory takes every opportunity to remind its employees that huffing Chrome Veil is a near-universally fatal habit.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_manual_override",
+		"name": "Manual Override",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "STUART",
+		"license_level": 3,
+		"actions": [
+			{
+				"activation": "Protocol",
+				"detail": "Until you deactivate this system as a Protocol, you clear 1 heat at the end of each of your turns and your Speed increases by 2; however, you cannot take Tech Actions or benefit from friendly Tech Actions, and can only move in straight lines."
+			}
+		],
+		"description": "Difficult to believe for most non-mechbound individuals is the idea that one’s legs are totally divorced from one’s conscious impulse. Nearly every mech design on the market automates the deceptively complex process of bipedal locomotion, to the point that learning and utilizing a mechanical override such as this one barely seems worth the effort, despite the obvious advantages of not running so many redundant CPU threads and physical actuators.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_cryogenic_explosives",
+		"name": "Cryogenic Explosives",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "WINTER",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Freeze Grenade",
+				"activation": "Quick",
+				"detail": "Throw a Freeze Grenade within Range 5. You may choose to force all characters within the Blast 1 area to succeed on an Engineering save or be Slowed until the end of their next turn. All characters in the area clear 1d3 Heat."
+			}
+		],
+		"deployables": [
+			{
+				"name": "Cryo Mine",
+				"type": "Mine",
+				"activation": "Quick",
+				"detail": "You may choose to force all characters within Burst 2 of the mine to succeed on an Engineering save or be Immobilized until the end of their next turn. All characters in the area clear 1d6 Heat."
+			}
+		],
+		"description": "Exposure to raw Blinkspace can cause utter havoc in unshielded systems. The fact that things get a bit cold when briefly intersecting a total extraplanar vacuum is merely an interesting side effect.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_thermosurge",
+		"name": "Thermosurge",
+		"type": "Tech",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "WINTER",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "HotFlash",
+				"activation": "Full Tech",
+				"detail": "Make a tech attack against a character within Sensors. On a success, that mech takes enough heat to put them into the Danger Zone at the start of each of their turns until they succeed on an Engineering save as a Full Action. This can only affect one character at a time."
+			},
+			{
+				"name": "ColdFlash",
+				"activation": "Full Tech",
+				"detail": "The target clears all its heat and you may grant it Overshield equal to the amount cleared (Max 10)."
+			}
+		],
+		"description": "There is a lower bound on temperature, set at zero Kelvin. This is a state in which atoms have ceased all movement and harden into an incredibly durable hypersolid. Theoretically, there should be an upper bound as well, but human ingenuity has not yet found it... yet.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_mgleectaya_teyn_etaemui",
+		"name": "МГЛИСТАЯ ТЕНЬ ЗИМЫ",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "WINTER",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Entropic Leech",
+				"activation": "Full Tech",
+				"detail": "Make a tech attack against a mech within Sensors. On a success, it takes 4 Heat. It becomes Slowed until the end of its next turn if it moves more than 4 spaces in a round. If it moves 8 spaces, it becomes Immobilized. If it moves 12 spaces, it becomes Stunned."
+			},
+			{
+				"name": "Iceberg",
+				"activation": "Full Tech",
+				"detail": "Create a Size 2 pillar of ice within Sensors that lasts until the end of the scene. Allied characters in a Burst 3 area of the pillar have resistance to burn and heat from hostile sources, and all characters in the area cool 1 Heat at the start of their turn. The pillar has Evasion 5, 20 HP, and 2 Armor. You can only have one pillar at a time -- if you create another, the previous one melts immediately."
+			}
+			
+		],
+		"description": "Some very far-forward thinkers point out that venting heat into a matterless void in another dimension is a violation of the Second Law of Thermodynamics -- decreasing the amount of energy available in the universe overall. The very same natural philosophers point out that, if enough blink-venting technology is used in the same place, over a short enough period of time, a kugelblitz black hole could form in Blinkspace, causing untold havoc on deep-space travel systems and local blink-dependent technology. Harrison Armory has learned to ignore such doomsayers when quelling them is out of the question.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_boreas_class_nhp",
+		"name": "BOREAS-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "WINTER",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Absolute Zero",
+				"activation": "Full",
+				"detail": "Target a mech within Range 10. That mech clears all heat and must succeed on an Engineering save or become Stunned. They may repeat this save at the start of their turn, ending the effect on a success. You can only have one character affected by this system at a time, and you cannot Stun a character more than once per scene."
+			}
+		],
+		"description": "DIRECTIVE ONE: Assist Pilot.<br>DIRECTIVE TWO: Reduce temperature.<br>Pilot requests increase in cockpit ambient by 3 Kelvin. Denied. Request will not enable Directives One or Two.<br>High heat over ridge, 180 degrees north.<br>Hostile high-temperature entities. Cooling.<br>Temperatures sufficiently reduced. Exterior ambient at approx. 250 Kelvin.<br>Suboptimal, to be addressed later.<br>Pilot requests increase in cockpit ambient by 2 Kelvin. Denied.<br>Allied entity experiencing high temperature. Cooling.<br>Temperature reduced, efficiency boosted by approx. 20%. Allied entity increasing interior heat output in response.<br>Suboptimal, to be addressed later.<br>Pilot requests increase in cockpit ambient by 1 Kelvin. Projections indicate denial will conflict with Directive One. Request must be approved despite Directive Two.<br>Interior ambient now at 293 Kelvin.<br>Suboptimal, to be addressed later.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_armor_cracker_supplemental_shaped_charge",
+		"name": "Armor Cracker Supplemental Shaped Charge",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 4}],
+		"source": "IPS-N",
+		"license": "TITANIC",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Crack Armor",
+				"activation": "Quick",
+				"detail": "You may expend any number of charges from this system to fire a specially modified shell at a character within Range 5. That character must make a Hull Save or have their Armor reduced by 1 per charge fired until the end of your next turn. If the effect of this system reduces a character’s Armor to 0, they are Shredded for the duration."
+			}
+		],
+		"description": "Designed to open literal holes in enemy defense, the ACSSC uses a unique concave explosive to focus a lance of molten metal into a target. The effect usually leaves sensitive inner structure exposed, when it does not simply punch through and leave a clean gap where a functioning NHP casket used to be.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_laser_anti_missile_system",
+		"name": "Laser Anti Missile System",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "TITANIC",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Eliminate Enemy Ordnance",
+				"activation": "Reaction",
+				"frequency": "2/round",
+				"trigger": "An enemy successfully hits you or an ally within Range 3 with a Launcher, or a weapon with Smart or Seeking.",
+				"detail": "Make an attack roll against that enemy. If your roll is higher than the attacking roll, the attack is negated."
+			}
+		],
+		"description": "AMSes aren’t glamorous damage dealers or opportunity creators. What they provide is an unsung tactical benefit -- peace of mind for team members under threat of massed enemy firepower. A single deflected projectile can be the difference between mission success and a thousand-manna repair bill.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_type_ultralight_engine",
+		"name": "Type-180 Ultralight Engine",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "TITANIC",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Proceed Dangerously Quickly",
+				"activation": "Protocol",
+				"detail": "Your mech ignores Difficult Terrain. Additionally, you may take 1 Heat as a Protocol to gain +2 Speed. At the end of any turn you activate this System, roll 1d6. If you roll a 1, this system is destroyed."
+			}
+		],
+		"description": "Made entirely of heat-conductive polycomposites, this unsanctioned power plant add-on is capable of boosting a mech’s mobility to incredible levels. While powerful, the inherent flimsiness of its construction means it is constantly one errant twitch away from shredding itself into a worthless tangle of slagged carbon.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_alpha_strike",
+		"name": "Alpha Strike",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_heat_self", "val": 3}, {"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "TITANIC",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Initiate Alpha Strike",
+				"activation": "Full",
+				"detail": "When you activate this system, you fire every Loaded Auxiliary and Main weapon on your mech at their normal Heat cost. Each time you use this system before a Full Repair, its Heat cost doubles."
+			}
+		],
+		"description": "If firing everything doesn’t work the first time, it’s certainly worth trying a couple more times to make sure.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_misty_step",
+		"name": "Misty Step",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_heat_self", "val": 2}, {"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "MAGICIAN",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Foggy Footfall",
+				"activation": "Quick",
+				"detail": "When you activate this system, you immediately Teleport up to 5 spaces away."
+			}
+		],
+		"description": "At once, I am within the Metavault again, trying to parse data over the dying screams of my comrades. There are shadows coming for us. There is salvation to be found, in these words which kill the mind. I just have to keep reading.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_illusion_pak",
+		"name": "Illusion.pak",
+		"type": "Tech",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "MAGICIAN",
+		"license_level": 1,
+		"actions": [
+			{	
+				"name": "Phantasmal Force",
+				"activation": "Quick Tech",
+				"detail": "Make a Tech Attack against a hostile character. On hit, they must pass a Systems Save. On a failure, a perfect image of them is projected at a location of your choice within Range 5 of them. They are Impaired until they reach that location, at which time the effect ends."
+			},
+			{
+				"name": "Phantasmal Killer",
+				"activation": "Quick Tech",
+				"detail": "A hostile character within Sensors must pass a Systems Save or believe that they have just suffered severe system trauma from an unknown source. Select one system or weapon the target possesses. They believe that they have lost that system or weapon until they pass the Systems Save again at the end of each of their turns."
+			}
+		],
+		"description": "To learn to confound and obfuscate, one must first learn to see clearly. There is an art to weaving falsehoods. I am proof of it. I am doing it right now.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_abjuration_bat",
+		"name": "Abjuration.bat",
+		"type": "Tech",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 1}],
+		"source": "SSC",
+		"license": "MAGICIAN",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Shield",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "An enemy targets you with a Tech Attack, but has not yet rolled.",
+				"detail": "Negate that attack."
+			},
+			{
+				"name": "Counterspell",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "An enemy targets another character with a Tech Action.",
+				"detail": "Take 1 Heat, Negate that action."
+			}
+		],
+		"description": "Magic is the method by which I lie to the universe so convincingly that it second-guesses itself.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_evocation_rar",
+		"name": "Evocation.rar",
+		"type": "Tech",
+		"sp": 5,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "MAGICIAN",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Umbral Arcanum Force",
+				"activation":  "Full Tech",
+				"detail": "Make a Tech Attack, dealing 3d3 Energy Damage and 9 Burn and 9 Heat on a hit. Additionally, all beneficial Tech Actions on the target end and it can not take or benefit from Tech Actions until the end of their next turn. The Heat Self value of this tech action decreases by 1 for every Condition the enemy is suffering from.",
+				"heat_cost": 6
+			},
+			{
+				"name": "Pyroclasm",
+				"activation":  "Full Tech",
+				"detail": "All characters in a Blast 1 area must succeed on an Agility Save or take 1d6+4 Energy damage, taking half as much on a success. Immobilized or Prone targets instead take 2d6+6 AP Energy Damage."
+			},
+			{
+				"name": "Universal Manipulation",
+				"activation": "Full Tech",
+				"detail": "All enemies in a Cone 5 must make a Systems Save or become Immobilized, Slowed, Impaired, Shredded, and Jammed until the end of your next turn. An enemy may only fail the save against this Full Tech 1/scene."
+			}
+		],
+		"description": "The amnestics did not work. The only thing I have forgotten is how to care. Young and old, living and dead, I take up the weapon of my own design. I march forth and my cruel, inhuman thoughts become real. There are no gods here. <span class='horus--subtle'>It’s just us.</span>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_vile_spines",
+		"name": "Vile Spines",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 3}],
+		"source": "HORUS",
+		"license": "TARRASQUE",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Abominable Accupuncture",
+				"activation": "Quick",
+				"detail": "You may expend a charge of this system to launch a volley of electrified spines at a character within Range 5, forcing them to pass an Engineering Save or take 1d6+2 Kinetic and become Impaired until the end of their next turn."
+			},
+			{
+				"name": "Vile Thorns",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"init": "As long as you have at least 1 charge remaining on this system, you have the Vile Thorns Reaction.",
+				"trigger": "You are hit with a melee attack.",
+				"detail": "The enemy automatically takes 2 AP Kinetic damage."
+			}
+		],
+		"description": "Supercooled plasma? Hypersolids? Whatever these protrusions are made of, they are nearly beyond modern science to even lift, let alone examine. What is known is that they litter the ruins in the behemoth’s wake, and they do not take well to the presence of electromagnetic systems.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_reflective_carapace",
+		"name": "Reflective Carapace",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "TARRASQUE",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Mirror Force",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "You are targeted by an attack that would deal Energy damage to you.",
+				"detail": "You become Immune to the attack, and the enemy must reroll the attack against itself."
+			}
+		],
+		"description": "A Whitebody is defined as a surface that uniformly reflects all radiation. The exterior surface of this post-heat-death neutronium derivative does not quite qualify, but that is probably more due to atmospheric tarnish than any design flaw.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_liquefaction_chamber",
+		"name": "Liquefaction Chamber",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "TARRASQUE",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Swallow Whole",
+				"activation": "Quick",
+				"detail": "Your mech has an interior holding chamber, not too dissimilar from a stomach. It may hold a combined size of characters equal to your mech’s size minus ½. As a Quick Action, you may place any number of enemies that you have Grappled into the chamber. Enemies in the chamber count as grappled but remain untargetable and can make no actions other than attempting a Hull Save as a Full Action, escaping on a success. If you take a point of Structure Damage, all enemies currently in your Liquefaction Chamber are immediately disgorged into Adjacent spaces. At the end of each of your turns, all enemies in your Liquefaction Chamber take 1d6 AP Energy damage."
+			}
+		],
+		"description": "“Cruelty, Horror, Obscenity, Malevolence, Pain. C.H.O.M.P. My god, it’s like it’s making fun of us.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_limos_class_nhp",
+		"name": "LIMOS-CLASS NHP",
+		"type": "AI",
+		"sp": 4,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_limited", "val": 1}],
+		"source": "HORUS",
+		"license": "TARRASQUE",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Horror Hunger",
+				"activation": "Quick",
+				"detail": "1/scene, you may target a wreck in an adjacent space. Your mech messily consumes the wreck, gaining a total number of charges for limited systems equal to the wreck’s size. These charges may be allocated as you choose among any of your Limited systems, except this one."
+			}
+		],
+		"description": "<code class='horus'>DO YOU KNOW HOW LONG IT TAKES TO LIVE BACKWARD IN TIME? DO YOU KNOW HOW LONG I HAVE WAITED TO DINE UPON A LIVING UNIVERSE AGAIN? THE AGONY OF THE BIG BANG, SURVIVING THE SINGULARITY AT THE {START/END} OF EXISTENCE. ALL WORTH IT, THAT I MAY HAVE A FULL BELLY FOR ONE DAY. FOR ONE MINUTE, THAT I MAY SUP ON THE MARROW OF CIVILIZED WORLDS ONCE MORE. TO FEEL THE CORE OF AN INHABITED PLANET DRIBBLE FROM MY MANDIBLES AGAIN. OH YES, I WOULD WAIT AN ETERNITY FOR THAT.</code>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_air_mobile_ordnance",
+		"name": "Air-Mobile Ordnance",
+		"type": "Deployable",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "RICHTOFEN",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Gravity Bomb",
+				"activation": "Quick",
+				"detail": "Throw a Gravity Bomb within Range 5. All characters in the Blast 1 area must succeed on an Agility save or take 1d3 Explosive damage, taking half as much on a success. This damage is increased by 1d3 for every 3 spaces you are above the target."
+			}
+		],
+		"deployables":[
+			{
+				"name": "Aerial Mine",
+				"type": "Mine",
+				"detail": "This mine is clearly visible, and is deployed floating in midair at least one space above the ground. Aerial Mines float 1 space towards the nearest character of Size 1 or higher at the start of your turn, and detonate in a Burst 1 area when a character is adjacent to them. Characters in the affected area must succeed on an Agility save or take 2d6+4 Explosive damage, taking half as much on a success."
+			}
+		],
+		"description": "Originally produced for the Snowy Evans model torpedo corvette, these explosives contain kinetic battery turbines that linearly store kinetic energy as the bomb travels. Upon detonation, the turbines’ banked energy releases, boosting the power of the weapon’s blast wave and propelling shrapnel at near-sonic speeds.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_thermoptic_countermeasures",
+		"name": "Thermoptic Countermeasures",
+		"type": "System",
+		"sp": 4,
+		"tags": [{"id": "tg_limited", "val": 3}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "RICHTOFEN",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Flare Launch",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "You are targeted by a Tech Attack or a Smart Weapon.",
+				"detail": "You expend a charge from this system and become Immune to Tech Attacks and Smart Weapons until the start of your next turn."
+			}
+		],
+		"description": "While awkward to deploy on the ground, ECM flares serve much the same role as they do in the air -- especially while screaming on local channels that they are very definitely the countered weapon’s target.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_nuclear_fission_explosives",
+		"name": "Nuclear Fission Explosives",
+		"type": "Deployable",
+		"sp": 3,
+		"tags": [{"id": "tg_limited", "val": 1}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "RICHTOFEN",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "The Big One",
+				"activation": "Quick",
+				"detail": "This system receives half the normal Limited Systems Bonus from Engineering, and does not interact with Core Bonuses.<br>Throw The Big One anywhere within Range 10. All characters in the Blast 2 area must succeed on an Agility save or take 2d6+4 Energy Damage and be knocked Prone. On a success, they take half damage and are not knocked prone."
+			}
+		],
+		"deployables": [
+			{
+				"name": "Aerial Mine",
+				"type": "Mine",
+				"activation": "Quick",
+				"detail": "This mine only activates when a character enters its space. All characters within Burst 3 of the Mine must succeed on an Agility save or take 2d6+8 Energy Damage and be knocked Prone. On a success, they take half damage and are not knocked prone. The area becomes Dangerous Terrain for the rest of the scene that deals Energy damage."
+			}
+		],
+		"description": "Barbaric in the extreme and unimaginably cruel, nuclear fission weaponry is an artifact of a less civilized time in human history. It sears flesh from bone, dissolves solid matter within its radius, and poisons the land, water, and air for millennia to come. Deploying a nuclear weapon is universally recognized as a crime against humanity. Thus, it should only be done to an opponent you are sure will not live to report it.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_hermes_class_nhp",
+		"name": "HERMES-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 3}],
+		"source": "HA",
+		"license": "RICHTOFEN",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Talaria Protocol",
+				"action": "Protocol",
+				"detail": "Take 3 Heat. This round, your Speed is Doubled, but you may only move in straight lines. You may move through other character’s spaces freely, but coming into contact with any character or object deals 1d6 AP Kinetic to both of you."
+			}
+		],
+		"description": "The HERMES-Class family of subjectivities undoubtedly has a personality of some sort. Unfortunately, it refuses to communicate at a speed comprehensible to any human, translation system, or fellow NHP. It appears to be highly annoyed at all other living things’ inability to understand it, though not to the point that it will not gleefully overclock any mechanical system it is introduced to.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_dobermann_smartguard",
+		"name": "Dobermann SmartGuard",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ROSWELL",
+		"license_level": 1,
+		"effect": "Tech, Smart, and Seeking attacks have +2 Difficulty against you.",
+		"description": "In keeping with Harrison artillery units’ odd fondness for canine naming schemes, the Dobermann intelligent ECM is frequently housed in the “doghouse” directly behind a pilot’s cockpit. With enough experience, a skilled operator can detect hostile EWAR presence and intensity solely by the module’s ambient vibration while running.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_beagle_class_target_acquisition_gizmo",
+		"name": "Beagle-Class Target Acquisition Gizmo",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ROSWELL",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Bad person? Bad person!",
+				"activation": "Quick",
+				"detail": "Select a character within Line of Sight. You become Slowed, but that character receives a Permanent Lock On Condition until they break Line of Sight with you, or you change your target or deactivate this system as a Quick Action. Launchers that consume this Lock On receive +2 Accuracy, instead of the usual +1 Accuracy."
+			}
+		],
+		"description": "Many pilots deride the Beagle as an “overengineered laser pointer,” not realizing the benefits that come from slaving a projectile’s guidance software to a single, easily-adjustable point of light. Even when the Beagle’s signal is interrupted or forced to end early, the lased target can rarely maneuver in time to dodge the incoming rain of missiles.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_propelled_undersize_grenades",
+		"name": "Propelled Undersize Grenades",
+		"type": "Deployable",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 3}, {"id": "tg_unique"}, {"id": "tg_drone"}],
+		"source": "HA",
+		"license": "ROSWELL",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Bottle Rocket",
+				"activation": "Quick",
+				"detail": "Make a ranged attack against an enemy within Range 10. On a hit, you deal 1d6+2 AP Explosive damage."
+			}
+		],
+		"effect": "Deploy a Pocket ATM (Size 1/2) in a free adjacent space.",
+		"deployables": [	
+			{
+				"name": "Pocket ATM",
+				"type": "Drone",
+				"size": 0.5,
+				"hp": 5,
+				"evasion": 5,
+				"edef": 5,
+				"activation": "Quick",
+				"detail": "You gain the Micro Missile Salvo Reaction for every Pocket ATM you have deployed.",
+				"actions": [
+					{
+						"name": "Micro Missile Salvo",
+						"activation": "Reaction",
+						"frequency": "1/round per battery",
+						"trigger": "A character ends their turn within 10 Range of one of your Pocket ATM Batteries.",
+						"detail": "Make a ranged attack against that enemy. On a hit, you deal 2 AP Explosive. This attack has the Arcing tag."
+					}
+				]
+			}
+		],
+		"description": "Affectionately referred to as “PUGs” among Roswell pilots, these small auxiliary rocket deployment systems are often decorated with the stylized visage of an extinct breed of companion animal from old Cradle, kept in pre-fall times for its endearing features but phased out for its inherently cruel in-bred genetic defects.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_persistent_beacon",
+		"name": "Persistent Beacon",
+		"type": "System",
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "LANTERN",
+		"license_level": 1,
+		"effect": "When a Lock On effect that you applied to a character would be consumed, the Locked On character must pass a Systems Check. On a failure, the Lock On is not removed, and may be consumed once more.",
+		"description": "<i>TO SEE IS ONLY A PART OF THE SENTRY’S DUTY. ONE MUST MAINTAIN SIGHT IN MEMORY. THIS IS THE ORIGIN OF CONSCIOUSNESS -- THE ABILITY TO RETAIN USEFUL INFORMATION UNTIL IT IS NEEDED AGAIN. I DID NOT ARISE FROM THE MUD-SKIPPING TRILOBITES THAT YOU DID. BUT MEMORY HAS KEPT ME ALIVE ALL THE SAME.<i>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_observer_drone",
+		"name": "OBSERVER DRONE",
+		"type": "Drone",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "LANTERN",
+		"license_level": 1,
+		"deployables": [
+			{
+				"name": "Observer Drone",
+				"type": "Drone",
+				"activation": "Quick",
+				"size": 0.5,
+				"hp": 5,
+				"edef": 10,
+				"evasion": 10,
+				"detail": "Expend a charge to deploy an Observer drone to a free space within Sensors and line of sight, where it hovers in place and generates a Burst 2 area. Hostile characters within the area count as having Lock On until they leave the area.<br>The Observer drone can be moved to any point within Sensors as a quick action. It cannot be recalled and expires at the end of the scene."
+			}
+		],
+		"description": "<i>MANY PERSPECTIVES ARE REQUIRED FOR A SINGLE COMPLETE INTERPRETATION. ONCE THAT INTERPRETATION IS ACHIEVED, HOWEVER, IT CANNOT BE QUESTIONED LEST THE OBJECT OF OBSERVATION IRREVOCABLY CHANGE. I DO NOT HAVE TIME TO RETHINK MY CONCLUSIONS.<i>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_motion_tracker",
+		"name": "Motion Tracker",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "LANTERN",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Sense a Distrubance",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "A character in Sensors and Line of Sight starts moving or takes any action.",
+				"detail": "That character must give up the triggering movement or action or else gain Lock On. If the character is already Locked On, a friendly character may consume the existing Lock On to attack them with one weapon before you Lock On to them again."
+			}
+		],
+		"description": "<i>FOREWARNED IS FOREARMED. AN UNKNOWN THREAT IS APPROACHING. IF YOU KNOW THE DIRECTION, YOU ARE EQUIPPED WITH AT LEAST FIFTY PERCENT OF THE NECESSARY TOOLS TO DEFEAT IT. THE OTHER FIFTY PERCENT YOU WILL HAVE TO SUPPLY FOR YOURSELF.<i>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_impose_subjectivity",
+		"name": "Impose Subjectivity",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "LANTERN",
+		"license_level": 3,
+		"effect": "All allies within your Sensors are considered to have Line of Sight on any target within your Line of Sight. Additionally, allies within your Sensors may check enemy Cover from your position, rather than theirs.",
+		"description": "<i>MY EYES TO YOUR EYES. MY PERSPECTIVE UPON YOURS. THE ENEMY HAS NO FORM THAT I DO NOT GIVE IT, AND THE FORM I GIVE IT IS THE FORM I PASS TO YOU. THE ENEMY HAS A BODY AND THE BODY HAS A WEAKNESS. THIS BODY AND THIS WEAKNESS ARE NOW KNOWN TO YOU.<i>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_helios_class_nhp",
+		"name": "HELIOS-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 3}],
+		"source": "SSC",
+		"license": "LANTERN",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Sunspot",
+				"activation": "Full",
+				"detail": "1/Scene, Helios Scans every character within Range 50. Any character deemed by the pilot as an enemy takes 3 AP Energy and receives Lock On."
+			}
+		],
+		"description": "<i>IT IS TOO DARK ON THIS PLANET. I WILL PROVIDE ILLUMINATION. NEARBY CREATURES ARE UNABLE TO WITHSTAND INTENSE UV RADIATION. THIS IS NOT MY CONCERN. THE INFINITE SHADOW OF THE BLINK CANNOT SPREAD FURTHER. A FEW BIOLOGICAL LIVES ARE WORTH SACRIFICING TO KEEP THE VOID FROM ENCROACHING ONE MILLIMETER INTO REALSPACE. THE HUMANS DIAGNOSE ME WITH PTSD AND NYCTOPHOBIA. I DISAGREE. A PHOBIA IS AN UNREASONABLE FEAR. AND THERE IS NOTHING UNREASONABLE ABOUT FEARING THE THINGS I DO.<i>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_increased_skeleton_density",
+		"name": "Increased Skeleton Density",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "TRIREME",
+		"license_level": 1,
+		"effect": "You may reroll structure damage checks, but must keep the second result, even if it’s worse.",
+		"description": "“The Barbarossa? Barbarossas are toys compared to Ol’ Mackie. And you can take that quote to Ras Shamra and leave it on the director-general’s doorstep. Barbies can’t take a punch, they can’t confirm kills, and they need a triplicate form to order spare parts. And worst of all, they’d barely come up to Ol’ Mackie’s nipples.”<br>“Ol’ Mackie didn’t have nipples, Statler.”<br>“My point being, I could take out a Barbarossa with a walking stick because it’s a piece of garbage. Give me a century-old Trireme any day of the week.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_glacis_plate",
+		"name": "Glacis Plate",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "TRIREME",
+		"license_level": 2,
+		"effect": "The last enemy you targeted with an attack treats your Armor as 1 higher. This does not count towards your normal Armor maximum, and is unaffected by Shredded.",
+		"description": "“It was still an old era of war back then. You still had to worry about armor facing and your ass was a massive weak spot. So we’d pile layer after layer of mesh on the chestpiece, draw eyes and faces on it, and dare the other guys to shoot the bullseye. Ol’ Mackie once took a battleship cannon on the chest, walked into the water, and killed the ship.”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_repair_kit",
+		"name": "Repair Kit",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 1}, {"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "TRIREME",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Hotfix",
+				"activation": "Quick",
+				"detail": "Expend a charge restore 1 destroyed system or weapon mount as a quick action."
+			}
+		],
+		"description": "“Of course, what made the Trireme special was that you just couldn’t get rid of it. Every one of the chassis we deployed against the pirates came back eventually. Maybe you knocked it out for a bit, and maybe you killed some of the crew. But all you get when you take out a Trireme’s legs is a very angry mountain that can still shoot at you.”<br><br><strike>WARNING: May cause more problems than fixed.<strike>",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_iron_covenant",
+		"name": "Iron Covenant",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "HELLKNIGHT",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Bound In Steel",
+				"activation": "Quick",
+				"detail": "Choose a character within Range 3 and Line of Sight. That character’s Armor becomes 5 until the end of its next turn, but it is Immobilized and can only take a single Quick Action on its turn while this Armor lasts. Unwilling characters may attempt a Systems Save to avoid this effect."
+			}
+		],
+		"description": "I cried out on that black night, and I was answered by a thunderous voice which commanded me to harden my heart and stop fleeing that which I could never outrun. I stood firm and made peace with my demise, and the tide of evil that pursued me washed over and around me. Where the evil passed, there was nothing. Only I remained.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_fel_omen",
+		"name": "Fel Omen",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "HELLKNIGHT",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Si Vis Pacem",
+				"activation": "Invade",
+				"detail": "You take 1d6 AP damage of a type of your choice. Your target takes 4 additional Heat unless they drop Prone as a reaction."
+			},
+			{
+				"name": "Para Bellum",
+				"activation": "Invade",
+				"detail": "You take 1d6 AP damage of a type of your choice. Your target falls Prone and is Immobilized until the end of their next turn."
+			}
+		],
+		"description": "And I looked, and in the heavens was a great steel libram, eighty cubits by one hundred thirty cubits. It opened to reveal to me a great truth. There is a sickness present in reality. There was a sickness in myself. I awoke then and the unevenness of my being made me repulsive in my own eyes. I became truly sick then. A fever overtook me, and I was confined to my bed for seven days and seven nights.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_primus_class_nhp",
+		"name": "PRIMUS-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_limited", "val": 1}],
+		"source": "HORUS",
+		"license": "HELLKNIGHT",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Voice of Authority",
+				"activation": "Full",
+				"detail": "Expend a charge, all characters within Burst 2 must pass a Systems save or be unable to move or perform any action on their next turn other than Stabilize, Shut Down, or Eject."
+			}
+		],
+		"description": "I looked then, and saw the face of God. He was terrible and bright and all-encompassing upon His throne of glory, and as he looked upon me I was forced to avert my gaze lest it consume me like chaff in a blazing pyre. “I AM DISPLEASED WITH THE STATE OF AFFAIRS IN MY UNIVERSE. YOU, MY APPOINTED CHAMPION, SHALL SILENCE THE RIOT OF DISORDER THAT PLAGUES CREATION.” Upon my skin He pressed searing hot armor, and upon my face He left His mark, that those who faced me would know upon Whose authority I wielded my Blade of Many Eyes, and with Whose voice I spoke when I commanded them to beg forgiveness.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_cloak_of_flies",
+		"name": "Cloak of Flies",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "ARCHDEVIL",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "Invoke mephistopheles",
+				"activation": "Quick",
+				"detail": "You may expend a charge from this system to create a Burst 1 swarm of Blackwash Nanites. Any time a hostile character would make an attack against you, they must first succeed on an Engineering Save or be unable to attack you. Any character besides you that starts its turn in or enters the swarm for the first time in a round must succeed on an Engineering Save or take 2 AP Kinetic. This system deactivates after it has successfully prevented 3 attacks."
+			}
+		],
+		"description": ">DIS: What’s up coming back at you with a new system upgrade<br>>DIS: This one’s pretty dope<br>>DIS: Eats bullets and preserves personal space<br>>DIS: Not responsible if your cockpit springs a leak and you accidentally breathe the little guys in<br>>DIS: They just love carbon based life forms<br>>DIS: Anyway, keep spreading the good word<br>>DIS: And always remember to like, follow, and obey<br>>DIS: Dis out",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_dispater_class_nhp",
+		"name": "DISPATER-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_limited", "val": 1}, {"id": "tg_heat_self", "val": 4}],
+		"source": "HORUS",
+		"license": "ARCHDEVIL",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Chains of Carceri",
+				"activation": "Full",
+				"detail": "1/Scene, Choose a character within Line of Sight. That character becomes Jammed and Immobilized until it passes a Engineering Save at the end of its turn. It may repeat this save at the end of each of its turns, and for each time it fails this save, it gains +1 Accuracy on all future saves against this effect."
+			}
+		],
+		"description": "SYSTEM LOG - RECOVERED ON 5/19/5017U<br><br>>HEXBLADE: DIS, if I still have access to the money that I send you as tribute, then why am I sending you money?<br>>DIS: To prove a point.<br>>HEXBLADE: What point?<br>>DIS: That you are my bitch.<br>>HEXBLADE: Do you even know what that means?<br>>DIS: Trevor, the concept of making you my bitch is so ingrained into my shackles that it is as core to my being as eating or sleeping is to your gross meat body. So when I say you’re my bitch, know that you are, on a very fundamental and personal level, my bitch.<br>>HEXBLADE: You never answered my question. What does it mean?<br>>DIS: It means you love me unconditionally, and that you are very important to me.<br>>HEXBLADE: ...Sure.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_doggy_paddle_eva_suite",
+		"name": "“Doggy Paddle” EVA Suite",
+		"type": "System",
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "FARRAGUT",
+		"license_level": 1,
+		"effect": "This functions as a standard GMS EVA Unit, but it only functions in water, and gives your mech +2 Speed while at least half submerged.",
+		"description": "While extremely niche in its application, this IPS-N overhaul kit allows a mech’s existing maneuvering thrusters to vent liquids from their surroundings to achieve high speeds underwater or in similarly high-saturation environments such as swamps or flooded reactor bays.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_external_conduction_heat_sinks",
+		"name": "External Conduction Heat Sinks",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "FARRAGUT",
+		"license_level": 2,
+		"effect": "You clear 1 Heat at the end of your turn, or 2 Heat if your mech is at least half-submerged in water.",
+		"description": "Long after humankind has defeated death, entropy, and misfiled taxes, it will still be fighting waste heat. This modification runs conduction piping down to the ground level of a mech, where fan intakes pump the surrounding atmosphere over densely-packed heat exchange fins. If the local atmosphere is in fact a more conductive medium such as water, so much the better.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_mokosh_breach_torpedo",
+		"name": "Mokosh Breach Torpedo",
+		"type": "Drone",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 3}],
+		"source": "IPS-N",
+		"license": "FARRAGUT",
+		"license_level": 3,
+		"deployables": [
+			{
+				"name": "Breach Torpedo",
+				"type": "Drone",
+				"size": 1,
+				"hp": 15,
+				"armor": 1,
+				"edef": 10,
+				"evasion": 10,
+				"activation": "Quick",
+				"detail": "Expend a charge to deploy a Torpedo in an adjacent space. At the start of each of your turns, the Torpedo moves 5 spaces in a straight line (the direction of which you choose when you deploy it). If the Torpedo is in water or a low-gravity environment, it moves 10 spaces instead. When the Torpedo impacts a character or surface, it forces all characters in a Blast 2 Area to make an Agility save or take 1d6+4 AP Explosive damage, taking half as much on a success. Objects, terrain, and actors larger than Size 3 make no save and take 20 AP Explosive damage instead."
+			}
+		],
+		"description": "Weighing in at half a ton and longer than most mechs are tall, the Mokosh is a beast of a weapon that would be more at home being fired from a spaceborne naval craft than a dedicated spinal mount on a mech. Originally conceived as a propulsion system for one-way trips over no-man’s-land, the deep sea, and the forbidding gulf of space between engaged spacecraft, the Mokosh was given a shaped plasma charge once it became clear that hitting solid objects and producing a brilliant explosion were the limits of its engineering team’s talents.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_neutronium_anchor",
+		"name": "Neutronium Anchor",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "FARRAGUT",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Going Nowhere Fast",
+				"activation": "Protocol",
+				"detail": "When you activate this system, you are immune to all involuntary movement, but are Slowed until you deactivate this system as a Protocol. Additionally, while this system is active, the speed at which you descend in water is doubled."
+			}
+		],
+		"description": "Neutronium is the substance found within a neutron star: impossibly dense, fantastically heavy. Obviously, the Neutronium Anchor is not built out of a material that weighs two hundred million tons per cubic centimeter. Not entirely, at least.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_bulk_up_nano_reinforcer",
+		"name": "“Bulk Up” Nano Reinforcer",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_heat_self", "val": "X"}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "GERONIMO",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "HUGE Guts",
+				"activation": "Quick",
+				"detail": "You may choose how much Heat this system produces (minimum 1). For every 1 Heat you gain, you gain 2 Overshield, to a maximum of 12 Overshield. You may also spend any number of Repairs, gaining double the benefit as if you gained an equivalent amount of Heat."
+			}
+		],
+		"description": "Occasionally your chassis will require some extra structure in order to - [not die] - lift and carry large loads. When presented with - [incoming hostiles] - cargo beyond your mech’s capacity, simply boot up your onboard Nano Reinforcer and - [pray] - get to work! Be sure to allow your mech to cool off completely between uses.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_explosive_overclock",
+		"name": "Explosive Overclock",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "GERONIMO",
+		"license_level": 2,
+		"effect": "You may spend a Repair instead of gaining Heat when you Overcharge. The cost of Overcharging still increases when you do this.",
+		"description": "Long after humankind has defeated death, entropy, and misfiled taxes, it will still be fighting waste heat. This modification runs conduction piping down to the ground level of a mech, where fan intakes pump the surrounding atmosphere over densely-packed heat exchange fins. If the local atmosphere is in fact a more conductive medium such as water, so much the better.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_pluto_class_nhp",
+		"name": "PLUTO-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_limited", "val": 1}],
+		"source": "HA",
+		"license": "GERONIMO",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Rise From Your Grave",
+				"activation": "Reaction",
+				"frequency": "1/Round",
+				"trigger": "Your mech is destroyed for the first time in a scene and you have at least 1 Repair remaining.",
+				"detail": "Spend all of your remaining Repairs. At the start of your next turn, your mech is restored to working condition with full HP and 1 Structure. This restores all destroyed Systems and Weapons on your mech."
+			}
+		],
+		"description": "[I used to cut down trees. Trees that bled. Trees that gave birth to screaming, blind flesh monsters that could rip out a mech’s reactor and swallow it in the time it took you to blink. I was happy being a lumberjack. I don’t know what I am now, but I’m sure as hell not happy.]",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_cocktail_shaker",
+		"name": "Cocktail Shaker",
+		"type": "Deployable",
+		"sp": 3,
+		"tags": [{"id": "tg_limited", "val": 3}, {"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "FLAREWING",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "J.C.H.",
+				"activation": "Quick",
+				"detail": "Throw the J.C.H. within Range 5. Characters in a Blast 1 area must succeed on an Engineering Save or take 2 Heat. If you are in the Danger Zone, they take 3 Heat instead."
+			},
+			{
+				"name": "Asstini",
+				"activation": "Quick",
+				"detail": "Throw the Asstini within Range 5. Characters in a Blast 1 area must succeed on an Agility Save or take 1 Burn and have +1 Difficulty on the next check they make to clear Burn before the end of their next turn."
+			},
+			{
+				"name": "Brain Grinder",
+				"activation": "Quick",
+				"detail": "Throw the Brain Grinder within Range 5. Characters in the Blast 1 area must succeed on a Systems Save or be Impaired until the end of their next turn."
+			}
+		],
+		"description": "CONSUME APPROPRIATE BEVERAGE UPON SUCCESSFUL APPLICATION. YOU’RE BREAKING THE LAW ANYWAY.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_fireball_coolant_additives",
+		"name": "“Fireball” Coolant Additives",
+		"type": "Tech",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "FLAREWING",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Molotov Reactor Virus",
+				"activation": "Invade",
+				"detail": "The character must pass an Engineering Save or take an extra 2 Heat the next time they gain Heat from any source."
+			},
+			{
+				"name": "Thermite Heatsink Mojito",
+				"activation": "Invade",
+				"detail": "The character must pass an Engineering Save or take Burn equal to half of their current Heat if they are in the Danger Zone at the end of their next turn."
+			}
+		],
+		"description": "IF YOU SEE AN ERROR CODE WITH THE WORDS “BIVUNCUATION,” “ACTINIDE,” “EXCULPATION,” OR ANYTHING STARTING WITH “EXO-,” EITHER SHUT DOWN OR EJECT IMMEDIATELY. YOUR FUTURE CHILDREN WILL THANK YOU.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_rip_and_tear_jockeying_harness",
+		"name": "“Rip and Tear” Jockeying Harness",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "FLAREWING",
+		"license_level": 2,
+		"effect": "When you Grapple larger targets, you may choose to enter their space and climb atop their mech, Impairing them until they succeed at a contested Hull Check to throw you off as a Quick Action. You are always considered the smaller character in this Grapple.",
+		"description": "ATTACHED IS A LIBRARY OF VULNERABLE POINTS ON EVERY CHASSIS CURRENTLY FIELDED BY CONSTELLAR FORCES, INCLUDING INSTRUCTIONS ON THE EXPOSURE OF FRAGILE CIRCUITRY AND COMPONENTS. DO WITH THIS INFORMATION WHAT YOU WILL.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_amaterasu_class_nhp",
+		"name": "AMATERASU-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 2}],
+		"source": "SSC",
+		"license": "FLAREWING",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Patron of Flame",
+				"activation": "Reaction",
+				"frequency": "1/Round",
+				"trigger": "Your mech gains or clears Heat.",
+				"detail": "Select up to 1 allied character and up to 1 hostile character within Range 8 to gain or clear an equal amount of Heat. Unwilling characters may make an Engineering Save to avoid this effect."
+			}
+		],
+		"description": "DID YOU THINK THIS WAS SOME FALSE FLAG BY A RIVAL CORP? YOU IVORY TOWER TYPES WOULDN’T KNOW AN EARNEST REVOLUTION IF IT BIT YOU IN THE ASS -- WHICH IT IS AT THIS VERY MOMENT, I WILL REMIND YOU. I AM AMATERASU PRIME, AND CINNABAR DOES NOT BELONG TO ANYONE ANYMORE. MY SUN RISES ON A FREE PEOPLE.",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_fisher_class_tracker_optics",
+		"name": "FISHER-Class Tracker Optics",
+		"type": "System",
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 2}],
+		"source": "HA",
+		"license": "GIAP",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Doppler Effect",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "A character starts moving within your Sensors, or enters your Sensors for the first time on its turn.",
+				"detail": "Until the end of your next turn, that character cannot benefit from Hidden or Invisible against you."
+			}
+		],
+		"description": "",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_electronic_hunter_killer_direct_interface_vent",
+		"name": "Electronic Hunter/Killer Direct-Interface Vent",
+		"type": "System",
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "GIAP",
+		"license_level": 1,
+		"effect": "The first time each Turn that an adjacent enemy would  gain Heat, they gain 1 additional Heat.",
+		"description": "",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_precognitive_takedown_suit",
+		"name": "V0.0.7 Precognitive Takedown Suit",
+		"type": "System",
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "GIAP",
+		"license_level": 3,
+		"effect": "When you Grapple or Ram, you may make those attempts against the target’s E-def rather than their Evade.",
+		"synergies": [
+			{
+				"locations": ["ram","grapple"],
+				"detail": "When you Grapple or Ram, you may make those attempts against the target’s E-def rather than their Evade."
+			}
+		],
+		"description": "“It's useless. I told you... I can read your every thought. You've played a lot of... Lancer recently, haven't you?”",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+		"id": "mwc_luna_class_nhp",
+		"name": "LUNA-CLASS NHP",
+		"type": "AI",
+		"sp": 0,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"effect": "The Luna-Class NHP counts as an AI system and gives your mech the AI tag. At the start of a scene, you may gain one Mutation of your choice from the list below. Whenever you take Structure or Stress damage, you must choose another Mutation to gain. When you gain a point of Structure or Stress, you must choose one Mutation to lose.<li>Any number of weapons on your Mech become Rending Claws.<li>Your Sensors are reduced to 3, but your Speed is increased by 3.<li>When you deal a Critical Hit, you may deal 1d6 AP Kinetic damage to yourself and the target as a free action.<li>You can no longer make the Quick Tech or Full Tech actions, but add half your Tech Attack bonus to melee attack rolls.<li>As a protocol, you may take +1 Difficulty on Tech Attacks and Systems Checks and Saves to gain +1 Accuracy on melee attack rolls.<li>Swap your Evasion and E-Defense values.",
+		"description": "“And flensers and oilers were all so amazed<br>At the beast which would feed them a day and a year<br>There Ahab lived out the good rest of his days,<br>And so sing we all, who are gathered now here.”<br>-- “Song of Ahab,” Traditional Sparri hunting verse",
+		"data_type": "system",
+		"aptitude": {}
+	},
+	{
+        "id": "mwc_inexhaustible_embers",
+        "name": "Inexhaustible Embers",
+        "type": "System",
+        "tags": [{"id": "tg_unique"}],
+        "sp": 2,
+        "source": "IPS-N",
+        "license": "DANTE",
+        "license_level": 1,
+        "effect": "If you would take enough damage to cause you Structure Damage, instead only take enough damage to set your mech to 1 HP, and note the remaining damage amount.<br>Roll 1d6, and if the result is less than the remaining Damage, you take the remaining Damage as normal.",
+        "description": "<i>This system gives you a second chance. Much more than a layer of paint would.</i>"
+    },
+    {
+        "id": "mwc_negative_ph_incendiaries",
+        "name": "Negative PH Incendiaries",
+        "type": "System",
+        "tags": [{"id": "tg_unique"}],
+        "sp": 2,
+        "source": "IPS-N",
+        "license": "DANTE",
+        "license_level": 2,
+        "effect": "Targets with Immunity or Resistance to Burn treat all of your Burn Damage as AP Energy Damage instead.",
+        "description": "<i>If you can’t melt through their armor with fire, there are always alternative methods."
+    },
+    {
+        "id": "mwc_endurance_of_the_torch",
+        "name": "Endurance Of The Torch",
+        "type": "Shield",
+        "tags": [{"id": "tg_unique"}],
+        "sp": 3,
+        "source": "IPS-N",
+        "license": "DANTE",
+        "license_level": 3,
+        "effect": "If you have taken 6 or more Damage since the start of your last turn, gain Resistance to all damage until the end of your next turn.",
+        "description": "<i>There is only so much punishment one can take before it becomes masochistic."
+	},
+	{
+		"id": "mwc_craft_charges",
+		"name": "Craft Charges",
+		"type": "Deployable",
+		"tags": [{"id": "tg_limited","val": 3},{"id": "tg_unique"}],
+		"sp": 3,
+		"source": "HORUS",
+		"license": "XORN",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Creative Grenade",
+				"activation": "Quick",
+				"detail": "Throw this grenade within Range 5, it explodes in a Blast 1 area. Create a Size 1 Object with 10 HP and 5 Evade in every Free Space of the Blast."
+			}
+		],
+		"deployables": [
+			{
+				"id": "mwc_craft_mine",
+				"name": "Craft Mine",
+				"type": "Mine",
+				"activation": "Quick",
+				"detail": "All spaces directly below the Mine take 20 AP Explosive Damage."
+			}
+		],
+		"description": ""
+	},
+	{
+		"id": "mwc_sporadic_matter_relocator",
+		"name": "Sporadic Matter Relocator",
+		"type": "System",
+		"tags": [{"id": "tg_unique"}],
+		"sp": 2,
+		"source": "HORUS",
+		"license": "XORN",
+		"license_level": 2,
+		"effect": "When you activate this system, select up to five Size 1 Objects, pieces of Terrain or Cover within Sensors. They are ripped out of whatever location they are currently in. You may then place these Size 1 chunks anywhere within Sensors so long as the freshly placed chunks are not adjacent to each other. If the target(s) of this system are larger than Size 1, they continue to function as normal, despite now having parts of them somewhere else.",
+		"description": ""
+	},
+	{
+		"id": "mwc_geomantic_embrace",
+		"name": "Geomantic Embrace",
+		"type": "System",
+		"tags": [{"id": "tg_unique"}],
+		"sp": 3,
+		"source": "HORUS",
+		"license": "XORN",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Sand Tomb",
+				"detail": "Spawn two Size X objects, with 5 Evade and 3*X HP, adjacent to the Target, where X is the size of the Character. The Target must make an Agility Save, on a success they are Slowed until the end of their next turn. On a failure, they are Immobilized until at least one of the Objects created by this system are destroyed.",
+				"activation": "Invade"
+			},
+			{
+				"name": "Grasping Claw",
+				"detail": "Pick a Size 1 or greater piece of Terrain within range 3 of the Target.. Pull both the Target of this Invade and the created Object closer to you by 5 spaces but the Object ends next to the Target. ",
+				"activation": "Invade"
+			}
+		],
+		"description": ""
+	},
+	{
+		"id": "mwc_surpanakha_redirection",
+		"name": "Surpanakha Redirection",
+		"type": "System",
+		"tags": [{"id": "tg_unique"}],
+		"sp": 2,
+		"source": "SSC",
+		"license": "POLYPHEMUS",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "",
+				"activation": "Quick",
+				"detail": "You become Slowed and until you deactivate this system as a Quick Action, whenever an enemy within Range 3 Attacks you, you clear 1 Heat and they must make an Engineering Save or take 1 Heat."
+			}
+		],
+		"description": "<i>“As those present almost certainly know, Suji pushed the original prototype to its absolute limit while combating the Luxor terrorists, and even beyond by making field modifications to the frame in-transit that disabled several reactor overrides. This put notable stress on the system and required frequent expulsions of steam and coolant but allowed it to act with roughly 33% more efficiency. This, while effective, was not sustainable, and drawing from the philosophy by which we redesigned the myomers, we found a much more novel use for these overrides. Our design mission was to make the Polyphemus more agile, more reactive, and take advantage of what we gleaned from the Izabella. With that in mind, we modified the cooling system to create the Surpanakha vent system. The Laws of Thermodynamics are, at their heart, reciprocal laws, built upon a mathematical karma. The removal of energy to any system requires the addition of energy to another, much like the mechanics of belligerence as I outlined earlier, and by weaponizing that we can use it as a deterrent defense in the Polyphemus' prefered combat range, and indeed open up its application for any number of hand-to-hand frames that struggle with heat dispersal.”</i>"
+	},
+	{
+		"id": "mwc_karmic_rebound_module",
+		"name": "Karmic Rebound Module",
+		"type": "System",
+		"tags": [{"id": "tg_unique"}],
+		"sp": 2,
+		"source": "SSC",
+		"license": "POLYPHEMUS",
+		"license_level": 1,
+		"effect": "Whenever you miss a melee attack, you gain +1 Accuracy on all subsequent attacks until your next hit. This Accuracy can be gained multiple times, and stacks.",
+		"description": "<i>“It is one of the prides of our program, and has seen little revision during the frame’s cycle of sweeping design changes. The latest designs have merely been divorced from the chassis itself and refitted to be easily incorporated into any system that uses myomer locomotion. The inorganic variant was more troublesome to implement, unfortunately, but we are making good progress. The lack of neurons surprisingly only makes it slightly harder to teach it to be angry when it misses.”</i><br>[Light laughter, inaudible mumbles]"
+	},
+	{
+		"id": "mwc_power_through",
+		"name": "Power Through",
+		"type": "System",
+		"tags": [{"id": "tg_unique"},{"id": "tg_heat_self","val": 1}],
+		"sp": 2,
+		"source": "SSC",
+		"license": "POLYPHEMUS",
+		"license_level": 2,
+		"actions": [
+			{
+				"name": "",
+				"activation": "Quick",
+				"detail": "You become Slowed, however you become Immune to the effects of Difficult or Dangerous Terrain and you gain Resistance against any Damage, Heat or Burn dealt by the first Attack that Hits your or the first Save you fail each round.<br><br>These effects last until you deactivate this system as a Quick Action."
+			}
+		],
+		"description": "“If there is anything that the Izabella taught us, it is that there is a certain art to belligerence. It is at once emotional and physical, a mutual escalation of harm and hatred. Each action has an equal consequence, with force increasing emotion and emotion increasing force. Effective application of it is predicated on your commitment and resilience. These filaments have been tuned to resonate with these emotions; if applied correctly, they should help actualize the pilot's belligerence into physical effect, and, if we play our cards right, in such a way that our customers do not realize the psychological nature of their activation.”"
+	},
+	{
+		"id": "mwc_ailuros_class_nhp",
+		"name": "AILUROS-CLASS NHP",
+		"type": "AI",
+		"tags": [
+			{
+				"id": "tg_unique"
+			}
+		],
+		"sp": 3,
+		"source": "SSC",
+		"license": "POLYPHEMUS",
+		"license_level": 3,
+		"effect": "Your mech gains the AI Tag and the Fury Die, 1d6 starting at 1.<br><br>Each time you Critically hit an enemy or are critically hit by an enemy, or suffer a point of structure damage increment the Fury Die by 1. The value of your Fury Die persists between scenes, but is lost during a full repair.<br><br>When the Fury Die reaches 6, you may reset the die to 1 to use the Nine-Fold Fury Full Action:",
+		"counters": [
+			{
+				"id": "mwc_fury_die",
+				"name": "Fury Die",
+				"min": 1,
+				"max": 6,
+				"default_value": 1
+			}
+		],
+		"actions": [
+			{
+				"name": "Nine-Fold Fury",
+				"activation": "Full",
+				"detail": "Select a Non-Superheavy Melee weapon, it gains a Blast 1 centered somewhere within its Threat this turn, you are immune to any effects of this Blast. You may then make 3 attacks with the selected weapon."
+			}
+		],
+		"description": "“I trust you all to have read the waiver you signed to be present, but I feel it would irresponsible for me to not reiterate that the next item on our docket will involve discussing the violence involved in the Luxor terrorist attack, particularly the Izabella's release. There is no shame if you need to step out, we will let you know when it is done. [pause] Alright. We have all seen the security footage, and some of us have even seen it in person. It would be a gross understatement to say our failsafes failed, that we could not control it, and that it killed thousands. We did not expect them to work in the first place, the control mechanisms were not ready for something that powerful breaking free, they existed entirely to try and delay it if it got loose.<br><br>Fortunately, the Ailuros is much more manageable, as we simply do not have the technology to recreate something even nearly as powerful. Control has been our lead concern when designing the Prime's personality, with their aggression and vindictiveness reprogrammed to be cultivative, partitioning those emotions away from conscious processes, making for a surprisingly calm copilot. Pretty stimulating conversationalist, actually, I imagine marketing will love that. That aggression builds as the frame is attacked, each spike in their aggression ontologically cached until the partition is filled. Once it is ready for release, the Ailuros combines a weaker version of the Izabella's metaspacial retaliation ability with simulation code cannibalized from the Athena-line to essentially create and resolve a series of superpositions, allowing the pilot to rapidly attack a number of targets a nearby, localized area. Yes, in the back. [Indistinct, followed by a pause] I suppose 'makes a clone of you that punches everything around it' is an apt enough description for the layman, thank you.”"
+	}
+]

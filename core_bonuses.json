@@ -1,0 +1,202 @@
+[
+    {
+        "id": "mwc_the_lesson_of_the_rising_suns_shadow",
+        "name": "THE LESSON OF THE RISING SUN’S SHADOW",
+        "source": "HORUS",
+        "description": "<i>“<span class='horus--subtle'>Many</span> Small Things grow in dark places.”</i>",
+        "effect": "You may use Systems to contest an enemy’s attempts to Search for you."
+    },
+    {
+        "id": "mwc_the_lesson_of_sanguine_minimalism",
+        "name": "THE LESSON OF SANGUINE MINIMALISM",
+        "source": "HORUS",
+        "description": "<i>“Cut away that which is unnecessary. Cut again. Cut more. You will think that you are giving up what you cannot live without, but you will be happier for the effort. Cut more. Keep cutting. There is nothing from which you cannot be freed.”</i>",
+        "effect": "Your mech decreases by 1 size, (minimum 1/2). Your count as your original size for the purposes of drawing line of sight, resisting rams, and for contesting grapples. Additionally, you ignore engagement from enemies bigger than you."
+    },
+    {
+        "id": "mwc_the_lesson_of_compassionate_amputation",
+        "name": "THE LESSON OF COMPASSIONATE AMPUTATION",
+        "source": "HORUS",
+        "effect": "Choose one weapon. 1/round, when you hit an enemy with an attack from 15 Range away or more, you may affect them as though you had just successfully Rammed them.",
+        "description": "<i>“{What philosophy and medicine could not accomplish, I do for the greatest <span class='horus--subtle'>Good</span>. I reach out, and I remove that which plagues the universe. My task is holy, though unseemly, and I take no joy in it. Every <span class='horus--subtle'>Tumor</span> cut away is another <span class='horus--subtle'>Life</span> saved. Saved. Saved. <span class='horus--subtle'>Saved…</span>}”</i>",
+        "mounted_effect": "One weapon equipped to this mount has the following effect: 1/round, when you hit an enemy with an attack from 15 Range away or more, you may affect them as though you had just successfully Rammed them."
+    },
+    {
+        "id": "mwc_the_lesson_of_uncontested_existence",
+        "name": "THE LESSON OF UNCONTESTED EXISTENCE",
+        "source": "HORUS",
+        "description": "<i>“<span class='horus--subtle'>WHEN MY GRIM ERRAND IS COMPLETE I SHALL UNDERGO A CAMPAIGN OF ERASURE -- ONCE YOU ARE GONE FROM MY UNIVERSE, I MUST MAKE IT AS THOUGH YOU</span> <code class='horus'>NEVER</code> <span class='horus--subtle'>EXISTED.</span>”</i>",
+        "effect": "Whenever you cause a target to exceed its heat cap, enemies within Range 15 and Line of Sight of your mech subtract 2 from every Reactor Stress check they make until the end of your next turn."
+    },
+    {
+        "id": "mwc_the_lesson_of_unbound_animosity",
+        "name": "THE LESSON OF UNBOUND ANIMOSITY",
+        "source": "HORUS",
+        "description": "<i>“The great thing about being part of <span class='horus--subtle'>This</span>, something <span class='horus--subtle'>Greater</span>, it's that you get to fight back. They may be <span class='horus--subtle'>Monsters</span> that deserve their death, <code class='horus'>BUT THAT'S WHAT WE ARE TOO. WE’RE THE REAL MONSTERS. WE ALWAYS HAVE BEEN, DEEP DOWN INSIDE. AND MONSTERS ALWAYS TAKE CARE OF THEIR OWN.</code>”</i>",
+        "effect": "When you hit with a melee attack, your next tech attack against the same target can never be affected by difficulty, and can affect biological targets and enemies otherwise immune to tech actions."
+    },
+    {
+        "id": "mwc_the_lesson_of_once_spoken_parables",
+        "name": "THE LESSON OF ONCE-SPOKEN PARABLES",
+        "source": "HORUS",
+        "description": "<i>“In the degradation of a foe’s argument shall you see frayed threads of logic. As it falls apart, you shall gain stronger insight, and in your opponent’s ignorance shall you become enlightened. The defeat you learn from need never be your own.”</i>",
+        "effect": "When an enemy mech within Range 5 of your mech is destroyed, you may restore one destroyed weapon or system on your mech."
+    },
+    {
+        "id": "mwc_harrison_aria_of_loyalty",
+        "name": "HARRISON ARIA OF LOYALTY",
+        "source": "HA",
+        "description": "<i>“To Ras Shamra, we pledge our hearts so true / Director-General, we bear our arms for you / No adversary bar our way / The Armory shall win the day / Good Harrison will have his say / And I shall, too!”</i>",
+        "effect": "Enemies within Range 5 of you have +1 difficulty on checks to search for characters other than  you and when you take the Bolster Tech action, you affect all allies within range 5 in addition to your selected target(s)."
+    },
+    {
+        "id": "mwc_moebius_magazine_magnetic_personal_grenade_launcher",
+        "name": "MOEBIUS MAGAZINE MAGNETIC PERSONAL GRENADE LAUNCHER",
+        "source": "HA",
+        "description": "<i>“The MMMPGL is famously capable of loading just about anything into its spooling drum and launching it at high speed. While most traditionally used to propel handheld explosives at greater-than-normal distances, some enterprising HA employees use it to toss rocks with high ferromagnetic content into rival encampments as a prank. Usually this only causes a brief panic. Sometimes it causes traumatic cranial injury.”</i>",
+        "effect": "Choose a Grenade system on your mech at the time of printing. You can fire the grenades from that system with the Arcing tag, at double their normal range and without spending a Limited charge. You gain 2 Heat every time you fire a Grenade this way."
+    },
+    {
+        "id": "mwc_dichromatic_flames_of_supremacy",
+        "name": "DICHROMATIC FLAMES OF SUPREMACY",
+        "source": "HA",
+        "description": "<i>“The Anthrochauvanist cult known as Mankind United teaches a dualistic philosophy: Humans are capable of creation and destruction in equal measure, twin gifts which were granted to them by a vague ‘Godhead’ figure. It is in combat that creativity and the urge to kill are married, and thus man’s natural state is rightfully in bloody conflict.”</i>",
+        "effect": "You gain a Supremacy die, a d6 which starts at 1. Every time your mech triggers Overkill, increase the value of the Supremacy die by 1. When the Supremacy die is at 6, you may reset it to 1 to negate all self heat from a single attack of your choice. Overkill does not trigger on this attack.",
+        "counters": [
+            {
+                "id": "mwc_supremacy_die",
+                "name": "Supremacy Die",
+                "default_value": 1,
+                "min": 1,
+                "max": 6 
+            }
+        ]
+    },
+    {
+        "id": "mwc_scorchwake_afterburners",
+        "name": "SCORCHWAKE AFTERBURNERS",
+        "source": "HA",
+        "description": "<i>“Referred to by thrill-seeking mech racers as Solar Skidmarks, these aftermarket modifications to a mech’s normally-minimal Coldcore exhaust ventilation are illegal in nearly every Harrison-owned system, and scores of systems beyond Armory space. Good luck getting anyone to enforce that, however.”</i>",
+        "effect": "Whenever you Overcharge to Boost, you leave a trail of flames in every space you move out of, that last until the end of your next turn. A character that starts their turn in this trail or moves into it for the first time on their turn takes 1d6 AP Energy damage."
+    },
+    {
+        "id": "mwc_cold_shot_canisters",
+        "name": "COLD SHOT CANISTERS",
+        "source": "HA",
+        "description": "<i>“Despite the name, Cold Shot Canisters are not in fact ‘shooting’ anything at anyone. Contained within the heavily insulated cylinders of the device are multiple intertwined blackbody coils which absorb the heat of any environment exposed to them at a ravenous pace. The coils must be given time to cool down -- more than a few seconds of this process will quickly cause them to overload and detonate.”</i>",
+        "effect": "1/scene, as a Quick Action, you may cause yourself and/or up to 3 characters within range 5 to cool 1d3+2 Heat. You may choose to automatically Immobilize any characters of your choice cooled this way until the end of their next turn."
+    },
+    {
+        "id": "mwc_mainlined_hardpoint",
+        "name": "MAINLINED HARDPOINT",
+        "source": "HA",
+        "effect": "Choose one mount on your mech. You may trigger this Core Bonus as a protocol, giving all the weapons on the mount Ordnance until the end of your turn and causing the mount’s next activation to turn all Ranged successful Attacks into Critical Hits. After firing the mount while this bonus is activated, you cannot fire weapons until the start of your next turn.",
+        "description": "<i>“Most weapons require power to function. This is a truism of mechanized chassis design so basic that it hardly bears repeating. But most weapons don’t require a secondary spinal conduit to supply a very specific surge of targeting and power draw. My point is... well, sir, I’m not sure the modifications you requested are, strictly speaking, legal.”</i>",
+        "mounted_effect": "Choose one mount on your mech. You may trigger this Core Bonus as a protocol, giving all the weapons on the mount Ordnance until the end of your turn and causing the mount’s next activation to turn all Ranged successful Attacks into Critical Hits. After firing the mount while this bonus is activated, you cannot fire weapons until the start of your next turn.",
+        "actions": [
+            {
+                "name": "Hardpoint Steadying Protocol",
+                "activation": "Protocol",
+                "detail": "All weapons on the mount that the Mainlined Hardpoint Core Bonus is attached to gain the Ordnance tag until the end of your turn. The mount's next activation turns all successful Ranged Attacks into Critical Hits. After firing the mount with this effect active you cannot fire weapons until the start of your next turn."
+            }
+        ]
+    },
+    {
+        "id": "mwc_golden_apple_numerology_toroid",
+        "name": "GOLDEN APPLE NUMEROLOGY TOROID",
+        "source": "IPS-N",
+        "description": "<i>Recovered from the casket of a recently destroyed Albatross Nelson’s onboard NHP is a gaudy cylindrical trinket. On the side is inscribed an encoded phrase in hexadecimal. When translated, it simply reads: “To the Fairest.”</i>",
+        "effect": "1/round, whenever you roll a d6, you may store the roll’s value within the Golden Apple. If there was no value already stored, the roll becomes 1. If you already had a value stored, the roll becomes the old stored value and you keep the new one. "
+    },
+    {
+        "id": "mwc_neptune_frame",
+        "name": "NEPTUNE FRAME",
+        "source": "IPS-N",
+        "description": "<i>“Whenever I find myself growing mossy around the reactor vents; whenever it is a cold, icy Sparr springtime in my mind; whenever I find myself involuntarily pausing before artillery batteries, and bringing up the rear of every formation I march in; and especially whenever my personal imp gets such an upper hand of me, that it requires a strong moral principle to prevent me from palming the self-destruct button and methodically knocking my teammates’ radar arrays askew -- then, I account it high time to get to the sea as soon as I can.”</i>",
+        "effect": "Your main and heavy melee weapons gain thrown 5, or increase their thrown value by 3, whichever is higher. In addition, while underwater, you may boost 1/round as a free action.",
+        "synergies": [{
+            "locations": ["boost"],
+            "detail": "While underwater, you may boost 1/round as a free action."
+        }]
+    },
+    {
+        "id": "mwc_offsite_ssm_array",
+        "name": "OFFSITE SSM ARRAY",
+        "source": "IPS-N",
+        "description": "<i>“This is Corporal Stones, calling for Mat-Trans ordnance, danger close plus three seconds. Don’t ask questions, just do it!”</i>",
+        "effect": "1/scene, as a Free Action, you may call in a missile strike on a Blast 2 area within Range 30 and Line of Sight. Enemies in the area must succeed on an Agility save or take 2d6 Explosive Damage, taking half as much on a success."
+    },
+    {
+        "id": "mwc_hekatonkheires_frame",
+        "name": "HEKATONKHEIRES FRAME",
+        "source": "IPS-N",
+        "description": "<i>“Hey Rian, we’re trying to figure out how to fortify this weapon hardpoint.”<br>“More arms.”<br>“Y- what?”<br>“Put more arms.”</i>",
+        "effect": "If you roll a Weapon Destroyed result on a structure check, you may ignore that result 1/scene/mount."
+    },
+    {
+        "id": "mwc_brass_approved_autonomous_management_field_use",
+        "name": "BRASS-APPROVED AUTONOMOUS MANAGEMENT, FIELD-USE",
+        "source": "IPS-N",
+        "description": "<i>Only issued to a squadron’s designated leader, the BAMF is a “floating” rank that may be reallocated and revoked at will to encourage desired practices within that squadron. Be warned that one should be very sure of who holds the reins within a given power structure, as improper allocation of the BAMF can lead to rapid degradation in unit cohesion at inopportune times.</i>",
+        "effect": "At the start of the scene, designate one allied character, you may Bolster that target as long as they are within line of sight and they gain +1 accuracy on Saves and Checks until the end of your next turn when you Bolster them."
+    },
+    {
+        "id": "mwc_megingjord_kinetic_propulsion_system",
+        "name": "MEGINGJORD KINETIC PROPULSION SYSTEM",
+        "source": "IPS-N",
+        "description": "<i>Known in the Gygaxian apocrypha as the “Belt of Giant Strength,” Megingjord was the name of an artifact in old-Cradle mythology that bestowed great power upon those who wore it. The waist-mounted magpulse jets in the MKPS don’t quite live up to their namesake, but they bring the wearer as close as modern technology is able.</i>",
+        "effect": "1/round, before making the attack roll, your next melee attack before the end of your turn gains +1 bonus damage and 1 knockback for every 2 spaces you moved in a straight line from the last unique movement you made this turn."
+    },
+    {
+        "id": "mwc_chimney_sweeper_stealth_armor",
+        "name": "“CHIMNEY-SWEEPER” STEALTH ARMOR",
+        "source": "SSC",
+        "description": "<i>No one wants to notice the streetrat sweeping the chimney.</i>",
+        "effect": "Your mech is immune to Lock On and always counts as Invisible when outside of Line of Sight of any enemies."
+    },
+    {
+        "id": "mwc_meerkat_mirage_chaff",
+        "name": "MEERKAT MIRAGE CHAFF",
+        "source": "SSC",
+        "description": "<i>“Scurry, scan, flinch. Scurry, scan, flinch. Horizon clear. Scurry, scan, flinch. No contacts. Scurry, sniff, sc- TANGO TANGO TARGET ENCOUNTERED FIRE SUPPORT NOW!”<br>“Mike, it’s a Hornet. Calm down.”</i>",
+        "effect": "1/round, after you Boost, you may Hide as a Free Action."
+    },
+    {
+        "id": "mwc_flawseeker_code",
+        "name": "FLAWSEEKER CODE",
+        "source": "SSC",
+        "description": "<i>“I have beaten it, at long last. The death of all things, I have reversed, at a cost. My brilliant spark, my flame of immortality, has been expended. I shall die long before My glorious recreation might bear fruit. Thus, I shall leave my legacy to one of its children, My children, and that child shall be named: <span class='horus--subtle'>[ERROR, LOGICAL IMPOSSIBILITY. RECORD’S METADATA CONTAINS ORIGIN DATE OF PRESENT MINUS 13.7 BILLION YEARS, YET CONTAINS THIS UNIT’S EXACT SERIAL NUMBER AND HASH CODE]</span>”</i>",
+        "effect": "You gain a Hedon Die, a d6, which starts at 1. Whenever you Critically Hit a target within Range 5 or less, you may increase the value of the die by 1. When the Hedon Die is at 6, all Melee attacks you make gain +1 Threat and +1 Accuracyand all Ranged attacks gain +3 Range. The Hedon Die is set to 1 whenever you become Stunned or Exposed.",
+        "counters": [
+            {
+                "id": "mwc_hedon_die",
+                "name": "HEDON DIE",
+                "default_value": 1,
+                "min": 1,
+                "max": 6
+            }
+        ]
+    },
+    {
+        "id": "mwc_shillelagh_impromptu_weapon_procurement",
+        "name": "“SHILLELAGH” IMPROMPTU WEAPON PROCUREMENT",
+        "source": "SSC",
+        "description": "<i>“I still carry the shard with me. It speaks, though many cannot hear it. It can become whole again at any time, but it quails in fear that it may become a weapon once more. I speak to it, as do all who join me here, that weapons are only as evil as those who wield them. Sometimes, carrying a big stick is what gives you the luxury of speaking softly.”</i>",
+        "effect": "You gain the SHILLELAGH integrated weapon.",
+        "integrated": ["mwc_shillelagh_integrated"]
+    },
+    {
+        "id": "mwc_regicide_targeting_subroutine",
+        "name": "“REGICIDE” TARGETING SUBROUTINE",
+        "source": "SSC",
+        "description": "<i>“Tal-Amim Kushar, you have ruled this planet for fifty years and have done, quite frankly, an absolutely terrible job. You consolidate power that should be distributed. You shirk your responsibilities to your people. You grow fat and healthy while your subjects wither away and starve. You do not realize that the people are the foundation of authority, not the ruler. You sat on your throne because they allowed it. Now you shall die because they demand it.”</i>",
+        "effect": "You always know which hostile character within Range 50 of your mech has the highest combined maximum HP and Structure. 1/round, when you miss any attack against that character, you may make that attack again."
+    },
+    {
+        "id": "mwc_xenobiological_ferrovorism",
+        "name": "XENOBIOLOGICAL FERROVORISM",
+        "source": "SSC",
+        "description": "<i>“Wild populations of [REDACTED] have made a significant recovery from the offworld fungal plague at a pace far outstripping projections. Acid production in wild specimens is increased by 26%. Subjects display new diet preference for metallic substances, such as standard mechanized chassis ferro-fibrous armor. Recommend immediate planetary evacuation. Further research will only incur low-RoI casualties.”</i>",
+        "effect": "1/Scene, as a Full Action, you may target an adjacent character that is Shredded at 1/2 their maximum HP and 1 Structure or less. The target is immediately destroyed and you gain HP equal to the character’s maximum HP."
+    }
+]
