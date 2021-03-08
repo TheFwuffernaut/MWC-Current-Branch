@@ -1621,7 +1621,7 @@
 			{
 				"name": "Realize True Potential",
 				"activation": "Quick",
-				"detail": "When you activate this system, you increase the Ki Die’s value by 1, to a maximum of 6."
+				"detail": "When you activate this system, you increase the Ki Die’s value by 1, to a maximum of 6. You may instead use this system as a Full Action and take 6 Heat instead of 3 to Increment the Ki Die's value by 2."
 			}
 		],
 		"counters": [
@@ -2102,7 +2102,7 @@
 		"name": "Abjuration.bat",
 		"type": "Tech",
 		"sp": 3,
-		"tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 1}],
+		"tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 2}],
 		"source": "SSC",
 		"license": "MAGICIAN",
 		"license_level": 2,
@@ -2111,15 +2111,15 @@
 				"name": "Shield",
 				"activation": "Reaction",
 				"frequency": "1/round",
-				"trigger": "An enemy targets you with a Tech Attack, but has not yet rolled.",
+				"trigger": "An enemy within your Sensors targets you with a Tech Attack, but has not yet rolled. This reaction is a Tech Action.",
 				"detail": "Negate that attack."
 			},
 			{
 				"name": "Counterspell",
 				"activation": "Reaction",
 				"frequency": "1/round",
-				"trigger": "An enemy targets another character with a Tech Action.",
-				"detail": "Take 1 Heat, Negate that action."
+				"trigger": "An enemy within Sensors targets another character within your Sensors with a Tech Action. This reaction is a Tech Action.",
+				"detail": "Take 2 Heat, Negate that action."
 			}
 		],
 		"description": "Magic is the method by which I lie to the universe so convincingly that it second-guesses itself.",
@@ -3014,7 +3014,7 @@
 				"name": "Craft Mine",
 				"type": "Mine",
 				"activation": "Quick",
-				"detail": "All spaces directly below the Mine take 20 AP Explosive Damage."
+				"detail": "All Objects or Terrain in spaces directly below the Mine take 20 AP Explosive Damage."
 			}
 		],
 		"description": ""
