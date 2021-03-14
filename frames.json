@@ -1235,12 +1235,12 @@
         "description": "The Pershing can fire Ordnance weapons if it has only moved a single space since the start of its turn. The final roll of the Pershing’s ranged attacks cannot be affected by Difficulty if it is still able to fire Ordnance weapons."
       },
       {
-        "name": "COLOSSUS",
-        "description": "Allies can use the Pershing as Hard Cover. "
+        "name": "HEH HEH, CLICK-CLACK",
+        "description": "The Pershing can open and close the weapon bay doors on its arms as a Free Action. This has no mechanical purpose but looks cool and makes a funny noise."
       },
       {
-        "name": "SLOW",
-        "description": "The Pershing has +1 Difficulty on Agility Checks and Saves.",
+        "name": "COLOSSUS",
+        "description": "The Pershing has +1 Difficulty on Agility Checks and Saves, but allies can use it as Hard Cover.
         "synergies": [{
           "locations": ["agility","skill_check"],
           "detail": "The Pershing receives +1 Difficulty on Agility checks and saves."
