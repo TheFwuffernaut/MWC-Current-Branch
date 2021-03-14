@@ -1241,6 +1241,7 @@
       {
         "name": "COLOSSUS",
         "description": "The Pershing has +1 Difficulty on Agility Checks and Saves, but allies can use it as Hard Cover.
+        "synergies": [{
           "locations": ["agility","skill_check"],
           "detail": "The Pershing receives +1 Difficulty on Agility checks and saves."
         }]
