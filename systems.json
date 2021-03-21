@@ -584,7 +584,7 @@
 		"name": "FH-121 Direct System Interfacer",
 		"type": "System",
 		"sp": 2,
-		"tags": [{"id": "tg_drone"},{"id": "tg_unique"}],
+		"tags": [{"id": "tg_unique"}],
 		"source": "SSC",
 		"license": "MALACHITE",
 		"license_level": 1,
