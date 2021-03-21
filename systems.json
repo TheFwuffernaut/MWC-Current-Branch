@@ -2383,7 +2383,7 @@
 		"name": "Propelled Undersize Grenades",
 		"type": "Deployable",
 		"sp": 2,
-		"tags": [{"id": "tg_limited", "val": 3}, {"id": "tg_unique"}, {"id": "tg_drone"}],
+		"tags": [{"id": "tg_limited", "val": 3}, {"id": "tg_unique"}],
 		"source": "HA",
 		"license": "ROSWELL",
 		"license_level": 2,
