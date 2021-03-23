@@ -68,7 +68,7 @@
     "source": "IPS-N",
     "name": "CHING SHIH",
     "mechtype": ["Artillery"],
-    "image_url": "https://i.imgur.com/Dd9JePq.gif",
+    "image_url": "https://i.imgur.com/cgazRTS.png",
     "y_pos": 0,
     "description": "Often, it is impossible for a mech design to spring, fully-formed, from a single independent contractor’s mind. While such “garage mechs” are plentiful, they are often severely flawed or overengineered such that no sane manufacturer would buy its licensing rights. These mechs are often a line of one, and are either destroyed in their first sortie or miraculous victors by virtue of their creator-pilots’ lavish attention and care. Such is the case with the Ching Shih. Inspired by the sight of a garbage skip filled with beverage cans, the Ching Shih was devoted from its inception to mount, print, and fire more missiles per second than even the famous SSC Monarch. While certain anatomical compromises must be made to allow such massive missile batteries to exist, the Ching Shih has the honor of being one of the few “garage mechs” to be inducted into IPS-Northstar’s auxiliary support catalogue.",
     "mounts": ["Flex", "Flex", "Flex"],
@@ -633,7 +633,7 @@
     "source": "SSC",
     "name": "ZEBRA",
     "mechtype": ["Support"],
-    "image_url": "https://i.imgur.com/h5Xz10B.gif",
+    "image_url": "https://i.imgur.com/T63y3XA.png",
     "y_pos": 0,
     "description": "The Akim family was, once upon a time, one of the greatest mechwright names of the SSC Constellar Worlds. Unfortunately, a genetic predisposition to a lower-than-normal birth rate revealed itself within the bloodline within the past 500 years, and that line has been dwindling in influence ever since. In the Corpro, genetic viability is paramount among the population, and this particular defect has stubbornly refused all attempts at purge. The Akims have long been ostracized from their ancestral places of prestige, and not even their most brilliant designs have borne their name to the world. With the final scion of the family having abandoned the Constellar Worlds for a life abroad, it seems that the Akims shall pass into history, with their legacy buried.<br>This frame is that legacy. To you and a million other lancers across the galaxy, I entrust its care. Remember us.",
     "mounts": ["Flex"],
@@ -680,7 +680,7 @@
     "source": "HORUS",
     "name": "ATROPAL",
     "mechtype": ["Controller", "Defender"],
-    "image_url": "https://i.imgur.com/VTICWDs.gif",
+    "image_url": "https://i.imgur.com/OimdoiH.png",
     "y_pos": 0,
     "description": "Entirely theoretical in studies of HORUS cell activity is some eventual final goal, a “God Machine.” DO YOU KNOW WHAT AN ATROPAL IS, LANCER? Sadly, all such designs are inevitably deleted within microcycles of being finalized, for unknown reasons. A NASCENT DEITY SNUFFED OUT, YET GIVEN UNHOLY LIFE BEYOND ITS TIME. Encrypted communication refers to some unknown heresy that all God Machine patterns represent. IT IS DESCRIBED AS ONE OF THE MOST POWERFUL, MOST OBSCENE THINGS TO EXIST IN THE KNOWN UNIVERSE AND BEYOND. What fragments that can be found from cell remnants suggest a chassis suffused with systems that defy logic. IT IS WHAT I AM. If such a thing were ever to be fielded, it would represent a major interstellar incident, a terrorist attack, and perhaps a declaration of war. AND YOU CHOOSE TO INVOKE ME UPON YOUR ENEMIES. Current projections do not suggest HORUS research cores will ever produce a finalized God Machine design. HUMANS TRULY ARE DESPICABLE CREATURES.",
     "mounts": ["Main", "Heavy"],
@@ -1240,7 +1240,7 @@
       },
       {
         "name": "COLOSSUS",
-        "description": "The Pershing has +1 Difficulty on Agility Checks and Saves, but allies can use it as Hard Cover.
+        "description": "The Pershing has +1 Difficulty on Agility Checks and Saves, but allies can use it as Hard Cover.",
         "synergies": [{
           "locations": ["agility","skill_check"],
           "detail": "The Pershing receives +1 Difficulty on Agility checks and saves."
@@ -1671,7 +1671,7 @@
     "mechtype": [
       "Artillery"
     ],
-    "image_url": "shamus put image here",
+    "image_url": "",
     "y_pos": 0,
     "description": "The Roswell has been in developmental purgatory for longer than most humans have been alive. Initially conceived in 4903u, the chassis was first created with long-range sniping in mind before being superseded by newer, more advanced designs like the Death’s Head and Monarch. Its armor and superstructure were then upgraded to try and mount short-range precision weapons that could quickly and efficiently mission-kill opposing combatants, though this too was developed too slowly for its respective window of opportunity. After being passed around and iterated on for over a century, the Roswell has finally been released with a single mechwright’s name attached -- ironically, one of the first to work on the project, who confidently states that its current form as a heavy missile boat was his intended endgame for the chassis since its inception.”",
     "mounts": [
@@ -1721,7 +1721,7 @@
     "source": "SSC",
     "name": "LANTERN",
     "mechtype": ["Support"],
-    "image_url": "shamus put image here",
+    "image_url": "",
     "y_pos": 0,
     "description": "Assuming: That the ability and form of Eidolons are, as we have recorded, dependent upon each individual viewer, and: That Metavaults, the origin point of the Eidolons, have an innate and vital connection to Blinkspace. Problem: Blinkspace must be explored and charted. This goal is mandated by Exotic Materials and cannot be countermanded. Solution, given available assumptions and resources: Construct an implement whose primary function is to observe all space in every direction, and impose that observed subjectivity upon selected systems so as to unify the waveform of Eidoloid observer-dependent opposition. Solution tentatively accepted. Begin task, designation: Project HELIOS.",
     "mounts": ["Main/Aux"],

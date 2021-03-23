@@ -595,7 +595,7 @@
 		"name": "Rending Claw",
 		"mount": "Auxiliary",
 		"type": "Melee",
-		"damage": [{"type": "Kinetic", "val": "1d3-1"}], "range": [{"type": "Threat", "val": 1}],
+		"damage": [{"type": "Kinetic", "val": "1d3-1"},{"type": "Heat","val": 1}], "range": [{"type": "Threat", "val": 1}],
 		"tags": [{"id": "tg_overkill"}],
 		"effect": "When you Barrage, you may attack with any number of weapons named Rending Claw in addition to the weapons you select for the Barrage.",
 		"description": "“Beware the Skinwalker, my son! The jaws that bite, the claws that catch!”"
@@ -1146,7 +1146,7 @@
 		"source": "HA",
 		"license": "ROSWELL",
 		"license_level": 2,
-		"on_hit": "1/turn when you Skirmish or Barrage you may attack the target again with this weapon. This weapon’s additional shots cannot benefit from bonus damage.",
+		"on_hit": "You may attack the target again with this weapon. This effect may trigger a maximum of 4 times per Action used to fire the Downpour Battery. This weapon’s additional shots cannot benefit from bonus damage.",
 		"description": "DECODED TRANSMISSION RECOVERED FROM ENEMY MECH BLACK BOX:<br>>INCOMING TRANSMISSION FROM ENEMY ROSWELL<br>[ACCEPT TRANSMISSION?] {y/n}<br>> Y<br>>“YOU’RE TALKING A LOT OF SHIT FOR SOMEONE WITH A VERY SOLID SET OF GRID COORDINATES.”<br>>TRANSMISSION ENDED.",
 		"data_type": "weapon",
 		"aptitude": {}
