@@ -2421,7 +2421,7 @@
       "name": "The Book Of Those Other Rings",
       "description": "“Do you really have to yell that every time?”<br>“Yes… shut up! It doesn’t work if you don’t yell that.”<br>“...Why would Talmath do that?”",
       "active_name": "Tengoku-Daichi  Kaimetsu",
-      "active_effect": "When you activate this, clear the Slowed and Immobilized Conditions, then move 10 spaces forward, attacking every enemy within threat with the Focused profile on the Masamune, ignoring the Loading tag. This movement does not trigger Reactions, allows you to move through other Characters’ spaces, and ignores Engagement. Objects and Terrain that you pass within your Threat automatically take 40 AP Energy Damage.",
+      "active_effect": "When you activate this, clear the Slowed and Immobilized Conditions, then move 10 spaces forward, attacking every enemy within threat with the Focused profile on the Masamune. This movement does not trigger Reactions, allows you to move through other Characters’ spaces, and ignores Engagement. Objects and Terrain that you pass within your Threat automatically take 40 AP Energy Damage.",
       "use": "Turn",
       "activation": "Protocol",
       "integrated": ["mwc_musashi_integrated_weapon"]
