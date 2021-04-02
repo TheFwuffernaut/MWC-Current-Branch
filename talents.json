@@ -22,7 +22,7 @@
   {
     "id": "mwc_vanguard_alt", 
     "name": "Assault Pioneer",
-    "terse": "Alternative and Mutually Exclusive to Assault",
+    "terse": "Alternative and Mutually Exclusive to Vanguard",
     "description": "<i>First in, last out. That's the deal you make. The problem with being the point of the spear is that sometimes the shaft snaps off behind you. Sometimes you have to push yourself and your squad when there's no help. Sometimes you need to take point. Sometimes you have to damn the insurance and create an opening. I say 'sometimes,' but it's happened a hell of a lot since I took this post.</i>",
     "ranks": [
       {
@@ -31,7 +31,7 @@
       },
       {
         "name": "Spycheck",
-        "description": "On a hit with a CQB weapon, the target loses hidden and invisibility and cannot benefit from Hidden Invisibility, or Cover until the end of their next turn."
+        "description": "On a hit with a CQB weapon, the target loses Hidden and Invisibility and cannot benefit from Hidden, Invisibility, or Cover until the end of their next turn."
       },
       {
         "name": "Controlled Recoil",
@@ -47,26 +47,26 @@
     "ranks": [
       {
         "name": "Quicksilver Blade",
-        "description": "You cannot take this talent and Duelist at the same time.<br>Your attacks with main melee weapons do not trigger reactions. When you are missed by an attack, you gain +1 accuracy on your next attack with a main melee weapon against the attacker until the start of your next turn.",
+        "description": "You cannot take this talent and Duelist at the same time.<br>Your attacks with main melee weapons do not trigger reactions. When you hit a target with a Main melee, your next Auxiliary melee attack against the same target before the end of your next turn gains +1 Accuracy. When you hit a target with a Auxiliary  melee, your next Main melee attack against the same target before the end of your next turn gains +1 Accuracy. This effect doesn’t stack.",
         "exclusive": false
       },
       {
         "name": "Deadly Dances",
-        "description": "Once per round, when you hit with an attack with a main melee weapon, you gain a blade master die. You can carry up to 3, and they last until expended or the current scene ends. You can spend them 1 to 1 for the following benefits:<li><b>Kick Up</b> - As a protocol, you may end Prone.<li><b>Untouchable</b> - As a reaction, you may treat yourself as invisible against a melee attack targeting you.<li><b>Tumble</b> - 1/turn, when you are hit by an attack you may move 3 spaces directly away from the attacker as a reaction. This movement does not provoke overwatch and ignores engagement.<li><b>Dragging Slice</b> - When you miss with an attack with a main melee weapon, you may deal 1 AP kinetic damage to the missed target.",
+        "description": "You gain a Dancer's Die, a d6, that starts at 1. Each time you hit with an Auxiliary or Main Melee, increase the value of the Dancer's Die by 1. You may treat the value of any damage die rolled as part of a Melee attack as though it had rolled a value equal to half the Dancer's Die's value. The value of your Dancer's Die persists between scenes but resets to 1 when you rest or perform a Full Repair.",
         "exclusive": false,
         "counters": [
           {
             "id": "mwc_blade_dancer",
-            "name": "BLADEMASTER DICE",
-            "default_value": 0,
+            "name": "DANCER DICE",
+            "default_value": 1,
             "min": 0,
-            "max": 3
+            "max": 6
           }
         ]
       },
       {
         "name": "Riposte",
-        "description": "1/round when you are missed by an attack you may spend a blade master die to make a main melee attack targeting the attacker as a reaction.",
+        "description": "When you make a melee attack with an Auxiliary weapon, you may reset the Dancer's die to 1 to give the attack +2d6 Bonus Damage and AP. This talent's second rank's benefit applies to this attack if you hit.",
         "exclusive": false
       }
     ]
