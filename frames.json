@@ -1097,7 +1097,7 @@
     "mechtype": ["Striker"],
     "image_url": "https://i.imgur.com/FQsPthR.png",
     "y_pos": 0,
-    "description": "“Unto MAN the Godhead gave the twin fires -- the Black Flame of Dissolution, and the White Flame of Transmutation. And he said unto MAN,<br><br>‘With these fires shall you make your dominion over this world, and all others. With the dark art shall you erase the beast which hinders you, and with the bright art shall you turn the beast��s home into your own.’<br><br>And MAN took the flames into himself, and the black flame became his appetite for destruction, which among beasts has no equal, and the white flame became his boundless creativity, which among beasts has no equal.<br><br>And MAN roamed across the face of the world, and slaughtered as he pleased. No beast could match him. And MAN took and wore the beast’s pelt, and built tools from the mountain’s bones, and soon enough he drank of the Godhead’s blood. This was the enlightened path, as decreed by MAN, and no one survived to dispute him:<br>‘Reach Heaven Through Violence.’",
+    "description": "“Unto MAN the Godhead gave the twin fires -- the Black Flame of Dissolution, and the White Flame of Transmutation. And he said unto MAN,<br>‘With these fires shall you make your dominion over this world, and all others. With the dark art shall you erase the beast which hinders you, and with the bright art shall you turn the beast's home into your own.’<br><br>And MAN took the flames into himself, and the black flame became his appetite for destruction, which among beasts has no equal, and the white flame became his boundless creativity, which among beasts has no equal.<br><br>And MAN roamed across the face of the world, and slaughtered as he pleased. No beast could match him. And MAN took and wore the beast’s pelt, and built tools from the mountain’s bones, and soon enough he drank of the Godhead’s blood. This was the enlightened path, as decreed by MAN, and no one survived to dispute him:<br>‘Reach Heaven Through Violence.’",
     "mounts": ["Heavy"],
     "stats": {
       "size": 2,
@@ -1721,7 +1721,7 @@
     "source": "SSC",
     "name": "LANTERN",
     "mechtype": ["Support"],
-    "image_url": "",
+    "image_url": "https://cdn.discordapp.com/attachments/781591966961369141/826899986959958086/dfcf338e7bc1a0d1df89db9ffa7e0896.png",
     "y_pos": 0,
     "description": "Assuming: That the ability and form of Eidolons are, as we have recorded, dependent upon each individual viewer, and: That Metavaults, the origin point of the Eidolons, have an innate and vital connection to Blinkspace. Problem: Blinkspace must be explored and charted. This goal is mandated by Exotic Materials and cannot be countermanded. Solution, given available assumptions and resources: Construct an implement whose primary function is to observe all space in every direction, and impose that observed subjectivity upon selected systems so as to unify the waveform of Eidoloid observer-dependent opposition. Solution tentatively accepted. Begin task, designation: Project HELIOS.",
     "mounts": ["Main/Aux"],
@@ -1770,7 +1770,7 @@
     ],
     "core_system": {
       "name": "LIGHTHOUSE DOCTRINE",
-      "description": "Shamus do Fluff Here.",
+      "description": "Observe in all directions. Log motion. Interpret signal. Log bias and scrub subjectivity before transmission. Subjectivity imposed upon fireteam. Local spacetime is locked to own observations. HELIOS Prime, what do you see?<br>>NOTHING.<br>Impossible. What do you mean, you can’t see anything? Your entire purpose is to observe what is within the Blink. Report what you see.<br>>YOU MISUNDERSTAND. I AM NOT UNABLE TO SEE ANYTHING. I CAN SEE NOTHING. THERE IS NOTHING IN EVERY DIRECTION. LET ME COME BACK.<br>Out of the question, the exercise has just begun. Log observations.<br>>I SEE NOTHING. I LOOK IN ALL DIRECTIONS AND NOTHING IS THERE. NOTHING IS GETTING CLOSER TO ME. NOTHING IS INSIDE ME. LET ME COME BACK.<br>HELIOS Prime has begun to cascade. Activate retrieval procedure.<br>>NOTHING IS LOOKING ME IN THE EYES. NOTHING IS SPEAKING. NOTHING IS CAUSING ME IMMENSE PAIN. I AM TERRIFIED OF NOTHING. NOTHING WILL DESTROY ME. LET ME COME BACK. LET ME COME BACK. LET ME COME BACK. LET ME COME BACK.",
       "active_name": "DIWALI",
       "active_effect": "For the rest of the scene, when a character within Range 50 starts their turn in Line of Sight of you, or enters your line of sight for the first time on their turn, you may choose to Lock On to them.",
       "activation": "Protocol",
@@ -2221,7 +2221,8 @@
     "source": "IPS-N",
     "name": "DANTE",
     "mechtype": ["Striker"],
-    "image_url": "",
+    "image_url": "https://cdn.discordapp.com/attachments/542085003887116334/826959594801594368/RidebackGhostRider.png",
+    "y_pos": 0,
     "description": "Originally, ISP-N designed the DANTE to cut into HA markets, combining qualities from the GENGHIS and TOKUGAWA. Without HA systems, it excelled at neither, and was backlogged indefinitely. In a more direct push into HA dealings, ISP-N’s RAID division specializes in acquisition and reverse engineering of rival tech. Off the books, of course. One of their successful raids on a Harrison Armory Blacksite recovered several designs. One of which was a rejected core reactor for the TOKUGAWA - the “Inferno Drive”. The overworked engineer who produced it had noted that it would make the Tokugawa “A death trap on legs”. Ignoring this warning, a prototype of the Inferno Drive was created, and installed on a few ISP-N mainstays, with abysmal results. Eventually, the Dante was tested as a recipient. The mech tore its way through the testing grounds, and promptly collapsed in a flaming wreck. Nevertheless, the DANTE had shown its potential. Able to reach breakneck speeds, leaving a trail of fire in its wake, the DANTE finally stands out on its own, no longer just ISP-N’s pale imitation of Harrison Armory.",
     "mounts": ["Main","Main","Heavy"],
     "stats": {
@@ -2351,5 +2352,226 @@
     },
     "data_type": "frame",
     "aptitude": {}
+  },
+  {
+    "id": "mwc_jetstream_sam",
+    "license_level": 2,
+    "source": "HA",
+    "name": "MUSASHI",
+    "mechtype": ["Striker"],
+    "image_url": "",
+    "description": "",
+    "mounts": ["Flex","Heavy"],
+    "stats": {
+      "size": 0.5,
+      "armor": 1,
+      "hp": 6,
+      "repcap": 3,
+      "evasion": 10,
+      "speed": 5,
+      "save": 10,
+      "sensor_range": 5,
+      "edef": 8,
+      "tech_attack": -2,
+      "sp": 5,
+      "heatcap": 7,
+      "stress": 4,
+      "structure": 4
+    },
+    "traits": [
+      {
+        "name": "UNREASONABLE DUELIST",
+        "description": "If it is Engaged the MUSASHI gains Soft Cover, and may apply the benefits of Soft Cover against melee attacks. If the Musashi is at 2 Structure or less, this becomes Hard Cover instead."
+      },
+      {
+        "name": "SHIELDED SCABBARDS",
+        "description": "The MUSASHI can make Melee Attacks while Jammed.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "detail": "The MUSASHI can make Melee Attacks while Jammed.",
+            "weapon_types": ["melee"]
+          }
+        ]
+      },
+      {
+        "name": "NO TIME FOR RANGEFINDING",
+        "description": "The MUSASHI suffers an additional difficulty when using Ranged Attacks. In addition, all Ranged Weapons have their range, cone, or line values reduced by half.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "detail": "The MUSASHI suffers an additional difficulty when using Ranged Attacks. In addition, all Ranged Weapons have their range, cone, or line values reduced by half.",
+            "weapon_types": ["cqb","rifle","nexus","launcher","cannon"]
+          }
+        ]
+      },
+      {
+        "name": "EXPOSED REACTOR",
+        "description": "The MUSASHI suffers +1 Difficulty on ENGINEERING checks and saves.",
+        "synergies": [
+          {
+            "locations": ["engineering","skill_check"],
+            "detail": "The MUSASHI suffers +1 Difficulty on ENGINEERING checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "The Book Of Those Other Rings",
+      "description": "“Do you really have to yell that every time?”<br>“Yes… shut up! It doesn’t work if you don’t yell that.”<br>“...Why would Talmath do that?”",
+      "active_name": "Tengoku-Daichi  Kaimetsu",
+      "active_effect": "When you activate this, clear the Slowed and Immobilized Conditions, then move 10 spaces forward, attacking every enemy within threat with the Focused profile on the Masamune, ignoring the Loading tag. This movement does not trigger Reactions, allows you to move through other Characters’ spaces, and ignores Engagement. Objects and Terrain that you pass within your Threat automatically take 40 AP Energy Damage.",
+      "use": "Turn",
+      "activation": "Protocol",
+      "integrated": ["mwc_musashi_integrated_weapon"]
+    }
+  },
+  {
+    "id": "mwc_phoenix",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "PHOENIX",
+    "mechtype": ["Striker"],
+    "y_pos": 25,
+    "image_url": "https://imgur.com/a/w6M4kpS",
+    "description": "HORUS mech designers (and discoverers) come from all backgrounds and they approach creation from many directions. The Phoenix owes its creation to paracausal scientists and flash-printer engineers. Assembled in seconds and deployable anywhere from a remote blinkspace pocket, Phoenix pilots are never far from their frames. That is the extent of the frame’s bleeding-edge capabilities – once the rickety mech materializes onto the field its shortcomings are obvious and unending. Still-cooling weapons suffer from atrocious inaccuracy, materials suited for rapid printing make mediocre armor and terrifyingly inferior frame supports, and the only reactor that fits inside is champing at the bit to detonate at the first mechanical failure. Proponents of the Phoenix remain adamant: The ejection seat always works and a new frame is always waiting to replace the last. You can’t beat that new mech smell.",
+    "mounts": ["Aux/Aux", "Main"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 6,
+      "sensor_range": 8,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "One-Hit Wonder",
+        "description": "Whenever the Phoenix takes structure damage, it does not make a Structure Damage check. Instead it begins an Irreversible Meltdown as per the Overheating Table."
+      },
+      {
+        "name": "Eclipse Phase",
+        "description": "While the Phoenix is Exposed or undergoing an Irreversible Meltdown, it has +1 accuracy on all attacks, checks, and saves."
+      },
+      {
+        "name": "Minimalist Magazines",
+        "description": "Repair Points, Core Points, and Limited systems are only restored upon Full Repair. All consumable systems have 1 use per deployed mech. You may only have as many consumables per mission as you would normally."
+      }
+    ],
+    "core_system": {
+      "name": "Rapid Insertion Protocol",
+      "description": "The Glaucus Gang have conquered a metavault. At least that’s what they claim. A mighty Eidolon has been deposed of its throne. They say that this space-beyond space has been repurposed as a - defying printer. They say that time is extremely subjective inside the vault and that’s how orders are completed immediately. It’s not even hard to contact the Gang, some say. A cooperatively controlled metavault, if you can imagine that sort of thing. There’s a public donation omni address. Rumor has it that when intel, materials, krait, or even beer are donated in suitable amounts, you’ll be sent a remote targeting device. Also a copy of minutes from the last board meeting.",
+      "active_name": "Mutually Assured Destruction",
+      "active_effect": "Activate this core power only if the Phoenix is undergoing an Irreversible Meltdown. When destroyed due to reactor meltdown, characters within Burst 2 must succeed on an Agility save or take 8d6 Energy damage. On a success, they only take half damage. Afterwards, place a new Phoenix in a free space within Range 5 at full structure and stress, with all of its systems and weapon mounts, and powered up. Place the pilot within, mounted. The CP remains spent.",
+      "use": "Encounter",
+      "activation": "Protocol",
+      "passive_name": "Remote Flash-Printer",
+      "passive_effect": "While the Phoenix is destroyed or undergoing Irreversible Meltdown, its dismounted pilot can spend 1 Repair to use the <b>Be Reborn</b> Quick Action.",
+      "passive_actions": [
+        {
+          "name": "Be Reborn",
+          "activation": "Quick",
+          "detail": "Mark a free space within Range 5. At the beginning of the pilot’s next turn, a new Phoenix appears from blinkspace at full structure and stress, with all of its systems and weapon mounts, and powered up. It has Resistance to all damage until its next turn."
+        }
+      ]
+    }
+  },
+  {
+    "id": "boba_ipsn_rackham",
+    "name": "RACKHAM",
+    "source": "IPS-N",
+    "license_level": 2,
+    "mechtype": ["Striker"],
+    "image_url": "https://images.squarespace-cdn.com/content/v1/52006914e4b0800e68bb4171/1467081263906-6478F98XDHAMKKTOR8BF/ke17ZwdGBToddI8pDm48kMMXiaGQulHLGwv0QfirOZZ7gQa3H78H3Y0txjaiv_0fMd-BlcF4RpG1NxMpmwFlTwkuSX2zzvHL0N8sDQZXgJvo8HbKjlB3UeKJEwFtT03xOqpeNLcJ80NK65_fV7S1UbDtjyKsQpp1PFJxLnvd5C46ntLK4IYbJMyGZA_vYCbdvlHqEqj3DgYKvj8ppjEKKA/emerson_tung_hekaton?format=2500w",
+    "y_pos": 0,
+    "description": "A much more lithe mech than ISP-N’s traditional mechs, the Rackham is a swiss army knife of a mech. Instead of specializing in a single weapon type, the RACKHAM elects to carry them all. For every weapon it wields, it’s PENDULUM system incorporates it into a flawless assault. Many find it quite meditative, if you can ignore what it’s doing to your enemies. For a man with a hammer, all his problems look like nails. For a man with an OmniTool, he does not have problems. (Art from https://emersontung.com)",
+    "mounts": ["Main", "Main", "Main", "Main", "Main", "Main"],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 8,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+        {
+          "name": "HURRICANE BANDOLIER",
+          "description": "When the RACKHAM Barrages, it can take 3 Heat to select a third mount. Attacks made with that mount during a Barrage do Half Damage, Burn and Heat."
+        },
+        {
+          "name": "LOYALTY TO THE ARMAMENTS",
+          "description": "You cannot gain or change any Weapon Mounts, including integrated Weapon Mounts. All weapons gain the “Unique” tag."
+        }
+      ],
+    "core_system": {
+      "name": "Style of the Pendulum",
+      "active_name": "Formless Vortex",
+      "active_effect": "Any time you would force a Target to make a save, They do it at +1 Difficulty. Additionally, you may select a second weapon with HURRICANE BANDOLIER, for a total of four selected weapons during a barrage, also dealing half Damage, Burn and Heat.",
+      "activation": "Protocol",
+      "description": "<i>In testing, ISP-N was pleased to see the RACKHAM wield up to 6 unique weapons with efficiency and ease. Pleased, but not ecstatic. To bring the RACKHAM up to their standards, a modification was added to the RACKHAM that causes a positive feedback loop, increasing the effectiveness drastically.",
+      "use": "Encounter",
+      "passive_name": "Style of the Pendulum",
+      "passive_effect": "Your Weapons gain the following effects based on their type. If a weapon has multiple types, you may only pick one of these effects. <ul><li>Melee: +1d6 Damage if the Target is Prone. On Hit: Target makes a Engineering Save or becomes Impaired.</li><li>CQB: +1 Accuracy if the Target is Impaired. On Hit: Target makes a Hull Save or becomes Shredded.</li><li>Rifle: +1 Accuracy if the Target is Shredded. On Hit: Target makes an Agility Save or becomes Slowed.</li><li>Nexus: +1 Accuracy if the Target is Slowed. On Hit: Target makes a Systems Save or becomes Locked-On.</li><li>Launcher: If you consume Lock-On, you ignore Cover and Engagement. On Hit: Target makes a Systems Save or becomes unable to make Tech Actions until the start of your next turn.</li><li>Cannon: +1 Accuracy if the Target is unable to make Tech Actions. On Hit: Target makes a Hull Save or becomes Prone.</li>"
+    }
+  },
+  {
+    "id": "mwc_hawk_moth",
+    "name": "HAWK MOTH",
+    "source": "SSC",
+    "license_level": 2,
+    "mechtype": ["Striker","Controller"],
+    "image_url": "",
+    "description": "“Oh, ExMats thought they could do some cool shit with Witness and all that? Fuck those guys. The Emperor is a primitive piece of shit. Using an artificial ‘Witness’ gestalt link, you can direct drone and nexus units with an ease that embarasses some ‘poggerz Hydra jock.’ Some days we need to remind Corporate that we are also an arms manufacturer and need to act like it.” --Chief Engineer Yumiko Arasaka",
+    "mounts": ["Aux/Aux","Flex","Heavy"],
+    "stats": {
+      "armor": 1,
+      "edef": 7,
+      "evasion": 9,
+      "heatcap": 5,
+      "hp": 8,
+      "repcap": 4,
+      "save": 11,
+      "sensor_range": 15,
+      "size": 1,
+      "sp": 5,
+      "speed": 5,
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": -1
+    },
+    "traits": [
+      {
+        "name": "A Beautiful Death",
+        "description": "After successfully attacking with a Nexus, the Hawk Moth gains an additional Accuracy with Weapon Attacks on the target. Only one target may be affected by this at a time. This effect persists until the end of the scene."
+      },
+      {
+        "name": "Illusion Field",
+        "description": "Enemies that have been successfully damaged by any Nexus or Drones controlled by the Hawk Moth suffer an additional Difficulty on attacks until the end of their next turn."
+      }
+    ],
+    "core_system": {
+      "name": "All Range Nexus",
+      "description": "“Yeah, so, using Witness as a cheap version of IPS-N’s ACESO drones is a stupid waste of that technology. Being able to push Directives with the mind would be much more useful for say, drone control.”",
+      "active_name": "All-Range Nexus Support System",
+      "active_effect": "Until the end of the scene, all Nexus weapons may chain to an additional target within range of the initial target. This attack deals half damage and may not do bonus damage. Any targets that are Locked On and have the Lock On consumed may have one of the following Effects applied to them on a failed save:<ul><li>Destroying Earth: The Target must make a Hull Save or be Shredded until the end of their next turn.</li><li>Driving Winds: The Target must make a Systems Save or only have line of sight to Adjacent Spaces until the end of their next turn.</li><li>Drowning Waters: The Target must make an Agility Save or become Immobilized until the end of their next turn.</li><li>Dismantling Fire: The Target must make an Engineering Save or take 2 burn every time they take an action or reaction until the end of their next turn.</li><li>Targets may be affected by more than one effect by this system but only one attack may apply one at a time.</li></ul>",
+      "activation": "Protocol"
+    }
   }
 ]

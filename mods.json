@@ -133,5 +133,32 @@
     "restricted_types": ["Cannon","CQB","Launcher","Nexus","Rifle"],
     "applied_types": "a melee weapon that does at least partially Kinetic or Explosive damage.",
 		"description": ""
-	}
+	},
+  {
+    "id": "mwc_smart_shrapnel_mod",
+    "name": "SMART SHRAPNEL MOD",
+    "sp": 3,
+    "source": "HORUS",
+    "license": "PHOENIX",
+    "license_level": 3,
+    "effect": "Choose a <b>Blast</b> weapon. It gains Reliable 2. If the weapon is already Reliable, add the values together.",
+    "description": "Smart Shrapnel systems are reverse-engineered from acquired experimental Harrison Armory munitions. As explosive ordnance is deployed, its fragmention shells are carved from the inside to direct projectiles at all valid targets.",
+    "added_tags": [
+      {
+        "id": "tg_reliable",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "mwc_autonomous_weapon_platform_adaptation",
+    "name": "Autonomous Weapon Platform Adaptation",
+    "sp": 1,
+    "source": "SSC",
+    "license": "HAWK MOTH",
+    "license_level": 3,
+    "effect": "Choose one Ranged weapon: Its weapon type changes to Nexus instead of its former type(s).",
+    "description": "<i>“This was a real fucker to get working right but a weapon system equipped with this lets any pilot who is skilled with Nexus weapons to take advantage of that with any primary weapon system.”</i>",
+    "restricted_types": ["Melee"]
+  }
 ]

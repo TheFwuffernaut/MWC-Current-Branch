@@ -1116,7 +1116,7 @@
 			{
 				"name": "Ouroboros Barrage",
 				"activation": "Full Tech",
-				"detail": "Choose a weapon and target a Blast 1 area in its range. When you activate this system, make an attack with that weapon against each enemy in that area. Make this attack again when an enemy starts its turn in the area or enters it for the first time on its turn. This effect can only damage a single target -- it immediately ends the first time you deal damage with it, and you make no further attacks afterward.<br>While this system is active, you cannot attack with the weapon normally, and remain unable to use it until the end of your turn after this system deals damage. You may end the effect as a free action."
+				"detail": "Choose a weapon and target a Blast 1 area in its range. When you activate this system, make an attack with that weapon against each enemy in that area. Make this attack again when an enemy starts its turn in the area or enters it for the first time on its turn. This effect can only damage a single target -- it immediately ends the first time you deal damage with it, and you make no further attacks afterward.<br>While this system is active, you cannot attack with the weapon normally, and remain unable to use it to Skirmish, Barrage, or use any other actions that require you to make an attack with the chosen weapon, until the end of your turn after this system deals damage. You may end the effect as a free action."
 			}
 		],
 		"description": "I loose my thunderbolt to tear through the inbetweens {I fly, and the colors streak past} it misses and before it can draw Gaia’s blood it falls into the bifrost once more {I shall not fail} thousands of my dragonsteeth pierce the air, a thunderstorm of fangs {I adjust and next time I shall strike true} and finally my quarry is downed after a legion assails him {I only need to hit you once}",
@@ -2772,7 +2772,7 @@
 		"license": "GERONIMO",
 		"license_level": 2,
 		"effect": "You may spend a Repair instead of gaining Heat when you Overcharge. The cost of Overcharging still increases when you do this.",
-		"description": "Long after humankind has defeated death, entropy, and misfiled taxes, it will still be fighting waste heat. This modification runs conduction piping down to the ground level of a mech, where fan intakes pump the surrounding atmosphere over densely-packed heat exchange fins. If the local atmosphere is in fact a more conductive medium such as water, so much the better.",
+		"description": "Unlicensed emergency operations are - [necessary] - not authorized by Harrison Industrial. Should your supervisor see you performing such destructive modifications, you will - [survive] - be heavily reprimanded, and possibly fined or barred from further logging operations.",
 		"data_type": "system",
 		"aptitude": {}
 	},
@@ -3028,7 +3028,13 @@
 		"source": "HORUS",
 		"license": "XORN",
 		"license_level": 2,
-		"effect": "When you activate this system, select up to five Size 1 Objects, pieces of Terrain or Cover within Sensors. They are ripped out of whatever location they are currently in. You may then place these Size 1 chunks anywhere within Sensors so long as the freshly placed chunks are not adjacent to each other. If the target(s) of this system are larger than Size 1, they continue to function as normal, despite now having parts of them somewhere else.",
+		"actions": [
+			{
+				"name": "/rtp_solid_objects",
+				"activation": "Quick",
+				"effect": "When you activate this system, select up to five Size 1 Objects, pieces of Terrain or Cover within Sensors. They are ripped out of whatever location they are currently in. You may then place these Size 1 chunks anywhere within Sensors so long as the freshly placed chunks are not adjacent to each other. If the target(s) of this system are larger than Size 1, they continue to function as normal, despite now having parts of them somewhere else."
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3133,5 +3139,219 @@
 			}
 		],
 		"description": "“I trust you all to have read the waiver you signed to be present, but I feel it would irresponsible for me to not reiterate that the next item on our docket will involve discussing the violence involved in the Luxor terrorist attack, particularly the Izabella's release. There is no shame if you need to step out, we will let you know when it is done. [pause] Alright. We have all seen the security footage, and some of us have even seen it in person. It would be a gross understatement to say our failsafes failed, that we could not control it, and that it killed thousands. We did not expect them to work in the first place, the control mechanisms were not ready for something that powerful breaking free, they existed entirely to try and delay it if it got loose.<br><br>Fortunately, the Ailuros is much more manageable, as we simply do not have the technology to recreate something even nearly as powerful. Control has been our lead concern when designing the Prime's personality, with their aggression and vindictiveness reprogrammed to be cultivative, partitioning those emotions away from conscious processes, making for a surprisingly calm copilot. Pretty stimulating conversationalist, actually, I imagine marketing will love that. That aggression builds as the frame is attacked, each spike in their aggression ontologically cached until the partition is filled. Once it is ready for release, the Ailuros combines a weaker version of the Izabella's metaspacial retaliation ability with simulation code cannibalized from the Athena-line to essentially create and resolve a series of superpositions, allowing the pilot to rapidly attack a number of targets a nearby, localized area. Yes, in the back. [Indistinct, followed by a pause] I suppose 'makes a clone of you that punches everything around it' is an apt enough description for the layman, thank you.”"
+	},
+	{
+		"id": "mwc_reactor_stabilizer_mktwo",
+    	"name": "REACTOR STABILIZER MK. II",
+		"type": "System",
+    	"sp": 3,
+    	"tags": [{
+    	  	"id": "tg_unique"
+    	}],
+    	"source": "HA",
+    	"license": "SHERMAN",
+    	"license_level": 1,
+    	"effect": "You may reroll overheating checks, you then keep the higher number(s).",
+    	"description": "A necessary component of most mechs that rely on high energy output, reactor stabilizers add another layer of failsafes to vent heat, manage power flow, and shunt excessive output into weapons and systems as needed."
+	},
+	{
+		"id": "mwc_conqeuror_mobility_suite",
+		"name": "Conqueror Mobility Suite",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "MUSASHI",
+		"license_level": 2,
+		"effect": "1/round: You may either stand from Prone as a Free Action or move 3 spaces as part of a Barrage, ignoring Engagement and do not provoke reactions.",
+		"description": "A refit kit available to any mech, the suite offers an enhanced musculature and control system, allowing for movement options that were previously unheard of. "
+	},
+	{
+		"id": "mwc_dokkodo_class_comp_con",
+		"name": "Dokkōdō Class COMP/CON",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "MUSASHI",
+		"license_level": 2,
+		"effect": "Once per turn, you may select one of the following benefits when you are attacked or attack:<ul><li>1/round: When you are attacked by a Ranged Attack , you may make an opposed attack roll. If you are successful, you may reduce that attack’s damage by 4 and it cannot critically hit.</li><li>1/round: When you are attacked by a Melee Attack, you may move 2 spaces, ignoring Reactions and Engagement.</li><li>1/round: If you critically hit with both a Heavy and a Main Melee weapon this since the start of your last turn, you may gain 2+Grit Overshield and clear 2 heat.</li><li>1/round: If you Destroy or Structure a character using a Heavy or Superheavy weapon, you may Turn Invisible until the start of your next turn.</li></ul><br><br>The Dokkōdō Class COMP/CON is not a true AI and may not enter Cascade.",
+		"description": "One of two ‘competing’ upgrade kits available for acquisition by Harrison Armory, the Dokkōdō Comp/Con unit takes from its namesake a defensive set of tools and upgrades for any Frame."
+	},
+	{
+		"id": "mwc_nitoichi_class_comp_con",
+		"name": "Nitōichi Class COMP/CON",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "MUSASHI",
+		"license_level": 3,
+		"effect": "When you Barrage with only Melee weapons, you may select one of the following benefits before making the attack rolls:<ul><li>1/round: Both selected weapons gain the threat of the higher threat between the two weapons.</li><li>1/round: If the Heavy weapon successfully damages a character, the Main weapon’s damage cannot be reduced by any means, and ignores Immunity.</li><li>1/round: If you attack two separate targets, you gain 1 Accuracy against both.</li><li>1/round: If you Destroy or Structure a target with a Super Heavy Melee weapon, you may Reload or Charge it as a Free Action, and is considered to have been Charged at the start of the turn.</li></ul><br><br>The Dokkōdō Class COMP/CON is not a true AI and may not enter Cascade.",
+		"description": "The other Upgrade kit sold by Harrison Armory, the Nitōichi Class COMP/CON is far more offensively focused. In addition to a full suite of ‘macroed’ movements and a comp/con unit to adapt them to any frame pattern, the Comp/Con has a full suite of exercises for the pilot to help guide them in proper usage."
+	},
+	{
+		"id": "mwc_distortion_pad",
+		"name": "DISTORTION PLATE",
+		"type": "Deployable",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 2}],
+		"source": "HORUS",
+		"license": "PHOENIX",
+		"license_level": 1,
+		"deployables": [
+			{
+				"name": "Distortion Pad",
+				"type": "Deployable",
+				"activation": "Quick",
+				"size": 1,
+				"hp": 5,
+				"evasion": 10,
+				"detail": "Expend a charge to deploy a Size 1 Distortion Pad shield generator in a free space within Range 5. The Distortion Pad is flat and doesn’t obstruct movement. Any character that completely shares its space with the Distortion Pad is Invisible. The Distortion Pad shorts out and is destroyed at the end of your next turn."
+		  	}
+		],
+		"description": "The Emergency Safety Plate is a self-activating defensive device. Less of a cloak and more of a smokescreen, it scans anything on top of itself and casts holographic decoys in its immediate proximity. Its battery life is measured in seconds but many lives have been saved by the Plate despite."
+	},
+	{
+		"id": "mwc_siren_song",
+		"name": "SIREN SONG",
+		"type": "Tech",
+		"sp": 2,
+		"tags": [],
+		"source": "HORUS",
+		"license": "PHOENIX",
+		"license_level": 2,
+		"actions": [
+		  {
+			"name":"ACTIVATE SIREN SONG",
+			"activation": "Quick Tech",
+			"detail": "Your mech and one character in Range 5 and line of sight cannot attack one another nor force each other to make saves. On any subsequent turn, you can end this effect as a free action, or your target can end it by passing a System save as a quick action or leaving this system’s range."
+		  }
+		],
+		"description": ">//TRANSCRIPT: MSMC_golgotha3<br>SYSTEM ALERT! DIGITAL BREACH<br>EXECUTING notatrojanipromise.bat<br>NOTICE: FRIENDLY UNIT ENTERING AREA OF OPERATION<br>PILOT COMMAND: set target7 hostile<br>FRIENDLY UNITS MAY NOT BE SET TO HOSTILE WITHOUT PROVOCATION<br>PILOT COMMAND: rm ffpervent<br>FILE “ffpervent” NOT FOUND!<br>PILOT COMMAND: rm ffprevent<br>ARE YOU SURE YOU WISH TO DELETE FILE “ffprevent” ?<br>PILOT COMMAND: y<br>UNABLE TO DELETE FILE “ffprevent” <span class='horus--subtle'>THEY ARE SO BEAUTIFUL</span><br>PILOT COMMAND: asdarklwhl"
+	},
+	{
+		"id": "mwc_ablative_systems",
+		"name": "ABLATIVE SYSTEMS",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "PHOENIX",
+		"license_level": 2,
+		"actions": [
+		  {
+			"name": "ABLATIVE SYSTEMS",
+			"activation": "Reaction",
+			"frequency": "1/round",
+			"trigger": "You are hit by an attack and damage has been rolled.",
+			"detail": "You count as having Resistance to all damage, Burn, and Heat from the triggering attack. Until the end of your next turn, all other attacks against you are made at +1 Difficulty. Your mech suffers System Trauma as per the Structure Damage Table."
+		  }
+		],
+		"description": "A feature, not a flaw! These easy-on-easy-off system and hardpoint mounts make mech assembly a quick and simple process. Guaranteed to help your mech withstand the stresses of combat. “Front Towards Enemy” engraving optional."
+	},
+	{
+		"id": "mwc_glaucus_class_nhp",
+		"name": "GLAUCUS-CLASS NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "PHOENIX",
+		"license_level": 3,
+		"effect": "Gain the AI property and the <b>Certainty</b> Quick Action.",
+		"actions": [
+		  	{
+				"name": "Certainty",
+				"activation": "Quick",
+				"detail": "Make an attack with a weapon but treat the roll as a 20. It automatically critically hits. After the attack is completed, that weapon mount is destroyed. If the weapon or mount cannot be destroyed, it instead cannot be used for the rest of the Scene."
+		  	}
+		],
+		"description": "The GLAUCUS entity has no clones and is not kept within an NHP casket. They communicate remotely and control frame systems from afar - their own metavault, they claim. GLAUCUS is talkative and curious, expressing wonder and interest at just about anything that comes before them. Their temperament is mild and are especially pleased to acquire information in the form of stories and anecdotes. It is common for the NHP to seemingly not understand the motivation behind violence or even realize that a battle is taking place. When GLAUCUS is reminded that a mech is in combat, they bring weapons to bear with inhuman precision and no concern for system tolerances."
+	},
+	{
+		"id": "mwc_hive_deployment_unit",
+		"name": "HIVE Deployment Unit",
+		"type": "Drone",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"},{"id": "tg_limited","val": 2}],
+		"source": "SSC",
+		"license": "HAWK MOTH",
+		"license_level": 1,
+		"effect": "You may expend a Charge to deploy a HIVE Drone within sensors. When you do select a Main or Auxiliary Nexus weapon. You may not attack Normally with that weapon but may take the Flanking Shots reaction. If the drone is destroyed the weapon is re-enabled at the end of your next turn. You may have one HIVE Drone active at a time.",
+		"deployables": [
+			{
+				"id": "mwc_hive_drone",
+				"name": "HIVE Drone",
+				"type": "Drone",
+				"detail": "Gain the Flanking Shots reaction.",
+				"size": 0.5,
+				"hp": 5,
+				"evasion": 10,
+				"edef": 10,
+				"activation": "Quick",
+				"actions": [
+					{
+						"name": "Flanking Shots",
+						"activation": "Reaction",
+						"frequency": "1/round",
+						"trigger": "You successfully attack a target.",
+						"detail": "You may attack with the weapon selected for HIVE Deployment Unit."
+					}
+				]
+			}
+		],
+		"description": "The HIVE Drone is effectively a refueling and control base for any Nexus system. This allows for deployed sub-units to attack in tandem with the main unit."
+	},
+	{
+		"id": "mwc_distracting_swarm",
+		"name": "Distracting Swarm",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"},{"id": "tg_heat_self","val": 1}],
+		"source": "SSC",
+		"license": "HAWK MOTH",
+		"license_level": 2,
+		"effect": "As a Quick Action, charge this system and gain the Counterswarm Reaction.",
+		"actions": [
+			{
+				"name": "_",
+				"activation": "Quick",
+				"detail": "Gain the Counterswarm reaction."
+			},
+			{
+				"name": "Counterswarm",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "You are targeted by an attack.",
+				"detail": "You may interrupt the attack with an Auxiliary or Main Nexus attack. This attack deals no damage but, Impairs the target until the end of its next Turn and activates any On-Hit, or On-Crit effects, if applicable. The hostile attack then triggers."
+			}
+		],
+		"description": "<i>“So, a neat thing with the Hawk Moth’s gestalt link is tell your drones actually what to do instead of hoping for the best. In this case, actually interrupt, distract and possibly stop an attacker from happening.”</i>"
+	},
+	{
+		"id": "mwc_inari_class_nhp",
+		"name": "INARI-Class NHP",
+		"type": "AI",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"},{"id": "tg_unique"},{"id": "tg_heat_self","val": 2}],
+		"source": "SSC",
+		"license": "HAWK MOTH",
+		"license_level": 3,
+		"effect": "Your mech gains the AI tag and the Foxfire Quick Action. If this system has zero Charges, you may gain heat equal to half of your maximum heat capacity to gain a charge as a Quick Action.",
+		"actions": [
+			{
+				"name": "Foxfire",
+				"activation": "Quick",
+				"detail": "Expend a charge to gain the Deceit reaction until the end of the Scene."
+			},
+			{
+				"name": "Deceit",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "You are attacked.",
+				"detail": "The Attacker must make a Systems save. On a failure, the attack Misses. The Mech then teleports anywhere within Range 5 of the Attacker, success or failure. The charge is then used."
+			}
+		],
+		"description": "INARI was born from a modified and cultured ATHENA sub-group for potential use with the Mourning Cloak before the perfection of the FADE Cloak. By using drones to mimic and create sensor ghosts, INARI can camouflage the host mech and reveal it at a more opportune time. Unfortunately, it tends to think that its theatrics are most beneficial even if not tactically sound. "
 	}
 ]

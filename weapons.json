@@ -403,7 +403,7 @@
 		"actions": [
 			{
 				"name": "Dancing Quicksilver",
-				"activation": "Full",
+				"activation": "Quick",
 				"frequency": "1/Scene",
 				"detail": "The SUPERBIA begins to oscillate rapidly, becoming a blur as it synchronizes itself with all past, current, and future hands that wield it. While in such a state, it begins to function nearly autonomously, granting the following benefits until the end of the scene: You gain Resistance to all damage and heat from the closest hostile character. If multiple characters are equally close, this effect does not apply. A copy of the SUPERBIA appears in your space and constantly moves with you. 1/round, at any point, you may make an attack with this copy."
 			}
@@ -1125,7 +1125,7 @@
 		"name": "LRM 20",
 		"mount": "Main",
 		"type": "Launcher",
-		"damage": [{"type": "Explosive", "val": 2}],
+		"damage": [{"type": "Explosive", "val": "1d3"}],
 		"range": [{"type": "Range",	"val": 15},	{"type": "Blast", "val": 2}],
 		"tags": [{"id": "tg_arcing"},{"id": "tg_reliable", "val": 1}],
 		"source": "HA",
@@ -1146,7 +1146,7 @@
 		"source": "HA",
 		"license": "ROSWELL",
 		"license_level": 2,
-		"on_hit": "You may attack the target again with this weapon. This effect may trigger a maximum of 4 times per Action used to fire the Downpour Battery. This weapon’s additional shots cannot benefit from bonus damage.",
+		"on_attack": "You may attack the target again with this weapon. This effect may trigger a maximum of 4 times per Skirmish or Barrage. This weapon's additional attacks may only trigger 1/turn. This weapon’s additional shots cannot benefit from bonus damage.",
 		"description": "DECODED TRANSMISSION RECOVERED FROM ENEMY MECH BLACK BOX:<br>>INCOMING TRANSMISSION FROM ENEMY ROSWELL<br>[ACCEPT TRANSMISSION?] {y/n}<br>> Y<br>>“YOU’RE TALKING A LOT OF SHIT FOR SOMEONE WITH A VERY SOLID SET OF GRID COORDINATES.”<br>>TRANSMISSION ENDED.",
 		"data_type": "weapon",
 		"aptitude": {}
@@ -1224,20 +1224,20 @@
 		"source": "HORUS",
 		"license": "HELLKNIGHT",
 		"license_level": 3,
+		"effect": "By default this weapon uses the Erga Omnes Profile. As a Protocol, the nanites this weapon commands can be recalled to form into a large sword, or to return to their original function. While recalled, this weapon uses the Corpe Foedus Profile.",
 		"profiles": [
 			{
-				"name": "Nexus",
+				"name": "Erga Omnes",
 				"damage": [{"type": "Kinetic", "val": "1d6+3"}],
 				"range": [{"type": "Range", "val": 8}, {"type": "Threat", "val": 3}],
-				"tags": [{"id": "tg_smart"}, {"id": "tg_seeking"}],
-				"effect": "As a Protocol, the nanites this weapon commands can be recalled to form into a large sword, or to return to their original function. While recalled, this weapon uses the Sword"
+				"tags": [{"id": "tg_smart"}, {"id": "tg_seeking"}]
 			},
 			{
-				"name": "Sword",
+				"name": "Corpe Foedus",
 				"damage": [{"type": "Kinetic", "val": "1d3"}, {"type": "Burn", "val": 6}],
 				"range": [{"type": "Threat", "val": 2}],
 				"tags": [{"id": "tg_smart"}],
-				"effect": "Fever Dream: Sword counts as both a Melee and a Nexus weapon."
+				"effect": "Fever Dream: Corpe Foedus counts as both a Melee and a Nexus weapon."
 			}
 		],
 		"description": "In the throes of my sickness, I was visited by an angel of living metal and burning, scintillant light. That angel bestowed upon me a blade of silver that blinked at me with a million eyes, and as I touched it it became a part of my flesh.<br>The angel said to me: “The conquest of nature is to be achieved through number and measure.” In my dream I took the sword, and the miasma in my blood became a number, and I divided that number into nothing. I awoke that morning, sword in hand, and I was healed.",
@@ -1681,5 +1681,242 @@
 		"effect": "When you attack with this weapon, you make two attacks targeting either one target twice or two different targets.",
 		"description": "“It is time to address the design team's most -contentious- consideration: the fists. We all loved how powerful the original prototype was, how we cheered as every swing carried the terrorists into the air and every good blow crushed their armor. But unfortunately, that same engagement demonstrated the fatal flaw of the original design: it was powerful, but heavy and slow. Quite simply, the sheer musculature that had to be dedicated to create that much damage through the fists alone was an incredible burden on the frame, slowing it down and reducing available space for future systems. But, this gave us an opportunity to make something that could be more reliably implemented in other frames. By using micro flash-printers integrated into the arm, these allow you to feed a steady stream of shaped charges through the knuckles of the mech, supplying the ammunition almost as quickly as the chassis can swing.”",
 		"tags": [{"id": "tg_accurate"}]
+	},
+	{
+		"id": "mwc_musashi_integrated_weapon",
+		"name": "MASAMUNE-Class Nagamaki",
+		"type": "Melee",
+		"mount": "Superheavy",
+		"description": "A high frequency blade that previously could only be mounted to Schedule 2 or larger frames, a new analysis of the Blackened Throne Incident by Think Tank individuals bore fruit to advancements in miniaturized reactors. Through the seemingly impossible output of the Armory’s new Blink-Cooled Ozymandias reactors, this complete weapon and power pack allows the Musashi to carry this devastating weapon, in addition to a comparable weapons suite to modern frontline frames such as the venerable Atilla or loathsome Monarch.",
+		"effect": "The Masamune may be used in its Skirmish or Barrage profiles while Unloaded.",
+		"tags": [{"id": "tg_accurate"}],
+		"profiles": [
+			{
+				"name": "Standard",
+				"barrage": true,
+				"skirmish": false,
+				"damage": [{"type": "Energy", "val": "3d6+5"}],
+				"range": [{"type": "Threat", "val": 2}]
+			},
+			{
+				"name": "Skirmish",
+				"barrage": false,
+				"skirmish": true,
+				"damage": [{"type": "Energy", "val": "1d6+1"}],
+				"range": [{"type": "Threat", "val": 1}],
+				"effect": "This Profile may be used to Skirmish."
+			},
+			{
+				"name": "Focused",
+				"barrage": false,
+				"skirmish": true,
+				"damage": [{"type": "Energy", "val": "4d6+4"}],
+				"range": [{"type": "Threat", "val": 4}],
+				"effect": "Can only be used with the Blinding Strik reaction."
+			}
+		],
+		"actions": [
+			{
+				"name": "Remember Arima Kihei",
+				"activation": "Full",
+				"detail": "You gain the Blinding Strike reaction. You may not Skirmish or Barrage with the weapon while in this state."
+			},
+			{
+				"name": "Blinding Strike",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "A hostile character within Threat attacks you with a Ranged or Melee Attack.",
+				"detail": "You make a melee attack against the attacker, using the Focused profile. If the target attacked you with a Melee weapon, or if they are engaged with you, this attack resolves first."
+			}
+		]
+	},
+	{
+		"id": "mwc_torsion_odachi",
+		"name": "TORSION ODACHI",
+		"type": "Melee",
+		"mount": "Heavy",
+		"description": "Torsion Odachis are more than just effectively a large chunk of sharpened starship armor, the limb that the weapon is mounted to is completely rebuilt to allow the user to move an attacked target further away, or out of position to open the target up to further attacks.",
+		"range": [{"type": "Threat", "val": 3}],
+		"damage": [{"type": "Explosive", "val": "1d6+3"}],
+		"sp": 1,
+		"tags": [{"id": "tg_accurate"}],
+		"on_hit": "You may move the target of this weapon two spaces in any direction",
+		"source": "HA",
+		"license": "MUSASHI",
+		"license_level": 1
+	},
+	{
+		"id": "mwc_fusion_wakizashi",
+		"name": "FUSION WAKIZASHI",
+		"type": "Melee",
+		"mount": "Main",
+		"description": "A short blade requiring an outsized power supply and computational guidance for optimal performance, Fusion Wakizashis can quickly punch through ‘resistance holes’ in a target, and can provide an immense reduction in TTK when used in conjunction with a heavy weapon leading the attack.",
+		"range": [{"type": "Threat", "val": 1}],
+		"damage": [{"type": "Variable", "val": "1d3"}],
+		"sp": 1,
+		"tags": [{"id": "tg_unique"}],
+		"on_attack": "When this weapon is used as part of a Barrage with a Heavy or Superheavy Melee Weapon, this weapon gains 1 Accuracy and deals an additional 4 bonus damage. You may choose this weapon’s damage type on attack. ",
+		"source": "HA",
+		"license": "MUSASHI",
+		"license_level": 1
+	},
+	{
+		"id": "mwc_muramasa_class_zanbato",
+		"name": "MURAMASA-Class Zanbatō",
+		"type": "Melee",
+		"mount": "Superheavy",
+		"description": "“Why is it that big?”<br>“Why isn’t it that big?”<br>“I will literally die to the first asshole with a regular sword.”<br>“Good thing he’ll die over there first.”",
+		"range": [{"type": "Threat", "val": 1}],
+		"damage": [{"type": "Kinetic", "val": "1d6+4"}],
+		"skirmish": true,
+		"integrated": ["mwc_muramasa_class_zanbato_loaded"],
+		"effect": "When you destroy an enemy with this weapon, you may reload it as a free action that may be taken at any time. While the weapon is unloaded you may use the Skirmish (1d6+4) Profile.",
+		"source": "HA",
+		"license": "MUSASHI",
+		"license_level": 3
+	},
+	{
+		"id": "mwc_muramasa_class_zanbato_loaded",
+		"name": "MURAMASA-Class Zanbatō: LOADED",
+		"tags": [{"id": "tg_ap"},{"id": "tg_accurate"},{"id": "tg_ordnance"},{"id": "tg_loading"}],
+		"type": "Melee",
+		"mount": "Superheavy",
+		"range": [{"type": "Line", "val": 5}],
+		"damage": [{"type": "Kinetic", "val": "3d6+4"}],
+		"effect": "This weapon may be used against targets in Engagement. When you destroy an enemy with this weapon, you may reload it as a free action that may be taken at any time."
+	},
+	{
+		"id": "mwc_micromissile_spewer",
+    	"name": "HS 010 MICROMISSILE SPEWER",
+    	"mount": "Auxiliary",
+    	"type": "CQB",
+    	"damage": [{"type": "Explosive", "val": "1d3"}],
+    	"range": [{"type": "Range", "val": 5}, {"type": "Threat", "val": 3}, {"type": "Blast", "val": 1}],
+    	"tags": [{"id": "tg_inaccurate"}],
+    	"source": "HORUS",
+    	"license": "PHOENIX",
+    	"license_level": 1,
+    	"description": "Blocky, primitive, and hazardous, the HS 010 weapon system is a crude joke in a universe populated by sleek engines of destruction. Its cut-down barrel warps after even short bursts and what ordnance does find its mark might never detonate. The design attempts to make up for this with a tremendous fire rate, with dubious results."
+	},
+	{
+        "id": "mwc_temple_os_cannon",
+        "name": "Temple-OS Cannon",
+        "type": "Cannon",
+        "mount": "Main",
+        "license": "RACKHAM",
+        "license_level": 1,
+        "source": "IPS-N",
+        "range": [{"type": "Range","val": 8}],
+        "damage": [{"type": "Energy","val": "1d6"}],
+        "tags": [{"id": "tg_reliable","val": 1}],
+        "sp": 1,
+        "on_hit": "Deal 1 AP Energy Damage to all Targets within Blast 1 of the Target.",
+        "description": "<i>“The Ocular-Solar Cannon has earned the nickname of “Temple” due to its similarity to a pre-fall belief: A theory pyramids could be equipped with lenses to create ‘deathrays” out of pure sunlight. The Temple-OS, has in turn, inspired many conspiracies of its origin."
+    },
+    {
+        "id": "mwc_heartbleed_slug_discharger",
+        "name": "Heartbleed Slug-Discharger",
+        "type": "CQB",
+        "mount": "Main",
+        "license": "RACKHAM",
+        "license_level": 1,
+        "source": "IPS-N",
+        "range": [{"type": "Range","val": 3},{"type": "Threat","val": 3}],
+        "damage": [{"type": "Energy","val": "1d3+1"},{"type": "Heat","val": 1}],
+        "tags": [{"id": "tg_overkill"},{"id": "tg_smart"}],
+        "sp": 1,
+        "on_hit": "The next time the Target takes Heat before the end of their next turn, they take 1d3 AP Explosive Damage.",
+        "description": "<i>“The Heartbleed’s munitions are time delayed explosives. The force that the Heartbleed shoots them at, however, tends to destroy the timing mechanism. The weapon was to be mothballed as a failure, but Lancers have discovered that additional weapons fire causes the Heartbleeds’ munitions to detonate extremely reliably."
+    },
+    {
+        "id": "mwc_corrupted_blood_nanites",
+        "name": "Corrupted Blood Nanites",
+        "type": "Nexus",
+        "mount": "Main",
+        "license": "RACKHAM",
+        "license_level": 2,
+        "source": "IPS-N",
+        "range": [{"type": "Line","val": 5}],
+        "damage": [{"type": "Energy","val": "1d3+1"}],
+        "tags": [{"id": "tg_smart"},{"id": "tg_seeking"}],
+        "sp": 1,
+        "on_hit": "Until the start of your next turn, at the end of each turn, whenever the Target is adjacent to another Target, both take 1 AP damage.",
+        "description": "<i>“These microdrones are capable of electrically oxidizing and liquifying nearly any metal component; to a casual observer, it looks as if the mech is bleeding."
+    },
+    {
+        "id": "mwc_limewire_anti_invisibility_launcher",
+        "name": "Limewire Anti-Invisibility Launcher",
+        "type": "Launcher",
+        "mount": "Main",
+        "license": "RACKHAM",
+        "license_level": 2,
+        "source": "IPS-N",
+        "range": [{"type": "Range","val": 8},{"type": "Blast","val": 1}],
+        "damage": [{"type": "Energy","val": "1d3"}],
+        "tags": [{"id": "tg_smart"},{"id": "tg_arcing"}],
+        "effect": "Targets do not benefit from Invisibility against this weapon.",
+        "sp": 1,
+        "on_hit": "Until the end of your next turn, Targets can not Hide and do not benefit from Invisibility until the end of their next turn.",
+        "description": "<i>“Most launchers leave a slight smoke trail from the rocket smoke. The Limewire, however, leaves a bright neon green trail, easily revealing invisible targets on hit."
+    },
+    {
+        "id": "mwc_morris_class_wormblade",
+        "name": "MORRIS-Class Wormblade",
+        "type": "Melee",
+        "mount": "Main",
+        "license": "RACKHAM",
+        "license_level": 3,
+        "source": "IPS-N",
+        "range": [{"type": "Threat","val": 1}],
+        "damage": [{"type": "Energy","val": "2d3"},{"type": "Heat","val": 1}],
+        "sp": 2,
+        "tags": [{"id": "tg_ap"},{"id": "tg_thrown","val": 5},{"id": "tg_seeking"},{"id": "tg_unique"}],
+        "effect": "While this weapon is intact, your mech gains the AI Tag. At the end of your Turn, this weapon returns to your mech if Thrown.",
+        "on_crit": " Before the end of your next turn, you may convert any Energy Damage from your Ranged Weapon Attacks against the same target into Heat.",
+        "description": "<i>“This dataknife contains a single piece of ancient pre-fall earth technology- a ‘floppy disk’. The disk contains a precursor to a proper AI. It lies mostly dormant, only active to perform self maintenance. Its appetite for growth is never sated, as it is completely contained within its cramped 1.44 MB. When conscious enough to communicate, its language is barely above binary. "
+    },
+    {
+        "id": "mwc_bonzi_class_synapse_trigger",
+        "name": "BONZI-Class Synapse-Trigger",
+        "type": "Rifle",
+        "mount": "Main",
+        "license": "RACKHAM",
+        "license_level": 3,
+        "source": "IPS-N",
+        "range": [{"type": "Range","val": 5}],
+        "damage": [{"type": "Energy","val": "1d3+1"},{"type": "Heat","val": 1}],
+        "sp":2,
+        "tags": [{"id": "tg_smart"},{"id": "tg_reliable","val": 2}],
+        "on_hit": "The target must make a Hull Save or be infected with a movement impairing virus. At the start of each of their turns, they are Knocked back 2 spaces in a direction of your choice. Even though this movement is involuntary, it provokes reactions and engagement as normal. This effect can be ended by the target retrying and succeeding the Hull Save as a Quick Action.",
+		"description": "Everything about this weapon screams anti-user. It is a loud, harsh device with several triggers and muzzles. The internal mechanisms are a closely-guarded secret, with many redundancies. Any attempt to fix any of these issues, however, causes the weapon to lose its effectiveness. The less said about the onboard AI, the better."
+    },
+	{
+		"id": "mwc_stand_alone_nexus",
+		"name": "Stand-Alone Nexus",
+		"type": "Nexus",
+		"mount": "Auxiliary",
+		"license": "HAWK MOTH",
+		"license_level": 1,
+		"source": "SSC",
+		"range": [{"type": "Range","val": 5}],
+		"damage": [{"type": "Energy","val": "1d3"}],
+		"sp": 1,
+		"tags": [{"id": "tg_smart"},{"id": "tg_seeking"}],
+		"on_hit": "If a target would benefit from cover or is Impaired, they take bonus 1d3 Energy damage.",
+		"description": "The ‘Stand-Alone’ Nexus is an admittedly short range weapon system. However, the short range and heavy subunits of the SAN allow for multiple systems placed into a given space on a mech, while the heavier sub-units are able to bring more firepower against distracted or unaware targets."
+	},
+	{
+		"id": "mwc_benisuzume_nexus",
+		"name": "Benisuzume Nexus",
+		"type": "Nexus",
+		"mount": "Heavy",
+		"license": "HAWK MOTH",
+		"license_level": 2,
+		"source": "SSC",
+		"range": [{"type": "Range","val": 15}],
+		"damage": [{"type": "Energy","val": "1d3+1"}],
+		"tags": [{"id": "tg_smart"},{"id": "tg_seeking"}],
+		"on_hit": "You may attack the same target again. This weapon may fire up to 4 additional times as long as you consecutively hit the same target when you select to fire it with Skirmish, Barrage or similar actions. Additional attacks may not use any sources of additional damage and apply the following effects depending on how many times the target has been hit by this weapon this Turn:<ul><li>First hit: The Target must make an Agility save or be Slowed until the end of its next turn.</li><li>Second hit: The Target must make a Hull save or lose the benefits of Armor until the end of the turn.</li><li>Third hit: The Target must make a Systems save or be Impaired until the end of its next turn.</li><li>Fourth hit: The Target must make an Engineering Save or gain 3 Heat.</li><li>Fifth Hit: Your Nexus weapons deal an additional 3 AP Energy Damage against that Target until the end of the Current Turn.</li></ul",
+		"description": "<i>“The centerpiece of the Hawk Moth. Why I decided to give it artistic names and bullshit like that. This is a Nexus unit that’ll rip a Drake apart in mere minutes, crippling its operational status along the way. Being able to direct Benisuzume with a mere thought lets you do far more with a Nexus unit then some cheap portable turret.”</i>"
 	}
 ]
