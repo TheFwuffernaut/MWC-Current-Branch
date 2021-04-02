@@ -1688,7 +1688,6 @@
 		"type": "Melee",
 		"mount": "Superheavy",
 		"description": "A high frequency blade that previously could only be mounted to Schedule 2 or larger frames, a new analysis of the Blackened Throne Incident by Think Tank individuals bore fruit to advancements in miniaturized reactors. Through the seemingly impossible output of the Armory’s new Blink-Cooled Ozymandias reactors, this complete weapon and power pack allows the Musashi to carry this devastating weapon, in addition to a comparable weapons suite to modern frontline frames such as the venerable Atilla or loathsome Monarch.",
-		"effect": "The Masamune may be used in its Skirmish or Barrage profiles while Unloaded.",
 		"tags": [{"id": "tg_accurate"}],
 		"profiles": [
 			{
