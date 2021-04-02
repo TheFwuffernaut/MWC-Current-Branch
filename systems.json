@@ -3163,8 +3163,8 @@
 		"source": "HA",
 		"license": "MUSASHI",
 		"license_level": 2,
-		"effect": "1/round: You may either stand from Prone as a Free Action or move 3 spaces as part of a Barrage, ignoring Engagement and do not provoke reactions.",
-		"description": "A refit kit available to any mech, the suite offers an enhanced musculature and control system, allowing for movement options that were previously unheard of. "
+		"effect": "1/round: You may either stand from Prone as a Free Action or move 3 spaces as part of a Barrage. This movement ignores Engagement and doesn't provoke reactions.",
+		"description": "A refit kit available to any mech, the suite offers an enhanced musculature and control system, allowing for movement options that were previously unheard of."
 	},
 	{
 		"id": "mwc_dokkodo_class_comp_con",

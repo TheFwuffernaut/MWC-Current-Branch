@@ -1712,7 +1712,7 @@
 				"skirmish": true,
 				"damage": [{"type": "Energy", "val": "4d6+4"}],
 				"range": [{"type": "Threat", "val": 4}],
-				"effect": "Can only be used with the Blinding Strik reaction."
+				"effect": "Can only be used with the Blinding Strike reaction."
 			}
 		],
 		"actions": [

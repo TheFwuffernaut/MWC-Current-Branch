@@ -2359,8 +2359,9 @@
     "source": "HA",
     "name": "MUSASHI",
     "mechtype": ["Striker"],
-    "image_url": "",
-    "description": "",
+    "image_url": "https://cdn.discordapp.com/attachments/781591966961369141/827605874222170187/f8a28326912e4d2a676d864c3b851c12.png",
+    "y_pos": 0,
+    "description": "<i>“...The hell do you mean, banned in the Karrakin Trade Baronies! Wai-wai-wait. It was banned because it destroyed too many heirloom Atlas suits? HAH! Call Marketing and see if we can get contacts to keep selling them.” -Chief Engineer Talmath</i><br><br>The Harrison Armory Musashi project was originally started as a more aggressive bodyguard unit for unarmored VIPs. Most designs in the Armory feature blocky, geometric designs, while the Musashi favors sleeker curves, looking more like an overly built sporting hardsuit rather than a weapon of war. Underneath the hood, however, Harrison Armory’s technical expertise comes to the fore, featuring the usual hallmarks of Harrison Armory design schools borrowed from such vaunted frames as the Napoleon, Saladin and Tokugawa.",
     "mounts": ["Flex","Heavy"],
     "stats": {
       "size": 0.5,
