@@ -2148,7 +2148,7 @@
     ],
     "core_system": {
       "name": "KAIJU-Class Molecular Cloaking Apparatus",
-      "description": "Enough radiation can mask your presence from any form of sensor, even someone 's eyes.",
+      "description": "Enough radiation can mask your presence from any form of sensor, even someone's eyes.",
       "active_name": "Reactor Shield Override",
       "active_effect": "For the rest of the Scene, the Giap may Hide and end its turn Hidden even without cover, in addition, any enemies that start their turn or move adjacent to the Giap for the first time on a turn suffer 3 Heat.",
       "activation": "Protocol",

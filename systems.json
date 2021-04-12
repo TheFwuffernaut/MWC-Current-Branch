@@ -2927,7 +2927,7 @@
 	},
 	{
 		"id": "mwc_precognitive_takedown_suit",
-		"name": "V0.0.7 Precognitive Takedown Suit",
+		"name": "V0.0.7 Precognitive Takedown Suite",
 		"type": "System",
 		"sp": 1,
 		"tags": [{"id": "tg_unique"}],
@@ -3337,12 +3337,12 @@
 		"source": "SSC",
 		"license": "HAWK MOTH",
 		"license_level": 3,
-		"effect": "Your mech gains the AI tag and the Foxfire Quick Action. If this system has zero Charges, you may gain heat equal to half of your maximum heat capacity to gain a charge as a Quick Action.",
+		"effect": "This system starts the scene with 3 Charges. Your mech gains the AI tag, Foxfire Quick Action and the Deceit Reaction. The Deceit Reaction can only be used while this System has charges.",
 		"actions": [
 			{
 				"name": "Foxfire",
 				"activation": "Quick",
-				"detail": "Expend a charge to gain the Deceit reaction until the end of the Scene."
+				"detail": "Take 2X heat to gain X charges, to a maximum of 3."
 			},
 			{
 				"name": "Deceit",
@@ -3350,6 +3350,15 @@
 				"frequency": "1/round",
 				"trigger": "You are attacked.",
 				"detail": "The Attacker must make a Systems save. On a failure, the attack Misses. The Mech then teleports anywhere within Range 5 of the Attacker, success or failure. The charge is then used."
+			}
+		],
+		"counters": [
+			{
+				"id": "mwc_foxfire_die",
+				"name": "Charges",
+				"min": 0,
+				"max": 3,
+				"default_value": 3
 			}
 		],
 		"description": "INARI was born from a modified and cultured ATHENA sub-group for potential use with the Mourning Cloak before the perfection of the FADE Cloak. By using drones to mimic and create sensor ghosts, INARI can camouflage the host mech and reveal it at a more opportune time. Unfortunately, it tends to think that its theatrics are most beneficial even if not tactically sound. "
