@@ -399,7 +399,7 @@
 		"source": "SSC",
 		"license": "PLAYBOY",
 		"license_level": 3,
-		"effect": "As long as this weapon is intact, your mech has the <b>AI</b> tag and the <span class='horus--subtle'><b>Dancing Quicksilver</b></span> Full Action. This weapon counts as a Main Melee.",
+		"effect": "As long as this weapon is intact, your mech has the <b>AI</b> tag and the <span class='horus--subtle'><b>Dancing Quicksilver</b></span> Quick Action. This weapon counts as a Main Melee.",
 		"actions": [
 			{
 				"name": "Dancing Quicksilver",
@@ -709,7 +709,7 @@
 		"source": "HA",
 		"license": "ALEXANDROV",
 		"license_level": 1,
-		"effect": "This weapon may be fired twice before needing to be reloaded. Alternately, both eyes can fire at once, causing the weapon to deal 1d6+1 Energy damage, but causing you to gain 1 Heat.",
+		"effect": "This weapon may be fired either as a Cone or as a Line. This weapon may be fired twice before needing to be reloaded. Alternately, both eyes can fire at once, causing the weapon to deal 1d6+1 Energy damage, but causing you to gain 1 Heat.",
 		"description": "Frequently mounted on a mech’s “face,” these high powered energy emitters are rumored to focus their energy in the shape of the Harrison Armory insignia, so as to leave a calling card on enemy wrecks. The weapon runs off of a super-compact flash battery that must be replaced only by licensed technicians at an approved resupply depot. Failure to comply with this restriction may result in catastrophic containment breach, causing loss of limb, vision, and/or hearing.",
 		"data_type": "weapon",
 		"aptitude": {}
@@ -1869,7 +1869,7 @@
         "range": [{"type": "Threat","val": 1}],
         "damage": [{"type": "Energy","val": "2d3"},{"type": "Heat","val": 1}],
         "sp": 2,
-        "tags": [{"id": "tg_ap"},{"id": "tg_thrown","val": 5},{"id": "tg_seeking"},{"id": "tg_unique"}],
+        "tags": [{"id":"tg_ai"},{"id": "tg_ap"},{"id": "tg_thrown","val": 5},{"id": "tg_seeking"},{"id": "tg_unique"}],
         "effect": "While this weapon is intact, your mech gains the AI Tag. At the end of your Turn, this weapon returns to your mech if Thrown.",
         "on_crit": " Before the end of your next turn, you may convert any Energy Damage from your Ranged Weapon Attacks against the same target into Heat.",
         "description": "<i>“This dataknife contains a single piece of ancient pre-fall earth technology- a ‘floppy disk’. The disk contains a precursor to a proper AI. It lies mostly dormant, only active to perform self maintenance. Its appetite for growth is never sated, as it is completely contained within its cramped 1.44 MB. When conscious enough to communicate, its language is barely above binary. "

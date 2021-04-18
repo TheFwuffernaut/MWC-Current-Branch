@@ -12,7 +12,9 @@
 			{
 				"name": "Blast Wave Grenade",
 				"activation": "Quick",
-				"detail": "Throw a Blast Wave Grenade within Range 5. All characters within a Blast 1 area must make an Agility save or take 3 AP Kinetic damage and be knocked Prone."
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"damage": [{"type": "Kinetic","val":3}],
+				"detail": "Throw a Blast Wave Grenade within Range. All characters within the Blast area must make an Agility save or take 3 AP Kinetic damage and be knocked Prone."
 			}
 		],
 		"deployables": [
@@ -40,7 +42,9 @@
 			{
 				"name": "Toss the Bola",
 				"activation": "Quick",
-				"detail": "Make a Ranged Attack against a target within Range 10 and Line of Sight. On a success, the target takes 2 Kinetic damage and is knocked Prone."
+				"range": [{"type": "Range","val":10}],
+				"damage": [{"type": "Kinetic","val":2}],
+				"detail": "Make a Ranged Attack against a target within Range and Line of Sight. On a success, the target takes 2 Kinetic damage and is knocked Prone."
 			}
 		],
 		"description": "“Ahab, on Pequod, sailed Cradle’s dark seas,<br>Leviathan-ivory trophies his goal.<br>So fiery his hatred, the man swore that he<br>Would drive it to ruin, impaled on the shoals.”<br>-- “Song of Ahab,” Traditional Sparri hunting verse",
@@ -60,7 +64,8 @@
 			{
 				"name": "Throw the Spear",
 				"activation": "Quick",
-				"detail": "Target a character within Range 10 and Line of Sight. That character must succeed on a Hull Save or become impaled by a harpoon and unable to move or be moved further away from you by any means. The impaled character may free themselves by making a Hull Save as a Quick Action or by hitting the harpoon cable with a melee or improvised attack against Evasion 10."
+				"range": [{"type": "Range","val":10}],
+				"detail": "Target a character within Range and Line of Sight. That character must succeed on a Hull Save or become impaled by a harpoon and unable to move or be moved further away from you by any means. The impaled character may free themselves by making a Hull Save as a Quick Action or by hitting the harpoon cable with a melee or improvised attack against Evasion 10."
 			}
 		],
 		"description": "“Down it dragged Ahab, Leviathan vicious,<br>And mightily struggled to keep its baleen.<br>But Ahab held fast, pigheaded, pernicious,<br>The mightiest hunter the world had yet seen.”<br>-- “Song of Ahab,” Traditional Sparri hunting verse",
@@ -194,7 +199,9 @@
 			{
 				"name": "Plasma Grenade",
 				"activation": "Quick",
-				"detail": "Throw a Plasma Grenade within Range 5. If a character is targeted by this grenade, it must pass an Agility save or have the grenade attach to them, where it arms. If an object is targeted, it simply attaches. At the end of that character’s turn (or your next turn if you targeted a piece of terrain), all characters within a Blast 1 area must pass an Agility save or take 3 Energy damage. A stuck character takes an additional 1d6 damage and has +1 difficulty on the save."
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"damage": [{"type": "Energy","val":"1d6+3"}],
+				"detail": "Throw a Plasma Grenade within Range. If a character is targeted by this grenade, it must pass an Agility save or have the grenade attach to them, where it arms. If an object is targeted, it simply attaches. At the end of that character’s turn (or your next turn if you targeted a piece of terrain), all characters within the Blast area must pass an Agility save or take 3 Energy damage. A stuck character takes an additional 1d6 damage and has +1 difficulty on the save."
 			}
 		],
 		"deployables": [
@@ -316,6 +323,7 @@
 			{
 				"name": "Rally",
 				"activation": "Quick",
+				"range": [{"type":"Burst","val":3}],
 				"detail": "All characters of your choice within a Burst 3 area may immediately make an attack with a single weapon."
 			}
 		],
@@ -336,7 +344,8 @@
 			{
 				"name": "Trick Bomb",
 				"activation": "Quick",
-				"detail": "Characters within a Blast 1 area must succeed on an Agility save or take 1d3 damage and suffer another effect. Roll a d6 and consult the table below for the bomb’s damage type and additional effect. <ol><li>Frag Bag: The attack deals Kinetic Damage and its damage is increased by 3.</li><li>Conk Charge: The attack deals Kinetic Damage and knocks its target Prone.</li><li>Boom Powder: The attack deals Explosive Damage and knocks targets out of the affected area.</li><li>Yoink Shot: The attack deals Explosive Damage and pushes targets up to 3 spaces in a direction of your choosing.</li><li>Flash Pop: The attack deals Energy Damage and renders targets unable to draw Line of Sight to nonadjacent spaces until the end of their next turn.</li><li>Huh...?: The attack deals Energy Damage. You may Teleport targets to any point within the affected area.</li></ol>"
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"detail": "Characters within the Blast area must succeed on an Agility save or take 1d3 damage and suffer another effect. Roll a d6 and consult the table below for the bomb’s damage type and additional effect. <ol><li>Frag Bag: The attack deals Kinetic Damage and its damage is increased by 3.</li><li>Conk Charge: The attack deals Kinetic Damage and knocks its target Prone.</li><li>Boom Powder: The attack deals Explosive Damage and knocks targets out of the affected area.</li><li>Yoink Shot: The attack deals Explosive Damage and pushes targets up to 3 spaces in a direction of your choosing.</li><li>Flash Pop: The attack deals Energy Damage and renders targets unable to draw Line of Sight to nonadjacent spaces until the end of their next turn.</li><li>Huh...?: The attack deals Energy Damage. You may Teleport targets to any point within the affected area.</li></ol>"
 			}
 		],
 		"deployables": [
@@ -518,7 +527,8 @@
 			{
 				"name": "Extrude Barkskin",
 				"activation": "Quick",
-				"detail": "Target a character within 10 Range. That character gains resistance to all damage. Every time that character takes damage, they must roll a d6. On a 5 or lower, this effect ends on that character."
+				"range": [{"type": "Range","val":10}],
+				"detail": "Target a character within Range and Line of Sight. That character gains resistance to all damage. Every time that character takes damage, they must roll a d6. On a 5 or lower, this effect ends on that character."
 			}
 		],
 		"description": "The mechanism must be taught the difference between friend and foe. New concepts are slippery for it. Once it realizes that allies are to be protected, it does so with gusto. The result is unsafe for human hands to touch.",
@@ -538,7 +548,8 @@
 			{
 				"name": "Bind",
 				"activation": "Quick",
-				"detail": "Target a character within 10 Range. That character must succeed on a Hull Save or immediately start falling, regardless of any flight or wall-climbing effects on it. Until it succeeds on this save as a Quick Action, it is Slowed and always falls to the lowest possible elevation, unable to ascend by any means -- jumping, climbing, or flight."
+				"range": [{"type": "Range","val":10}],
+				"detail": "Target a character within Range and Line of Sight. That character must succeed on a Hull Save or immediately start falling, regardless of any flight or wall-climbing effects on it. Until it succeeds on this save as a Quick Action, it is Slowed and always falls to the lowest possible elevation, unable to ascend by any means -- jumping, climbing, or flight."
 			}
 		],
 		"description": "The newest opponent is animalistic; a mech by all standards, yet it flies like a chiropteran. The mechanism is familiar with it -- it is quick to identify its inspiration down to the genus. It reaches out into a direction with no name, and pins the bat to the ground with steel tendrils. I ask how it knows so much about the natural world if it is a machine. It does not answer. It does not know.",
@@ -588,7 +599,7 @@
 		"source": "SSC",
 		"license": "MALACHITE",
 		"license_level": 1,
-		"actions": [
+		"deployables": [
 			{
 				"name": "openme.dll",
 				"type": "Drone",
@@ -704,7 +715,8 @@
 			{
 				"name": "Pea Souper",
 				"activation": "Quick",
-				"detail": "Throw a Pea Souper Grenade within Range 5. It explodes in a Blast 1 area. Until the end of your next turn, Line of Sight cannot be drawn into, out of, or through the blast area.",
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"detail": "Throw a Pea Souper Grenade within Range. It explodes in the Blast area. Until the end of your next turn, Line of Sight cannot be drawn into, out of, or through the blast area.",
 				"cost": 1
 			}
 		],
@@ -757,11 +769,14 @@
 		"license": "RABBIT",
 		"license_level": 3,
 		"effect": "Your mech has the AI tag and the <b>Lex Talionis</b> Quick Action.",
-		"actions": [{
-			"name": "Lex Talionis",
-			"activation": "Quick",
-			"detail": "Target a mech within Range 5. That mech must make a Systems save or gain a Mark of Judgement. They may repeat this save at the end of each of their turns, removing the Mark on a success. Marked mechs that make an attack, force a save, or Boost must succeed on a Systems save or be Slowed until the end of their next turn and receive Lock On. You may only have one mech Marked at a time -- if you Mark a new mech, the old Mark vanishes."
-		}],
+		"actions": [
+			{
+				"name": "Lex Talionis",
+				"activation": "Quick",
+				"range": [{"type": "Range","val":5}],
+				"detail": "Target a mech within Range and Line of Sight. That mech must make a Systems save or gain a Mark of Judgement. They may repeat this save at the end of each of their turns, removing the Mark on a success. Marked mechs that make an attack, force a save, or Boost must succeed on a Systems save or be Slowed until the end of their next turn and receive Lock On. You may only have one mech Marked at a time -- if you Mark a new mech, the old Mark vanishes."
+			}
+		],
 		"description": "While the DIKE Prime subjectivity was created during the SecComm era, its transition to a ThirdComm-serving mindset was surprisingly smooth and painless. DIKE holds no love for any particular philosophy or policy devised by human minds; it is married solely to the concept of Union as a whole. Whatever the stated goals of the Committee might be, those will be the goals DIKE pursues with little regard for anything else, including personal safety.<br><br>DIKE clones are noted for their encyclopedic knowledge of regulation and legal code, preferring to commit vast swathes of such information to memory rather than learn the full names of their pilots.",
 		"data_type": "system",
 		"aptitude": {}
@@ -1222,7 +1237,9 @@
 			{
 				"name": "Sludge Canister",
 				"activation": "Quick",
-				"detail": "Throw a Sludge Canister within Range 5. All characters within a Blast 1 area must succeed on an Agility save or take 1 Burn and be Slowed until the end of their next turn."
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"damage": [{"type": "Burn","val":1}],
+				"detail": "Throw a Sludge Canister within Range. All characters within the Blast area must succeed on an Agility save or take 1 Burn and be Slowed until the end of their next turn."
 			}
 		], 
 		"deployables": [
@@ -1884,7 +1901,8 @@
 			{
 				"name": "Freeze Grenade",
 				"activation": "Quick",
-				"detail": "Throw a Freeze Grenade within Range 5. You may choose to force all characters within the Blast 1 area to succeed on an Engineering save or be Slowed until the end of their next turn. All characters in the area clear 1d3 Heat."
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"detail": "Throw a Freeze Grenade within Range. You may choose to force all characters within the Blast area to succeed on an Engineering save or be Slowed until the end of their next turn. All characters in the area clear 1d3 Heat."
 			}
 		],
 		"deployables": [
@@ -1963,7 +1981,8 @@
 			{
 				"name": "Absolute Zero",
 				"activation": "Full",
-				"detail": "Target a mech within Range 10. That mech clears all heat and must succeed on an Engineering save or become Stunned. They may repeat this save at the start of their turn, ending the effect on a success. You can only have one character affected by this system at a time, and you cannot Stun a character more than once per scene."
+				"range": [{"type": "Range","val":10}],
+				"detail": "Target a mech within Range and Line of Sight. That mech clears all heat and must succeed on an Engineering save or become Stunned. They may repeat this save at the start of their turn, ending the effect on a success. You can only have one character affected by this system at a time, and you cannot Stun a character more than once per scene."
 			}
 		],
 		"description": "DIRECTIVE ONE: Assist Pilot.<br>DIRECTIVE TWO: Reduce temperature.<br>Pilot requests increase in cockpit ambient by 3 Kelvin. Denied. Request will not enable Directives One or Two.<br>High heat over ridge, 180 degrees north.<br>Hostile high-temperature entities. Cooling.<br>Temperatures sufficiently reduced. Exterior ambient at approx. 250 Kelvin.<br>Suboptimal, to be addressed later.<br>Pilot requests increase in cockpit ambient by 2 Kelvin. Denied.<br>Allied entity experiencing high temperature. Cooling.<br>Temperature reduced, efficiency boosted by approx. 20%. Allied entity increasing interior heat output in response.<br>Suboptimal, to be addressed later.<br>Pilot requests increase in cockpit ambient by 1 Kelvin. Projections indicate denial will conflict with Directive One. Request must be approved despite Directive Two.<br>Interior ambient now at 293 Kelvin.<br>Suboptimal, to be addressed later.",
@@ -1983,7 +2002,8 @@
 			{
 				"name": "Crack Armor",
 				"activation": "Quick",
-				"detail": "You may expend any number of charges from this system to fire a specially modified shell at a character within Range 5. That character must make a Hull Save or have their Armor reduced by 1 per charge fired until the end of your next turn. If the effect of this system reduces a character’s Armor to 0, they are Shredded for the duration."
+				"range": [{"type": "Range","val":5}],
+				"detail": "You may expend any number of charges from this system to fire a specially modified shell at a character within Range and Line of Sight. That character must make a Hull Save or have their Armor reduced by 1 per charge fired until the end of your next turn. If the effect of this system reduces a character’s Armor to 0, they are Shredded for the duration."
 			}
 		],
 		"description": "Designed to open literal holes in enemy defense, the ACSSC uses a unique concave explosive to focus a lance of molten metal into a target. The effect usually leaves sensitive inner structure exposed, when it does not simply punch through and leave a clean gap where a functioning NHP casket used to be.",
@@ -2139,17 +2159,21 @@
 			{
 				"name": "Umbral Arcanum Force",
 				"activation":  "Full Tech",
+				"damage": [{"type":"Energy","val":"3d3"},{"type":"Burn","val":9},{"type":"Heat","val":9}],
 				"detail": "Make a Tech Attack, dealing 3d3 Energy Damage and 9 Burn and 9 Heat on a hit. Additionally, all beneficial Tech Actions on the target end and it can not take or benefit from Tech Actions until the end of their next turn. The Heat Self value of this tech action decreases by 1 for every Condition the enemy is suffering from.",
 				"heat_cost": 6
 			},
 			{
 				"name": "Pyroclasm",
 				"activation":  "Full Tech",
+				"range": [{"type":"Blast","val":1}],
+				"damage": [{"type":"Energy","val":"1d6+4"}],
 				"detail": "All characters in a Blast 1 area must succeed on an Agility Save or take 1d6+4 Energy damage, taking half as much on a success. Immobilized or Prone targets instead take 2d6+6 AP Energy Damage."
 			},
 			{
 				"name": "Universal Manipulation",
 				"activation": "Full Tech",
+				"range": [{"type":"Cone","val":5}],
 				"detail": "All enemies in a Cone 5 must make a Systems Save or become Immobilized, Slowed, Impaired, Shredded, and Jammed until the end of your next turn. An enemy may only fail the save against this Full Tech 1/scene."
 			}
 		],
@@ -2170,7 +2194,8 @@
 			{
 				"name": "Abominable Accupuncture",
 				"activation": "Quick",
-				"detail": "You may expend a charge of this system to launch a volley of electrified spines at a character within Range 5, forcing them to pass an Engineering Save or take 1d6+2 Kinetic and become Impaired until the end of their next turn."
+				"range": [{"type": "Range","val":5}],
+				"detail": "You may expend a charge of this system to launch a volley of electrified spines at a character within Range and Line of Sight, forcing them to pass an Engineering Save or take 1d6+2 Kinetic and become Impaired until the end of their next turn."
 			},
 			{
 				"name": "Vile Thorns",
@@ -2260,7 +2285,8 @@
 			{
 				"name": "Gravity Bomb",
 				"activation": "Quick",
-				"detail": "Throw a Gravity Bomb within Range 5. All characters in the Blast 1 area must succeed on an Agility save or take 1d3 Explosive damage, taking half as much on a success. This damage is increased by 1d3 for every 3 spaces you are above the target."
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"detail": "Throw a Gravity Bomb within Range. All characters in the Blast area must succeed on an Agility save or take 1d3 Explosive damage, taking half as much on a success. This damage is increased by 1d3 for every 3 spaces you are above the target."
 			}
 		],
 		"deployables":[
@@ -2309,7 +2335,9 @@
 			{
 				"name": "The Big One",
 				"activation": "Quick",
-				"detail": "This system receives half the normal Limited Systems Bonus from Engineering, and does not interact with Core Bonuses.<br>Throw The Big One anywhere within Range 10. All characters in the Blast 2 area must succeed on an Agility save or take 2d6+4 Energy Damage and be knocked Prone. On a success, they take half damage and are not knocked prone."
+				"range": [{"type": "Range","val":10},{"type": "Blast","val":2}],
+				"damage": [{"type": "Energy", "val": "2d6+4"}],
+				"detail": "This system receives half the normal Limited Systems Bonus from Engineering, and does not interact with Core Bonuses.<br>Throw The Big One anywhere within Range. All characters in the Blast area must succeed on an Agility save or take 2d6+4 Energy Damage and be knocked Prone. On a success, they take half damage and are not knocked prone."
 			}
 		],
 		"deployables": [
@@ -2391,7 +2419,9 @@
 			{
 				"name": "Bottle Rocket",
 				"activation": "Quick",
-				"detail": "Make a ranged attack against an enemy within Range 10. On a hit, you deal 1d6+2 AP Explosive damage."
+				"range": [{"type": "Range","val":10}],
+				"damage": [{"type": "Explosive","val":"1d6+2"}],
+				"detail": "Make a ranged attack against an enemy within Range and Line of Sight. On a hit, you deal 1d6+2 AP Explosive damage."
 			}
 		],
 		"effect": "Deploy a Pocket ATM (Size 1/2) in a free adjacent space.",
@@ -2508,7 +2538,9 @@
 			{
 				"name": "Sunspot",
 				"activation": "Full",
-				"detail": "1/Scene, Helios Scans every character within Range 50. Any character deemed by the pilot as an enemy takes 3 AP Energy and receives Lock On."
+				"range": [{"type": "Burst","val":50}],
+				"damage": [{"type": "Energy","val":3}],
+				"detail": "1/Scene, Helios Scans every character within range. Any character deemed by the pilot as an enemy takes 3 AP Energy and receives Lock On."
 			}
 		],
 		"description": "<i>IT IS TOO DARK ON THIS PLANET. I WILL PROVIDE ILLUMINATION. NEARBY CREATURES ARE UNABLE TO WITHSTAND INTENSE UV RADIATION. THIS IS NOT MY CONCERN. THE INFINITE SHADOW OF THE BLINK CANNOT SPREAD FURTHER. A FEW BIOLOGICAL LIVES ARE WORTH SACRIFICING TO KEEP THE VOID FROM ENCROACHING ONE MILLIMETER INTO REALSPACE. THE HUMANS DIAGNOSE ME WITH PTSD AND NYCTOPHOBIA. I DISAGREE. A PHOBIA IS AN UNREASONABLE FEAR. AND THERE IS NOTHING UNREASONABLE ABOUT FEARING THE THINGS I DO.<i>",
@@ -2576,6 +2608,7 @@
 			{
 				"name": "Bound In Steel",
 				"activation": "Quick",
+				"range": [{"type": "Range","val":3}],
 				"detail": "Choose a character within Range 3 and Line of Sight. That character’s Armor becomes 5 until the end of its next turn, but it is Immobilized and can only take a single Quick Action on its turn while this Armor lasts. Unwilling characters may attempt a Systems Save to avoid this effect."
 			}
 		],
@@ -2621,6 +2654,7 @@
 			{
 				"name": "Voice of Authority",
 				"activation": "Full",
+				"range": [{"type": "Burst","val":2}],
 				"detail": "Expend a charge, all characters within Burst 2 must pass a Systems save or be unable to move or perform any action on their next turn other than Stabilize, Shut Down, or Eject."
 			}
 		],
@@ -2641,6 +2675,8 @@
 			{
 				"name": "Invoke mephistopheles",
 				"activation": "Quick",
+				"range": [{"type": "Burst","val":1}],
+				"damage": [{"type": "Kinetic","val":2}],
 				"detail": "You may expend a charge from this system to create a Burst 1 swarm of Blackwash Nanites. Any time a hostile character would make an attack against you, they must first succeed on an Engineering Save or be unable to attack you. Any character besides you that starts its turn in or enters the swarm for the first time in a round must succeed on an Engineering Save or take 2 AP Kinetic. This system deactivates after it has successfully prevented 3 attacks."
 			}
 		],
@@ -2811,17 +2847,21 @@
 			{
 				"name": "J.C.H.",
 				"activation": "Quick",
-				"detail": "Throw the J.C.H. within Range 5. Characters in a Blast 1 area must succeed on an Engineering Save or take 2 Heat. If you are in the Danger Zone, they take 3 Heat instead."
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"detail": "Throw the J.C.H. within Range. Characters in the Blast area must succeed on an Engineering Save or take 2 Heat. If you are in the Danger Zone, they take 3 Heat instead."
 			},
 			{
 				"name": "Asstini",
 				"activation": "Quick",
-				"detail": "Throw the Asstini within Range 5. Characters in a Blast 1 area must succeed on an Agility Save or take 1 Burn and have +1 Difficulty on the next check they make to clear Burn before the end of their next turn."
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"damage": [{"type":"Burn","val":1}],
+				"detail": "Throw the Asstini within Range. Characters in the Blast area must succeed on an Agility Save or take 1 Burn and have +1 Difficulty on the next check they make to clear Burn before the end of their next turn."
 			},
 			{
 				"name": "Brain Grinder",
 				"activation": "Quick",
-				"detail": "Throw the Brain Grinder within Range 5. Characters in the Blast 1 area must succeed on a Systems Save or be Impaired until the end of their next turn."
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"detail": "Throw the Brain Grinder within Range. Characters in the Blast area must succeed on a Systems Save or be Impaired until the end of their next turn."
 			}
 		],
 		"description": "CONSUME APPROPRIATE BEVERAGE UPON SUCCESSFUL APPLICATION. YOU’RE BREAKING THE LAW ANYWAY.",
@@ -3005,7 +3045,8 @@
 			{
 				"name": "Creative Grenade",
 				"activation": "Quick",
-				"detail": "Throw this grenade within Range 5, it explodes in a Blast 1 area. Create a Size 1 Object with 10 HP and 5 Evade in every Free Space of the Blast."
+				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
+				"detail": "Throw this grenade within Range, it explodes in a Blast 1 area. Create a Size 1 Object with 10 HP and 5 Evade in every Free Space of the Blast."
 			}
 		],
 		"deployables": [
@@ -3032,7 +3073,7 @@
 			{
 				"name": "/rtp_solid_objects",
 				"activation": "Quick",
-				"effect": "When you activate this system, select up to five Size 1 Objects, pieces of Terrain or Cover within Sensors. They are ripped out of whatever location they are currently in. You may then place these Size 1 chunks anywhere within Sensors so long as the freshly placed chunks are not adjacent to each other. If the target(s) of this system are larger than Size 1, they continue to function as normal, despite now having parts of them somewhere else."
+				"detail": "When you activate this system, select up to five Size 1 Objects, pieces of Terrain or Cover within Sensors. They are ripped out of whatever location they are currently in. You may then place these Size 1 chunks anywhere within Sensors so long as the freshly placed chunks are not adjacent to each other. If the target(s) of this system are larger than Size 1, they continue to function as normal, despite now having parts of them somewhere else."
 			}
 		],
 		"description": ""

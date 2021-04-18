@@ -55,7 +55,8 @@
         {
           "name": "Throw The Net",
           "activation": "Quick",
-          "detail": "Make a Ranged Attack against a target within Range 10 and Line of Sight. On a success, that target is Immobilized and their Evasion cannot be higher than 5 until they escape the net by making a Hull Save as a Full Action. You can only have one character Ensnared at a time -- using this action while you already have an Ensnared target ends the effect on that target."
+          "range": [{"type": "Range","val":10}],
+          "detail": "Make a Ranged Attack against a target within Range and Line of Sight. On a success, that target is Immobilized and their Evasion cannot be higher than 5 until they escape the net by making a Hull Save as a Full Action. You can only have one character Ensnared at a time -- using this action while you already have an Ensnared target ends the effect on that target."
         }
       ]
     },
@@ -497,7 +498,7 @@
       "name": "WARNING: EXTREMELY CAUSTIC INTERNAL FLUIDS",
       "description": "In place of coolant, the Malachite pumps a low-viscosity superacid from a preserved gland of unknown origin housed in its central black-box compartment. This fluid’s boiling point is rather low, and is constantly vented from the frame’s “gills” at a low, manageable volume. When necessary, the gland can be overworked with applied electrostimulation, causing it to churn out gallons of acid in a brief span -- presumably, the panic defense mechanism of its origin creature. The Malachite superheats this excess substance, then vomits it out as a quick-spreading, ground-hugging “greenwash,” which is notably attracted to metallic substances and active electric current, which it clings to and melts down within seconds.",
       "active_name": "Acid Nova",
-      "active_effect": "All characters of your choice within a Burst 5 area who are in Line of Sight and not in cover from you become Shredded until they succeed on an Engineering Save as a Quick Action. If this triggers your Penetrating Acid trait, the enemy does not take Burn but is instead reduced to 1 HP.",
+      "active_effect": "All characters of your choice within a Burst 5 area who are in Line of Sight and not in cover from you become Shredded until they succeed on an Engineering Save as a Quick Action, this is the only way to remove this Shredded. If this triggers your Penetrating Acid trait, you may choose to have the enemy instead be reduced to 1 HP in place of taking burn.",
       "activation": "Full"
     },
     "data_type": "frame",
@@ -620,7 +621,7 @@
         {
           "name": "Tyrant's End",
           "activation": "Full",
-          "detail": "Choose a character within Range 5. As long as that character is within range 5, you gain +2 accuracy on attacks with CQB weapons against them and your successful critical hits with CQB weapons force it to make an Engineering Save or be Stunned. The target gains a stacking +2 Accuracy on saves versus being stunned by this system again for the rest of the scene."
+          "detail": "Choose a character within Range 5. As long as that character is within range 5, you gain +2 accuracy on attacks with CQB weapons against them and your successful critical hits with CQB weapons force it to make an Engineering Save or be Stunned. The target gains a stacking +2 Accuracy on saves versus being stunned by this system again for the rest of the scene for each time is has been Stunned by this ability.."
         }
       ]
     },
