@@ -492,7 +492,7 @@
 		"name": "Orisha Tether",
 		"mount": "Main",
 		"type": "Cannon",
-		"damage": [{"type": "Kinetic", "val": "1d3+1"}],
+		"damage": [{"type": "Energy", "val": "1d3+1"}],
 		"range": [{"type": "Range", "val": 8}],
 		"tags": [{"id": "tg_ap"}, {"id": "tg_unique"}],
 		"source": "SSC",

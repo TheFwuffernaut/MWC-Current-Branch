@@ -325,19 +325,19 @@
   {
     "id": "mwc_supersoldier",
     "name": "Supersoldier",
-    "terse": "placeholder",
-    "description": "also a placeholder",
+    "terse": "Breaking my limits.",
+    "description": "There are people out there who can tear arms out of sockets. Who dance across a battlefield. And for just a moment, you've learned how to push you and your machine to dance and tear with the best of them. You may be a supersoldier, you may have been trained by one. One thing's for sure; you are a terror.",
     "ranks": [
       {
-          "name": "Signature Technique",
+          "name": "Bleeding Edge",
           "description": "1/scene you can perform a special Signature Attack quick action with a non-superheavy melee weapon of your choice in place of a Skirmish. Choose one option from each of the three categories, Setup, Execution, and Flourish, to assemble the technique you wish to use. You may choose different options each time you use this ability to represent different signature moves you've learned over the years. <br><br> <i>Setup:</i> <br> -Make an attack with + 2 Threat... <br> -Make an attack, treating your weapon's range as Burst 1 taking 1 heat per target... <br><br> <i>Execution:</i><br> -...dealing an additional +1d6 bonus damage against prone or Immobilized targets. <br> -...gaining the AP and Overkill tags against a single target of your choice... <br><br> <i>Flourish:</i> <br>-...and on hit each target must pass a Hull save or become Impaired until the end of their next turn. <br>-...and on hit each target must pass an agility save or become Slowed until the end of their next turn. "
       },
       {
-          "name": "Comeback Kid",
+          "name": "Won't Stay Down",
           "description": "You may spend your Signature Attack as a reaction to taking Structure damage from a hostile character's attack. This reaction resolves before rolling on the Structure Damage Table. Add the following options to choose from: <br><br> <i>Setup:</i><br> -Move up to your speed towards the target your your Special attack and make an attack against them... <br><br> <i>Execution:</i> <br>-...knocking all targets back 2 spaces...<br><br> <i>Flourish:</i> <br> -...and all other attakcs against you are made at +1 Difficulty until the end of your next turn."
       },
       {
-          "name": "A Card To Play",
+          "name": "Limit Break",
           "description": "You may use your Signature Attack a second time during the same scene by taking 1d6+1 heat. Options chosen for the first such attack during a scene cannot be chosen for the second attack. Add the following options to choose from: <br><br> <i>Setup:</i> <br> -Make an attack, treating your weapon's range as Thrown (5)... <br><br> <i>Execution:</i> <br>-...Add +2 to your attack roll... <br><br> <i>Flourish:</i> <br>-...and a single target of your choice must pass an Engineering save on critical hit or become Jammed until the end of their next turn."
       }
     ]

@@ -116,7 +116,7 @@
     "license": "DANTE",
     "license_level": 3,
     "effect": "Choose one Ranged or Melee weapon. This Weapon gains the following effects depending on your remaining Structure:<ul><li>4 or Less: The weapon can be fired while you are Jammed.</li><li>3 or Less: The weapon gains AP.</li><li>2 or Less: On Hit: Target must make a Hull Save or become Stunned. A target can only be Stunned this way 1/scene.</li><li>1 or Less: On Hit: Your weapon deals Maximum Damage.</li>",
-    "description": "<i>“SALES@IPSNET: You think a LUCIFER pushes its pilots? Mechs equipped with an ICARUS have a 17% mission survival rate.</i><br><i>ENGINEERING@HA: That’s not something you should be bragging about :/”</i><br><i>- Email exchange referenced in the ISP-N Design Vs. Harrison Armory IP lawsuit.</i>"
+    "description": "<i>“SALES@IPSNET: You think a LUCIFER pushes its pilots? Mechs equipped with an ICARUS have a 17% mission survival rate.</i><br><i>ENGINEERING@HA: That’s not something you should be bragging about :/”</i><br><i>- Email exchange referenced in the IPS-N Design Vs. Harrison Armory IP lawsuit.</i>"
   },
   {
 		"id": "mwc_kinetic_remuneration_ligaments",

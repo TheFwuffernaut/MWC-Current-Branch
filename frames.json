@@ -5,7 +5,7 @@
     "source": "IPS-N",
     "name": "AHAB",
     "mechtype": ["Controller"],
-    "image_url": "https://i.imgur.com/vDBXQIa.png",
+    "image_url": "https://cdn.discordapp.com/attachments/781591966961369141/834531885547389026/ahab1_by_jose_melo_deghyv3-pre.png",
     "y_pos": 0,
     "description": "Named after one of the first recorded megafauna hunters in Cradle’s history, the Ahab is a venerable design that has seen widespread and varied use on a plethora of worlds -- though none more so than Sparr, home to the famed hunters that carry on the ancient sailor’s heritage. Captain Ahab’s biography, titled simply The Whale, was one of the many examples of ancient Cradle literature carried on the Yggdrasil, and understandably one the Sparri people took to heart upon settling their new world. The canon of the Pequod, Ahab’s hunting vessel, has since been expanded over the millennia, giving rise to many fantastical stories far divorced from the original’s realistic tone, save for the presence of gigantic beasts menacing the sea and shore, requiring steely resolve and a sharp harpoon to dispatch.",
     "mounts": ["Main", "Main"],
@@ -61,15 +61,20 @@
       ]
     },
     "data_type": "frame",
-    "aptitude": {}
-    },
+    "aptitude": {},
+    "other_art": [
+      {
+        "url": "https://i.imgur.com/vDBXQIa.png"
+      }
+    ]
+  },
   {
     "id": "mwc_ching_shih",
     "license_level": 2,
     "source": "IPS-N",
     "name": "CHING SHIH",
     "mechtype": ["Artillery"],
-    "image_url": "https://i.imgur.com/cgazRTS.png",
+    "image_url": "https://cdn.discordapp.com/attachments/781591966961369141/834531927380721664/file.png",
     "y_pos": 0,
     "description": "Often, it is impossible for a mech design to spring, fully-formed, from a single independent contractor’s mind. While such “garage mechs” are plentiful, they are often severely flawed or overengineered such that no sane manufacturer would buy its licensing rights. These mechs are often a line of one, and are either destroyed in their first sortie or miraculous victors by virtue of their creator-pilots’ lavish attention and care. Such is the case with the Ching Shih. Inspired by the sight of a garbage skip filled with beverage cans, the Ching Shih was devoted from its inception to mount, print, and fire more missiles per second than even the famous SSC Monarch. While certain anatomical compromises must be made to allow such massive missile batteries to exist, the Ching Shih has the honor of being one of the few “garage mechs” to be inducted into IPS-Northstar’s auxiliary support catalogue.",
     "mounts": ["Flex", "Flex", "Flex"],
@@ -128,7 +133,12 @@
       "use": "Encounter"
     },
     "data_type": "frame",
-    "aptitude": {}
+    "aptitude": {},
+    "other_art": [
+      {
+        "url": "https://i.imgur.com/cgazRTS.png"
+      }
+    ]
   },
   {
     "id": "mwc_crozier",
@@ -136,7 +146,7 @@
     "source": "IPS-N",
     "name": "CROZIER",
     "mechtype": ["Striker"],
-    "image_url": "https://i.imgur.com/gq20zMg.png",
+    "image_url": "https://cdn.discordapp.com/attachments/781591966961369141/834532755919994890/file.png",
     "y_pos": 0,
     "description": "The task of wreckage reclamation is an ignoble one, though no less vital for its lack of glamour. Even in an age of printer technology, material that is deployed must be used for as long as it is available -- so, until antimatter weaponry becomes mainstream, there will always be scrap to collect, disassemble, and repurpose. Once a dedicated trash-collector frame, the Crozier has been updated and retrofitted throughout the years to become a shockingly effective mid-range combatant. While its matter reclamation subsystems are no less effective for their age and new target of enemy armor, its primary self-defense tool is an upper body actuator system, once used to haul large wrecks, now primarily concerned with creating them via severe blunt trauma and hardwired secondary fire triggers, allowing it to blow apart enemy subsystems before vacuuming up the remains and transforming them into ammunition, armor, and other useful combat materiel.",
     "mounts": ["Main/Aux", "Aux/Aux"],
@@ -179,7 +189,12 @@
       "use": "Encounter"
     },
     "data_type": "frame",
-    "aptitude": {}
+    "aptitude": {},
+    "other_art": [
+      {
+        "url": "https://i.imgur.com/gq20zMg.png"
+      }
+    ]
   },
   {
     "id": "mwc_keyes",
@@ -648,7 +663,7 @@
       "edef": 12,
       "heatcap": 4,
       "repcap": 3,
-      "sensor_range": 5,
+      "sensor_range": 8,
       "tech_attack": 2,
       "save": 10,
       "speed": 5,
@@ -1492,11 +1507,11 @@
       },
       {
         "name": "Unfathomable Cosmic Power",
-        "description": "The Magician always fails Hull Checks and Saves and counts as Size 0 for Grapples and any system dependent on grappling.",
+        "description": "The Magician always fails Hull Checks and Saves and counts as Size 0 for Rams, Grapples and any system dependent on grappling. Additionally, it is Jammed and can only use Systems that explicitly say they may be used while Jammed for the duration of any Grapple.",
         "synergies": [
           {
             "locations": ["skill_check","hull","grapple"],
-            "detail": "The Magician always fails Hull Checks and Saves and counts as Size 0 for Grapples and any system dependent on grappling."
+            "detail": "The Magician always fails Hull Checks and Saves and counts as Size 0 for Rams, Grapples and any system dependent on grappling. Additionally, it is Jammed and can only use Systems that explicitly say they may be used while Jammed for the duration of any Grapple."
           }
         ]
       },
@@ -1709,7 +1724,7 @@
       "name": "STEELRAIN RESERVE",
       "description": "Embedded in the core system of the Roswell is the formula for a specific explosive compound. Roswell licensees are allowed to substitute all warheads meeting certain size and dimension restrictions with this formula for a limited time, though the frame is strictly forbidden by law from producing it in abundance. This makes the Roswell one of the few, though by no means the only, weapon platforms in history to have its combat effectiveness limited by licensing rights.",
       "active_name": "Expanded Payload",
-      "active_effect": "For the rest of the scene, the Roswell’s Main Mounts have +1 Accuracy on all attacks, and gain Reliable equal to half their maximum damage. This Reliable damage stacks with any existing Reliable.",
+      "active_effect": "For the rest of the scene, the Roswell’s Main Mounts have +1 Accuracy on all attacks, and gain Reliable equal to half their maximum base damage; for example a 1d6+2 weapon would gain Reliable 4. This Reliable damage stacks with any existing Reliable.",
       "activation": "Protocol",
       "use": "Encounter"
     },
@@ -1912,7 +1927,7 @@
       "evasion": 8,
       "speed": 3,
       "save": 11,
-      "sensor_range": 3,
+      "sensor_range": 15,
       "edef": 12,
       "tech_attack": 1,
       "sp": 6,
@@ -1932,7 +1947,7 @@
       "name": "EXISTENTIAL DISPLACEMENT ENGINE",
       "description": ">DIS: okay so I’m gonna have to dumb this down a lot for you to understand<br>>DIS: but here we go<br>>DIS: there are these little undersea critters on Cradle called Mantis Shrimp<br>>DIS: vicious bastards<br>>DIS: literally punch their prey so hard it causes a vacuum bubble that explodes<br>>DIS: if, you know, the concussion didn’t kill them already<br>>DIS: so I figured my trademark would be a gun that does that<br>>DIS: but instead of water, the cavitation bubble is being made in<br>>DIS: like<br>>DIS: reality",
       "active_name": "Apotheosis",
-      "active_effect": "For the rest of the scene, your Wraithfire may attack 3 targets at once.",
+      "active_effect": "For the rest of the scene, your Wraithfire may attack 3 different targets at once.",
       "activation": "Protocol",
       "use": "Encounter",
       "integrated": ["mwc_archdevil_integrated"]
@@ -2224,7 +2239,7 @@
     "mechtype": ["Striker"],
     "image_url": "https://cdn.discordapp.com/attachments/542085003887116334/826959594801594368/RidebackGhostRider.png",
     "y_pos": 0,
-    "description": "Originally, ISP-N designed the DANTE to cut into HA markets, combining qualities from the GENGHIS and TOKUGAWA. Without HA systems, it excelled at neither, and was backlogged indefinitely. In a more direct push into HA dealings, ISP-N’s RAID division specializes in acquisition and reverse engineering of rival tech. Off the books, of course. One of their successful raids on a Harrison Armory Blacksite recovered several designs. One of which was a rejected core reactor for the TOKUGAWA - the “Inferno Drive”. The overworked engineer who produced it had noted that it would make the Tokugawa “A death trap on legs”. Ignoring this warning, a prototype of the Inferno Drive was created, and installed on a few ISP-N mainstays, with abysmal results. Eventually, the Dante was tested as a recipient. The mech tore its way through the testing grounds, and promptly collapsed in a flaming wreck. Nevertheless, the DANTE had shown its potential. Able to reach breakneck speeds, leaving a trail of fire in its wake, the DANTE finally stands out on its own, no longer just ISP-N’s pale imitation of Harrison Armory.",
+    "description": "Originally, IPS-N designed the DANTE to cut into HA markets, combining qualities from the GENGHIS and TOKUGAWA. Without HA systems, it excelled at neither, and was backlogged indefinitely. In a more direct push into HA dealings, IPS-N’s RAID division specializes in acquisition and reverse engineering of rival tech. Off the books, of course. One of their successful raids on a Harrison Armory Blacksite recovered several designs. One of which was a rejected core reactor for the TOKUGAWA - the “Inferno Drive”. The overworked engineer who produced it had noted that it would make the Tokugawa “A death trap on legs”. Ignoring this warning, a prototype of the Inferno Drive was created, and installed on a few IPS-N mainstays, with abysmal results. Eventually, the Dante was tested as a recipient. The mech tore its way through the testing grounds, and promptly collapsed in a flaming wreck. Nevertheless, the DANTE had shown its potential. Able to reach breakneck speeds, leaving a trail of fire in its wake, the DANTE finally stands out on its own, no longer just IPS-N’s pale imitation of Harrison Armory.",
     "mounts": ["Main","Main","Heavy"],
     "stats": {
       "size": 1,
@@ -2494,7 +2509,7 @@
     "mechtype": ["Striker"],
     "image_url": "https://images.squarespace-cdn.com/content/v1/52006914e4b0800e68bb4171/1467081263906-6478F98XDHAMKKTOR8BF/ke17ZwdGBToddI8pDm48kMMXiaGQulHLGwv0QfirOZZ7gQa3H78H3Y0txjaiv_0fMd-BlcF4RpG1NxMpmwFlTwkuSX2zzvHL0N8sDQZXgJvo8HbKjlB3UeKJEwFtT03xOqpeNLcJ80NK65_fV7S1UbDtjyKsQpp1PFJxLnvd5C46ntLK4IYbJMyGZA_vYCbdvlHqEqj3DgYKvj8ppjEKKA/emerson_tung_hekaton?format=2500w",
     "y_pos": 0,
-    "description": "A much more lithe mech than ISP-N’s traditional mechs, the Rackham is a swiss army knife of a mech. Instead of specializing in a single weapon type, the RACKHAM elects to carry them all. For every weapon it wields, it’s PENDULUM system incorporates it into a flawless assault. Many find it quite meditative, if you can ignore what it’s doing to your enemies. For a man with a hammer, all his problems look like nails. For a man with an OmniTool, he does not have problems. (Art from https://emersontung.com)",
+    "description": "A much more lithe mech than IPS-N’s traditional mechs, the Rackham is a swiss army knife of a mech. Instead of specializing in a single weapon type, the RACKHAM elects to carry them all. For every weapon it wields, it’s PENDULUM system incorporates it into a flawless assault. Many find it quite meditative, if you can ignore what it’s doing to your enemies. For a man with a hammer, all his problems look like nails. For a man with an OmniTool, he does not have problems. (Art from https://emersontung.com)",
     "mounts": ["Main", "Main", "Main", "Main", "Main", "Main"],
     "stats": {
       "size": 0.5,
@@ -2527,7 +2542,7 @@
       "active_name": "Formless Vortex",
       "active_effect": "Any time you would force a Target to make a save, They do it at +1 Difficulty. Additionally, you may select a second weapon with HURRICANE BANDOLIER, for a total of four selected weapons during a barrage, also dealing half Damage, Burn and Heat.",
       "activation": "Protocol",
-      "description": "<i>In testing, ISP-N was pleased to see the RACKHAM wield up to 6 unique weapons with efficiency and ease. Pleased, but not ecstatic. To bring the RACKHAM up to their standards, a modification was added to the RACKHAM that causes a positive feedback loop, increasing the effectiveness drastically.",
+      "description": "<i>In testing, IPS-N was pleased to see the RACKHAM wield up to 6 unique weapons with efficiency and ease. Pleased, but not ecstatic. To bring the RACKHAM up to their standards, a modification was added to the RACKHAM that causes a positive feedback loop, increasing the effectiveness drastically.",
       "use": "Encounter",
       "passive_name": "Style of the Pendulum",
       "passive_effect": "Your Weapons gain the following effects based on their type. If a weapon has multiple types, you may only pick one of these effects. <ul><li>Melee: +1d6 Damage if the Target is Prone. On Hit: Target makes a Engineering Save or becomes Impaired.</li><li>CQB: +1 Accuracy if the Target is Impaired. On Hit: Target makes a Hull Save or becomes Shredded.</li><li>Rifle: +1 Accuracy if the Target is Shredded. On Hit: Target makes an Agility Save or becomes Slowed.</li><li>Nexus: +1 Accuracy if the Target is Slowed. On Hit: Target makes a Systems Save or becomes Locked-On.</li><li>Launcher: If you consume Lock-On, you ignore Cover and Engagement. On Hit: Target makes a Systems Save or becomes unable to make Tech Actions until the start of your next turn.</li><li>Cannon: +1 Accuracy if the Target is unable to make Tech Actions. On Hit: Target makes a Hull Save or becomes Prone.</li>"

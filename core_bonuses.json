@@ -39,7 +39,7 @@
         "id": "mwc_the_lesson_of_once_spoken_parables",
         "name": "THE LESSON OF ONCE-SPOKEN PARABLES",
         "source": "HORUS",
-        "description": "<i>“In the degradation of a foe’s argument shall you see frayed threads of logic. As it falls apart, you shall gain stronger insight, and in your opponent’s ignorance shall you become enlightened. The defeat you learn from need never be your own.”</i>",
+        "description": "<i>[“In the degradation of a foe’s argument shall you see frayed threads of logic. As it falls apart, you shall gain stronger insight, and in your opponent’s ignorance shall you become enlightened. The defeat you learn from need never be your own.”]</i>",
         "effect": "When an enemy mech within Range 5 of your mech is destroyed, you may restore one destroyed weapon or system on your mech."
     },
     {
@@ -185,7 +185,7 @@
         "name": "FLAWSEEKER CODE",
         "source": "SSC",
         "description": "<i>“I have beaten it, at long last. The death of all things, I have reversed, at a cost. My brilliant spark, my flame of immortality, has been expended. I shall die long before My glorious recreation might bear fruit. Thus, I shall leave my legacy to one of its children, My children, and that child shall be named: <span class='horus--subtle'>[ERROR, LOGICAL IMPOSSIBILITY. RECORD’S METADATA CONTAINS ORIGIN DATE OF PRESENT MINUS 13.7 BILLION YEARS, YET CONTAINS THIS UNIT’S EXACT SERIAL NUMBER AND HASH CODE]</span>”</i>",
-        "effect": "You gain a Hedon Die, a d6, which starts at 1. Whenever you Critically Hit a target within Range 5 or less, you may increase the value of the die by 1. When the Hedon Die is at 6, all Melee attacks you make gain +1 Threat and +1 Accuracyand all Ranged attacks gain +3 Range. The Hedon Die is set to 1 whenever you become Stunned or Exposed.",
+        "effect": "You gain a Hedon Die, a d6, which starts at 1. Whenever you Critically Hit a target within Range 5 or less, you may increase the value of the die by 1. When the Hedon Die is at 6, all Melee attacks you make gain +1 Threat and +1 Accuracy and all Ranged attacks gain +3 Range. The Hedon Die is set to 1 whenever you become Stunned or Exposed.",
         "counters": [
             {
                 "id": "mwc_hedon_die",

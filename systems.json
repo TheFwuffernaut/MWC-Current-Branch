@@ -1378,7 +1378,7 @@
 			{
 				"name": "Swords to Plowshares",
 				"activation": "Quick Tech",
-				"detail": "Whenever the target attacks, roll a d6. On a 1, the target becomes Jammed until the end of their next turn. They can remove this effect by passing an engineering save as a Quick Action."
+				"detail": "The target must make a Systems Save, on a Success nothing happens. On a failure; whenever the target attacks, roll a d6. On a 1, the target becomes Jammed until the end of their next turn. They can remove this effect by passing an Engineering Save as a Quick Action."
 			},
 			{
 				"name": "Naturalize",
@@ -2677,7 +2677,7 @@
 				"activation": "Quick",
 				"range": [{"type": "Burst","val":1}],
 				"damage": [{"type": "Kinetic","val":2}],
-				"detail": "You may expend a charge from this system to create a Burst 1 swarm of Blackwash Nanites. Any time a hostile character would make an attack against you, they must first succeed on an Engineering Save or be unable to attack you. Any character besides you that starts its turn in or enters the swarm for the first time in a round must succeed on an Engineering Save or take 2 AP Kinetic. This system deactivates after it has successfully prevented 3 attacks."
+				"detail": "You may expend a charge from this system to create a Blast 1 swarm of Blackwash Nanites centered on yourself. As long as you're within this Blast, Any time a hostile character would make an attack against you, they must first succeed on an Engineering Save or be unable to attack you. Any character besides you that starts its turn in or enters the swarm for the first time in a round must succeed on an Engineering Save or take 2 AP Kinetic. This system deactivates after it has successfully prevented 3 attacks."
 			}
 		],
 		"description": ">DIS: What’s up coming back at you with a new system upgrade<br>>DIS: This one’s pretty dope<br>>DIS: Eats bullets and preserves personal space<br>>DIS: Not responsible if your cockpit springs a leak and you accidentally breathe the little guys in<br>>DIS: They just love carbon based life forms<br>>DIS: Anyway, keep spreading the good word<br>>DIS: And always remember to like, follow, and obey<br>>DIS: Dis out",
