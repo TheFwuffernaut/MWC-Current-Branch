@@ -652,7 +652,7 @@
 		"name": "AKHLYS-CLASS NHP",
 		"type": "AI",
 		"sp": 3,
-		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 3}],
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 2}],
 		"source": "SSC",
 		"license": "MALACHITE",
 		"license_level": 3,
@@ -661,7 +661,7 @@
 			{
 				"name": "Pandemic",
 				"activation": "Quick",
-				"detail": "Target a character within your Sensors. Another character of your choice in a Burst 2 area of the target becomes Shredded if the target is Shredded, and marks an amount of Burn equal to the Burn marked on the target (It does not take initial damage from gaining Burn)."
+				"detail": "Target a character within your Sensors. Another character of your choice in a Burst 3 area of the target becomes Shredded if the target is Shredded, and marks an amount of Burn equal to the Burn marked on the target (It does not take initial damage from gaining Burn). Repeat until there are no more targets within Burst 3 of the previous target that have already been affected by Epidemic this turn."
 			}
 		],
 		"description": "[REDACTED] populations are on the decline due to fungal infection brought by SSC observation crews. Plague origin is as-yet unknown by the public at large. Recommend suppression of this information and framing of Project Defoliant as a wildlife preservation initiative.<br>--Field Report, AKHLYS Prime",
@@ -3095,7 +3095,7 @@
 			},
 			{
 				"name": "Grasping Claw",
-				"detail": "Pick a Size 1 or greater piece of Terrain within range 3 of the Target.. Pull both the Target of this Invade and the created Object closer to you by 5 spaces but the Object ends next to the Target. ",
+				"detail": "Pick a Size 1 or greater piece of Terrain within range 3 of the Target. Pull both the Target of this Invade and the created Object closer to you by 5 spaces but the Object ends next to the Target. ",
 				"activation": "Invade"
 			}
 		],
@@ -3212,11 +3212,41 @@
 		"name": "Dokkōdō Class COMP/CON",
 		"type": "AI",
 		"sp": 3,
-		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"},{"id": "tg_heat_self","val": 1}],
 		"source": "HA",
 		"license": "MUSASHI",
 		"license_level": 2,
-		"effect": "Once per turn, you may select one of the following benefits when you are attacked or attack:<ul><li>1/round: When you are attacked by a Ranged Attack , you may make an opposed attack roll. If you are successful, you may reduce that attack’s damage by 4 and it cannot critically hit.</li><li>1/round: When you are attacked by a Melee Attack, you may move 2 spaces, ignoring Reactions and Engagement.</li><li>1/round: If you critically hit with both a Heavy and a Main Melee weapon this since the start of your last turn, you may gain 2+Grit Overshield and clear 2 heat.</li><li>1/round: If you Destroy or Structure a character using a Heavy or Superheavy weapon, you may Turn Invisible until the start of your next turn.</li></ul><br><br>The Dokkōdō Class COMP/CON is not a true AI and may not enter Cascade.",
+		"effect": "You gain the <b>Parry THIS</b>, <b>Dodge and Weave</b>, <b>Unbreakable</b>, and <b>Where'd they go!</b> Reactions, each of which can be taken 1/round. The Dokkōdō Class COMP/CON is not a true AI and may not enter Cascade.",
+		"actions": [
+			{
+				"name": "Parry THIS",
+				"activation": "Reaction",
+				"trigger": "You are attacked by a Ranged Attack.",
+				"frequency": "1/round",
+				"detail": "You may make an opposed attack roll. If you are successful, you may reduce that attack’s damage by 4 and it cannot critically hit."
+			},
+			{
+				"name": "Dodge and Weave",
+				"activation": "Reaction",
+				"trigger": "You are attacked by a Melee Attack.",
+				"frequency": "1/round",
+				"detail": "You may move 2 spaces, ignoring Reactions and Engagement."
+			},
+			{
+				"name": "Unbreakable",
+				"activation": "Reaction",
+				"trigger": "You critically hit with both a Heavy and a Main Melee weapon this since the start of your last turn.",
+				"frequency": "1/round",
+				"detail": "You may gain 2+Grit Overshield and clear 2 heat."
+			},
+			{
+				"name": "Where'd they go!",
+				"activation": "Reaction",
+				"trigger": "You Destroy or Structure a character using a Heavy or Superheavy weapon.",
+				"frequency": "1/round",
+				"detail": "You may Turn Invisible until the start of your next turn."
+			}
+		],
 		"description": "One of two ‘competing’ upgrade kits available for acquisition by Harrison Armory, the Dokkōdō Comp/Con unit takes from its namesake a defensive set of tools and upgrades for any Frame."
 	},
 	{
@@ -3224,11 +3254,41 @@
 		"name": "Nitōichi Class COMP/CON",
 		"type": "AI",
 		"sp": 3,
-		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"},{"id": "tg_heat_self","val": 1}],
 		"source": "HA",
 		"license": "MUSASHI",
 		"license_level": 3,
-		"effect": "When you Barrage with only Melee weapons, you may select one of the following benefits before making the attack rolls:<ul><li>1/round: Both selected weapons gain the threat of the higher threat between the two weapons.</li><li>1/round: If the Heavy weapon successfully damages a character, the Main weapon’s damage cannot be reduced by any means, and ignores Immunity.</li><li>1/round: If you attack two separate targets, you gain 1 Accuracy against both.</li><li>1/round: If you Destroy or Structure a target with a Super Heavy Melee weapon, you may Reload or Charge it as a Free Action, and is considered to have been Charged at the start of the turn.</li></ul><br><br>The Dokkōdō Class COMP/CON is not a true AI and may not enter Cascade.",
+		"effect": "You gain the <b>Dream Within A Dream</b>, <b>Rending Blow</b>, <b>Ah, but I use two!</b>, and <b>Momentum Conservation</b> Reactions, each of which can be taken 1/round. The Nitōichi Class COMP/CON is not a true AI and may not enter Cascade.",
+		"actions": [
+			{
+				"name": "Dream Within A Dream",
+				"activation": "Reaction",
+				"trigger": "You Barrage with only Melee weapons.",
+				"frequency": "1/round",
+				"detail": "Before making the attack rolls, both selected weapons gain the threat of the higher threat between the two weapons."
+			},
+			{
+				"name": "Rending Blow",
+				"activation": "Reaction",
+				"trigger": "You Barrage with only Melee weapons.",
+				"frequency": "1/round",
+				"detail": "Before making the attack rolls, if the Heavy weapon successfully damages a character, the Main weapon’s damage cannot be reduced by any means, and ignores Immunity."
+			},
+			{
+				"name": "Ah, but I use two!",
+				"activation": "Reaction",
+				"trigger": "You Barrage with only Melee weapons.",
+				"frequency": "1/round",
+				"detail": "Before making the attack rolls, if you attack two separate targets, you gain 1 Accuracy against both."
+			},
+			{
+				"name": "Momentum Conservation",
+				"activation": "Reaction",
+				"trigger": "You Barrage with only Melee weapons.",
+				"frequency": "1/round",
+				"detail": "Before making the attack roll, if you Destroy or Structure a target with a Super Heavy Melee weapon, you may Reload or Charge it as a Free Action, and is considered to have been Charged at the start of the turn."
+			}
+		],
 		"description": "The other Upgrade kit sold by Harrison Armory, the Nitōichi Class COMP/CON is far more offensively focused. In addition to a full suite of ‘macroed’ movements and a comp/con unit to adapt them to any frame pattern, the Comp/Con has a full suite of exercises for the pilot to help guide them in proper usage."
 	},
 	{

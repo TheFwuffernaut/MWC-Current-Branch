@@ -482,7 +482,7 @@
     "image_url": "https://i.imgur.com/RXMlUxP.png",
     "y_pos": 0,
     "description": "It is said that the greatest advances in technology are first made in biology. Man has made no great mechanical breakthrough that evolution has not first perfected. With this in mind, SSC blacksites have made great strides researching the flora and fauna of various worlds for unexplored angles or novel concepts. Details about the bio-research program are light, but the Malachite frame has illustrated several facts: firstly, that Smith-Shimano Corpro is not above the use of harvested biological organs in mechanical chassis. Secondly: it is privy to a number of species and worlds that it has not shared with Union at large. And thirdly: whatever world and whatever species has contributed to the Malachite’s design, it is not one that humankind should ever visit for any length of time.",
-    "mounts": ["Flex", "Main"],
+    "mounts": ["Main/Aux","Main/Aux"],
     "stats": {
       "size": 1,
       "structure": 4,
@@ -502,7 +502,7 @@
     "traits": [
       {
         "name": "PENETRATING ACID",
-        "description": "When the Malachite applies Shred to an already Shredded target, that target takes 2 Burn."
+        "description": "When the Malachite applies Shred to an already Shredded target, that target takes 3 Burn."
       },
       {
         "name": "PROTON DONOR",
@@ -513,7 +513,7 @@
       "name": "WARNING: EXTREMELY CAUSTIC INTERNAL FLUIDS",
       "description": "In place of coolant, the Malachite pumps a low-viscosity superacid from a preserved gland of unknown origin housed in its central black-box compartment. This fluid’s boiling point is rather low, and is constantly vented from the frame’s “gills” at a low, manageable volume. When necessary, the gland can be overworked with applied electrostimulation, causing it to churn out gallons of acid in a brief span -- presumably, the panic defense mechanism of its origin creature. The Malachite superheats this excess substance, then vomits it out as a quick-spreading, ground-hugging “greenwash,” which is notably attracted to metallic substances and active electric current, which it clings to and melts down within seconds.",
       "active_name": "Acid Nova",
-      "active_effect": "All characters of your choice within a Burst 5 area who are in Line of Sight and not in cover from you become Shredded until they succeed on an Engineering Save as a Quick Action, this is the only way to remove this Shredded. If this triggers your Penetrating Acid trait, you may choose to have the enemy instead be reduced to 1 HP in place of taking burn.",
+      "active_effect": "All characters of your choice within a Burst 3 area who are in Line of Sight become Shredded until they pass an Engineering Save as a Quick Action. Additionally, the target must make an Agility Save, on a failure they lose 1 Structure, and are reduced to 1 HP on a Success.",
       "activation": "Full"
     },
     "data_type": "frame",
@@ -981,7 +981,7 @@
         {
           "name": "Subdivide",
           "activation": "Quick",
-          "detail": "The Ooze splits in half, becoming two identical Oozes that are one size smaller. Each Ooze can move independently, but are effectively one mech in every other way -- HP and heat are carried between them, and they may only make the usual number of actions per turn. Two adjacent Oozes of equal size may merge as a Free Action to become an Ooze of one size larger. Split Oozes retain the Subdivide ability, but cannot use it if they are Size 1/2."
+          "detail": "The Ooze splits in half, becoming two identical Oozes that are one size smaller. Each Ooze can move and be targetted independently, but are effectively one mech in every other way -- HP and heat are carried between them, and they may only make the usual number of actions per turn. Two adjacent Oozes of equal size may merge as a Free Action to become an Ooze of one size larger. Split Oozes retain the Subdivide ability, but cannot use it if they are Size 1/2."
         }
       ]
     },
@@ -2439,7 +2439,7 @@
       "active_name": "Tengoku-Daichi  Kaimetsu",
       "active_effect": "When you activate this, clear the Slowed and Immobilized Conditions, then move 10 spaces forward, attacking every enemy within threat with the Focused profile on the Masamune. This movement does not trigger Reactions, allows you to move through other Characters’ spaces, and ignores Engagement. Objects and Terrain that you pass within your Threat automatically take 40 AP Energy Damage.",
       "use": "Turn",
-      "activation": "Protocol",
+      "activation": "Full",
       "integrated": ["mwc_musashi_integrated_weapon"]
     }
   },

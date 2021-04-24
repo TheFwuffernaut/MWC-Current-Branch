@@ -324,9 +324,9 @@
 	{
 		"id": "mwc_alkaline_vent",
 		"name": "Alkaline Vent",
-		"mount": "Main",
+		"mount": "Auxiliary",
 		"type": "CQB",
-		"damage": [{"type": "Energy", "val": "1d6+1"}],
+		"damage": [{"type": "Energy", "val": "1d3+1"}],
 		"range": [{"type": "Range", "val": 5}, {"type": "Threat", "val": 3}],
 		"tags": [{"id": "tg_heat_self","val": 1}],
 		"source": "SSC",
@@ -348,7 +348,7 @@
 		"source": "SSC",
 		"license": "MALACHITE",
 		"license_level": 3,
-		"effect": "This weapon does +4 Bonus Damage and gains the Accurate tag against Shredded targets.",
+		"effect": "This weapon does +3 Bonus Damage and gains the Accurate tag against Shredded targets.",
 		"description": "<i>The [REDACTED] is a very messy eater. Biomass waste is rampant among existing populations, which are already selecting for more particular dining habits. If [REDACTED] is to be farmed for the project, alterations must be made so as not to cause untenable feed wastage.</i>",
 		"data_type": "weapon",
 		"aptitude": {}
