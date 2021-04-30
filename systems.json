@@ -3272,7 +3272,7 @@
 				"activation": "Reaction",
 				"trigger": "You Barrage with only Melee weapons.",
 				"frequency": "1/round",
-				"detail": "Before making the attack rolls, if the Heavy weapon successfully damages a character, the Main weapon’s damage cannot be reduced by any means, and ignores Immunity."
+				"detail": "When you select a single target for a melee weapon barrage; you gain the following benefit: If a Heavy Weapon damages the target, a Main weapon selected part of the barrage cannot have its damage reduced by any means and ignores Immunity."
 			},
 			{
 				"name": "Ah, but I use two!",
@@ -3286,7 +3286,7 @@
 				"activation": "Reaction",
 				"trigger": "You Barrage with only Melee weapons.",
 				"frequency": "1/round",
-				"detail": "Before making the attack roll, if you Destroy or Structure a target with a Super Heavy Melee weapon, you may Reload or Charge it as a Free Action, and is considered to have been Charged at the start of the turn."
+				"detail": "When you select this effect; gain the following benefit until the end of the turn: If you Destroy or Structure a target, you may Reload or Charge it as a Free Action, and is considered to have been Charged at the start of the turn."
 			}
 		],
 		"description": "The other Upgrade kit sold by Harrison Armory, the Nitōichi Class COMP/CON is far more offensively focused. In addition to a full suite of ‘macroed’ movements and a comp/con unit to adapt them to any frame pattern, the Comp/Con has a full suite of exercises for the pilot to help guide them in proper usage."
@@ -3361,10 +3361,10 @@
 		"license_level": 3,
 		"effect": "Gain the AI property and the <b>Certainty</b> Quick Action.",
 		"actions": [
-		  	{
+			{
 				"name": "Certainty",
 				"activation": "Quick",
-				"detail": "Make an attack with a weapon but treat the roll as a 20. It automatically critically hits. After the attack is completed, that weapon mount is destroyed. If the weapon or mount cannot be destroyed, it instead cannot be used for the rest of the Scene."
+				"detail": "Make an attack with a weapon but treat the roll as a 20. It automatically critically hits. After the attack is completed, that weapon mount is destroyed. If the weapon or mount cannot be destroyed, it instead cannot be used for the rest of the Scene - however if a new frame appears before the end of the scene the mount is usable again."
 		  	}
 		],
 		"description": "The GLAUCUS entity has no clones and is not kept within an NHP casket. They communicate remotely and control frame systems from afar - their own metavault, they claim. GLAUCUS is talkative and curious, expressing wonder and interest at just about anything that comes before them. Their temperament is mild and are especially pleased to acquire information in the form of stories and anecdotes. It is common for the NHP to seemingly not understand the motivation behind violence or even realize that a battle is taking place. When GLAUCUS is reminded that a mech is in combat, they bring weapons to bear with inhuman precision and no concern for system tolerances."

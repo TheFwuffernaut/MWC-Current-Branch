@@ -2464,7 +2464,7 @@
       "heatcap": 4,
       "repcap": 6,
       "sensor_range": 8,
-      "tech_attack": -1,
+      "tech_attack": 1,
       "save": 10,
       "speed": 5,
       "sp": 6
