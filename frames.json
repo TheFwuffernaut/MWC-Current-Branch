@@ -286,7 +286,7 @@
       "name": "QUESTOR IMPERIALIS",
       "description": "Verily, verily, I say unto thee: Neither man nor beast nor vile thing of the depths shall stray thee from thy course. No blackguard of sin in his armor of blasphemed godsteel, nor gigafaunus nor megarthropod, nor twisted thinking metal of RA in any of its forms. For you are my chosen, the QUESTOR IMPERIALIS, and you shall know no equal.",
       "active_name": "Knighting Ceremony",
-      "active_effect": "Target an ally within Range 3. That ally gets +1 Armor (To a maximum of 4) for the rest of the scene, Overshield equal to your Grit plus 6, and Caledfwlch as an Integrated Mount. As a Protocol, you may nominate a character within Sensors. Attacks made with Caledfwlch against that character gain the AP tag.",
+      "active_effect": "Target an ally within Line of Sight. That ally gets +1 Armor (To a maximum of 4) for the rest of the scene, Overshield equal to your Grit plus 6, and Caledfwlch as an Integrated Mount. As a Protocol, you may nominate a character within Sensors. Attacks made with Caledfwlch against that character gain the AP tag.",
       "activation": "Full",
       "use": "Encounter",
       "integrated": ["mwc_king_integrated"]
@@ -1646,7 +1646,7 @@
       },
       {
         "name": "FIGHTER-BOMBER",
-        "description": "If the Richtofen flies at least half its speed in a straight line on its turn, it doubles the range of Grenades thrown in that direction until it moves again, and may launch a free copy of each grenade thrown this way."
+        "description": "If the Richtofen flies at least half its speed in a straight line on its turn, it gets +5 range for the next Grenade thrown in that direction until it moves again, and may launch a free copy of a grenade thrown this way."
       },
       {
         "name": "ULTRALIGHT",
@@ -1875,7 +1875,7 @@
       "stress": 4,
       "armor": 2,
       "hp": 8,
-      "repcap": 3,
+      "repcap": 4,
       "evasion": 7,
       "speed": 3,
       "save": 11,

@@ -2286,14 +2286,14 @@
 				"name": "Gravity Bomb",
 				"activation": "Quick",
 				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
-				"detail": "Throw a Gravity Bomb within Range. All characters in the Blast area must succeed on an Agility save or take 1d3 Explosive damage, taking half as much on a success. This damage is increased by 1d3 for every 3 spaces you are above the target."
+				"detail": "Throw a Gravity Bomb within Range. All characters in the Blast area must succeed on an Agility save or take 1d3 Explosive damage, taking half as much on a success. This damage is increased by 1d3 for every 3 spaces you are above the target up to a maximum of 3d3."
 			}
 		],
 		"deployables":[
 			{
 				"name": "Aerial Mine",
 				"type": "Mine",
-				"detail": "This mine is clearly visible, and is deployed floating in midair at least one space above the ground. Aerial Mines float 1 space towards the nearest character of Size 1 or higher at the start of your turn, and detonate in a Burst 1 area when a character is adjacent to them. Characters in the affected area must succeed on an Agility save or take 2d6+4 Explosive damage, taking half as much on a success."
+				"detail": "This mine is clearly visible, and is deployed floating in midair at least one space above the ground. Aerial Mines float 1 space towards the nearest character of Size 1 or higher at the start of your turn, and detonate in a Burst 1 area when a character is adjacent to them. Characters in the affected area must succeed on an Agility save or take 1d6+6 Explosive damage, taking half as much on a success."
 			}
 		],
 		"description": "Originally produced for the Snowy Evans model torpedo corvette, these explosives contain kinetic battery turbines that linearly store kinetic energy as the bomb travels. Upon detonation, the turbines’ banked energy releases, boosting the power of the weapon’s blast wave and propelling shrapnel at near-sonic speeds.",
@@ -2331,18 +2331,19 @@
 		"source": "HA",
 		"license": "RICHTOFEN",
 		"license_level": 3,
+		"effect": "This system receives half the normal Limited Systems Bonus from Engineering, and does not interact with Core Bonuses or Talents in any way.",
 		"actions": [
 			{
 				"name": "The Big One",
 				"activation": "Quick",
 				"range": [{"type": "Range","val":10},{"type": "Blast","val":2}],
 				"damage": [{"type": "Energy", "val": "2d6+4"}],
-				"detail": "This system receives half the normal Limited Systems Bonus from Engineering, and does not interact with Core Bonuses.<br>Throw The Big One anywhere within Range. All characters in the Blast area must succeed on an Agility save or take 2d6+4 Energy Damage and be knocked Prone. On a success, they take half damage and are not knocked prone."
+				"detail": "Throw The Big One anywhere within Range. All characters in the Blast area must succeed on an Agility save or take 2d6+4 Energy Damage and be knocked Prone. On a success, they take half damage and are not knocked prone."
 			}
 		],
 		"deployables": [
 			{
-				"name": "Aerial Mine",
+				"name": "The Bigger One",
 				"type": "Mine",
 				"activation": "Quick",
 				"detail": "This mine only activates when a character enters its space. All characters within Burst 3 of the Mine must succeed on an Agility save or take 2d6+8 Energy Damage and be knocked Prone. On a success, they take half damage and are not knocked prone. The area becomes Dangerous Terrain for the rest of the scene that deals Energy damage."

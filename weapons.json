@@ -498,7 +498,7 @@
 		"source": "SSC",
 		"license": "ZEBRA",
 		"license_level": 2,
-		"effect": "This weapon may target an ally and fire against Evasion 8. On a hit, you become Tethered to that ally instead of dealing damage. Upon tethering and at the start of each of your turns, the tethered ally gains Overshield equal to your Grit plus 1. If you fire the weapon again, or if either tethered character ends their turn outside of this weapon's range or line of sight to the other, the tether ends.",
+		"effect": "This weapon may target an ally, it automatically hits the ally when used this way. You become Tethered to that ally instead of dealing damage. Upon tethering and at the start of each of your turns, the tethered ally gains Overshield equal to your Grit plus 1. If you fire the weapon again, or if either tethered character ends their turn outside of this weapon's range or line of sight to the other, the tether ends.",
 		"description": "<i>I didn’t have anything else to put here, so I threw in the other big secret project. High energy draw, low range, and the tether snaps at the worst possible times. But the field’s biphasic, so it refreshes a hell of a lot faster than anything you could compare it to. Family didn’t want people to get shot with it, but I overrode that setting. Fuck the “intended use,” go with your heart.</i>",
 		"data_type": "weapon",
 		"aptitude": {}
