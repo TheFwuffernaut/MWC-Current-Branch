@@ -530,7 +530,7 @@
 		"source": "HORUS",
 		"license": "BUER",
 		"license_level": 1,
-		"effect": "You cannot attack with this weapon normally. Rather, 1/round when you successfully Ram a target, you may automatically hit a character within threat with this weapon as a free action. This weapon's damage becomes 1d3+3 if you have already hit a different target with a Voltaic Spike on your turn.",
+		"effect": "You cannot attack with this weapon normally. Rather, 1/round when you successfully Ram a target, you may automatically hit that character with this weapon as a free action. This weapon's damage becomes 1d3+3 if you have already hit a different target with a Voltaic Spike on your turn.",
 		"description": "<i>“‘We just need to keep our distance,’ they said. ‘Outrun it,’ they said. How am I going to tell Kyle’s ma what this goofy starfish thing did to him? There’s not even a wreck to search.” -- PVT G. Pyle.</i>",
 		"data_type": "weapon",
 		"aptitude": {}

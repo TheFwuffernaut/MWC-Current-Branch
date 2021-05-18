@@ -3047,7 +3047,7 @@
 				"name": "Creative Grenade",
 				"activation": "Quick",
 				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
-				"detail": "Throw this grenade within Range, it explodes in a Blast 1 area. Create a Size 1 Object with 10 HP and 5 Evade in every Free Space of the Blast."
+				"detail": "Throw this grenade within Range, it explodes in a Blast 1 area. Create a Size 1 Object with 1 HP and 5 Evade in every Free Space of the Blast. Characters in the Blast are pushed to the edge of it in the nearest free space.<br>Objects placed by this Blast treat spaces above the ground as valid free spaces and may be placed mid-air, in which case they do not fall."
 			}
 		],
 		"deployables": [

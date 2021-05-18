@@ -66,7 +66,7 @@
       },
       {
         "name": "Riposte",
-        "description": "When you make a melee attack with an Auxiliary weapon, you may reset the Dancer's die to 1 to give the attack +2d6 Bonus Damage and AP. This talent's second rank's benefit applies to this attack if you hit.",
+        "description": "When you make a melee attack with an Auxiliary weapon, if the Dancer's Die is at 6, you may reset the Dancer's die to 1 to give the attack +2d6 Bonus Damage and AP. This talent's second rank's benefit applies to this attack if you hit.",
         "exclusive": false
       }
     ]

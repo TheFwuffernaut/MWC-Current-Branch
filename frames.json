@@ -61,12 +61,7 @@
       ]
     },
     "data_type": "frame",
-    "aptitude": {},
-    "other_art": [
-      {
-        "url": "https://i.imgur.com/vDBXQIa.png"
-      }
-    ]
+    "aptitude": {}
   },
   {
     "id": "mwc_ching_shih",
@@ -133,12 +128,7 @@
       "use": "Encounter"
     },
     "data_type": "frame",
-    "aptitude": {},
-    "other_art": [
-      {
-        "url": "https://i.imgur.com/cgazRTS.png"
-      }
-    ]
+    "aptitude": {}
   },
   {
     "id": "mwc_crozier",
@@ -189,12 +179,7 @@
       "use": "Encounter"
     },
     "data_type": "frame",
-    "aptitude": {},
-    "other_art": [
-      {
-        "url": "https://i.imgur.com/gq20zMg.png"
-      }
-    ]
+    "aptitude": {}
   },
   {
     "id": "mwc_keyes",
@@ -1098,7 +1083,7 @@
         {
           "name": "Anthem of Attention",
           "activation": "Protocol",
-          "detail": "1/round, affected allies may gain +1 Accuracy on a Tech Attack, Systems Save, or Systems Check."
+          "detail": "1/round, affected allies may gain +1 Accuracy on each of: a tech attack, a Systems Save, and a Systems Check."
         }
       ]
     },
