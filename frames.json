@@ -27,20 +27,24 @@
     },
     "traits": [
       {
-        "name": "Whaler",
+        "name": "WHALER",
         "description": "If a target is at least 1 size larger than the Ahab (without rounding), it makes all attacks against that target at an amount of Accuracy equal to the difference in their sizes (Maximum 3). All Hull Saves the Ahab forces on the target are made at an equal amount of difficulty."
       },
       {
-        "name": "High Test Line",
+        "name": "HIGH TEST LINE",
         "description": "The Ahab counts as Size 3 when inflicting forced movement. 1/round, the Ahab may pull an Immobilized character within Range 10 up to 3 spaces towards it as a Free Action."
       },
       {
-        "name": "Slow",
+        "name": "SLOW",
         "description": "The Ahab has +1 Difficulty on Agility checks and saves.",
         "synergies": [{
           "locations": ["agility","skill_check"],
           "detail": "The Ahab receives +1 Difficulty on Agility checks and saves."
         }]
+      },
+      {
+        "name": "EASY LUNCH",
+        "description": "If you miss with a melee attack while in Water, you collect lunch for the day."
       }
     ],
     "core_system": {
@@ -110,6 +114,10 @@
       {
         "name": "No Arms",
         "description": "If the Ching Shih is knocked prone, it must either succeed on an Agility check or have an adjacent ally to stand. It can never equip Manipulators."
+      },
+      {
+        "name": "PIRATED SATELLITE MEDIA",
+        "description": "Get every local media channel ever whereever you go."
       }
     ],
     "core_system": {
@@ -168,6 +176,10 @@
           "id": "Threat",
           "val": 1
         }
+      },
+      {
+        "name": "NOVELTY COIN DISPENSER",
+        "description": "Choose a picture; you can print that on coins."
       }
     ],
     "core_system": {
@@ -187,7 +199,7 @@
     "source": "IPS-N",
     "name": "KEYES",
     "mechtype": ["Defender", "Striker"],
-    "image_url": "https://i.imgur.com/S9wjFJj.png",
+    "image_url": "https://cdn.discordapp.com/attachments/781591966961369141/851231472069509130/keyes2.png",
     "y_pos": 0,
     "description": "An instrumental tool in the Qikost Rebellions, the J17 Heavy Armature Loader is famous for its role in the Battle of the Seventh Column, in which one of the mining moon’s massive supporting pillars was collapsed to create a crater roughly 1300 kilometers across, destroying thousands of manna in Harrison Armory property and ending the now-disavowed Detonite mining operations that occurred beneath the moon’s crust. In the immediate aftermath of the insurrection, IPS-Northstar was quick to provide asylum for all involved, hiring 90% of the rebellion’s participants under the condition that they bring their equipment -- originally HA property -- with them off-world. Since then, the Keyes has emerged as a highly durable point-man frame, employing weaponry strikingly similar to proprietary Harrison plasma-cutter mining equipment. IPS-N vehemently denies any allegations of intellectual, physical, or human property theft.",
     "mounts": ["Main", "Heavy"],
@@ -209,12 +221,16 @@
     },
     "traits": [
       {
-        "name": "Plasma Shield",
+        "name": "PLASMA SHIELD",
         "description": "At the start of each of its turns, the Keyes gains Overshield 4. When the Keyes Stabilizes, it gains Overshield 6. Overshield from this trait stacks with already-present Overshield, to a maximum of 10."
       },
       {
-        "name": "Guardian",
+        "name": "GUARDIAN",
         "description": "Allied characters can use the Keyes for Hard Cover."
+      },
+      {
+        "name": "MISTAKEN IDENTITY",
+        "description": "People think you drive a giant robot video game character occasionally."
       }
     ],
     "core_system": {
@@ -233,7 +249,7 @@
     "source": "IPS-N",
     "name": "KING",
     "mechtype": ["Support"],
-    "image_url": "https://i.imgur.com/CpQvDfH.png",
+    "image_url": "https://cdn.discordapp.com/attachments/781591966961369141/851231474124587018/King.png",
     "y_pos": 0,
     "description": "Among the Diaspora, there are multitudes of strange worlds, featuring every technology level and societal structure one cares to name. The world of Questor is an odd example even among these -- a feudal civilization on a placid agri-world whose greatest technological artifacts are a broken set of printers only capable of producing components for mechanized chassis. With these printers enshrined on a holy neutral site of pilgrimage, Questorian Titan Knights and noblemen are expected to field mechs in combat over matters of honor, territory, and legal proceedings. In times of world-unifying conflict, such as the HORUS incursion of 5014U (known to Questorians as the Dawn of Monsters), the reigning monarch of the world is expected to mount a truly ancient frame, with incredibly advanced support and reinforcement systems beyond anything used even by modern lancers. That mount is the King, and its license file has only recently been extracted for general use.",
     "mounts": ["Flex", "Main"],
@@ -265,6 +281,10 @@
       {
         "name": "CASTLING",
         "description": "When a hostile action is taken against the King, it may use its reaction to move a willing character within Sensors up to 5 spaces in any direction, so long as they end the move closer to the King than they started. This happens before the triggering action resolves."
+      },
+      {
+        "name": "REAL COMFY COCKPIT",
+        "description": "Its Extra Comfy and has luxury cooling systems."
       }
     ],
     "core_system": {
@@ -285,7 +305,7 @@
     "source": "IPS-N",
     "name": "SPARROW",
     "mechtype": ["Support", "Striker"],
-    "image_url": "https://i.imgur.com/bNcRuMj.png",
+    "image_url": "https://cdn.discordapp.com/attachments/781591966961369141/851231467584356363/Sparrow.png",
     "y_pos": 0,
     "description": "According to Interplanetary Shipping Northstar, this mech does not exist. Unlisted on any catalogue, unavowed by any major corporation, the mysterious frame known as the Sparrow cannot possibly be manufactured in the numbers in which it regularly appears. Sparrows are universally a source of consternation and bewilderment for planetary and trade route security forces -- their actions, targets, and motivations seem to make little sense, and their armament is as varied and unpredictable as their tactics. What’s more, the rest of the frame is composed almost entirely of standard IPS-N parts. What this means, and how this relates to the rumors of false-flag operations by the Albatross, is anyone’s guess. Dissection of captured Sparrows reveals a strange, almost HORUS-like infinite probability calculator that informs most, if not all, of these eccentric raiders’ strategy and tactics. This would explain the mental state of most Sparrow pilots; long-term communion with such a machine can hardly be conducive to one’s sanity.",
     "mounts": ["Aux/Aux", "Main/Aux"],
@@ -314,6 +334,10 @@
       {
         "name": "LIAR'S DICE",
         "description": "The Sparrow gains +1 Accuracy on all attacks if the result of its most recent d20 roll was even. It imposes +1 Difficulty on all attacks made against it if the result of its most recent d20 roll was odd."
+      },
+      {
+        "name": "LOADED DICE",
+        "description": "RNG hates you when you play recreational games of chance. "
       }
     ],
     "core_system": {
@@ -726,7 +750,7 @@
         {
           "name": "GAZE_UPON_THE_I",
           "activation": "Full Tech",
-          "detail": "Make a Tech Attack, if successful, you overload their central AI cores, Jamming and Impairing them until they take the Stabilize action. If a single character is affected by this action 3 times within a single scene, it is immediately reduced to 0 HP and 0 Structure."
+          "detail": "Make a Tech Attack, if successful, you overload their central AI cores, Jamming and Impairing them until they take the Stabilize action. If a single character is affected by this action 3 times within a single scene, it is immediately reduced to 0 HP and 0 Structure. This Tech Action can be used upon and effect Biological targets."
         }
       ]
     },
@@ -1418,7 +1442,7 @@
     },
     "traits": [
       {
-        "name": "360° Torso",
+        "name": "360° TORSO",
         "description": "The Titanic can Overwatch as a reaction to any hostile action made within Range 5.",
         "synergies": [
           {
@@ -1428,7 +1452,7 @@
         ]
       },
       {
-        "name": "Adjustable Frame",
+        "name": "ADHUSTABLE FRAME",
         "description": "When undergoing a Full Repair, you may choose to increase the Titanic’s Speed by 2 and reduce its Armor by 1.",
         "synergies": [
           {
@@ -1438,8 +1462,12 @@
         ]
       },
       {
-          "name": "No Arms",
+          "name": "NO ARMS",
           "description": "If the Titanic is knocked Prone, it must either succeed on an Agility check or have an adjacent ally to stand up. It can never equip Manipulators."
+      },
+      {
+        "name": "WARHORN MOUNT",
+        "description": "You have configured your mech to blast a sound on a successful kill."
       }
     ],
     "core_system": {
@@ -1831,6 +1859,10 @@
       {
         "name": "STONE TITAN",
         "description": "The Trireme is Immune to involuntary movement. Allies can use the Trireme as Hard Cover and are also Immune to involuntary movement whilst benefiting from this cover."
+      },
+      {
+        "name": "ANALOG CONTROL PANEL",
+        "description": "The dials don't lie, do they?"
       }
     ],
     "core_system": {
@@ -1955,10 +1987,10 @@
       "structure": 4,
       "stress": 4,
       "armor": 2,
-      "hp": 10,
-      "repcap": 5,
+      "hp": 12,
+      "repcap": 6,
       "evasion": 6,
-      "speed": 3,
+      "speed": 4,
       "save": 10,
       "sensor_range": 8,
       "edef": 8,
@@ -1978,6 +2010,10 @@
       {
         "name": "WATERLOGGED GYRO",
         "description": "The Farragut has +1 Difficulty on all attacks made as Reactions."
+      },
+      {
+        "name": "WATER CHAIR",
+        "description": "It's like a water bed. 'Cept it's your chair."
       }
     ],
     "core_system": {
@@ -2188,7 +2224,7 @@
     "traits": [
       {
         "name": "UNSTOPPABLE",
-        "description": "While Slowed, the POLYPHEMUS gains Immunity to Immobilize."
+        "description": "The Polyphemus is immune to Slowed and Immobilize other than those cause by its own Systems, Traits, Weapons and Talents."
       },
       {
         "name": "TOP-HEAVY",

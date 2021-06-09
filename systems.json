@@ -2792,7 +2792,7 @@
 			{
 				"name": "HUGE Guts",
 				"activation": "Quick",
-				"detail": "You may choose how much Heat this system produces (minimum 1). For every 1 Heat you gain, you gain 2 Overshield, to a maximum of 12 Overshield. You may also spend any number of Repairs, gaining double the benefit as if you gained an equivalent amount of Heat."
+				"detail": "You may choose how much Heat this system produces (minimum 1). For every 1 Heat you gain, you gain 1 Overshield, to a maximum of 12 Overshield. You may choose to instead spend a Repair, gaining Overshield equal to half your maximum hp."
 			}
 		],
 		"description": "Occasionally your chassis will require some extra structure in order to - [not die] - lift and carry large loads. When presented with - [incoming hostiles] - cargo beyond your mech’s capacity, simply boot up your onboard Nano Reinforcer and - [pray] - get to work! Be sure to allow your mech to cool off completely between uses.",
@@ -2993,7 +2993,6 @@
 		"sp": 0,
 		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
 		"effect": "The Luna-Class NHP counts as an AI system and gives your mech the AI tag. At the start of a Mission, you may gain one Mutation of your choice from the list below. At the start of a Scene, you may exchange 1 Mutation for a different Mutation. Whenever you take Structure or Stress damage, you must choose another Mutation to gain. When you gain a point of Structure or Stress, you must choose one Mutation to lose.<li>Any number of weapons on your Mech become Rending Claws.<li>Your Sensors are reduced to 3, but your Speed is increased by 3.<li>1/Round, when you make a Tech Attack and Miss you may take 2 AP Kinetic Damage to Re-roll the Tech Attack.<li>You can no longer make the Quick Tech or Full Tech actions, but add half your Tech Attack bonus to melee attack rolls.<li>As a Protocol, you may take +1 Difficulty on Melee Attacks and Hull Checks and Saves to gain +1 Accuracy on Tech Attack Rolls.<li>Swap your Evasion and E-Defense values.",
-		"description": "“And flensers and oilers were all so amazed<br>At the beast which would feed them a day and a year<br>There Ahab lived out the good rest of his days,<br>And so sing we all, who are gathered now here.”<br>-- “Song of Ahab,” Traditional Sparri hunting verse",
 		"data_type": "system",
 		"aptitude": {}
 	},

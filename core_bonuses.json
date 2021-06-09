@@ -11,7 +11,11 @@
         "name": "THE LESSON OF SANGUINE MINIMALISM",
         "source": "HORUS",
         "description": "<i>“Cut away that which is unnecessary. Cut again. Cut more. You will think that you are giving up what you cannot live without, but you will be happier for the effort. Cut more. Keep cutting. There is nothing from which you cannot be freed.”</i>",
-        "effect": "Your mech decreases by 1 size, (minimum 1/2). Your count as your original size for the purposes of drawing line of sight, resisting rams, and for contesting grapples. Additionally, you ignore engagement from enemies bigger than you."
+        "effect": "Your mech decreases by 1 size, (minimum 1/2). You Gain +1 Speed and count as your original size for the purposes of resisting rams, and for contesting grapples. Additionally, you ignore engagement from enemies bigger than you.",
+        "bonuses": [{
+            "id": "speed",
+            "val": 1
+        }]
     },
     {
         "id": "mwc_the_lesson_of_compassionate_amputation",
@@ -152,7 +156,7 @@
         "name": "“CHIMNEY-SWEEPER” STEALTH ARMOR",
         "source": "SSC",
         "description": "<i>No one wants to notice the streetrat sweeping the chimney.</i>",
-        "effect": "Your mech is immune to Lock On and always counts as Invisible when outside of Line of Sight of any enemies."
+        "effect": "Your mech is immune to Lock On, and always counts as Invisible when outside of Line of Sight of any enemies."
     },
     {
         "id": "mwc_meerkat_mirage_chaff",
