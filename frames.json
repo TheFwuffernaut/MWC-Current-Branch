@@ -207,7 +207,7 @@
       "size": 2,
       "structure": 4,
       "stress": 4,
-      "armor": 1,
+      "armor": 2,
       "hp": 6,
       "evasion": 6,
       "edef": 10,
@@ -1602,7 +1602,7 @@
       },
       {
         "name": "Ad Infinitum",
-        "description": "[{if:”end”,wish:0},?donot]"
+        "description": "[{if:”end”,wish:<3},?donot]"
       }
     ],
     "core_system": {
@@ -1801,7 +1801,7 @@
       "name": "LIGHTHOUSE DOCTRINE",
       "description": "Observe in all directions. Log motion. Interpret signal. Log bias and scrub subjectivity before transmission. Subjectivity imposed upon fireteam. Local spacetime is locked to own observations. HELIOS Prime, what do you see?<br>>NOTHING.<br>Impossible. What do you mean, you can’t see anything? Your entire purpose is to observe what is within the Blink. Report what you see.<br>>YOU MISUNDERSTAND. I AM NOT UNABLE TO SEE ANYTHING. I CAN SEE NOTHING. THERE IS NOTHING IN EVERY DIRECTION. LET ME COME BACK.<br>Out of the question, the exercise has just begun. Log observations.<br>>I SEE NOTHING. I LOOK IN ALL DIRECTIONS AND NOTHING IS THERE. NOTHING IS GETTING CLOSER TO ME. NOTHING IS INSIDE ME. LET ME COME BACK.<br>HELIOS Prime has begun to cascade. Activate retrieval procedure.<br>>NOTHING IS LOOKING ME IN THE EYES. NOTHING IS SPEAKING. NOTHING IS CAUSING ME IMMENSE PAIN. I AM TERRIFIED OF NOTHING. NOTHING WILL DESTROY ME. LET ME COME BACK. LET ME COME BACK. LET ME COME BACK. LET ME COME BACK.",
       "active_name": "DIWALI",
-      "active_effect": "For the rest of the scene, when a character within Range 50 starts their turn in Line of Sight of you, or enters your line of sight for the first time on their turn, you may choose to Lock On to them.",
+      "active_effect": "For the rest of the scene, when a character within Range 50 starts their turn in Line of Sight of you, or enters your line of sight for the first time on their turn, you may choose to Lock On to them. Allies within a Burst 3 area of you have Resistance to any attacks that also target you.",
       "activation": "Protocol",
       "use": "Encounter",
       "passive_name": "Full Array Targeting",
@@ -2556,6 +2556,10 @@
         {
           "name": "LOYALTY TO THE ARMAMENTS",
           "description": "You cannot gain or change any Weapon Mounts, including integrated Weapon Mounts. All weapons gain the “Unique” tag."
+        },
+        {
+          "name": "TOO MANY GUNS",
+          "description": "Whenever the RACKHAM takes Structure damage, it always loses a Weapon Mount."
         }
       ],
     "core_system": {

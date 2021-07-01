@@ -151,7 +151,7 @@
 		"source": "IPS-N",
 		"license": "KEYES",
 		"license_level": 2,
-		"on_hit": "The target is embedded with a Detonite spike. If this is the fourth spike in the target, all four are consumed and that target and all characters in a Burst 1 radius around it take 3d6 AP Explosive damage. A character with any embedded spikes may remove them by passing a Hull save as a Full Action.",
+		"on_hit": "The target is embedded with a Detonite spike. If this is the fourth spike in the target, all four are consumed and that target and all characters in a Burst 1 radius around it must make an Agility Save, taking 3d6 AP Explosive damage on a failure and half on a success. A character with any embedded spikes may remove them by passing a Hull save as a Full Action.",
 		"description": "The primary export of Qikost, Detonite is a unique crystalline substance produced in the mantle of small celestial bodies with a specific mineral makeup. When a certain mass of Detonite is forced into close proximity -- say, by being fired at supersonic speed by a pneumatic rifle -- the crystals violently resonate at a frequency correlating with the substance’s density in the area. After a certain mass is reached, the crystals “supercombine,” detonating within their victims like a conventional chemical explosive.",
 		"data_type": "weapon",
 		"aptitude": {}

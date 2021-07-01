@@ -202,5 +202,13 @@
         "source": "SSC",
         "description": "<i>“Wild populations of [REDACTED] have made a significant recovery from the offworld fungal plague at a pace far outstripping projections. Acid production in wild specimens is increased by 26%. Subjects display new diet preference for metallic substances, such as standard mechanized chassis ferro-fibrous armor. Recommend immediate planetary evacuation. Further research will only incur low-RoI casualties.”</i>",
         "effect": "1/Scene, as a Full Action, you may target an adjacent character that is Shredded at 1/2 their maximum HP and 1 Structure or less. The target is immediately destroyed and you gain HP equal to the character’s maximum HP."
+    },
+    {
+        "id": "mwc_hive_queen",
+        "name": "Hive Queen",
+        "source": "HORUS",
+        "description": "<i>“Supremacy is not something that is given. Supremacy is not something that is handed to you. Supremacy is something that one must earn, and something that one must prove.”</i>",
+        "effect": "The range of your Nexus weapons increases by 3. Additionally, your Sensor Range is increased by 3 for the purposes of Deploying, Recalling and Maneuvering systems with the Drone tag.",
+        "tags": ["tg_exotic"]
     }
 ]
