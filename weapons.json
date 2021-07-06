@@ -794,7 +794,7 @@
 		"id": "mwc_magnus_coilgun",
 		"name": "Magnus Coilgun",
 		"mount": "Superheavy",
-		"type": "Rifle",
+		"type": "Cannon",
 		"damage": [{"type": "Kinetic", "val": "2d6+9"}],
 		"range": [{"type": "Line", "val": 30}, {"type": "Blast", "val": 1}],
 		"tags": [{"id": "tg_inaccurate"}, {"id": "tg_heat_self", "val": 4}, {"id": "tg_loading"}, {"id": "tg_ordnance"}, {"id": "tg_ap"}],
@@ -1592,24 +1592,24 @@
 		"type": "Melee",
 		"mount": "Superheavy",
 		"description": "“Why is it that big?”<br>“Why isn’t it that big?”<br>“I will literally die to the first asshole with a regular sword.”<br>“Good thing he’ll die over there first.”",
-		"range": [{"type": "Threat", "val": 1}],
-		"damage": [{"type": "Kinetic", "val": "1d6+4"}],
-		"skirmish": true,
-		"integrated": ["mwc_muramasa_class_zanbato_loaded"],
-		"effect": "When you destroy an enemy with this weapon, you may reload it as a free action that may be taken at any time. While the weapon is unloaded you may use the Skirmish (1d6+4) Profile.",
+		"profiles": [
+			{
+				"name": "Unloaded",
+				"range": [{"type": "Threat", "val": 1}],
+				"damage": [{"type": "Kinetic", "val": "1d6+4"}],
+				"skirmish": true
+			},
+			{
+				"name": "Loaded",
+				"tags": [{"id": "tg_ap"},{"id": "tg_accurate"},{"id": "tg_ordnance"},{"id": "tg_loading"}],
+				"range": [{"type": "Line", "val": 5}],
+				"damage": [{"type": "Kinetic", "val": "3d6+4"}]
+			}
+		],
+		"effect": "When you destroy an enemy with this weapon, you may reload it as a free action that may be taken at any time. While the weapon is unloaded you may use the Unloaded Profile.",
 		"source": "HA",
 		"license": "MUSASHI",
 		"license_level": 3
-	},
-	{
-		"id": "mwc_muramasa_class_zanbato_loaded",
-		"name": "MURAMASA-Class Zanbatō: LOADED",
-		"tags": [{"id": "tg_ap"},{"id": "tg_accurate"},{"id": "tg_ordnance"},{"id": "tg_loading"}],
-		"type": "Melee",
-		"mount": "Superheavy",
-		"range": [{"type": "Line", "val": 5}],
-		"damage": [{"type": "Kinetic", "val": "3d6+4"}],
-		"effect": "This weapon may be used against targets in Engagement. When you destroy an enemy with this weapon, you may reload it as a free action that may be taken at any time."
 	},
 	{
 		"id": "mwc_micromissile_spewer",

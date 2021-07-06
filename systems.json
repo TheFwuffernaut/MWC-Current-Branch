@@ -3396,7 +3396,7 @@
 						"activation": "Reaction",
 						"frequency": "1/round",
 						"trigger": "You successfully attack a target.",
-						"detail": "You may attack with the weapon selected for HIVE Deployment Unit."
+						"detail": "You may attack with the selected weapon, drawing position from the Hive Deployment Unit (For Range, Line of Sight, etc.)."
 					}
 				]
 			}

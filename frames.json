@@ -460,11 +460,11 @@
     "traits": [
       {
         "name": "WILD SHAPE: MECH FORM",
-        "description": "The Druid has three Forms it can switch between as a protocol -- Mech, Jet, and Tank, with Mech Form as its default. In all forms except Tank Form, it cannot use its Heavy Mount. In all forms except Mech Form, the Druid can only move in a straight line when it makes a standard move or Boosts."
+        "description": "The Druid has three Forms it can switch to a different one as a protocol -- Mech, Jet, and Tank, with Mech Form as its default. In all forms except Tank Form, it cannot use its Heavy Mount. In all forms except Mech Form, the Druid can only move in a straight line when it makes a standard move or Boosts."
       },
       {
         "name": "WILD SHAPE: JET FORM",
-        "description": "In Jet form, the Druid’s Speed and Evasion are increased by 2 and it can Fly; however, its Armor is reduced by 1 and it must fly at least its full speed on its turn or start falling. If the Druid touches the ground in Jet Mode, it automatically falls Prone and is Immobilized until it changes form."
+        "description": "In Jet form, the Druid’s Speed and Evasion are increased by 2 and it can Fly; however, its Armor is reduced by 1 and it must fly at least its full speed on its turn or start falling. If the Druid touches the ground in Jet Mode after swapping, it automatically falls Prone and is Immobilized until it changes form."
       },
       {
         "name": "WILD SHAPE: TANK FORM",
@@ -1887,7 +1887,7 @@
     "description": "If you are reading this manifest, it means that I am dead. To you, I pass this technology. I was gifted this mech and its many tools by a previous owner, who in turn received it in kind from their own predecessor. I am not the first to wear it, and you will hopefully not be the last. We do not know where it comes from, and we do not know who designed it. All we have is an account of the original bearer’s dreams, a set of designs and schematics I cannot hope to understand, and a mandate to bring Order to a chaotic and uncaring universe. To you I leave this responsibility: Take up my armor and wear it well. Avenge my death, if at all possible. Take up an apprentice of your own, for you shall surely follow me one day. And above all else, leave the universe a better place than when you arrived.",
     "mounts": ["Aux/Aux","Main","Heavy"],
     "stats": {
-      "size": 1,
+      "size": 2,
       "structure": 4,
       "stress": 4,
       "armor": 2,
@@ -2190,7 +2190,7 @@
       "active_effect": "For the rest of the Scene, the Giap may Hide and end its turn Hidden even without cover, in addition, any enemies that start their turn or move adjacent to the Giap for the first time on a turn suffer 3 Heat.",
       "activation": "Protocol",
       "passive_name": "COVERT INSERTION",
-      "passive_effect": "The Giap may choose not to deploy normally at the start of combat, instead deploying in disguise. At the start of an enemy mech’s turn, so long as that mech has not dealt damage to or taken damage from the Giap’s allies, the Giap may reveal itself to have been disguised as that mech, deploying itself in its position. The actual enemy is revealed to have been waylaid and hidden in a position up to Range 5 from the Giap of your choice, only now reactivating and joining the battle.",
+      "passive_effect": "The Giap may choose not to deploy normally at the start of combat, instead deploying in disguise. At the start of an enemy mech’s turn, so long as that mech has not: made any saves, made other characters make saves, dealt damage or heat, or has taken damage or heat, the Giap may reveal itself to have been disguised as that mech, deploying itself in its position. The actual enemy is revealed to have been waylaid and hidden in a position up to Range 5 from the Giap of your choice, only now reactivating and joining the battle.",
       "use": "Encounter"
     },
     "data_type": "frame",
