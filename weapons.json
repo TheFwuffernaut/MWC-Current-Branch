@@ -1501,7 +1501,7 @@
 		"mount": "Heavy",
 		"license": "POLYPHEMUS",
 		"license_level": 2,
-		"source": "HORUS",
+		"source": "SSC",
 		"sp": 1,
 		"range": [{"type": "Threat","val": 1}],
 		"damage": [{"type": "Kinetic","val": "1d3"},{"type": "Explosive","val": 3}],

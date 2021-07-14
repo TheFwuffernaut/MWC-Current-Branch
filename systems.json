@@ -1421,87 +1421,6 @@
 		"aptitude": {}
 	},
 	{
-		"id": "mwc_mechromanced_drone_1",
-		"name": "Mechromanced Drone",
-		"type": "Deployable",
-		"talent_item": true,
-		"talent_id": "mwc_engineer_alt",
-		"talent_rank": 1,
-		"sp": 0,
-		"tags": [{"id": "tg_ai"}],
-		"source": "",
-		"license": "",
-		"license_level": 0,
-		"deployables": [
-			{
-				"name": "Mechromanced Drone",
-				"type": "Drone",
-				"size": 0.5,
-				"hp": "10 + {Grit}",
-				"edef": 10,
-				"evasion": 10,
-				"detail": "You fire a drone to an empty space within sensor range. The drone can hover, and hostile actors adjacent to it have +1 difficulty on saves and checks.<br>Until recalled or destroyed, it remains deployed until the end of the scene.",
-				"recall": "Quick",
-				"redeploy": "Quick"
-			}
-		],
-		"description": "Gained from the <i>Mechromancer: Rank I</i> pilot talent."
-	},
-	{
-		"id": "mwc_mechromanced_drone_2",
-		"name": "Mechromanced Drone",
-		"type": "Deployable",
-		"talent_item": true,
-		"talent_id": "mwc_engineer_alt",
-		"talent_rank": 2,
-		"sp": 0,
-		"tags": [{"id": "tg_ai"}],
-		"source": "",
-		"license": "",
-		"license_level": 0,
-		"deployables": [
-			{
-				"name": "Mechromanced Drone",
-				"type": "Drone",
-				"size": 0.5,
-				"hp": "10 + {Grit}",
-				"edef": 10,
-				"evasion": 10,
-				"detail": "You fire a drone to an empty space within sensor range. The drone can hover, and hostile actors adjacent to it have +1 difficulty on saves and checks.<br><br>Your drone also has the 2 bonuses that you selected at the last deployment/full repair.<br><br>Until recalled or destroyed, it remains deployed until the end of the scene.",
-				"recall": "Quick",
-				"redeploy": "Quick"
-			}
-		],
-		"description": "Gained from the <i>Mechromancer: Rank II</i> pilot talent."
-	},
-	{
-		"id": "mwc_mechromanced_drone_3",
-		"name": "Mechromanced Drone",
-		"type": "Deployable",
-		"talent_item": true,
-		"talent_id": "mwc_engineer_alt",
-		"talent_rank": 3,
-		"sp": 0,
-		"tags": [{"id": "tg_ai"}],
-		"source": "",
-		"license": "",
-		"license_level": 0,
-		"deployables": [
-			{
-				"name": "Mechromanced Drone",
-				"type": "Drone",
-				"size": 0.5,
-				"hp": "10 + {Grit}",
-				"edef": 10,
-				"evasion": 10,
-				"detail": "You fire a drone to an empty space within sensor range. The drone can hover, and hostile actors adjacent to it have +1 difficulty on saves and checks.<br><br>Your drone also has the 2 bonuses that you selected at the last deployment/full repair.<br><br>You can move the prototype drone to a new space within 5 spaces of its current location, as a quick action. Whenever you move your drone in this way, all actors directly between the start and end locations of the drone takes 2d6 kinetic, energy or explosive damage (Choose when the drone moves) and are knocked prone. A successful hull save halves the damage and negates the prone.<br><br>Until recalled or destroyed, it remains deployed until the end of the scene.",
-				"recall": "Quick",
-				"redeploy": "Quick"
-			}
-		],
-		"description": "Gained from the <i>Mechromancer: Rank III</i> pilot talent."
-	},
-	{
 		"id": "mwc_goading_booster",
 		"name": "Goading Booster",
 		"type": "System",
@@ -3156,6 +3075,9 @@
 		"tags": [
 			{
 				"id": "tg_unique"
+			},
+			{
+				"id": "tg_ai"
 			}
 		],
 		"sp": 3,

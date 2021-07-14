@@ -2044,7 +2044,7 @@
     "armor": 2,
     "hp": 10,
     "repcap": 1,
-    "evasion": 7,
+    "evasion": 10,
     "speed": 4,
     "save": 10,
     "sensor_range": 8,
