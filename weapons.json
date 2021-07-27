@@ -922,7 +922,7 @@
 		"id": "mwc_type_thirteentwelve_lmg",
 		"name": "Type-1312 LMG",
 		"mount": "Auxiliary",
-		"type": "CQB Rifle",
+		"type": "CQB",
 		"damage": [{"type": "Kinetic", "val": "1d3"}],
 		"range": [{"type": "Range",	"val": 5}, {"type": "Threat", "val": 3}],
 		"tags": [{"id": "tg_inaccurate"}],
