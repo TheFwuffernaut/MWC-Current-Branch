@@ -100,7 +100,7 @@
     "source": "HA",
     "license": "GIAP",
     "license_level": 2,
-    "effect": "Choose a Non-Superheavy Ranged Weapon, when you fire this weapon and only hit a single enemy, roll a d6. On an Auxiliary Weapon, do not roll. On a Main weapon, you lose Hidden on a result of a 1. On a Heavy weapon, you lose hidden on a 3 or less.",
+    "effect": "Choose a Non-Superheavy Ranged Weapon, when you fire this weapon and only target a single enemy, roll a d6. On an Auxiliary Weapon, do not roll. On a Main weapon, you lose Hidden on a result of a 1. On a Heavy weapon, you lose hidden on a 3 or less.",
     "description": "fluff",
     "data_type": "mod",
     "aptitude": {},

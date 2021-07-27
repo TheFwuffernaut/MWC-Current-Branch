@@ -102,7 +102,7 @@
 		"source": "IPS-N",
 		"license": "CHING SHIH",
 		"license_level": 1,
-		"effect": "When you fire a Launcher, you may give the attack +1 Difficulty to increase its range by 5. You may stack this effect any number of times.",
+		"effect": "When you fire a Launcher, you may give the attack +1 Difficulty to increase its range by 5. You may stack this effect up to 3 times.",
 		"description": "A popular hobbyist workaround for insufficient or unsatisfactory materiel is the use of tightly packed solid fuel in launcher projectiles. Civilian-grade mounted printers are, unfortunately, hardly up to the task of evenly and smoothly distributing such dense matter, which results in flight path irregularities that only get worse the further the projectile flies. Garage Lancers widely accept this tradeoff, as access to proper missile fuel often costs Manna that these individuals simply don’t have.",
 		"data_type": "system",
 		"aptitude": {}
@@ -2476,7 +2476,7 @@
 		"source": "IPS-N",
 		"license": "TRIREME",
 		"license_level": 1,
-		"effect": "You may reroll structure damage checks, but must keep the second result, even if it’s worse.",
+		"effect": "You may reroll all structure damage checks twice and choose either result.",
 		"description": "“The Barbarossa? Barbarossas are toys compared to Ol’ Mackie. And you can take that quote to Ras Shamra and leave it on the director-general’s doorstep. Barbies can’t take a punch, they can’t confirm kills, and they need a triplicate form to order spare parts. And worst of all, they’d barely come up to Ol’ Mackie’s nipples.”<br>“Ol’ Mackie didn’t have nipples, Statler.”<br>“My point being, I could take out a Barbarossa with a walking stick because it’s a piece of garbage. Give me a century-old Trireme any day of the week.”",
 		"data_type": "system",
 		"aptitude": {}

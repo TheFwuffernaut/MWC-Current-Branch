@@ -149,7 +149,7 @@
         "name": "MEGINGJORD KINETIC PROPULSION SYSTEM",
         "source": "IPS-N",
         "description": "<i>Known in the Gygaxian apocrypha as the “Belt of Giant Strength,” Megingjord was the name of an artifact in old-Cradle mythology that bestowed great power upon those who wore it. The waist-mounted magpulse jets in the MKPS don’t quite live up to their namesake, but they bring the wearer as close as modern technology is able.</i>",
-        "effect": "1/round, before making the attack roll, your next melee attack before the end of your turn gains +1 bonus damage and 1 knockback for every 2 spaces you moved in a straight line from the last unique movement you made this turn."
+        "effect": "1/round, before making the attack roll, your next melee attack before the end of your turn gains +1 bonus damage and 1 knockback for every 2 spaces you moved in a straight line from the last unique movement you made this turn up to a maximum of +6 Knockback and Damage."
     },
     {
         "id": "mwc_chimney_sweeper_stealth_armor",

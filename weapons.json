@@ -530,7 +530,7 @@
 		"source": "HORUS",
 		"license": "BUER",
 		"license_level": 1,
-		"effect": "You cannot attack with this weapon normally. Rather, 1/round when you successfully Ram a target, you may automatically hit that character with this weapon as a free action. This weapon's damage becomes 1d3+3 if you have already hit a different target with a Voltaic Spike on your turn.",
+		"effect": "You cannot attack with this weapon normally. Rather, 1/round when you successfully Ram a target, you may automatically hit that character with this weapon as a free action. This weapon's damage becomes 1d3+3 if you have already hit a different target with a Voltaic Spike on your turn. This weapon cannot deal any bonus damage.",
 		"description": "<i>“‘We just need to keep our distance,’ they said. ‘Outrun it,’ they said. How am I going to tell Kyle’s ma what this goofy starfish thing did to him? There’s not even a wreck to search.” -- PVT G. Pyle.</i>",
 		"data_type": "weapon",
 		"aptitude": {}
@@ -977,7 +977,7 @@
 		"source": "SSC",
 		"license": "MAGICIAN",
 		"license_level": 3,
-		"effect": "While this weapon is mounted on your mech, you may apply one of the following effects whenever you make a successful tech attack, an Enemy fails a System's Save you forced them to make, or target an ally with a tech action:<br><ul><li>Bane: The character takes 1 Heat and 1 AP Energy Damage.</li><li>Bless: The character gains 2 Overshield that stacks with any existing Overshield.</li><li>Daze: The character takes +1 Difficulty on all Attacks until the end of its turn.</li></ul>",
+		"effect": "While this weapon is mounted on your mech, you may apply one of the following effects whenever you make a successful tech attack, an Enemy fails a System's Save you forced them to make, or target an ally with a tech action:<br><ul><li>Bane: The character takes 1 Heat and 1 AP Energy Damage.</li><li>Bless: The character gains 2 Overshield that stacks with any existing Overshield (up to 12 overshield).</li><li>Daze: The character takes +1 Difficulty on all Attacks until the end of its turn.</li></ul>",
 		"description": "Physical implements are for those with a flair for the dramatic. Only a fool would wave a length of tungsten and imbue it with the foci for his incantations. I happen to be a fool with a flair for the dramatic.",
 		"data_type": "weapon",
 		"aptitude": {}
