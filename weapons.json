@@ -1552,7 +1552,7 @@
 				"activation": "Reaction",
 				"frequency": "1/round",
 				"trigger": "A hostile character within Threat attacks you with a Ranged or Melee Attack.",
-				"detail": "You make a melee attack against the attacker, using the Focused profile. If the target attacked you with a Melee weapon, or if they are engaged with you, this attack resolves first."
+				"detail": "You make a melee attack against the attacker, using the Focused profile. If the target attacked you with a Melee weapon, or if they are engaged with you, this attack resolves first. The weapon returns to its default profiles after the use of Blinding Strike or if you deactivate the charge as a Protocol."
 			}
 		]
 	},
@@ -1597,13 +1597,15 @@
 				"name": "Unloaded",
 				"range": [{"type": "Threat", "val": 1}],
 				"damage": [{"type": "Kinetic", "val": "1d6+4"}],
-				"skirmish": true
+				"skirmish": true,
+				"effect": "Unlike other Superheavy weapons, the MURAMASA when unloaded can be used with Skirmish."
 			},
 			{
 				"name": "Loaded",
 				"tags": [{"id": "tg_ap"},{"id": "tg_accurate"},{"id": "tg_ordnance"},{"id": "tg_loading"}],
 				"range": [{"type": "Line", "val": 5}],
-				"damage": [{"type": "Kinetic", "val": "3d6+4"}]
+				"damage": [{"type": "Kinetic", "val": "3d6+4"}],
+				"effect": "This weapon ignores the adjacency/engagement segments of the Ordnance tag. You cannot fire it after moving or other actions - but you can target and hit adjacent targets with it."
 			}
 		],
 		"effect": "When you destroy an enemy with this weapon, you may reload it as a free action that may be taken at any time. While the weapon is unloaded you may use the Unloaded Profile.",

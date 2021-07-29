@@ -3104,20 +3104,6 @@
 		"description": "“I trust you all to have read the waiver you signed to be present, but I feel it would irresponsible for me to not reiterate that the next item on our docket will involve discussing the violence involved in the Luxor terrorist attack, particularly the Izabella's release. There is no shame if you need to step out, we will let you know when it is done. [pause] Alright. We have all seen the security footage, and some of us have even seen it in person. It would be a gross understatement to say our failsafes failed, that we could not control it, and that it killed thousands. We did not expect them to work in the first place, the control mechanisms were not ready for something that powerful breaking free, they existed entirely to try and delay it if it got loose.<br><br>Fortunately, the Ailuros is much more manageable, as we simply do not have the technology to recreate something even nearly as powerful. Control has been our lead concern when designing the Prime's personality, with their aggression and vindictiveness reprogrammed to be cultivative, partitioning those emotions away from conscious processes, making for a surprisingly calm copilot. Pretty stimulating conversationalist, actually, I imagine marketing will love that. That aggression builds as the frame is attacked, each spike in their aggression ontologically cached until the partition is filled. Once it is ready for release, the Ailuros combines a weaker version of the Izabella's metaspacial retaliation ability with simulation code cannibalized from the Athena-line to essentially create and resolve a series of superpositions, allowing the pilot to rapidly attack a number of targets a nearby, localized area. Yes, in the back. [Indistinct, followed by a pause] I suppose 'makes a clone of you that punches everything around it' is an apt enough description for the layman, thank you.”"
 	},
 	{
-		"id": "mwc_reactor_stabilizer_mktwo",
-    	"name": "REACTOR STABILIZER MK. II",
-		"type": "System",
-    	"sp": 3,
-    	"tags": [{
-    	  	"id": "tg_unique"
-    	}],
-    	"source": "HA",
-    	"license": "SHERMAN",
-    	"license_level": 1,
-    	"effect": "You may reroll overheating checks, you then keep the higher number(s).",
-    	"description": "A necessary component of most mechs that rely on high energy output, reactor stabilizers add another layer of failsafes to vent heat, manage power flow, and shunt excessive output into weapons and systems as needed."
-	},
-	{
 		"id": "mwc_conqeuror_mobility_suite",
 		"name": "Conqueror Mobility Suite",
 		"type": "System",
@@ -3159,7 +3145,7 @@
 				"activation": "Reaction",
 				"trigger": "You critically hit with both a Heavy and a Main Melee weapon this since the start of your last turn.",
 				"frequency": "1/round",
-				"detail": "You may gain 2+Grit Overshield and clear 2 heat."
+				"detail": "You gain 2+Grit Overshield and clear 2 heat."
 			},
 			{
 				"name": "Where'd they go!",
