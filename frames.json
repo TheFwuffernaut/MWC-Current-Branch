@@ -998,7 +998,7 @@
       "name": "NANOSLURRY SUSPENSION",
       "description": "Less of a system and more of a core conceit of the Ooze’s construction is the concept of a gel-like substance containing trillions upon trillions of nanomachines. This allows individual portions of a nanite collective to emulate the whole on any scale. When desired, the nanites may interlock into long chains of artificial polymers, “freezing” into a gelatin-like state when energized. While such a state cannot be maintained for long without melting the lattice into metallic goop, it is exceptionally durable while it lasts.",
       "active_name": "Gelatinous3",
-      "active_effect": "Until the end of the scene, your mech’s size decreases by 1, and its Armor increases by 1. Your mech no longer benefits from Liquid Body, but acts as Hard Cover for friendly characters and has Resistance to damage taken with Absorption.",
+      "active_effect": "Upon activating this core power you may choose to grow all Ooze subdivisions up to a maximum Size of 3.<br>Enemies can no longer freely move through spaces you occupy but all other portions of Liquid Body function as normal.<br>Additionally the Ooze acts as Hard Cover for friendly characters, has Resistance to damage taken with Absorption, and has any damage it takes via Absorption reduced by 3.",
       "activation": "Protocol",
       "passive_name": "Subdivision Protocols",
       "passive_effect": "Gain the Subdivide Quick Action.",
@@ -1490,7 +1490,7 @@
       "name": "AFTERMARKET COLDCORE MODIFICATION",
       "description": "Reach into the reactor with your bare hands, take out the control rods, and put in unrefined self-cannibalizing fissile computronium. Tap your weapon systems directly into the coldcore feed. Flare plasma vents. Use the included magnetic flux channel to funnel waste heat into projectiles and/or melee attacks. Do not get shot. Do NOT get shot. Failure to follow these instructions to the letter will result in certain death.",
       "active_name": "Blaze of Glory",
-      "active_effect": "For the rest of the scene, you are Exposed, and cannot remove the condition by any means, but all of your weapons deal maximum damage.",
+      "active_effect": "For the rest of the scene, you are Exposed, and cannot remove the status by any means, but all of your weapons deal maximum damage.",
       "activation": "Protocol",
       "use": "Encounter"
     },
@@ -2136,10 +2136,6 @@
       {
         "name": "REACTOR GREMLIN",
         "description": "Enemies within the Flarewing’s Sensors subtract 1 from the final result of any Overheating Check, or 2 if the Flarewing is in the Danger Zone."
-      },
-      {
-        "name": "HEAVY REACTOR INTEGRATION",
-        "description": "When the Flarewing takes a point of Structure damage, it must succeed on an Engineering Check or make a Stress Check."
       }
     ],
     "core_system": {
@@ -2259,7 +2255,7 @@
       "name": "108 Forms of Vengeance",
       "description": "The “Vengeful Eye”, the system that the Polyphemus was named for, is an advanced targeting computer using a specialized sensor cluster stylistically designed to resemble a single, gigantic eye.  The prototype version was powerful but clunky, able to consistently pluck any system or weapon out of a target with the assistance of a target lock. The system has been reconfigured to be more opportunistic, instead identifying structural weaknesses and guiding user movement to best exploit openings in the enemy's movements via neural integration, trading surgical removal of systems in favor of gross structural damage. This combined with a bank of martial arts techniques designed to turn enemy's movements against them makes the Polyphemus a powerful and precise frame, achieving the design team's goal of a flexible and crushingly strong front-line brawler that does not sacrifice SSC's brand of luxury and mobility.",
       "active_name": "Rakshasa’s Invitation",
-      "active_effect": "You take on the most deceptive form built into the POLYPHEMUS’s datacore of Martial Arts, inviting impending doom on any that do not see past the facade or are simply blind to its true nature.<br><br>Until the end of your next turn, enemies within Range 3 of the POLYPHEMUS may choose to gain up to 3 Accuracy on all of their Attacks that target the POLYPHEMUS. If they attack the POLYPHEMUS during the duration of this ability, they become Exposed after the Attack resolves and additionally must make a Hull Save with a number of Difficulty equal to the Accuracy on the Attack or be knocked Prone and Slowed until the end of their next turn.<br><br>If the POLYPHEMUS is not attacked by any enemy during the duration of this ability, you regain CP at the end of the scene.",
+      "active_effect": "You take on the most deceptive form built into the POLYPHEMUS’s datacore of Martial Arts, inviting impending doom on any that do not see past the facade or are simply blind to its true nature.<br><br>Until the end of your next turn, enemies within Range 3 of the POLYPHEMUS may choose to gain up to 3 Accuracy on all of their Attacks that target the POLYPHEMUS. If a Hostile Character attacks the POLYPHEMUS during the duration of this ability, they become Exposed after the Attack resolves and additionally must make a Hull Save with a number of Difficulty equal to the Accuracy on the Attack or be knocked Prone and Slowed until the end of their next turn.<br><br>If the POLYPHEMUS is not attacked by any enemy during the duration of this ability, you regain CP at the end of the scene.",
       "activation": "Quick",
       "passive_name": "Appenditure Reallocation",
       "passive_effect": "Gain access to the Shun-Goku-Satsu Reaction. Additionally, the POLYTHEMEUS’s Melee Critical Hits can not have their damage reduced in any way and bypass any immunity to damage the target(s) may have.",

@@ -1314,7 +1314,7 @@
 		"source": "HA",
 		"license": "GERONIMO",
 		"license_level": 1,
-		"on_hit": "If you have not targeted a different character with any action since the last time you attacked the target with this weapon, the attack gains the AP tag and +1d3 bonus damage. This bonus damage stacks with itself every time you attack the enemy again.",
+		"on_hit": "If you have not targeted a different character with any action since the last time you attacked the target with this weapon, the attack gains the AP tag and +1d3 bonus damage. This bonus damage stacks with itself every time you attack the enemy again with a weapon named Steel Tooth Zaw.",
 		"description": "The important thing to remember with the Zaw is - [precision] - persistence. With the extreme power of - [your targets] - the tool’s motor, you can easily find yourself - [not getting another shot] - thrown off-balance and embarrassed. Remember, practice makes perfect!",
 		"data_type": "weapon",
 		"aptitude": {}

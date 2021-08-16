@@ -1267,12 +1267,12 @@
 			{
 				"name": "Assistant Polyp",
 				"activation": "Invade",
-				"detail": "The target leaks a pool of nanites that form into a polyp (Size 1/2, HP 5, Evasion 10, E-Defense 10, Tags: Drone) in an adjacent space. 1/round as a free action, adjacent friendly mechs may consume the polyp and spend a repair to restore half their maximum HP. When consumed or destroyed, or when the scene ends, the polyp dissolves, leaving no wreckage behind."
+				"detail": "The target leaks a pool of nanites that form into a polyp (Size 1/2, HP 1, Evasion 10, E-Defense 10, Tags: Drone) in an adjacent space. 1/round as a free action, adjacent friendly mechs may consume the polyp and spend a repair to restore half their maximum HP. When consumed or destroyed, or when the scene ends, the polyp dissolves, leaving no wreckage behind."
 			},
 			{
 				"name": "Assailant Phage",
 				"activation": "Invade",
-				"detail": "Portions of the target melt into a malevolent nanite amoeba (Size 1/2, HP 5, Evasion 10, E-Defense 10, Tags: Drone) in an adjacent space. As a protocol, you may move the amoeba up to 3 spaces and have it make a melee attack with your Grit, dealing 1d3 Heat on a hit. When the amoeba is destroyed, or when the scene ends, the amoeba dissolves, leaving no wreckage behind."
+				"detail": "Portions of the target melt into a malevolent nanite amoeba (Size 1/2, HP 1, Evasion 10, E-Defense 10, Tags: Drone) in an adjacent space. As a protocol, you may move the amoeba up to 3 spaces and have it make a melee attack with your Grit, dealing 1d3 Heat on a hit. When the amoeba is destroyed, or when the scene ends, the amoeba dissolves, leaving no wreckage behind."
 			}
 		],
 		"description": "So small are We, yet smaller still We can become. Small enough to ride waves of blink transmission and conduct our work on the other side. A new colony can start anywhere we wish to transmit.",
