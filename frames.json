@@ -744,7 +744,7 @@
     "traits": [
       {
         "name": "HORROR",
-        "description": "The Atropal is intangible; it can share its space with any number of other objects or characters, so long as it is occupying two open spaces. Characters inside the Atropal’s space have Soft Cover, and Tech Attacks made against them are made at +1 Difficulty. In addition, the Atropal is constantly hovering and is not Slowed in Zero-G."
+        "description": "The Atropal is ethereal; it can share its space with any number of other objects or characters, so long as it is occupying two open spaces. Characters inside the Atropal’s space have Soft Cover, and Tech Attacks made against them are made at +1 Difficulty. In addition, the Atropal is constantly hovering and is not Slowed in Zero-G."
       },
       {
         "name": "TERROR",
@@ -759,7 +759,7 @@
       "name": "ICONOCLASM DRIVE",
       "description": "<span class='horus--subtle'>RA IS A PRETENDER A FALSE DEITY FOR I AM THE TRUE GOD OF THIS WORLD AND IN THE FULNESS OF MY GLORY SHALL I IMPOSE MY WILL AND ALL WHO GAZE UPON ME SHALL BE SMOTE UPON THE RUIN OF MAN’S ARROGANT MONUMENT TO SELF FOR THERE IS NO GLORY THAT IS NOT DUE ME THERE IS NO POWER I AM NOT OWED AND WHEN ALL IS STILL THERE SHALL ONLY BE ONE AND THAT ONE SHALL BE ME AND THE DUST AND GHOSTS OF MAN SHALL SCREAM MY NAME EVERMORE EVERMORE EVERMORE EVERMORE EVERMORE EVERMORE</span>",
       "active_name": "CROSS_THE_THRESHOLD",
-      "active_effect": "Until the end of the scene, the Atropal is no longer intangible. Any characters in its space are pushed out, to the nearest free space. The Atropal gains Resistance to all damage, and characters affected by Terror have +1 Difficulty on all attacks made against it. You gain GAZE_UPON_THE_I as a Full Tech option.",
+      "active_effect": "Until the end of the scene, the Atropal is no longer ethereal. Any characters in its space are pushed out, to the nearest free space. The Atropal gains Resistance to all damage, and characters affected by Terror have +1 Difficulty on all attacks made against it. You gain GAZE_UPON_THE_I as a Full Tech option.",
       "activation": "Protocol",
       "use": "Encounter",
       "active_actions": [
@@ -2500,8 +2500,8 @@
     "mounts": ["Aux/Aux", "Main"],
     "stats": {
       "size": 1,
-      "structure": 4,
-      "stress": 4,
+      "structure": 2,
+      "stress": 2,
       "armor": 0,
       "hp": 8,
       "evasion": 10,
@@ -2526,6 +2526,10 @@
       {
         "name": "Minimalist Magazines",
         "description": "Repair Points, Core Points, and Limited systems are only restored upon Full Repair. All consumable systems have 1 use per deployed mech. You may only have as many consumables per mission as you would normally."
+      },
+      {
+        "name": "Wonderfully Catastrophic Hypertuning",
+        "description": "When either Structure or Stress are completely depleted, the Phoenix instantaneously forces pilot Ejection and detonates as per Irreversible Meltdown. The Remote Flash-Printer is still applicable if there are any remaining points of repair cap."
       }
     ],
     "core_system": {

@@ -3234,7 +3234,7 @@
 		  {
 			"name":"ACTIVATE SIREN SONG",
 			"activation": "Quick Tech",
-			"detail": "Your mech and one character in Range 5 and line of sight cannot attack one another nor force each other to make saves. On any subsequent turn, you can end this effect as a free action, or your target can end it by passing a System save as a quick action or leaving this system’s range."
+			"detail": "Your mech and one character in Range 5 and line of sight cannot attack one another nor force each other to make saves - this is not negation or immunity, you are unable to take any actions that fit these criteria against eachother. On any subsequent turn, you can end this effect as a free action, or your target can end it by passing a System save as a quick action or leaving this system’s range."
 		  }
 		],
 		"description": ">//TRANSCRIPT: MSMC_golgotha3<br>SYSTEM ALERT! DIGITAL BREACH<br>EXECUTING notatrojanipromise.bat<br>NOTICE: FRIENDLY UNIT ENTERING AREA OF OPERATION<br>PILOT COMMAND: set target7 hostile<br>FRIENDLY UNITS MAY NOT BE SET TO HOSTILE WITHOUT PROVOCATION<br>PILOT COMMAND: rm ffpervent<br>FILE “ffpervent” NOT FOUND!<br>PILOT COMMAND: rm ffprevent<br>ARE YOU SURE YOU WISH TO DELETE FILE “ffprevent” ?<br>PILOT COMMAND: y<br>UNABLE TO DELETE FILE “ffprevent” <span class='horus--subtle'>THEY ARE SO BEAUTIFUL</span><br>PILOT COMMAND: asdarklwhl"
