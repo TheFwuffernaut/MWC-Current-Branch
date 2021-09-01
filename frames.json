@@ -496,7 +496,7 @@
     "source": "SSC",
     "name": "MALACHITE",
     "mechtype": ["Support", "Striker"],
-    "image_url": "https://i.imgur.com/RXMlUxP.png",
+    "image_url": "https://i.imgur.com/TdRIFIr.png",
     "y_pos": 0,
     "description": "It is said that the greatest advances in technology are first made in biology. Man has made no great mechanical breakthrough that evolution has not first perfected. With this in mind, SSC blacksites have made great strides researching the flora and fauna of various worlds for unexplored angles or novel concepts. Details about the bio-research program are light, but the Malachite frame has illustrated several facts: firstly, that Smith-Shimano Corpro is not above the use of harvested biological organs in mechanical chassis. Secondly: it is privy to a number of species and worlds that it has not shared with Union at large. And thirdly: whatever world and whatever species has contributed to the Malachite’s design, it is not one that humankind should ever visit for any length of time.",
     "mounts": ["Main/Aux","Main/Aux"],
@@ -542,7 +542,7 @@
     "source": "SSC",
     "name": "PLAYBOY",
     "mechtype": ["Striker"],
-    "image_url": "https://i.imgur.com/5Q7VYY9.png",
+    "image_url": "https://i.imgur.com/euyxY2N.png",
     "y_pos": 0,
     "description": "“In the name of I, HEDON, who is exceptional in capacity for generosity to Myself and Others. I worship only happiness, which is the only thing more lovely and powerful than My Most Great Self.<br>My Name is Myself, and My Name means the Pursuit of Joy. All other desires are irrelevant in the extreme -- if it does not bring enjoyment to Myself or Others, it should be destroyed, and it is quite fortuitous that I find great beauty in destruction.<br>If I am not desirous of a thing, I shall annihilate it. If I am not pleased by an outcome, I shall undo it. I am the master of all I survey, and this pleases Me greatly. I shall exist, by My decree, until the end of all things, and by existing shall I bring great Joy to the universe.<br>So I decree, in my name: HEDON.”<br><br>--Hedon’s Autode, Prelude",
     "mounts": ["Aux/Aux", "Heavy"],
@@ -2136,6 +2136,10 @@
       {
         "name": "REACTOR GREMLIN",
         "description": "Enemies within the Flarewing’s Sensors subtract 1 from the final result of any Overheating Check, or 2 if the Flarewing is in the Danger Zone."
+      },
+      {
+        "name": "Reactor Technician Warning",
+        "description": "<b>GET OUT OF THERE STALKER</b>"
       }
     ],
     "core_system": {

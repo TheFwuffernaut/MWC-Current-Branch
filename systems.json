@@ -1976,7 +1976,7 @@
 		"name": "Alpha Strike",
 		"type": "System",
 		"sp": 3,
-		"tags": [{"id": "tg_heat_self", "val": 3}, {"id": "tg_unique"}],
+		"tags": [{"id": "tg_unique"}],
 		"source": "IPS-N",
 		"license": "TITANIC",
 		"license_level": 3,
@@ -1984,7 +1984,7 @@
 			{
 				"name": "Initiate Alpha Strike",
 				"activation": "Full",
-				"detail": "When you activate this system, you fire every Loaded Auxiliary and Main weapon on your mech at their normal Heat cost. Each time you use this system before a Full Repair, its Heat cost doubles."
+				"detail": "When you activate this system, you fire every Loaded Auxiliary and Main weapon on your mech at +1 Heat per mount and triggering weapon Heat costs as normal. Each time you use this system before a Full Repair, its total Heat cost increases by +3."
 			}
 		],
 		"description": "If firing everything doesn’t work the first time, it’s certainly worth trying a couple more times to make sure.",
