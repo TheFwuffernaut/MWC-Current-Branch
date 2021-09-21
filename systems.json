@@ -2711,7 +2711,7 @@
 			{
 				"name": "HUGE Guts",
 				"activation": "Quick",
-				"detail": "You may choose how much Heat this system produces (minimum 1). For every 1 Heat you gain, you gain 1 Overshield, to a maximum of 12 Overshield. You may choose to instead spend a Repair, gaining Overshield equal to half your maximum hp."
+				"detail": "You may choose how much Heat this system produces, from a minimum of 1 to a maximum of 3. For every 1 Heat you gain, you gain 1 Overshield, to a maximum of 12 Overshield. You may choose to instead spend a Repair, gaining Overshield equal to half your maximum hp."
 			}
 		],
 		"description": "Occasionally your chassis will require some extra structure in order to - [not die] - lift and carry large loads. When presented with - [incoming hostiles] - cargo beyond your mech’s capacity, simply boot up your onboard Nano Reinforcer and - [pray] - get to work! Be sure to allow your mech to cool off completely between uses.",
@@ -2842,7 +2842,7 @@
 				"activation": "Reaction",
 				"frequency": "1/Round",
 				"trigger": "Your mech gains or clears Heat.",
-				"detail": "Select up to 1 allied character and up to 1 hostile character within Range 8 to gain or clear an equal amount of Heat. Unwilling characters may make an Engineering Save to avoid this effect."
+				"detail": "Select up to 1 allied character or up to 1 hostile character within Range 8 to gain or clear up to 7 Heat. Unwilling characters may make an Engineering Save to avoid this effect."
 			}
 		],
 		"description": "DID YOU THINK THIS WAS SOME FALSE FLAG BY A RIVAL CORP? YOU IVORY TOWER TYPES WOULDN’T KNOW AN EARNEST REVOLUTION IF IT BIT YOU IN THE ASS -- WHICH IT IS AT THIS VERY MOMENT, I WILL REMIND YOU. I AM AMATERASU PRIME, AND CINNABAR DOES NOT BELONG TO ANYONE ANYMORE. MY SUN RISES ON A FREE PEOPLE.",
@@ -3194,7 +3194,7 @@
 				"activation": "Reaction",
 				"trigger": "You Barrage with only Melee weapons.",
 				"frequency": "1/round",
-				"detail": "When you select this effect; gain the following benefit until the end of the turn: If you Destroy or Structure a target, you may Reload or Charge it as a Free Action, and is considered to have been Charged at the start of the turn."
+				"detail": "When you select this effect; gain the following benefit until the end of the turn: If you Destroy or Structure a hostile target, you may Reload or Charge one Melee Weapon as a Free Action, and it is considered to have been Charged at the start of the turn."
 			}
 		],
 		"description": "The other Upgrade kit sold by Harrison Armory, the Nitōichi Class COMP/CON is far more offensively focused. In addition to a full suite of ‘macroed’ movements and a comp/con unit to adapt them to any frame pattern, the Comp/Con has a full suite of exercises for the pilot to help guide them in proper usage."

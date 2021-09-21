@@ -364,7 +364,7 @@
           "activation": "Reaction",
           "frequency": "1/round",
           "trigger": "You or a character within Sensors rolls a d6 for any reason.",
-          "detail": "You may increase or decrease that roll by 1, to a minimum of 0 and a maximum of 6."
+          "detail": "You may increase or decrease that roll by 1, to a minimum of 0 and a maximum of 6. You cannot reduce Structure or Stress rolls to a 0 with this reaction."
         }
       ]
     },
@@ -604,7 +604,7 @@
     "source": "SSC",
     "name": "RABBIT",
     "mechtype": ["Controller", "Striker"],
-    "image_url": "https://i.imgur.com/1QiV4g5.png",
+    "image_url": "https://i.imgur.com/qLRS3p1.png",
     "y_pos": 0,
     "description": "Commissioned by the Department of Justice and Human Rights shortly after the dawn of Thirdcomm, the Rabbit began its life as a general-purpose peacekeeping frame for use within the Sol system. As transition woes between ThirdComm and SecComm gradually faded, peace on Cradle became the norm. The Rabbit line was mothballed, with only a handful of frames active at any time to act as heavy duty CENTCOMM security. Recently, the DOJ/HR has taken the Rabbit out of its vault to be deployed in Union sanctions against various corprostates for human rights violations. This has garnered it both acclaim from the at-large Diaspora and disavowal from its parent company, Smith-Shimano Corpro, for its many depictions as a liberator and a champion of the systematically oppressed. Many Rabbit pilots see this image as an ideal to live up to, and emblazon their motto on the chassis’s pauldron:<br>Et custodiet ipsos custodes.",
     "mounts": ["Aux/Aux", "Flex", "Heavy"],
@@ -670,7 +670,7 @@
     "source": "SSC",
     "name": "ZEBRA",
     "mechtype": ["Support"],
-    "image_url": "https://i.imgur.com/T63y3XA.png",
+    "image_url": "https://i.imgur.com/nevhvDy.png",
     "y_pos": 0,
     "description": "The Akim family was, once upon a time, one of the greatest mechwright names of the SSC Constellar Worlds. Unfortunately, a genetic predisposition to a lower-than-normal birth rate revealed itself within the bloodline within the past 500 years, and that line has been dwindling in influence ever since. In the Corpro, genetic viability is paramount among the population, and this particular defect has stubbornly refused all attempts at purge. The Akims have long been ostracized from their ancestral places of prestige, and not even their most brilliant designs have borne their name to the world. With the final scion of the family having abandoned the Constellar Worlds for a life abroad, it seems that the Akims shall pass into history, with their legacy buried.<br>This frame is that legacy. To you and a million other lancers across the galaxy, I entrust its care. Remember us.",
     "mounts": ["Flex"],
@@ -1449,7 +1449,7 @@
       "evasion": 6,
       "edef": 8,
       "heatcap": 6,
-      "repcap": 3,
+      "repcap": 10,
       "sensor_range": 10,
       "tech_attack": -2,
       "save": 10,
@@ -1468,12 +1468,12 @@
         ]
       },
       {
-        "name": "ADHUSTABLE FRAME",
-        "description": "When undergoing a Full Repair, you may choose to increase the Titanic’s Speed by 2 and reduce its Armor by 1.",
+        "name": "ADJUSTABLE FRAME",
+        "description": "When undergoing a Rest, you may choose to increase the Titanic’s Speed by 2 and reduce its Armor by 1.",
         "synergies": [
           {
             "locations": ["rest"],
-            "detail": "When undergoing a Full Repair, you may choose to increase the Titanic’s Speed by 2 and reduce its Armor by 1."
+            "detail": "When undergoing a Rest, you may choose to increase the Titanic’s Speed by 2 and reduce its Armor by 1."
           }
         ]
       },
@@ -2076,7 +2076,7 @@
   "traits": [
     {
       "name": "Heavy Swings",
-      "description": "The Geronimo has two Heavy Mounts, but cannot mount Superheavy weapons. It can only attack with one Heavy weapon per turn."
+      "description": "The Geronimo has two Heavy Mounts, but cannot mount Superheavy weapons. It can only attack with one Heavy Mount per turn."
     },
 {
       "name": "LACERATE AND DISARM",
@@ -2114,8 +2114,8 @@
       "stress": 4,
       "armor": 0,
       "hp": 6,
-      "repcap": 2,
-      "evasion": 10,
+      "repcap": 3,
+      "evasion": 12,
       "speed": 6,
       "save": 11,
       "sensor_range": 3,
@@ -2135,7 +2135,7 @@
       },
       {
         "name": "REACTOR GREMLIN",
-        "description": "Enemies within the Flarewing’s Sensors subtract 1 from the final result of any Overheating Check, or 2 if the Flarewing is in the Danger Zone."
+        "description": "Enemies within the Flarewing’s Sensors subtract 1 from the final result of any Overheating Check, or 2 if the Flarewing is in the Danger Zone. Overheating Checks cannot be reduced below 1 by this Trait."
       },
       {
         "name": "Reactor Technician Warning",
@@ -2522,6 +2522,10 @@
       {
         "name": "One-Hit Wonder",
         "description": "Whenever the Phoenix takes structure damage, it does not make a Structure Damage check. Instead it begins an Irreversible Meltdown as per the Overheating Table."
+      },
+      {
+        "name": "Penumbra",
+        "description": "If you willingly start to Self-Destruct, you immediately take 1 Point of Stress Damage and become Exposed."
       },
       {
         "name": "Eclipse Phase",
