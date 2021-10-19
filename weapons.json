@@ -300,9 +300,9 @@
 		"name": "Call Lightning",
 		"mount": "Heavy",
 		"type": "Cannon",
-		"damage": [{"type": "Energy", "val": "1d6+1"}],
-		"range": [{"type": "Range", "val": 10}, {"type": "Blast", "val": 1}],
-		"tags": [{"id": "tg_seeking"}],
+		"damage": [{"type": "Energy", "val": "1d6+2"}],
+		"range": [{"type": "Range", "val": 10}, {"type": "Blast", "val": 3}],
+		"tags": [{"id": "tg_seeking"}, {"id": "tg_ap"}],
 		"source": "SSC",
 		"license": "DRUID",
 		"license_level": 3,
@@ -313,7 +313,7 @@
 				"activation": "Reaction",
 				"frequency": "1/round",
 				"trigger": "A character you hit with Call Lightning ends their turn within the Blast area you targeted.",
-				"detail": "Make another attack with Call Lightning, targeting the same area as before."
+				"detail": "Make another attack with Call Lightning, targeting the same area as before. If this attack is successful then Strike Twice may be used 1 additional time before the start of your next turn."
 			}
 		],
 		"description": "<i>I and the mechanism are well acquainted now. I learn to pilot its psyche like I pilot the mech it is attached to. I favor certain configurations over others. In its bulky, treaded aspect, I can close my eyes and imagine that I am a tanker, a nobody again, running missions on the badlands of Leera. But I am piloting something more than a tank now, and the gods themselves are not so well armed as I.<i>",
@@ -439,7 +439,7 @@
 		"source": "SSC",
 		"license": "RABBIT",
 		"license_level": 2,
-		"on_attack": "You may give this weapon Thrown 8. If you do, it deals no damage on a hit, but the target must succeed on a Hull save or be Immobilized as long as the Tonfa remains in its space. The target may repeat this save at the end of each of its turns.",
+		"on_attack": "You may give this weapon Thrown 8. If you do the target must succeed on a Hull save or be Immobilized as long as the Tonfa remains in its space. The target may repeat this save at the end of each of its turns.",
 		"description": "<i>“Enforcer Nobles, you are hereby charged with Murder in the First Degree, Violation of Civil Liberties, Assault and Battery, Breaking and Entering with Intent, and Conduct Unbecoming an Officer of the Law. From this point forward, you are no longer under Harrison Armory protection and are subject only to the jurisdiction of the Third Committee of Union and its laws.”</i>",
 		"data_type": "weapon",
 		"aptitude": {}
@@ -471,7 +471,7 @@
 			},
 			{
 				"name": "ROYAL GUARD Point Defense Stabilizer",
-				"range": [{"type": "Range", "val": 5}, {"type": "Threat", "val": 3}],
+				"range": [{"type": "Range", "val": 8}, {"type": "Threat", "val": 3}],
 				"damage": [{"type": "Kinetic", "val": "1d6+3"}],
 				"effect": "You have Resistance to damage from the nearest enemy character, or a character of your choice if more than one character is equidistant from you."
 			},
@@ -1746,5 +1746,85 @@
 		"tags": [{"id": "tg_smart"},{"id": "tg_seeking"}],
 		"on_hit": "You may attack the same target again with this weapon. This effect may trigger a maximum of 4 times per Skirmish or Barrage. This weapon's additional attacks may only trigger 1/turn. This weapon’s additional shots cannot benefit from bonus damage. Additional attacks apply the following effects depending on how many times the target has been hit by this weapon this Turn:<ul><li>First hit: The Target must make an Agility save or be Slowed until the end of its next turn.</li><li>Second hit: The Target must make a Hull save or lose the benefits of Armor until the end of the turn.</li><li>Third hit: The Target must make a Systems save or be Impaired until the end of its next turn.</li><li>Fourth hit: The Target must make an Engineering Save or gain 3 Heat.</li><li>Fifth Hit: Your Nexus weapons deal an additional 3 AP Energy Damage against that Target until the end of the Current Turn.</li></ul>",
 		"description": "<i>“The centerpiece of the Hawk Moth. Why I decided to give it artistic names and bullshit like that. This is a Nexus unit that’ll rip a Drake apart in mere minutes, crippling its operational status along the way. Being able to direct Benisuzume with a mere thought lets you do far more with a Nexus unit then some cheap portable turret.”</i>"
+	},
+	{
+		"id": "mwc_ballistic_hopper_shooter",
+		"name": "Ballistic-Hopper Shooter",
+		"type": "CQB",
+		"mount": "Main",
+		"license": "DIOLKOS",
+		"license_level": 1,
+		"source": "IPS-N",
+		"range": [{"type": "Threat", "val": 2}, {"type": "Range", "val": 2}, {"type": "Blast","val": 1}],
+		"damage": [{"type": "Kinetic", "val": "1d6"}],
+		"tags": [{"id": "tg_knockback", "val": 3}],
+		"description": "“Wow, That’s a Fucked Up Shotgun.”"
+	},
+	{
+		"id": "mwc_precog_marker_rounds",
+		"name": "PreCog Marker Rounds",
+		"type": "Nexus",
+		"mount": "Heavy",
+		"license": "DIOLKOS",
+		"license_level": 2,
+		"source": "IPS-N",
+		"range": [{"type": "Range", "val": 10}],
+		"damage": [{"type": "Variable", "val": "1d6+4"}],
+		"tags": [{"id": "tg_smart"}, {"id": "tg_seeking"}],
+		"on_hit": "The target must make a System save. On Failure, they recieve Lock On. While they have this Lock On, they cannot benefit from Hidden, Invisible, or Intangible.",
+		"description": "“We managed to get the battlefield records of everyone everywhere for the next millennium. The information is in an absolutely useless state, so we’ll need an entirely separate system to find out who it is, when it is, and where they are. If we just had a way to isolate the variable...”"
+	},
+	{
+		"id": "mwc_simple_as_lmg_bundle",
+		"name": "“Simple As” LMG Bundle",
+		"type": "Cannon",
+		"mount": "Auxiliary",
+		"license": "DIOLKOS",
+		"license_level": 3,
+		"source": "IPS-N",
+		"range": [{"type": "Range", "val": 7}],
+		"damage": [{"type": "Kinetic", "val": "1d3+1"}],
+		"sp": 1,
+		"effect": "If this weapon shares a mount with another weapon of the same name, you gain the following benefits:<br>- Repairing the whole mount only takes 1 Repair Cap instead of 2.<br>- Each one increases to 1d3+2 Kinetic.",
+		"description": "“By consolidating infantry-scale machine guns into a bundle, we found that the mount just recognizes the entire collective as one bundle, no matter how many more we add on top.”"
+	},
+	{
+		"id": "ssc_cetnucha_integrated",
+		"name": "THE CREST-UPON KITE",
+		"type": "Melee",
+		"mount": "Main",
+		"range": [{"type": "Threat", "val": 1}],
+		"damage": [{"type": "Kinetic", "val": "1d3+3"}],
+		"tags": [{"id": "tg_accurate"}, {"id": "tg_knockback", "val": 1}],
+		"on_crit": "The target gains the Prone status."
+	},
+	{
+		"id": "mwc_end_them_rightly",
+		"name": "END THEM RIGHTLY",
+		"type": "CQB",
+		"mount": "Heavy",
+		"license": "CETNUCHA",
+		"license_level": 2,
+		"source": "SSC",
+		"sp": 1,
+		"range": [{"type": "Threat", "val": 3}, {"type": "Range", "val": 3}],
+		"damage": [{"type": "Kinetic", "val": "1d6+4"}],
+		"tags": [{"id": "tg_inaccurate"}],
+		"on_hit": "If the target is Prone, this weapon deals +4 damage.",
+		"description": "Engraved on the barrel is a tapestry-style scene of a battle, with a single phrase beneath: “We Strive Higher Still”"
+	},
+	{
+		"id": "mwc_the_ultimate_test_of_honour",
+		"name": "THE ULTIMATE TEST OF HONOUR",
+		"type": "Melee",
+		"mount": "Superheavy",
+		"license": "CETNUCHA",
+		"license_level": 3,
+		"source": "SSC",
+		"range": [{"type": "Line", "val": 3}],
+		"damage": [{"type": "Energy", "val": "2d6+4"}],
+		"tags": [{"id": "tg_overkill"}],
+		"effect": "If you attack after traveling exactly 5 spaces using only your Move and/or Boost actions in a straight line in the same turn, this deals 3d6 more damage.<br>This weapon has +1 Accuracy on attacks at the furthest tip of the Line, and +1 Difficulty at all other points.",
+		"description": "There is only one thing that has ever decided the true mettle of Nobility."
 	}
 ]

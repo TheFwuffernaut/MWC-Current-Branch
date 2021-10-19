@@ -464,7 +464,7 @@
     "traits": [
       {
         "name": "WILD SHAPE: MECH FORM",
-        "description": "The Druid has three Forms it can switch to a different one as a protocol -- Mech, Jet, and Tank, with Mech Form as its default. In all forms except Tank Form, it cannot use its Heavy Mount. In all forms except Mech Form, the Druid can only move in a straight line when it makes a standard move or Boosts."
+        "description": "The Druid has three Forms it can switch to a different one as a protocol -- Mech, Jet, and Tank, with Mech Form as its default. When it switches between forms it clears 1 Heat. In all forms except Tank Form, it cannot use its Heavy Mount. In all forms except Mech Form, the Druid can only move in a straight line when it makes a standard move or Boosts."
       },
       {
         "name": "WILD SHAPE: JET FORM",
@@ -617,7 +617,7 @@
       "evasion": 10,
       "edef": 6,
       "heatcap": 6,
-      "repcap": 2,
+      "repcap": 3,
       "sensor_range": 5,
       "tech_attack": -2,
       "save": 12,
@@ -2091,7 +2091,7 @@
     "name": "RAPID DISASSEMBLY PROCESSOR",
     "description": "Hello, trainee! Welcome to the Harrison Industrial crash course in piloting the Geronimo Heavy Lumberjack. Central to the frame’s function is the Rapid Disassembly Processor, or RDP. Your RDP will let you analyze, evaluate, and swiftly cut down any - [goddamn flesh trees] - sessile lumber-bearing organisms you are assigned to process. The RDP will point you to viable cutting points, such as - [tendons, joints, sensory organs] - notches, roots, and exposed timber veins. Once felled, you will be responsible for - [finishing the job] - disassembling the timber and preparing it for disposal by removing any remaining - [limbs] - limbs. Enjoy the following tutorial, and have a safe and productive day at Harrison Industrial!",
     "active_name": "Until It Is Done",
-    "active_effect": "For the rest of the scene, you may attack with any number of mounted Heavy weapons in a turn. If you hit a target with two different Heavy weapons in a single turn, it must make a Hull save or immediately suffer System Trauma.",
+    "active_effect": "For the rest of the scene, you may disregard the Heavy Swings trait, and attack with more than one Heavy Mount per turn. If you hit a target with two different Heavy weapons in a single turn, it must make a Hull save or immediately suffer System Trauma.",
     "activation": "Protocol",
     "use": "Encounter"
   },
@@ -2658,6 +2658,120 @@
       "active_name": "All-Range Nexus Support System",
       "active_effect": "Until the end of the scene, all Nexus weapons may chain to an additional target within range of the initial target. This attack deals half damage and may not do bonus damage. Any targets that are Locked On and have the Lock On consumed may have one of the following Effects applied to them on a failed save:<ul><li>Destroying Earth: The Target must make a Hull Save or be Shredded until the end of their next turn.</li><li>Driving Winds: The Target must make a Systems Save or only have line of sight to Adjacent Spaces until the end of their next turn.</li><li>Drowning Waters: The Target must make an Agility Save or become Immobilized until the end of their next turn.</li><li>Dismantling Fire: The Target must make an Engineering Save or take 2 burn every time they take an action or reaction until the end of their next turn.</li><li>Targets may be affected by more than one effect by this system but only one attack may apply one at a time.</li></ul>",
       "activation": "Protocol"
+    }
+  },
+  {
+    "id": "mwc_ipsn_diolkos",
+    "name": "DIOLKOS",
+    "source": "IPS-N",
+    "license_level": 2,
+    "mechtype": ["Controller"],
+    "image_url": "",
+    "description": "The Diolkos was a failure before it was a success. At its core was an attempt to make proprietary FTL technology that meant IPS-N freighters wouldn’t have to rely on Union’s Gates, Harrison’s intrasolar “slip” technology, or the graciousness of the Voladore people out in the Long Rim. One late night, copious amounts of “Pain-tinis”, and a filled whiteboard later, two IPS-N scientists found out that by timing the start of a very specific ignition sequence with the impact of an object on the aft hull, a ship of any class would temporarily be shunted between Blinkspace and Realspace, as well as achieve a speed of 0.97c if certain conditions were maintained. This technology could not be adopted without thorough testing, and thus the ramshackle Diolkos was developed for the kind of Nav-Suite that would intentionally crash into an asteroid in order to bypass an entire belt and arrive at the destination 1 day quicker.",
+    "mounts": ["Flex", "Flex", "Heavy"],
+    "stats": {
+      "armor": 0,
+      "edef": 8,
+      "evasion": 8,
+      "heatcap": 6,
+      "hp": 10,
+      "repcap": 6,
+      "save": 12,
+      "sensor_range": 5,
+      "size": 2,
+      "sp": 6,
+      "speed": 2,
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": -2
+    },
+    "traits": [
+      {
+        "name": "GEOMETRICAL SYMPATHY",
+        "description": "1/round, if the Diolkos Boosts while adjacent to an object, character, or terrain larger than Size ½, the Diolkos can end their movement at any point on the edge of the map that is a valid space otherwise. Since this is a fucked up OoB glitch and not a Teleport, it is reactable when you perform the action, but the movement itself ignores Engagement. "
+      },
+      {
+        "name": "KINETIC CONSERVATION",
+        "description": "1/Round, when the Diolkos takes self-damage, it flies a number of spaces equal to the damage dealt before reductions or resistance."
+      },
+      {
+        "name": "FORCED PROBABILITY",
+        "description": "Any D20 rolled by the Diolkos or an Ally in sensors has Overkill. This heat goes to the Diolkos regardless of which character rolled."
+      },
+      {
+        "name": "ARE YA WINNING, SON?",
+        "description": "An IPS-N handler will regularly check in on you and your Frame to collect data and give paternalistic advice. It feels… nice."
+      }
+    ],
+    "core_system": {
+      "name": "ANY%WR ENGINE ABUSE",
+      "description": "“y-y-y-y-YAHOO!”",
+      "passive_name": "“Back Hop” Interdimensional Frame Shift",
+      "passive_effect": "After taking damage or heat from an outside source or save in a turn, you can become intangible and automatically succeed on saves for the rest of that turn.",
+      "active_name": "Blink Coordinate: X=Y=Z=0*c",
+      "active_effect": "For the rest of the scene, you can move off the edge of the map. When you do, you appear on the opposite side.<br>Additionally, 1/round you can teleport to a point up to 5 spaces away at any point in yours or other characters turns, and you can end this movement in another character's space. When you do, they must make a Hull save. On a failure they fly 5 spaces in a direction of your choice. If they hit an object in that path, they take 2d6 Kinetic damage and fall prone. If they succeed, they are pushed to an adjacent free space.",
+      "activation": "Protocol"
+    }
+  },
+  {
+    "id": "mwc_ssc_ctenucha",
+    "name": "CTENUCHA",
+    "source": "SSC",
+    "license_level": 2,
+    "mechtype": ["Defender", "Striker"],
+    "image_url": "",
+    "description": "The Ctenucha is a lesser known frame made for one purpose and, admittedly, a dated one. For a short period in the history of the Karrakin Trade Baronies, Nobles used to lead their forces from the front lines in these personalized frames, and would even duel each other using this chassis. Now, only a select few minor Houses still maintain them. The majority of current production goes to autonomous “Chivalric Orders” who act in a similar function to the Loyal Albatross within the Baronies-controlled areas of the galaxy.",
+    "mounts": ["Heavy"],
+    "stats": {
+      "armor": 0,
+      "edef": 10,
+      "evasion": 10,
+      "heatcap": 5,
+      "hp": 6,
+      "repcap": 4,
+      "save": 10,
+      "sensor_range": 5,
+      "size": 0.5,
+      "sp": 5,
+      "speed": 5,
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": -1
+    },
+    "traits": [
+      {
+        "name": "NOBLESSE OBLIGE",
+        "description": "2/Round, when an ally within your Sensors is hit by an attack, you can immediately move adjacent to the ally and interrupt the attack. Make a contested attack roll with an undestroyed weapon. If you meet or exceed the attack roll of the enemy, roll damage for the weapon you selected. The damage you roll is subtracted from the damage the enemy deals before you check for any resistance, status, condition, or armor."
+      },
+      {
+        "name": "CHAMPION TO THE LESS FORTUNATE",
+        "description": "While adjacent to an allied mech or a Narratively Important character/object with less Evasion than you, gain +1 Accuracy on all your attack rolls."
+      },
+      {
+        "name": "PEERLESS SYMBOL",
+        "description": "Before an attack is made against it, the Ctenucha gains 3 Overshield for every Accuracy in the attack roll. This Overshield lasts until end of that turn, and stacks with itself up to 21"
+      },
+      {
+        "name": "TRIUMPHANT TRUMPETS",
+        "description": "At the end of a scene you win, a small brass section will appear and play a little victory theme. *da-d-d-duuuh duh duh duh-da-daaaaaaah*"
+      }
+    ],
+    "core_system": {
+      "name": "WHAT DO I HAVE TO FEAR?",
+      "description": "We have a duty above all else.<br>Be they gods or kings, we must be the swiftest, most complete destruction of that which takes the life of our people.<br>They look upon our crest and know that we <b>are</b> lightning, the thunderclap that will sunder all opposed to our ambition.",
+      "integrated": ["ssc_cetnucha_integrated"],
+      "active_name": "UNDER THE SACRED BRIARS",
+      "activation": "Protocol",
+      "active_effect": "For the rest of the Scene, you gain the Retributive Rushdown reaction.",
+      "active_actions": [
+        {
+          "name": "Retributive Rushdown",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "An enemy within 10 spaces and line of sight attacks an ally.",
+          "detail": "You immediately run up to 10 spaces in a straight line to be adjacent to that enemy, ignoring reactions, engagement, and difficult terrain. Enemies in your path take 2 AP kinetic damage, while Allies can gain 2 Overshield (doesn’t stack with any existing overshield).<br>When you make it to the enemy, make a Ram, counting as size 4 for this reaction, dealing bonus damage equal to the number of spaces traveled."
+        }
+      ]
     }
   }
 ]

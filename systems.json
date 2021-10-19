@@ -549,7 +549,7 @@
 				"name": "Bind",
 				"activation": "Quick",
 				"range": [{"type": "Range","val":10}],
-				"detail": "Target a character within Range and Line of Sight. That character must succeed on a Hull Save or immediately start falling, regardless of any flight or wall-climbing effects on it. Until it succeeds on this save as a Quick Action, it is Slowed and always falls to the lowest possible elevation, unable to ascend by any means -- jumping, climbing, or flight."
+				"detail": "Target a character within Range and Line of Sight. That character must succeed on a Hull Save or immediately start falling, regardless of any flight or wall-climbing effects on it. Additionally, if the target moves 3 or more spaces on its turn after failing the initial save against this system, they become Immobilized until the end of their next turn. Until it succeeds on this save as a Quick Action, it is Slowed and always falls to the lowest possible elevation, unable to ascend by any means -- jumping, climbing, or flight."
 			}
 		],
 		"description": "The newest opponent is animalistic; a mech by all standards, yet it flies like a chiropteran. The mechanism is familiar with it -- it is quick to identify its inspiration down to the genus. It reaches out into a direction with no name, and pins the bat to the ground with steel tendrils. I ask how it knows so much about the natural world if it is a machine. It does not answer. It does not know.",
@@ -569,7 +569,7 @@
 			{
 				"name": "Investiture of the Elements",
 				"activation": "Full Tech",
-				"detail": "A character within Sensors and Line of Sight gains 8 Overshield. While this Overshield lasts, that character gains one of the following benefits, selected when you activate this system:<br><br>1. Investiture of Flame<br>The shielded character has Resistance to Burn and Energy damage. Hostile characters that start their turn in a Burst 1 area around the shielded character or enter that area for the first time on their turn take 2 Burn.<br><br>2. Investiture of Ice<br>The shielded character is immune to Heat from hostile sources. Hostile characters treat a Burst 2 area around the shielded character as Difficult Terrain.<br><br>3. Investiture of Stone<br>The shielded character’s Armor is increased by 2 (To a maximum of 4), and they ignore Difficult and Dangerous Terrain.<br><br>4. Investiture of Wind<br>The shielded character can fly when they make a standard move or Boost. Attacks against them have a 50% chance to automatically miss (this does not stack with Invisible or any similar effect)."
+				"detail": "A character within Sensors and Line of Sight gains 8 Overshield. While this Overshield lasts, that character gains one of the following benefits, selected when you activate this system:<br><br>1. Investiture of Flame<br>The shielded character has Resistance to Burn and Energy damage. Hostile characters that start their turn in a Burst 1 area around the shielded character or enter that area for the first time on their turn take 2 Burn.<br><br>2. Investiture of Ice<br>The shielded character is immune to Heat from external sources. Hostile characters treat a Burst 2 area around the shielded character as Difficult Terrain.<br><br>3. Investiture of Stone<br>The shielded character’s Armor is increased by 2 (To a maximum of 4), and they ignore Difficult and Dangerous Terrain.<br><br>4. Investiture of Wind<br>The shielded character can fly when they make a standard move or Boost. Attacks against them have a 50% chance to automatically miss (this does not stack with Invisible or any similar effect)."
 			}
 		],
 		"description": "I know the mechanism has come to love me when it wakes me in the night and tells me to flee. I know better than to argue with a thinking machine and I leave the blacksite as fast as my hardsuit can carry me. It sheathes me in godsblood which eats through the concrete walls like a hot iron through a snowdrift. As I clear a mile’s radius, I see, hear, and feel the coldcore of the Druid erupt in a final sacrificial gesture. I feel compelled to return, and though this place should be uninhabitable for centuries to come, I find an oasis has sprung up in my absence. It is in this oasis, holding the last charred fragment of the original Proteus Mechanism, that my rescuers found me. And now I pass its secrets on to you.",
@@ -738,7 +738,7 @@
 		"name": "Thundercage",
 		"type": "Deployable",
 		"sp": 2,
-		"tags": [{"id": "tg_limited", "val": 1}, {"id": "tg_unique"}],
+		"tags": [{"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
 		"source": "SSC",
 		"license": "RABBIT",
 		"license_level": 2,
@@ -1729,7 +1729,7 @@
 		"source": "HA",
 		"license": "PERSHING",
 		"license_level": 3,
-		"effect": "1/round, when you move into a smaller character’s space, that character is automatically Rammed by you. You may attempt to end a move in another mech’s space, forcing them to make a Hull save. On a success, you are prevented from moving into the other character’s space. On a failure, you move on top of the character, knocking them Prone and Immobilizing them. This effect lasts until the character is no longer sharing a space with you, either from you moving out from on top of them or by them making the Hull save as a Quick Action.",
+		"effect": "1/round, when you move into a smaller character’s space using your Standard Move, that character is automatically Rammed by you. You may attempt to end a move in another mech’s space, forcing them to make a Hull save. On a success, you are prevented from moving into the other character’s space. On a failure, you move on top of the character, knocking them Prone and Immobilizing them. This effect lasts until the character is no longer sharing a space with you, either from you moving out from on top of them or by them making the Hull save as a Quick Action.",
 		"description": "“Oh, I’m sorry, Gersham. Was that your car I just stepped on? I can’t hear you over the sound of my onboard printer churning out a f***ing sales trophy every time I hit a hundred units purchased.”",
 		"data_type": "system",
 		"aptitude": {}
@@ -3371,5 +3371,137 @@
 			}
 		],
 		"description": "INARI was born from a modified and cultured ATHENA sub-group for potential use with the Mourning Cloak before the perfection of the FADE Cloak. By using drones to mimic and create sensor ghosts, INARI can camouflage the host mech and reveal it at a more opportune time. Unfortunately, it tends to think that its theatrics are most beneficial even if not tactically sound. "
+	},
+	{
+		"id": "mwc_rebound_synchronicity",
+		"name": "Rebound Synchronicity",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "DIOLKOS",
+		"license_level": 1,
+		"effect": "This system automatically repairs during Narrative Downtime and cannot be repaired or regained otherwise.<br><br>When you lose a Structure, regardless of the Structure Check Result, you can choose to also destroy this system.<br>When it is destroyed, any damage from the attack or effect that overflows into your next Structure(s) is automatically dealt back to the source as irreducible damage.",
+		"description": "“Alright, by bringing the Real and Blink together for <b>just</b> enough time, a person can simultaneously fire a bullet <b>and</b> get hit by that bullet. The problem is that you need to know <b>exactly</b> where the bullet is. And you can only get that level of precision by first getting shot. A bunch.”"
+	},
+	{
+		"id": "mwc_slingshot_blink_nav_suite",
+		"name": "“Slingshot” Blink Nav-Suite",
+		"type": "Tech",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "IPS-N",
+		"license": "DIOLKOS",
+		"license_level": 2,
+		"effect": "You gain access to the Spacial Link and Collision Shunt Quick Tech actions, which can only be used against targets that have the Lock On condition. These actions consume Lock On.",
+		"actions": [
+			{
+				"name": "Spacial Link",
+				"activation": "Quick Tech",
+				"detail": "Pick a target in line of sight. Neither of you can go further from one another under any circumstances, however, all movement directly towards each other is increased by 3 Spaces. This ends when one is adjacent to the other."
+			},
+			{
+				"name": "Collision Shunt",
+				"activation": "Quick Tech",
+				"detail": "A target in Line of Sight makes a Hull Save. On a failure, you teleport to their space, and they teleport half as far in a direction of your choice. On a success, you teleport to an adjacent space and fall Prone."
+			}
+		],
+		"description": "“When you access something like Blinkspace, there is a rapid conversion back and forth between kinetic and potential energy that can create a whiplash effect if you’re not careful, and we are <b>not</b> careful.”"
+	},
+	{
+		"id": "mwc_scatter_pulse",
+		"name": "Scatter Pulse",
+		"type": "Tech",
+		"sp": 2,
+		"source": "IPS-N",
+		"license": "DIOLKOS",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "SNAP BACK TO REALITY",
+				"activation": "Quick Tech",
+				"detail": "Throw a Scatter Pulse within range 8. All characters in a blast 3 make a Hull save or take 1d6 Energy, half on success, and all characters not in the center are pushed 3 spaces away from it.<br>If you are in the center of the Blast, the damage increases to 2d6. "
+			}
+		],
+		"description": "“There’s something that you need to know about the relationship between the Real and the Blink: it’s kinda like... a rubber band! You can stretch it, twist it, do whatever, but it will always try to snap back to what it was before. The bigger the stretch, the bigger the snap.”"
+	},
+	{
+		"id": "mwc_duty_before_all_else",
+		"name": "DUTY BEFORE ALL ELSE",
+		"type": "Shield",
+		"sp": 2,
+		"tags": [{"id": "tg_shield"}],
+		"source": "SSC",
+		"license": "CTENUCHA",
+		"license_level": 1,
+		"effect": "Gain the Valiant Sacrifice Reaction",
+		"actions": [
+			{
+				"name": "Valiant Sacrifice",
+				"activation": "Reaction",
+				"frequency": "1/round",
+				"trigger": "An adjacent ally is targeted by a non-tech attack.",
+				"detail": "You instead become the target, gaining 3 Overshield for that attack, and the attack gains +1 Accuracy against you."
+			}
+		],
+		"description": "“I have come to your aid!”"
+	},
+	{
+		"id": "mwc_monogrammed_slippers",
+		"name": "MONOGRAMMED SLIPPERs",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "CTENUCHA",
+		"license_level": 1,
+		"effect": "You gain +2 HP and a nicer narrative benefit than the one from Personalizations.",
+		"bonuses": [
+			{
+				"id": "hp",
+				"val": 2
+			}
+		],
+		"description": "“Never settle for the urbane, good friend.”"
+	},
+	{
+		"id": "mwc_rigorous_reply",
+		"name": "RIGOROUS REPLY",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 1}],
+		"source": "SSC",
+		"license": "CTENUCHA",
+		"license_level": 2,
+		"effect": "1/round you can perform either the ADVANCE or STEADY Reaction when an ally in Sensors fails a save from a Hostile character.",
+		"actions": [
+			{
+				"name": "ADVANCE",
+				"activation": "Reaction",
+				"trigger": "An ally in Sensors fails a save from a Hostile character.",
+				"frequency": "1/round",
+				"detail": "Your ally immediately moves 4 spaces in a direction of your choice, regardless of slowed, immobilized, or their max speed."
+			},
+			{
+				"name": "STEADY",
+				"activation": "Reaction",
+				"trigger": "An ally in Sensors fails a save from a Hostile character.",
+				"frequency": "1/round",
+				"detail": "If the save deals damage, they gain Resistance to it."
+			}
+		],
+		"description": "“We will see the bright dawn of the ‘morrow, and we will TAKE THAT BANNER!”"
+	},
+	{
+		"id": "mwc_the_family_dragon",
+		"name": "The Family Dragon",
+		"type": "AI",
+		"sp": 2,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "CTENUCHA",
+		"license_level": 3,
+		"effect": "Gain the AI property and be named a Champion.<br>At the start of a scene, barring narrative reasons, the GM selects an Ally as your Chosen Heir. That ally adds 1 to all of their structure checks (to a maximum result of 6) as fate tries to keep them alive.<br>Only one member of the team can be a Chosen Heir.<br><br>The GM also selects a Destined Foe from one Multi-Structure NPC, if one is present.<br>The Foe can also enter the scene later as a Reinforcement.<br>You and the Destined Foe both have +2 Accuracy on non-tech attacks against each other.<br>So long as both a Champion and Destined Foe are active on the field, all Champions and Destined Foes subtract 1 from all structure checks (to a minimum result of 1).<br>When all Destined Foes are destroyed, dead, or retreating from the scene, all Champions add 1 to all their subsequent structure checks for the rest of the scene (to a maximum result of 6).<br><br><b>This NHP is already Unshackled and cannot Unshackle further.</b>",
+		"description": "My Father once said, “She has spoken with a Thousand Voices, and we have either listened or crashed upon the rocks of misfortune. Beware, my child, you are her favorite.”"
 	}
 ]
