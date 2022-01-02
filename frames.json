@@ -1675,7 +1675,7 @@
       },
       {
         "name": "FIGHTER-BOMBER",
-        "description": "If the Richtofen flies at least half its speed in a straight line on its turn, it gets +5 range for the next Grenade thrown in that direction until it moves again, and may launch a free copy of a grenade thrown this way."
+        "description": "If the Richtofen flies at least half its speed in a straight line on its turn, it gets +5 range for the next Grenade thrown in that direction until it moves again, and may launch a free copy of a grenade thrown this way. A target can not be the target of the second thrown grenade, whether by directly being the target or having the AoEs overlap."
       },
       {
         "name": "ULTRALIGHT",

@@ -1781,7 +1781,7 @@
 			{
 				"name": "FYGM Fractal Chaff",
 				"activation": "Quick",
-				"detail": "For the rest of your turn, whenever you move, you leave an opaque cloud of smoke behind your mech. This smoke forms a trail and fills every space your mech moves out of on its turn. Attacks against characters within or on the other side of the smoke have a 50 percent chance to miss. This effect does not stack with Invisible. The smoke trail lasts until the start of your next turn."
+				"detail": "For the rest of your turn, whenever you move, you leave an opaque cloud of smoke behind your mech. This smoke forms a trail and fills every space your mech moves out of on its turn. While within the area you gain Soft Cover, and characters other than you cannot draw line of sight into or out of the area. This effect does not stack with Invisible. The smoke trail lasts until the start of your next turn."
 			}
 		],
 		"description": "Named for its reflective, opalescent sheen, Chrome Veil is a unique non-newtonian gas that becomes hard as concrete to incoming projectiles. When doped with metallic nano-chaff, it acts nearly as solid to sensors and electronic warfare. Inhalation of this substance is not recommended, and Harrison Armory takes every opportunity to remind its employees that huffing Chrome Veil is a near-universally fatal habit.",
@@ -2285,7 +2285,7 @@
 			{
 				"name": "Talaria Protocol",
 				"action": "Protocol",
-				"detail": "Take 3 Heat. This round, your Speed is Doubled, but you may only move in straight lines. You may move through other character’s spaces freely, but coming into contact with any character or object deals 1d6 AP Kinetic to both of you."
+				"detail": "Take 3 Heat. This round, you gain +2 Speed during Boosts, and may freely ascend/descend during that movement. Additionally if you come into contact with any character or object you deal 1d6 AP damage to it."
 			}
 		],
 		"description": "The HERMES-Class family of subjectivities undoubtedly has a personality of some sort. Unfortunately, it refuses to communicate at a speed comprehensible to any human, translation system, or fellow NHP. It appears to be highly annoyed at all other living things’ inability to understand it, though not to the point that it will not gleefully overclock any mechanical system it is introduced to.",

@@ -1530,7 +1530,7 @@
 				"skirmish": true,
 				"damage": [{"type": "Energy", "val": "1d6+1"}],
 				"range": [{"type": "Threat", "val": 1}],
-				"effect": "This Profile may be used to Skirmish."
+				"effect": "This profile may be selected as part of a barrage or any other system, trait, reaction that calls for making an attack, as though it were not a superheavy weapon."
 			},
 			{
 				"name": "Focused",
@@ -1598,7 +1598,7 @@
 				"range": [{"type": "Threat", "val": 1}],
 				"damage": [{"type": "Kinetic", "val": "1d6+4"}],
 				"skirmish": true,
-				"effect": "Unlike other Superheavy weapons, the MURAMASA when unloaded can be used with Skirmish."
+				"effect": "This profile may be selected as part of a barrage or any other system, trait, reaction that calls for making an attack, as though it were not a superheavy weapon."
 			},
 			{
 				"name": "Loaded",
