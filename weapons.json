@@ -945,7 +945,7 @@
 		"source": "IPS-N",
 		"license": "TITANIC",
 		"license_level": 3,
-		"effect": "This weapon requires a bracing mount as though it were a Superheavy weapon (it still counts as a Main weapon: its primary mount is a Main mount and it does not require a Barrage action to fire).",
+		"effect": "This weapon requires a separate bracing mount as though it were a Superheavy weapon (it still counts as a Main weapon: its primary mount is a Main mount and it does not require a Barrage action to fire).",
 		"description": "Nicknamed the Icebreaker, this heavy-caliber slugthrower fires HEAT shells at a range typically reserved for tight, cramped firefights. Such skirmishes are usually silenced when the AC-20’s trademark “God slamming His car door” report sounds across the field.",
 		"data_type": "weapon",
 		"aptitude": {}
@@ -1395,7 +1395,7 @@
 		"license_level": 2,
 		"effect": "This weapon gains the AP tag against targets you are grappling.",
 		"on_crit": "The target takes 1d6 AP Kinetic Damage.",
-		"description": "",
+		"description": "<i></i>",
 		"data_type": "weapon",
 		"aptitude": {}
 	}, 
@@ -1423,7 +1423,7 @@
 		"damage": [{"type": "Kinetic", "val": "2d6+4"}],
 		"range": [{"type": "Threat", "val": 1}],
 		"on_hit": "The target is Immobilized until the end of its next turn.",
-		"description": "",
+		"description": "<i></i>",
 		"tags": [{"id": "tg_loading"}]
 	},
 	{
@@ -1464,7 +1464,7 @@
 		"damage": [{"type": "Kinetic", "val": "2d6"}],
 		"effect": "This weapon can only be reloaded by destroying two Size 1 portions of Adjacent Pieces of Cover, Terrain or Objects as Quick Action.",
 		"on_attack": "Place two SIZE 1 mounds of rock and debris in a free space adjacent to them. The mound is an object with EVASION 5 and 10 HP.",
-		"description": "",
+		"description": "<i></i>",
 		"tags": [{"id": "tg_loading"}]
 	},
 	{
@@ -1478,7 +1478,7 @@
 		"range": [{"type": "Threat", "val": 1}],
 		"damage": [{"type": "Kinetic", "val": "1d6+1"}],
 		"on_attack": "If there is an Object or Piece of Cover or Terrain of at least size  Size 1 Adjacent to the target of this attack, you may destroy that Object or Terrain in order to deal 2 Explosive Damage in a Burst 1 around the target and the destroyed material. You are immune to these Bursts and a character can only be damaged by these Bursts once per Attack even if they would be hit by multiple Bursts.",
-		"description": "",
+		"description": "<i></i>",
 		"tags": [{"id": "tg_unique"}]
 	},
 	{
@@ -1566,7 +1566,7 @@
 		"damage": [{"type": "Explosive", "val": "1d6+3"}],
 		"sp": 1,
 		"tags": [{"id": "tg_accurate"}],
-		"on_hit": "You may move the target of this weapon two spaces in any direction",
+		"on_hit": "You may move the target of this weapon two spaces in any direction. Any Threat increases that apply to the Torsion Odachi increase the number of spaces you can move a target. (If you gain +1 Threat, you may move the target 3 spaces.)",
 		"source": "HA",
 		"license": "MUSASHI",
 		"license_level": 1
@@ -1826,5 +1826,21 @@
 		"tags": [{"id": "tg_overkill"}],
 		"effect": "If you attack after traveling exactly 5 spaces using only your Move and/or Boost actions in a straight line in the same turn, this deals 3d6 more damage.<br>This weapon has +1 Accuracy on attacks at the furthest tip of the Line, and +1 Difficulty at all other points.",
 		"description": "There is only one thing that has ever decided the true mettle of Nobility."
+	},
+	{
+		"id": "mwc_snipper_tenmt_shears",
+		"name": "“Snippers” 10MT SHEARS",
+		"mount": "Main",
+		"type": "Melee",
+		"damage": [{"type": "Explosive", "val": "1d3"},{"type": "Kinetic", "val": 7}],
+		"range": [{"type": "Threat", "val": 1}],
+		"tags": [{"id": "tg_ap"},{"id": "tg_loading"},{"id": "tg_unique"}],
+		"effect": "This weapon requires a separate bracing mount as though it were a Superheavy weapon (it still counts as a Main weapon: its primary mount is a Main mount and it does not require a Barrage action to fire).",
+		"on_hit": "The target is Shredded until the end of their next turn.",
+		"on_crit": "The Target makes a Hull save or immediately suffers System Trauma.",
+		"source": "HORUS",
+		"license": "BULETTE",
+		"license_level": 2,
+		"description": "<i>Many systems made to harm the steel behemoths need extra power to do so. Powerful hydraulics, safety limiter removal, and advanced alloys.<br>Alternatively, you just blow a lot of explosives and channel 46 billion joules of energy into reinforced shears.</i>"
 	}
 ]

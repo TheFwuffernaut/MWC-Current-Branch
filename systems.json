@@ -1211,8 +1211,8 @@
 		"actions": [
 			{
 				"name": "Eclipse.VPK",
-				"activation": "Quick",
-				"detail": "Gain the following effect at the start of your next turn; Until the end of your next turn, your successful Melee Attacks deal 1 Heat in addition to their normal effects."
+				"activation": "Quick Tech",
+				"detail": "Gain the following effect until the end of your next turn, your successful Melee Attacks deal 1 Heat in addition to their normal effects."
 			},
 			{
 				"name": "New_Moon.VPK",
@@ -3503,5 +3503,99 @@
 		"license_level": 3,
 		"effect": "Gain the AI property and be named a Champion.<br>At the start of a scene, barring narrative reasons, the GM selects an Ally as your Chosen Heir. That ally adds 1 to all of their structure checks (to a maximum result of 6) as fate tries to keep them alive.<br>Only one member of the team can be a Chosen Heir.<br><br>The GM also selects a Destined Foe from one Multi-Structure NPC, if one is present.<br>The Foe can also enter the scene later as a Reinforcement.<br>You and the Destined Foe both have +2 Accuracy on non-tech attacks against each other.<br>So long as both a Champion and Destined Foe are active on the field, all Champions and Destined Foes subtract 1 from all structure checks (to a minimum result of 1).<br>When all Destined Foes are destroyed, dead, or retreating from the scene, all Champions add 1 to all their subsequent structure checks for the rest of the scene (to a maximum result of 6).<br><br><b>This NHP is already Unshackled and cannot Unshackle further.</b>",
 		"description": "My Father once said, “She has spoken with a Thousand Voices, and we have either listened or crashed upon the rocks of misfortune. Beware, my child, you are her favorite.”"
+	},
+	{
+		"id": "mwc_short_sighted_menace",
+		"name": "SHORT-SIGHTED MENACE",
+		"sp": 1,
+		"type": "Tech",
+		"tags": [],
+		"source": "HORUS",
+		"license": "BULETTE",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "STAAAAARE",
+				"activation": "Quick Tech",
+				"detail": "Perform a Tech Attack against all targets in a Cone 3. On hit, they are impaired. At the end of their next turn, if a target is still in the Cone, they take 2 Heat."
+			}
+		],
+		"effect": "Gain access to the STAAAAARE Quick Tech.",
+		"description": "<i>By grating plates together to emit a short range sonar-based attack, this system ends up finding openings in E-War defenses, often just by distracting the enemy pilot.</i>"
+	},
+	{
+		"id": "mwc_tungsten_elbow_drop",
+		"name": "TUNGSTEN ELBOW DROP",
+		"sp": 2,
+		"type": "System",
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "BULETTE",
+		"license_level": 1,
+		"effect": "You can fall into another character’s space. They take the same fall damage as you, and must make a Hull save or be knocked Prone and be pushed adjacent or take 2 Knockback for every 3 AP damage you take. If you take 6 AP damage or more from falling, the Prone is automatic.",
+		"description": "<i>Rocks fall, you die. I am the rocks.</i>"
+	},
+	{
+		"id": "mwc_surprise_party_kazoo_noise",
+		"name": "SURPRISE! *PARTY KAZOO NOISE*",
+		"sp": 2,
+		"type": "Tech",
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "BULETTE",
+		"license_level": 2,
+		"effect": "While Hidden or Intangible, you can use either of the BOO!, and HEART ATTACK Quick Tech Actions on adjacent characters. Both statuses end after using any single option. ",
+		"actions": [
+			{
+				"name": "BOO!",
+				"activation": "Quick Tech",
+				"detail": "The character immediately moves its speed away from you in a direction of your choice. This is not involuntary movement."
+			},
+			{
+				"name": "HEART ATTACK",
+				"activation": "Quick Tech",
+				"detail": "This tech action can affect Biological Targets. They must make an Engineering save or be Stunned until the end of their next turn. This can only Stun a target once per Scene."
+			}
+		],
+		"description": "<i>What do you mean? Everyone loves surprises!</i>"
+	},
+	{
+		"id": "mwc_stubborn_little_monster",
+		"name": "STUBBORN LITTLE MONSTEr",
+		"sp": 2,
+		"type": "System",
+		"tags": [{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "BULETTE",
+		"license_level": 3,
+		"effect": "Gain access to the YOU! Full Action.",
+		"actions": [
+			{
+				"name": "YOU!",
+				"activation": "Full",
+				"frequency": "1/Scene",
+				"detail": "When you activate this system, pick a character in Line of Sight. That character can never benefit from Hidden, Invisible, or Intangible against you for the rest of the scene."
+			}
+		],
+		"description": "<i>You can run, but... well, you know the rest.</i>"
+	},
+	{
+		"id": "mwc_tenacious_predator_drive",
+		"name": "TENACIOUS PREDATOR DRIVE",
+		"sp": 3,
+		"type": "System",
+		"tags": [{"id": "tg_heat_self", "val": 1},{"id": "tg_unique"}],
+		"source": "HORUS",
+		"license": "BULETTE",
+		"license_level": 1,
+		"effect": "All your melee attacks gain +1 Threat.<br>Additionall, gain the CHARGE Full Action.",
+		"actions": [
+			{
+				"name": "CHARGE",
+				"activation": "Full",
+				"detail": "Take 1 Heat and Move your full speed in a straight line, ignoring reactions and engagement. At the end of this, if you are within Threat of an Enemy, you may make a melee attack against them as a Free Action."
+			}
+		],
+		"description": "<i>It might be a machine, but I swear to god some mechs are just built mean.</i>"
 	}
 ]
