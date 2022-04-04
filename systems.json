@@ -3587,7 +3587,7 @@
 		"tags": [{"id": "tg_heat_self", "val": 1},{"id": "tg_unique"}],
 		"source": "HORUS",
 		"license": "BULETTE",
-		"license_level": 1,
+		"license_level": 3,
 		"effect": "All your melee attacks gain +1 Threat.<br>Additionall, gain the CHARGE Full Action.",
 		"actions": [
 			{
