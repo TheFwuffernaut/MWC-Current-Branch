@@ -607,6 +607,7 @@
 				"hp": 5,
 				"edef": 6,
 				"evasion": 6,
+				"activation": "Quick",
 				"detail": "This small drone can be deployed to an adjacent free space and is permanently Invisible. 1/round on any of your subsequent turns, you can move the drone up to 5 spaces as a free action. If this movement places it adjacent to a non-Biological enemy, it immediately leaps onto and attaches to that enemy, causing it to suffer one of your Quick Tech, Full Tech, or Invade options when it attaches (you determine which option the drone is loaded with when you deploy it). After discharging a tech action or invade, the Drone must be recalled and re-deployed before it can deliver another Tech Action or Invade. While attached, the drone is untargetable, but it detaches at the end of the attached character’s next turn. You can only recall this drone as a Quick Action if it is in an adjacent space.",
 				"recall": "Quick",
       			"redeploy": "Quick"
@@ -633,6 +634,7 @@
 				"hp": 5,
 				"edef": 10,
 				"evasion": 10,
+				"activation": "Other",
 				"detail": "This Drone is not deployable unless you use the Implant Progeny Full Tech."
 			}
 		],
@@ -956,6 +958,7 @@
 				"eva": "6-X",
 				"edef": 10,
 				"speed": "6-X",
+				"activation": "Other",
 				"detail": "At the end of the scene, all Thrall Drones collectively destroy themselves.",
 				"actions": [
 					{
@@ -3112,7 +3115,7 @@
 		"source": "HA",
 		"license": "MUSASHI",
 		"license_level": 2,
-		"effect": "1/round: You may either stand from Prone as a Free Action or move 3 spaces as part of a Barrage. This movement ignores Engagement and doesn't provoke reactions.",
+		"effect": "1/round: You may either stand from Prone as a Free Action or move up to 3 spaces as part of a Barrage. This movement ignores Engagement and doesn't provoke reactions, but will prevent Ordnance weapons from firing if used before said weapon fires.",
 		"description": "A refit kit available to any mech, the suite offers an enhanced musculature and control system, allowing for movement options that were previously unheard of."
 	},
 	{
@@ -3150,9 +3153,10 @@
 			{
 				"name": "Where'd they go!",
 				"activation": "Reaction",
-				"trigger": "You Destroy or Structure a character using a Heavy or Superheavy weapon.",
+				"trigger": "You Destroy or Structure a non-Grunt character using a Heavy or Superheavy weapon.",
 				"frequency": "1/round",
-				"detail": "You may Turn Invisible until the start of your next turn."
+				"heat_cost": 2,
+				"detail": "You may take 2 Heat to Turn Invisible until the start of your next turn."
 			}
 		],
 		"description": "One of two ‘competing’ upgrade kits available for acquisition by Harrison Armory, the Dokkōdō Comp/Con unit takes from its namesake a defensive set of tools and upgrades for any Frame."
@@ -3272,7 +3276,7 @@
 			{
 				"name": "Certainty",
 				"activation": "Quick",
-				"detail": "Make an attack with a weapon but treat the roll as a 20. It automatically critically hits. After the attack is completed, that weapon mount is destroyed. If the weapon or mount cannot be destroyed, it instead cannot be used for the rest of the Scene - however if a new frame appears before the end of the scene the mount is usable again."
+				"detail": "Make an attack with a weapon but treat the roll as a 20. It automatically critically hits. After the attack is completed, the GLAUCUS-Class NHP is destroyed."
 		  	}
 		],
 		"description": "The GLAUCUS entity has no clones and is not kept within an NHP casket. They communicate remotely and control frame systems from afar - their own metavault, they claim. GLAUCUS is talkative and curious, expressing wonder and interest at just about anything that comes before them. Their temperament is mild and are especially pleased to acquire information in the form of stories and anecdotes. It is common for the NHP to seemingly not understand the motivation behind violence or even realize that a battle is taking place. When GLAUCUS is reminded that a mech is in combat, they bring weapons to bear with inhuman precision and no concern for system tolerances."

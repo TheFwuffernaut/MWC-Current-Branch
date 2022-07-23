@@ -44,7 +44,7 @@
         "name": "THE LESSON OF ONCE-SPOKEN PARABLES",
         "source": "HORUS",
         "description": "<i>[“In the degradation of a foe’s argument shall you see frayed threads of logic. As it falls apart, you shall gain stronger insight, and in your opponent’s ignorance shall you become enlightened. The defeat you learn from need never be your own.”]</i>",
-        "effect": "When an enemy mech within Range 5 of your mech is destroyed, you may restore one destroyed weapon or system on your mech."
+        "effect": "When an enemy mech within Range 5 of your mech is destroyed, you may restore one destroyed weapon or non-AI system on your mech."
     },
     {
         "id": "mwc_harrison_aria_of_loyalty",

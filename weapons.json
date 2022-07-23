@@ -1268,7 +1268,7 @@
 		"damage": [{"type": "Explosive", "val": "1d6+3"}],
 		"range": [{"type": "Range", "val": 20}],
 		"tags": [{"id": "tg_smart"}],
-		"effect": "Unlike other Integrated Weapons, this weapon can be modified by Mods and Core Bonuses. Additionally, the Wraithfire can take any number of Mods at once, though its Mount may still only be affected by a single Core Bonus."
+		"effect": "Unlike other Integrated Weapons, this weapon can be modified by Mods and Core Bonuses. Additionally, the Wraithfire can take any number of Mods at once."
 	},
 	{
 		"id": "mwc_uahc_ten_halibut_cannon",
