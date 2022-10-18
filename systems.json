@@ -2204,7 +2204,7 @@
 				"name": "Umbral Arcanum Force",
 				"activation":  "Full Tech",
 				"damage": [{"type":"Energy","val":"3d3"},{"type":"Burn","val":9},{"type":"Heat","val":9}],
-				"detail": "Make a Tech Attack, dealing 3d3 Energy Damage and 9 Burn and 9 Heat on a hit. Additionally, all beneficial Tech Actions on the target end and it can not take or benefit from Tech Actions until the end of their next turn. The Heat Self value of this tech action decreases by 1 for every Condition the enemy is suffering from.",
+				"detail": "Take 6 Heat to make a Tech Attack, dealing 3d3 Energy Damage and 9 Burn and 9 Heat on a hit. Additionally, all beneficial Tech Actions on the target end and it can not take or benefit from Tech Actions until the end of their next turn. The Heat Self value of this tech action decreases by 1 for every Condition the enemy is suffering from.",
 				"heat_cost": 6
 			},
 			{
