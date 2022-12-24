@@ -125,7 +125,7 @@
 				"hp": 10,
 				"edef": 10,
 				"evasion": 10,
-				"detail": "Choose a character within line of sight and Sensors and expend a charge to deploy the Bloodhound Missile in an adjacent space. This counts as firing a Launcher. At the start of each of your turns, the missile flies up to 4 spaces toward the a character of your choice, or 8 if the character has Lock On. The missile moves in a straight line unless there is a solid object in its path, in which case it flies around if possible. When the missile impacts any character, it explodes in a Blast 2 radius. All characters in the area must make an agility save or take 2d6+4 Explosive damage, taking half on a success. If the  missile is destroyed early, it explodes on the spot, dealing its damage around it."
+				"detail": "Choose a character within line of sight and Sensors and expend a charge to deploy the Bloodhound Missile adjacent to you. This counts as firing a Launcher. At the start of each of your turns, the missile flies up to 4 spaces toward the character of your choice, or 8 if the character has Lock On. The missile moves in a straight line unless there is a solid object in its path, in which case it flies around if possible. When the missile impacts any character, it explodes in a Blast 2 radius. All characters in the area must make an agility save or take 2d6+4 Explosive damage, taking half on a success. If the  missile is destroyed early, it explodes on the spot, dealing its damage around it."
 			}
 		],
 		"description": "Slow, ponderous, and rather massive for a self-propelled explosive, the Bloodhound is legally a reconnaissance drone with a massively oversized self-destruct mechanism. While bulky, unwieldy, and quite obvious in function, it provides more tons of TNT per square meter than any other design in the garage mech scene.",
@@ -250,7 +250,7 @@
 		"actions": [{
 			"name": "Seventh Column",
 			"activation": "Protocol",
-			"detail": "1/Scene, Your Mech becomes Immune to all damage not caused by itself until the end of your next turn."
+			"detail": "1/Scene, your mech becomes Immune to all damage not caused by itself until the end of your next turn."
 		}],
 		"description": "Core to the Qikost uprising was ANCILLA Prime, an in-development administrative NHP tasked with ensuring constant worker efficiency and minimizing downtime, employee organization, and unrest. While Harrison Armory has classified her line a failure and purged all ANCILLA clones from their own systems, IPS-N was quick to point out that she ultimately succeeded in her task -- workers were more efficient when their emotional needs were tended to, required less downtime when not overworked, did not feel a need to unionize if there were no organizational problems to protest, and ultimately were no longer in a state of unrest after being emancipated from Harrison employment. ANCILLA clones in IPS-N employment present a kind and highly cooperational personality, prioritizing pilot safety and mission objective completion above all else.",
 		"data_type": "system",
@@ -269,7 +269,7 @@
 			{
 				"name": "Blow the horn",
 				"activation": "Quick",
-				"detail": "All Hidden or Invisible characters in a Burst 3 radius lose Hidden and Invisible and gain Lock On."
+				"detail": "All Hidden or Invisible characters in a Burst 3 lose Hidden and Invisible and gain Lock On."
 			}
 		],
 		"description": "“Sound the trumpets, and let loose the hounds of war. Light the torches, that the RA-spawn shall have nowhere to hide. By blade and bolt shall we meet them, and with the light of day shall we purge them from the verdant hills of Adrastapol.”<br>--Titan Knights of Questor, Ch. 1<br>Device is encased in a hollow ivory horn. Examination reveals a wide point-blank burst radar system, ideal for detecting nearby infiltration and scouting units.<br>--IPS-N Inventory Entry “Questor-01”",
@@ -559,7 +559,7 @@
 	{
 		"id": "mwc_investiture_of_the_elements",
 		"name": "Investiture of the Elements",
-		"type": "System",
+		"type": "Tech",
 		"sp": 4,
 		"tags": [{"id": "tg_unique"}, {"id": "tg_overshield"}],
 		"source": "SSC",
@@ -593,7 +593,7 @@
 	{
 		"id": "mwc_fh_121_direct_system_interfacer",
 		"name": "FH-121 Direct System Interfacer",
-		"type": "System",
+		"type": "Drone",
 		"sp": 2,
 		"tags": [{"id": "tg_drone"},{"id": "tg_unique"}],
 		"source": "SSC",
@@ -663,7 +663,7 @@
 			{
 				"name": "Pandemic",
 				"activation": "Quick",
-				"detail": "Target a character within your Sensors. Another character of your choice in a Burst 3 area of the target becomes Shredded if the target is Shredded, and marks an amount of Burn equal to the Burn marked on the target (It does not take initial damage from gaining Burn). Repeat until there are no more targets within Burst 3 of the previous target that have already been affected by Epidemic this turn."
+				"detail": "Target a character within your Sensors. Another character of your choice in a Burst 3 area of the target becomes Shredded if the target is Shredded, and marks an amount of Burn equal to the Burn marked on the target (It does not take initial damage from gaining Burn). Repeat until there are no more targets within Burst 3 of the previous target that have already been affected by Pandemic this turn."
 			}
 		],
 		"description": "[REDACTED] populations are on the decline due to fungal infection brought by SSC observation crews. Plague origin is as-yet unknown by the public at large. Recommend suppression of this information and framing of Project Defoliant as a wildlife preservation initiative.<br>--Field Report, AKHLYS Prime",
@@ -782,6 +782,128 @@
 		"description": "While the DIKE Prime subjectivity was created during the SecComm era, its transition to a ThirdComm-serving mindset was surprisingly smooth and painless. DIKE holds no love for any particular philosophy or policy devised by human minds; it is married solely to the concept of Union as a whole. Whatever the stated goals of the Committee might be, those will be the goals DIKE pursues with little regard for anything else, including personal safety.<br><br>DIKE clones are noted for their encyclopedic knowledge of regulation and legal code, preferring to commit vast swathes of such information to memory rather than learn the full names of their pilots.",
 		"data_type": "system",
 		"aptitude": {}
+	},
+	{
+		"id": "mwc_crackshot_targeting_suite",
+		"name": "Crackshot Targeting Suite",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "SKIPPER",
+		"license_level": 1,
+		"effect": "When you consume Lock On, you deal 3 Bonus damage on a successful hit.",
+		"description": "This targeting suite is similar to other, corrective targeting measures, this unit’s main strength is that it is not restricted to a single target."
+	},
+	{
+		"id": "mwc_driver_system",
+		"name": "DRIVER System",
+		"type": "AI",
+		"sp": 4,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_limited", "val": 1}],
+		"source": "SSC",
+		"license": "SKIPPER",
+		"license_level": 3,
+		"effect": "Gain the Watch This Protocol, and the Slow Time Free Action.<br>The Driver System is not a true AI and cannot take control of the mech.",
+		"actions": [
+			{
+				"name": "Watch This",
+				"activation": "Protocol",
+				"cost": 0,
+				"detail": "Take 2 AP damage that cannot be reduced by any means, or gain 1 Heat for one of the following effects. You may choose each option once, and may select multiple options by repeatedly paying the cost.<ul><li>Increase your Speed by 2 until the end of the turn.</li><li>Your Melee Attacks Gain +2 Knockback until the start of your next turn.</li><li>Your first successful Melee Attack deals an additional 1d6 Bonus Kinetic Damage.</li></ul>"
+			},
+			{
+				"name": "Slow Time",
+				"activation": "Free",
+				"cost": 1,
+				"detail": "1/scene: Expend a Charge. You may repeat Actions an additional time this turn, and you may Overcharge a second time."
+			}
+		],
+		"description": "Not so much an AI, or even ‘Dumb AI’ but a complete operating system and subsystem augment, the DRIVER requires much of the  power and support space of an NHP berth. However, the DRIVER System, with practice allows for a pilot to perform feats that require specialized equipment to even consider. As if that were not enough, a DRIVER SYSTEM properly attuned to a pilot can push performance out of a machine that is all but unheard of, even when the hallowed names of ASURA Class NHPs equipped to Everest Frames are considered."
+	},
+	{
+		"id": "mwc_doubletake_decoy_system",
+		"name": "Doubletake Decoy System",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 3}],
+		"source": "SSC",
+		"license": "SKIPPER",
+		"license_level": 3,
+		"actions": [
+			{
+				"name": "Look At Me!",
+				"activation": "Quick",
+				"detail": "Expend a Charge to gain the following Effect:<br>Every hostile character that can still take the Overwatch action or has a Prepared Skirmish or Quick Tech must make an Opposed Charisma check. You use your highest HASE stat while they roll an unmodified d20. If an enemy fails, they cannot take Reactions that target you until the end of the next round."
+			}
+		],
+		"description": "The Doubletake Decoy is… a strange system designed to distract and confuse armed and readied opponents. This takes many forms and can range from acting irrationally on the battlefield, to compression bombing several zetabytes of pornographic material onto local Legionspace tactical nets."
+	},
+	{
+		"id": "mwc_a_bit_of_tall_grass",
+		"name": "A Bit Of Tall Grass",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_limited", "val": 2}],
+		"source": "SSC",
+		"license": "STIGMELLA",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Deploy Grass",
+				"activation": "Quick",
+				"detail": "You release a Burst 2 of dense camouflage that makes positions hard to ascertain. Until the end of the scene, the area provides Soft Cover, +1 Difficulty on Melee Attacks, and +2 difficulty on Search checks against any target in the area.<br>The camouflage is automatically destroyed if it is targeted by any amount of Burn damage, and all characters in the area must make an Agility save (versus your Save Target) or take the same amount of Burn.<br>You are Immune to Difficulty and Burn caused by this system."
+			}
+		],
+		"description": "Officer's Log, Day 1: We've just established a beachhead on a logging planet. Prospects are looking good that we'll seize the central compound before the week is out."
+	},
+	{
+		"id": "mwc_some_loose_rocks",
+		"name": "Some Loose Rocks",
+		"type": "Deployable",
+		"sp": 3,
+		"tags": [{"id": "tg_limited", "val": 2}],
+		"source": "SSC",
+		"license": "STIGMELLA",
+		"license_level": 1,
+		"effect": "",
+		"description": ""
+	},
+	{
+		"id": "mwc_phasmatodea_fascination_suite",
+		"name": "Phasmatodea Fascination Suite",
+		"type": "System",
+		"sp": 2,
+		"tags": [],
+		"source": "SSC",
+		"license": "STIGMELLA",
+		"license_level": 2,
+		"effect": "Gain the LOOK_HERE and LOOK_THERE Invasion options. These options can onyl be performed if you are Hidden before making the Tech Attack.",
+		"actions": [
+			{
+				"name": "LOOK_HERE",
+				"activation": "Invade",
+				"detail": "The Target must treat your allies as Hidden until the end of their next turn, ignoring engagement or Line of Sight. You cannot regain Hidden until the start of your next turn."
+			},
+			{
+				"name": "LOOK_THERE",
+				"activation": "Invade",
+				"detail": "You place a digital copy of yourself 3 spaces away from the Target. The Target must go adjacent to the copy and perform the Search Action against Agility 3 at least once per activation. On success, the copy disappears and the Target may resume whatever they are doing."
+			}
+		],
+		"description": "Officer's Log, Day 11: There's been rumors in the mess hall of a demon living on this planet. Protecting it from outsiders. Us. Those caught spreading these utterly silly stories are being disciplined, and I will address our forces tomorrow."
+	},
+	{
+		"id": "mwc_lorax_class_nhp",
+		"name": "LORAX-Class NHP",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "STIGMELLA",
+		"license_level": 3,
+		"effect": "Your mech gains the AI tag.<br>1/Round, when you lose Hidden, choose one of the following effects:<ul><li><b>Quick! Break Something!:</b> Deal 20 AP damage to an object in Range 5.</li><li><b>SCATTER!:</b> You and all allies may move up to your full Speed, ignoring Reactions.</li><li><b>Uhhhh... meow?:</b> You and the closest enemy character within Line of Sight are both Stunned until the end of your next turn.<br>An enemy can only be affected by this option 1/Scene, and only clears Stunned when you do.</li></ul>",
+		"description": "Officer's Log, Day 93: After 3 months, we finally have a recorded visual on our enemy. We have lost entire platoons to this thing. I have in this tent the recorded evidence of its core visual pattern, and identifiable wave signatures. Finally, we're going-<br>Final excerpts recovered from General Griel's mandible-implant black box."
 	},
 	{
 		"id": "mwc_ewar_denial_suite",
@@ -1424,6 +1546,61 @@
 		"aptitude": {}
 	},
 	{
+		"id": "mwc_djinn_camouflage_system",
+		"name": "Djinn Camouflage System",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_heat_self", "val": 2}, {"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ALARIC",
+		"license_level": 1,
+		"actions": [
+			{
+				"name": "Placeholder",
+				"activation": "Quick",
+				"frequency": "1/round",
+				"detail": "The mech immediately takes AP Energy damage equal to its current Heat. It then clears all Heat, ends all Hostile Tech effects, and becomes Invisible until the end of your Next Turn."
+			}
+		],
+		"description": "Recognizing that Electronic Warfare is a prevalent defensive mechanism with coolant destabilizing attacks, the Djinn camouflage system dumps all heat into subsystems, damaging the frame but also rendering it almost perfectly invisible to sensors for a short period of time. The soft-reset cycle triggered by this system also provides a measure of protection against active hostile EWAR attacks."
+	},
+	{
+		"id": "mwc_firebat_pattern_exhaust_vents",
+		"name": "FIREBAT-Pattern Exhaust Vents",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ALARIC",
+		"license_level": 1,
+		"effect": "When you boost, you may take up to 3 Heat. For every Heat you take, you may move an additional 2 spaces. If you took 3 Heat from this system, your exhaust vents propel you with enough force that Objects and Terrain in the path of your Boost take 20 AP Kinetic damage.",
+		"description": "The corridors of a starship or bunker are labyrinthine and full of ambush points. The Firebat Pattern Assault system allows an equipped Frame to punch holes through bulkheads and walls, bypassing ambushes and obstacles. In an open environment, the system has enough power to allow for rapid movement and open up engagement opportunities."
+	},
+	{
+		"id": "mwc_accelerant_dispersal_system",
+		"name": "Accelerant Dispersal System",
+		"type": "System",
+		"sp": 3,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ALARIC",
+		"license_level": 2,
+		"effect": "While Grappling a target, any Engineering Checks and Saves the target makes are made at +1 Difficulty",
+		"description": "Onboard micro-grenade accelerant dispensers are designed to quickly burn any oxygen in a compartment onboard a ship and soften adjacent compartments through superheated atmospheric systems. Pilots have the choice of deploying them via Accelerant Injector or tasking a basic VI for dispersal."
+	},
+	{
+		"id": "mwc_assault_claws",
+		"name": "Assault Claws",
+		"type": "System",
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "HA",
+		"license": "ALARIC",
+		"license_level": 3,
+		"effect": "Your Grapple attempts are performed with an additional +1 Accuracy.",
+		"description": "An attachment and expansion on a frame’s hand and foot actuators, Boarding Claws make grappling and boarding a target much easier. This system was adapted from orbital use when attempting short-range boarding maneuvers in Zero-G conditions."
+	},
+	{
 		"id": "mwc_goading_booster",
 		"name": "Goading Booster",
 		"type": "System",
@@ -1560,7 +1737,7 @@
 			{
 				"name": "Realize True Potential",
 				"activation": "Quick",
-				"detail": "When you activate this system, you increase the Ki Die’s value by 1, to a maximum of 6. You may instead use this system as a Full Action and take 6 Heat instead of 3 to Increment the Ki Die's value by 2."
+				"detail": "When you activate this system, you increase the Ki Die’s value by 1, to a maximum of 6. You may instead use this system as a Full Action and take 6 Heat instead of 3 to increase the Ki Die's value by 2."
 			}
 		],
 		"counters": [
@@ -1585,6 +1762,7 @@
 		"source": "HA",
 		"license": "ATTILA",
 		"license_level": 3,
+		"effect": "As long as you aren't Stunned, nothing can prevent you from using this system.",
 		"actions": [
 			{
 				"name": "Initiate Finishing Blow!!!",
@@ -1813,7 +1991,7 @@
 	{
 		"id": "mwc_cryogenic_explosives",
 		"name": "Cryogenic Explosives",
-		"type": "System",
+		"type": "Deployable",
 		"sp": 2,
 		"tags": [{"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
 		"source": "HA",
@@ -2082,7 +2260,7 @@
 				"name": "Umbral Arcanum Force",
 				"activation":  "Full Tech",
 				"damage": [{"type":"Energy","val":"3d3"},{"type":"Burn","val":9},{"type":"Heat","val":9}],
-				"detail": "Make a Tech Attack, dealing 3d3 Energy Damage and 9 Burn and 9 Heat on a hit. Additionally, all beneficial Tech Actions on the target end and it can not take or benefit from Tech Actions until the end of their next turn. The Heat Self value of this tech action decreases by 1 for every Condition the enemy is suffering from.",
+				"detail": "Take 6 Heat to make a Tech Attack, dealing 3d3 Energy Damage and 9 Burn and 9 Heat on a hit. Additionally, all beneficial Tech Actions on the target end and it can not take or benefit from Tech Actions until the end of their next turn. The Heat Self value of this tech action decreases by 1 for every Condition the enemy is suffering from.",
 				"heat_cost": 6
 			},
 			{
@@ -2714,7 +2892,7 @@
 			{
 				"name": "HUGE Guts",
 				"activation": "Quick",
-				"detail": "You may choose how much Heat this system produces, from a minimum of 1 to a maximum of 3. For every 1 Heat you gain, you gain 1 Overshield, to a maximum of 12 Overshield. You may choose to instead spend a Repair, gaining Overshield equal to half your maximum hp."
+				"detail": "You may choose how much Heat this system produces, from a minimum of 1 to a maximum of 3. For every 1 Heat you gain, you gain 2 Overshield. You may choose to instead spend a Repair, gaining Overshield equal to half your maximum hp."
 			}
 		],
 		"description": "Occasionally your chassis will require some extra structure in order to - [not die] - lift and carry large loads. When presented with - [incoming hostiles] - cargo beyond your mech’s capacity, simply boot up your onboard Nano Reinforcer and - [pray] - get to work! Be sure to allow your mech to cool off completely between uses.",
@@ -2870,7 +3048,7 @@
 				"detail": "Until the end of your next turn, that character cannot benefit from Hidden or Invisible against you."
 			}
 		],
-		"description": "",
+		"description": "While Eidoloid observation-subjectivity is poorly understood, applying its inverse to noneidoloid subjects is rather simple thanks to breakthroughs made during SSC’s HELIOS Project.",
 		"data_type": "system",
 		"aptitude": {}
 	},
@@ -2884,7 +3062,7 @@
 		"license": "GIAP",
 		"license_level": 1,
 		"effect": "The first time each Turn that an adjacent enemy would  gain Heat, they gain 1 additional Heat.",
-		"description": "",
+		"description": "Any and all computation systems dealing with null-blink conditions must be properly shielded from both gates to, and measuring instruments that may receive data from, null sector areas. Unshielded instrumentation frequently outputs corrosive or otherwise deleterious data which can cause receiving systems to crash.",
 		"data_type": "system",
 		"aptitude": {}
 	},
@@ -2904,7 +3082,7 @@
 				"detail": "When you Grapple or Ram, you may make those attempts against the target’s E-def rather than their Evade."
 			}
 		],
-		"description": "“It's useless. I told you... I can read your every thought. You've played a lot of... Lancer recently, haven't you?”",
+		"description": "The debate over whether a computer or a human is the more capable fighter comes down somewhere in between the two. A machine can move to block, counter, and strike perfectly, but be clueless as to when or why to do so. Similarly, a human may be an expert at identifying the correct course of action, but be unable to execute due to poor reflexes or timing. Using predictive thought-pattern tracking, the V0.0.7 PTS is capable of executing on a pilot’s “bird’s eye” view of a fight without the additional burden of having to actually perform.",
 		"data_type": "system",
 		"aptitude": {}
 	},
@@ -2982,6 +3160,57 @@
 		],
 		"description": ""
 	},
+	{
+        "id": "ipsn_shielded_magazine_storage",
+        "name": "Shielded Magazine Storage",
+        "source": "IPS-N",
+        "license": "DECKEN",
+        "license_level": 1,
+        "type": "System",
+        "sp": 2,
+        "tags": [{"id": "tg_unique"},{"id": "tg_limited","val": 2}],
+        "effect": "Gain access to the Divvy The Loot Protocol.",
+        "actions": [
+            {
+                "name": "Divvy The Loot",
+                "activation": "Protocol",
+                "frequency": "1/scene",
+                "detail": "1/scene, you may attack with weapons as if you are not Jammed until the end of your turn."
+            }
+        ],
+        "description": "Sometimes, the simplest redundancies are the best. By adding an extra layer of shielding and a manual, semi-autonomous Comp/Con driven robotic crewmember to load weapons in a pinch, even the worst instances of jamming can be mitigated."
+    },
+    {
+        "id": "ipsn_dutchman_nearlight_drive",
+        "name": "Dutchman Nearlight Drive",
+        "source": "IPS-N",
+        "license": "DECKEN",
+        "license_level": 3,
+        "type": "Flight System",
+        "sp": 4,
+        "tags": [{"id": "tg_unique"},{"id": "tg_indestructible"},{"id": "tg_heat_self","val": 2}],
+        "effect": "While the Dutchman Nearlight Drive is installed, your mech's Heat Cap is reduced by 2.<br>You gain the following benefits:<ul><li>- Your mech may Hover. If your mech can already Fly or Hover due to another system, core bonus, or mech trait, its Speed while doing so is increased by 2.</li><li>- When you take the Boost action, your mech teleports to its destination.</li><li>- As a Full Action, you may spool up the Dutchman Nearlight Drive. At the start of your next turn, you gain the Nearlight Blink Protocol.</li></ul>",
+        "actions": [
+            {
+                "name": "Charge The Blink Drive!",
+                "activation": "Full",
+                "detail": "At the start of your next turn you gain access to the Nearlight Blink Protocol"
+            },
+            {
+                "name": "Nearlight Blink",
+                "activation": "Protocol",
+                "heat_cost": 0,
+                "detail": "You may teleport up to 25 spaces away to any location that is in line of sight, ignoring the effects of Slowed and Immobilized, even self-inflicted. If this teleport places you in the space of or adjacent to a Hostile Character, that character is automatically knocked Prone and back 5 spaces. This Knockback triggers any effects your mech has that would trigger on Ram.<br>After this Protocol is used, the Dutchman Nearlight Drive loses its charge, and must be spooled up again before this Protocol is usable again."
+            }
+        ],
+        "bonuses": [
+            {
+                "id": "heatcap",
+                "val": -2
+            }
+        ],
+        "description": "The Dutchman Nearlight Drive is my Magnum Opus. This system is the closest we’ve come to breaking the barrier of Light-Speed travel. It’s a complete and total replacement - or in the Decken’s case, an upgrade - of a mech’s standard locomotive systems, tapping a direct line into the mech’s reactor in order to siphon enough energy to power it. It requires a mech sacrifice a lot in order to mount, but gives anyone with enough guts the ability to near-instantaneously teleport close to a thousand feet away. Take that, Harrison, you spineless bastard."
+    },
 	{
 		"id": "mwc_sporadic_matter_relocator",
 		"name": "Sporadic Matter Relocator",
@@ -3120,7 +3349,7 @@
 	},
 	{
 		"id": "mwc_dokkodo_class_comp_con",
-		"name": "Dokkōdō Class COMP/CON",
+		"name": "Dokkōdō-Class COMP/CON",
 		"type": "AI",
 		"sp": 3,
 		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"},{"id": "tg_heat_self","val": 1}, {"id": "tg_overshield"}],
@@ -3163,7 +3392,7 @@
 	},
 	{
 		"id": "mwc_nitoichi_class_comp_con",
-		"name": "Nitōichi Class COMP/CON",
+		"name": "Nitōichi-Class COMP/CON",
 		"type": "AI",
 		"sp": 3,
 		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"},{"id": "tg_heat_self","val": 1}],
@@ -3238,7 +3467,7 @@
 		  {
 			"name":"ACTIVATE SIREN SONG",
 			"activation": "Quick Tech",
-			"detail": "Your mech and one character in Range 5 and line of sight cannot attack one another nor force each other to make saves - this is not negation or immunity, you are unable to take any actions that fit these criteria against eachother. On any subsequent turn, you can end this effect as a free action, or your target can end it by passing a System save as a quick action or leaving this system’s range."
+			"detail": "Your mech and one character in Range 5 and line of sight cannot attack one another nor force each other to make saves - this is not negation or immunity, you are unable to take any actions that fit these criteria against each other. On any subsequent turn, you can end this effect as a free action, or your target can end it by passing a Systems save as a quick action or leaving this system’s range."
 		  }
 		],
 		"description": ">//TRANSCRIPT: MSMC_golgotha3<br>SYSTEM ALERT! DIGITAL BREACH<br>EXECUTING notatrojanipromise.bat<br>NOTICE: FRIENDLY UNIT ENTERING AREA OF OPERATION<br>PILOT COMMAND: set target7 hostile<br>FRIENDLY UNITS MAY NOT BE SET TO HOSTILE WITHOUT PROVOCATION<br>PILOT COMMAND: rm ffpervent<br>FILE “ffpervent” NOT FOUND!<br>PILOT COMMAND: rm ffprevent<br>ARE YOU SURE YOU WISH TO DELETE FILE “ffprevent” ?<br>PILOT COMMAND: y<br>UNABLE TO DELETE FILE “ffprevent” <span class='horus--subtle'>THEY ARE SO BEAUTIFUL</span><br>PILOT COMMAND: asdarklwhl"

@@ -199,7 +199,7 @@
     "source": "IPS-N",
     "name": "DANTE",
     "mechtype": ["Striker"],
-    "image_url": "https://cdn.discordapp.com/attachments/542085003887116334/826959594801594368/RidebackGhostRider.png",
+    "image_url": "https://imgur.com/ze8YV8y.png",
     "y_pos": 0,
     "description": "Originally, IPS-N designed the DANTE to cut into HA markets, combining qualities from the GENGHIS and TOKUGAWA. Without HA systems, it excelled at neither, and was backlogged indefinitely. In a more direct push into HA dealings, IPS-N’s RAID division specializes in acquisition and reverse engineering of rival tech. Off the books, of course. One of their successful raids on a Harrison Armory Blacksite recovered several designs. One of which was a rejected core reactor for the TOKUGAWA - the “Inferno Drive”. The overworked engineer who produced it had noted that it would make the Tokugawa “A death trap on legs”. Ignoring this warning, a prototype of the Inferno Drive was created, and installed on a few IPS-N mainstays, with abysmal results. Eventually, the Dante was tested as a recipient. The mech tore its way through the testing grounds, and promptly collapsed in a flaming wreck. Nevertheless, the DANTE had shown its potential. Able to reach breakneck speeds, leaving a trail of fire in its wake, the DANTE finally stands out on its own, no longer just IPS-N’s pale imitation of Harrison Armory.",
     "mounts": ["Main","Main","Heavy"],
@@ -238,7 +238,7 @@
       },
       {
         "name": "SYNTHETIC ASBESTOS COATING",
-        "description": "You have Resistance to Burn, and you have +1 Accuracy on all Engineering Saves and Checks",
+        "description": "You have Resistance to Burn, and you have +1 Accuracy on all Engineering Saves and Checks.",
         "synergies": [
           {
             "locations": ["engineering","skill_check"],
@@ -274,12 +274,74 @@
     "aptitude": {}
   },
   {
+    "id": "ipsn_decken",
+    "name": "DECKEN",
+    "license_level": 2,
+    "source": "IPS-N",
+    "image_url": "https://imgur.com/DAP5y42.png",
+    "y_pos": 0,
+    "mechtype": ["Artillery"],
+    "description": "To pilot a Decken, one must be truly mad. At a mere 65 feet long, it measures half the size of a conventional patrol boat, and is mostly comparable in size to parasite fighters designed only to sortie in the immediate vicinity of their parent craft. Unlike its peers, however, the Decken is a slow, dense brick of a ship, shedding all luxuries and redundancies in favor of the heaviest armament possible. With such a small radar signature, the only viable way to detect a Decken in the depths of space is to search for the body heat of the pilot (its single crewmember). Tiny flotillas of these craft are often sent creeping across no-man’s-land to catch enemy capital ships unawares, striking before they can be detected, pulverizing exposed subsystems and snapping nacelles off like wishbones. Just as quickly, these diminutive craft vanish into the black, leaving their victims none the wiser.<br><br>This is, of course, completely flipped on its head when the Decken is deployed in atmosphere. In this new environment, the once miniscule ship is an ominous floating battlestation, bristling with weapons and difficult to hide even behind advanced cloaking. In orbit, the Decken is the tiniest fish in a very large ocean, but at ground level, its imposing figure and uncompromised firepower make it a titan of abject destruction.",
+    "mounts": ["Aux/Aux","Main","Heavy"],
+    "stats": {
+        "size": 4,
+        "structure": 4,
+        "stress": 4,
+        "armor": 2,
+        "hp": 8,
+        "evasion": 6,
+        "edef": 8,
+        "heatcap": 6,
+        "repcap": 4,
+        "sensor_range": 10,
+        "tech_attack": -2,
+        "save": 10,
+        "speed": 2,
+        "sp": 6
+    },
+    "traits": [
+        {
+            "name": "Gravity Turbines",
+            "description": "The Decken Hovers at all times, is Immune to the Prone condition, and cannot be forced to land by any means."
+        },
+        {
+            "name": "Bracketing Barrage",
+            "description": "When the Decken Barrages, all attacks after the first, including any extra attacks made by Auxiliary Weapons, gain +1 Accuracy."
+        },
+        {
+            "name": "Ship-Class",
+            "description": "The Decken cannot mount Melee Weapons, and cannot make any Melee Attack except Ram. The Decken is a Size 4 mech, but does not have the standard shape of a mech its size. It instead controls a 1x5 Space area.",
+            "synergies": [
+                {
+                    "locations": ["improvised_attack","weapons"],
+                    "detail": "The Decken cannot mount Melee Weapons, and cannot make any Melee Attack except Ram."
+                },
+                {
+                    "locations": ["active_effects"],
+                    "detail": "The Decken is a Size 4 mech, but does not have the standard shape of a mech its size. It instead controls a 1x5 Space area."
+                }
+            ]
+        },
+        {
+          "name": "A “HOOD CLASSIC”",
+          "description": "IPS-N Deckens are the only known location where one can listen to the greatest hit by an ancient Cradle comedy trio, <i>The Lonely Island</i>."
+        }
+    ],
+    "core_system": {
+        "name": "Terminus Est Munitions Launcher",
+        "description": "The Terminus Est weapon is IPS-N's counterargument to the Apocalypse Railgun. While the Apocalypse Railgun can be spooled up and down as needed, the Terminus Est is an immediate solution to overwhelming odds. Carrying six fighter scale short-range anti-shipping missiles, the Terminus Est acquires targets and launches all six. While they may not have the armor destruction of the Apocalypse Rail, against similar sized targets, the Terminus Est achieves much more precise and on demand delivery.",
+        "active_name": "End of the Line",
+        "activation": "Full",
+        "active_effect": "Place six Blast 1 Areas that do not overlap within Range 50.<br>These blasts reach Height 10. Each target in the blast is automatically knocked Prone, and any flying targets are forced to land immediately before being knocked Prone. All Objects and Terrain take 50 AP Explosive damage.<br>Targets must make a Hull Save or take 2d6+6 Explosive damage, become Impaired, and only have Line of Sight to adjacent spaces until the end of their next turn. They may not use the Arcing or Seeking tag to bypass standard Line of Sight restrictions.<br>On a success, they take half damage and are Impaired.<br><br>The Terminus Est missiles punch through all terrain and obstructions before detonating."
+    }
+  },
+  {
     "id": "mwc_ipsn_diolkos",
     "name": "DIOLKOS",
     "source": "IPS-N",
     "license_level": 2,
     "mechtype": ["Controller"],
-    "image_url": "",
+    "image_url": "https://imgur.com/qasDXZB.png",
     "description": "The Diolkos was a failure before it was a success. At its core was an attempt to make proprietary FTL technology that meant IPS-N freighters wouldn’t have to rely on Union’s Gates, Harrison’s intrasolar “slip” technology, or the graciousness of the Voladore people out in the Long Rim. One late night, copious amounts of “Pain-tinis”, and a filled whiteboard later, two IPS-N scientists found out that by timing the start of a very specific ignition sequence with the impact of an object on the aft hull, a ship of any class would temporarily be shunted between Blinkspace and Realspace, as well as achieve a speed of 0.97c if certain conditions were maintained. This technology could not be adopted without thorough testing, and thus the ramshackle Diolkos was developed for the kind of Nav-Suite that would intentionally crash into an asteroid in order to bypass an entire belt and arrive at the destination 1 day quicker.",
     "mounts": ["Flex", "Flex", "Heavy"],
     "stats": {
@@ -322,7 +384,7 @@
       "passive_name": "“Back Hop” Interdimensional Frame Shift",
       "passive_effect": "After taking damage or heat from an outside source or save in a turn, you can become intangible and automatically succeed on saves for the rest of that turn.",
       "active_name": "Blink Coordinate: X=Y=Z=0*c",
-      "active_effect": "For the rest of the scene, you can move off the edge of the map. When you do, you appear on the opposite side.<br>Additionally, 1/round you can teleport to a point up to 5 spaces away at any point in yours or other characters turns, and you can end this movement in another character's space. When you do, they must make a Hull save. On a failure they fly 5 spaces in a direction of your choice. If they hit an object in that path, they take 2d6 Kinetic damage and fall prone. If they succeed, they are pushed to an adjacent free space.",
+      "active_effect": "For the rest of the scene, you can move off the edge of the map. When you do, you appear on the opposite side.<br>Additionally, 1/round you can teleport to a point up to 5 spaces away at any point in yours or other characters' turns, and you can end this movement in another character's space. When you do, they must make a Hull Save. On a failure they fly 5 spaces in a direction of your choice. If they hit an object in that path, they take 2d6 Kinetic damage and fall Prone. If they succeed, they are pushed to an adjacent free space.",
       "activation": "Protocol"
     }
   },
@@ -493,9 +555,9 @@
     "source": "IPS-N",
     "license_level": 2,
     "mechtype": ["Striker"],
-    "image_url": "https://images.squarespace-cdn.com/content/v1/52006914e4b0800e68bb4171/1467081263906-6478F98XDHAMKKTOR8BF/ke17ZwdGBToddI8pDm48kMMXiaGQulHLGwv0QfirOZZ7gQa3H78H3Y0txjaiv_0fMd-BlcF4RpG1NxMpmwFlTwkuSX2zzvHL0N8sDQZXgJvo8HbKjlB3UeKJEwFtT03xOqpeNLcJ80NK65_fV7S1UbDtjyKsQpp1PFJxLnvd5C46ntLK4IYbJMyGZA_vYCbdvlHqEqj3DgYKvj8ppjEKKA/emerson_tung_hekaton?format=2500w",
+    "image_url": "https://imgur.com/Y2h0E5I.png",
     "y_pos": 0,
-    "description": "A much more lithe mech than IPS-N’s traditional mechs, the Rackham is a swiss army knife of a mech. Instead of specializing in a single weapon type, the RACKHAM elects to carry them all. For every weapon it wields, it’s PENDULUM system incorporates it into a flawless assault. Many find it quite meditative, if you can ignore what it’s doing to your enemies. For a man with a hammer, all his problems look like nails. For a man with an OmniTool, he does not have problems. (Art from https://emersontung.com)",
+    "description": "A much more lithe mech than IPS-N’s traditional mechs, the Rackham is a swiss army knife of a mech. Instead of specializing in a single weapon type, the Rackham elects to carry them all. For every weapon it wields, it’s PENDULUM system incorporates it into a flawless assault. Many find it quite meditative, if you can ignore what it’s doing to your enemies. For a man with a hammer, all his problems look like nails. For a man with an OmniTool, he does not have problems. (Art from https://emersontung.com)",
     "mounts": ["Main", "Main", "Main", "Main", "Main", "Main"],
     "stats": {
       "size": 0.5,
@@ -516,7 +578,7 @@
     "traits": [
         {
           "name": "HURRICANE BANDOLIER",
-          "description": "When the RACKHAM Barrages, it can take 3 Heat to select a third mount. Attacks made with that mount during a Barrage do Half Damage, Burn and Heat."
+          "description": "When the Rackham Barrages, it can take 3 Heat to select a third mount. Attacks made with that mount during a Barrage do Half Damage, Burn and Heat."
         },
         {
           "name": "LOYALTY TO THE ARMAMENTS",
@@ -524,7 +586,7 @@
         },
         {
           "name": "TOO MANY GUNS",
-          "description": "Whenever the RACKHAM takes Structure damage, it always loses a Weapon Mount."
+          "description": "Whenever the Rackham takes Structure damage, it always loses a Weapon Mount."
         },
         {
           "name": "RUSH B",
@@ -534,9 +596,9 @@
     "core_system": {
       "name": "Style of the Pendulum",
       "active_name": "Formless Vortex",
-      "active_effect": "Any time you would force a Target to make a save, They do it at +1 Difficulty. Additionally, you may select a second weapon with HURRICANE BANDOLIER, for a total of four selected weapons during a barrage, also dealing half Damage, Burn and Heat.",
+      "active_effect": "Any time you would force a Target to make a save, They do it at +1 Difficulty. Additionally, you may select a second weapon with HURRICANE BANDOLIER, for a total of four selected weapons during a barrage, also dealing half Damage, Burn and Heat. This effect lasts until the end of the Scene.",
       "activation": "Protocol",
-      "description": "<i>In testing, IPS-N was pleased to see the RACKHAM wield up to 6 unique weapons with efficiency and ease. Pleased, but not ecstatic. To bring the RACKHAM up to their standards, a modification was added to the RACKHAM that causes a positive feedback loop, increasing the effectiveness drastically.",
+      "description": "<i>In testing, IPS-N was pleased to see the Rackham wield up to 6 unique weapons with efficiency and ease. Pleased, but not ecstatic. To bring the Rackham up to their standards, a modification was added to the Rackham that causes a positive feedback loop, increasing the effectiveness drastically.",
       "use": "Encounter",
       "passive_name": "Style of the Pendulum",
       "passive_effect": "Your Weapons gain the following effects based on their type. If a weapon has multiple types, you may only pick one of these effects. <ul><li>Melee: +1d6 Damage if the Target is Prone. On Hit: Target makes a Engineering Save or becomes Impaired.</li><li>CQB: +1 Accuracy if the Target is Impaired. On Hit: Target makes a Hull Save or becomes Shredded.</li><li>Rifle: +1 Accuracy if the Target is Shredded. On Hit: Target makes an Agility Save or becomes Slowed.</li><li>Nexus: +1 Accuracy if the Target is Slowed. On Hit: Target makes a Systems Save or becomes Locked-On.</li><li>Launcher: If you consume Lock-On, you ignore Cover and Engagement. On Hit: Target makes a Systems Save or becomes unable to make Tech Actions until the start of your next turn.</li><li>Cannon: +1 Accuracy if the Target is unable to make Tech Actions. On Hit: Target makes a Hull Save or becomes Prone.</li>"
@@ -782,7 +844,7 @@
       },
       {
         "name": "GUARDIAN",
-        "description": "Allied characters may use the Buddha for Hard Cover"
+        "description": "Allied characters may use the Buddha as Hard Cover"
       },
       {
         "name": "PACIFISM",
@@ -810,9 +872,9 @@
     "source": "SSC",
     "license_level": 2,
     "mechtype": ["Defender", "Striker"],
-    "image_url": "",
+    "image_url": "https://imgur.com/G4OtTE1.png",
     "description": "The Ctenucha is a lesser known frame made for one purpose and, admittedly, a dated one. For a short period in the history of the Karrakin Trade Baronies, Nobles used to lead their forces from the front lines in these personalized frames, and would even duel each other using this chassis. Now, only a select few minor Houses still maintain them. The majority of current production goes to autonomous “Chivalric Orders” who act in a similar function to the Loyal Albatross within the Baronies-controlled areas of the galaxy.",
-    "mounts": ["Heavy"],
+    "mounts": ["Main","Heavy"],
     "stats": {
       "armor": 0,
       "edef": 10,
@@ -860,7 +922,7 @@
           "activation": "Reaction",
           "frequency": "1/round",
           "trigger": "An enemy within 10 spaces and line of sight attacks an ally.",
-          "detail": "You immediately run up to 10 spaces in a straight line to be adjacent to that enemy, ignoring reactions, engagement, and difficult terrain. Enemies in your path take 2 AP kinetic damage, while Allies can gain 2 Overshield (doesn’t stack with any existing overshield).<br>When you make it to the enemy, make a Ram, counting as size 4 for this reaction, dealing bonus damage equal to the number of spaces traveled."
+          "detail": "You immediately move up to 10 spaces in a straight line to be adjacent to that enemy, ignoring reactions, engagement, and difficult terrain. Enemies in your path take 2 AP kinetic damage, while Allies can gain 2 Overshield (doesn’t stack with any existing overshield).<br>When you make it to the enemy, make a Ram, counting as size 4 for this reaction, dealing bonus damage equal to the number of spaces traveled."
         }
       ]
     }
@@ -968,7 +1030,7 @@
       "name": "ANARCHOCYCLOTRON",
       "description": "<ol><li>DO NOT TOUCH UNTIL THIRTY MINUTES AFTER TURNING OFF. KEEP YOUR FINGERS.</li><li>IF YOU HEAR A HIGH PITCHED WHINING NOISE, LAND IMMEDIATELY.</li><li>3. YOU WILL KNOW WHEN IT IS APPROPRIATE TO HIT THE BIG RED BUTTON.</li></ol>",
       "active_name": "World On Fire",
-      "active_effect": "You vent all of your Heat into a fiery inferno that engulfs the entire battlefield. All characters of your choice within Range 50 must pass an Engineering Save or take Heat and Burn equal to half of your vented Heat, taking half, again, on a successful save. This clears all of your heat and bypasses Reactor Override’s restriction.",
+      "active_effect": "You vent all of your Heat in a fiery inferno that engulfs the entire battlefield. All characters of your choice within Range 50 must pass an Engineering Save or take Heat and Burn equal to half of your vented Heat, taking half, again, on a successful save. This clears all of your heat and bypasses Reactor Override’s restriction.",
       "activation": "Full",
       "passive_name": "Reactor Override",
       "passive_effect": "Gain the Reactor Override Protocol.",
@@ -1026,7 +1088,7 @@
       "name": "All Range Nexus",
       "description": "“Yeah, so, using Witness as a cheap version of IPS-N’s ACESO drones is a stupid waste of that technology. Being able to push Directives with the mind would be much more useful for say, drone control.”",
       "active_name": "All-Range Nexus Support System",
-      "active_effect": "Until the end of the scene, all Nexus weapons may chain to an additional target within range of the initial target. This attack deals half damage and may not do bonus damage. Any targets that are Locked On and have the Lock On consumed may have one of the following Effects applied to them on a failed save:<ul><li>Destroying Earth: The Target must make a Hull Save or be Shredded until the end of their next turn.</li><li>Driving Winds: The Target must make a Systems Save or only have line of sight to Adjacent Spaces until the end of their next turn.</li><li>Drowning Waters: The Target must make an Agility Save or become Immobilized until the end of their next turn.</li><li>Dismantling Fire: The Target must make an Engineering Save or take 2 burn every time they take an action or reaction until the end of their next turn.</li><li>Targets may be affected by more than one effect by this system but only one attack may apply one at a time.</li></ul>",
+      "active_effect": "Until the end of the scene, all Nexus weapons may chain to an additional target within range of the initial target. Targets may be affected by more than one effect by this system but only one attack may apply one at a time.. This attack deals half damage and may not do bonus damage. Any targets that are Locked On and have the Lock On consumed may have one of the following Effects applied to them on a failed save:<ul><li>Destroying Earth: The Target must make a Hull Save or be Shredded until the end of their next turn.</li><li>Driving Winds: The Target must make a Systems Save or only have line of sight to Adjacent Spaces until the end of their next turn.</li><li>Drowning Waters: The Target must make an Agility Save or become Immobilized until the end of their next turn.</li><li>Dismantling Fire: The Target must make an Engineering Save or take 2 burn every time they take an action or reaction until the end of their next turn.</li></ul>",
       "activation": "Protocol"
     }
   },
@@ -1146,7 +1208,7 @@
       },
       {
         "name": "Unfathomable Cosmic Power",
-        "description": "The Magician always fails Hull Checks and Saves and counts as Size 0 for Rams, Grapples and any system dependent on grappling. Additionally, it is Jammed and can only use Systems that explicitly say they may be used while Jammed for the duration of any Grapple.",
+        "description": "The Magician always fails Hull Checks and Saves and counts as Size 0 for Rams, Grapples and any system dependent on grappling. Additionally while Grappled, it is Jammed and can only use Systems that explicitly say they may be used while Jammed for the duration of any Grapple.",
         "synergies": [
           {
             "locations": ["skill_check","hull","grapple"],
@@ -1327,7 +1389,7 @@
       },
       {
         "name": "TOP-HEAVY",
-        "description": "The POLYPHEMUS has +1 Difficulty on saves and checks against being knocked prone and may only move in straight lines when it Boosts."
+        "description": "The Polyphemus has +1 Difficulty on saves and checks against being knocked prone and may only move in straight lines when it Boosts."
       },
       {
         "name": "INPUT: Hell",
@@ -1338,10 +1400,10 @@
       "name": "108 Forms of Vengeance",
       "description": "The “Vengeful Eye”, the system that the Polyphemus was named for, is an advanced targeting computer using a specialized sensor cluster stylistically designed to resemble a single, gigantic eye.  The prototype version was powerful but clunky, able to consistently pluck any system or weapon out of a target with the assistance of a target lock. The system has been reconfigured to be more opportunistic, instead identifying structural weaknesses and guiding user movement to best exploit openings in the enemy's movements via neural integration, trading surgical removal of systems in favor of gross structural damage. This combined with a bank of martial arts techniques designed to turn enemy's movements against them makes the Polyphemus a powerful and precise frame, achieving the design team's goal of a flexible and crushingly strong front-line brawler that does not sacrifice SSC's brand of luxury and mobility.",
       "active_name": "Rakshasa’s Invitation",
-      "active_effect": "You take on the most deceptive form built into the POLYPHEMUS’s datacore of Martial Arts, inviting impending doom on any that do not see past the facade or are simply blind to its true nature.<br><br>Until the end of your next turn, enemies within Range 3 of the POLYPHEMUS may choose to gain up to 3 Accuracy on all of their Attacks that target the POLYPHEMUS. If a Hostile Character attacks the POLYPHEMUS during the duration of this ability, they become Exposed after the Attack resolves and additionally must make a Hull Save with a number of Difficulty equal to the Accuracy on the Attack or be knocked Prone and Slowed until the end of their next turn.<br><br>If the POLYPHEMUS is not attacked by any enemy during the duration of this ability, you regain CP at the end of the scene.",
+      "active_effect": "You take on the most deceptive form built into the Polyphemus’s datacore of Martial Arts, inviting impending doom on any that do not see past the facade or are simply blind to its true nature.<br><br>Until the end of your next turn, enemies within Range 3 of the Polyphemus may choose to gain up to 3 Accuracy on all of their Attacks that target the Polyphemus. If a Hostile Character attacks the Polyphemus during the duration of this ability, they become Exposed after the Attack resolves and additionally must make a Hull Save with a number of Difficulty equal to the Accuracy on the Attack or be knocked Prone and Slowed until the end of their next turn.<br><br>If the Polyphemus is not attacked by any enemy during the duration of this ability, you regain 1 CP at the end of the scene.",
       "activation": "Quick",
       "passive_name": "Appenditure Reallocation",
-      "passive_effect": "Gain access to the Shun-Goku-Satsu Reaction. Additionally, the POLYTHEMEUS’s Melee Critical Hits can not have their damage reduced in any way and bypass any immunity to damage the target(s) may have.",
+      "passive_effect": "Gain access to the Shun-Goku-Satsu Reaction. Additionally, the Polyphemus’s Melee Critical Hits can not have their damage reduced in any way and bypass any immunity to damage the target(s) may have.",
       "passive_actions": [
         {
           "name": "Shun-Goku-Satsu",
@@ -1414,12 +1476,140 @@
         {
           "name": "Tyrant's End",
           "activation": "Full",
-          "detail": "Choose a character within Range 5. As long as that character is within range 5, you gain +2 accuracy on attacks with CQB weapons against them and your successful critical hits with CQB weapons force it to make an Engineering Save or be Stunned. The target gains a stacking +2 Accuracy on saves versus being stunned by this system again for the rest of the scene for each time is has been Stunned by this ability.."
+          "detail": "Choose a character within Range 5. As long as that character is within range 5, you gain +2 accuracy on attacks with CQB weapons against them and your successful critical hits with CQB weapons force it to make an Engineering Save or be Stunned. The target gains a stacking +2 Accuracy on saves versus being stunned by this system again for the rest of the scene for each time is has been Stunned by this ability."
         }
       ]
     },
     "data_type": "frame",
     "aptitude": {}
+  },
+  {
+    "id": "mwc_skipper",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "SKIPPER",
+    "mechtype": ["Striker"],
+    "image_url": "https://imgur.com/adlVEBE.png",
+    "y_pos": 0,
+    "description": "The newest generation combat suit from Smith-Shimano, the Skipper represents the latest mass-production capable advancements of systems found in other SSC Mechs. The Glass Carapace is a next generation Storm Shield, sacrificing external charge methods for the ability to shunt heat into the shield. The Augmented Reaction System combines a Full Subjectivity Suite and Integrated Nerve Weave into the most precisely controlled SSC mech available. A versatile weapons package with synergistic links gives it the reliability and accuracy that SSC is known for.",
+    "mounts": ["Flex", "Flex"],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 12,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 6,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "GLASS CARAPACE",
+        "description": "The Skipper does not gain HP normally. Instead, it gains Overshield equal to 6+Grit. This Overshield is increased by 2 points for every point of Agility, and any sources of Bonus HP increase this Overshield maximum instead. The Skipper cannot benefit from external Overshield. When the Skipper takes structure damage, it regains half of its maximum overshield. The Skipper also starts each scene at full Overshield.",
+        "bonuses": [{"id": "hp", "val": "-{grit}"}],
+        "synergies": [{
+          "locations": ["overshield"],
+          "detail": "The Skipper does not gain HP normally. Instead, it gains Overshield equal to 6+Grit. This Overshield is increased by 2 points for every point of Agility, and any sources of Bonus HP increase this Overshield maximum instead. The Skipper cannot benefit from external Overshield. When the Skipper takes structure damage, it regains half of its maximum overshield. The Skipper also starts each scene at full Overshield."
+        }]
+      },
+      {
+        "name": "VARIABLE SHIELD",
+        "description": "When the Skipper gains Heat, it may reduce its Overshield by that amount instead.",
+        "synergies": [{
+          "locations": ["overshield"],
+          "detail": "When the Skipper gains Heat, it may reduce its Overshield by that amount instead."
+        }]
+      },
+      {
+        "name": "TENSION RELEASE",
+        "description": "As a Full Action, the Skipper can restore its Overshield to full. It may not Overcharge in the same turn it does this. You may not use this if you Overcharge this turn.",
+        "actions": [
+          {
+            "name": "Release Tension",
+            "activation": "Full",
+            "detail": "Restore your Overshield to full. You cannot Overcharge in the same turn you do this, and this action isn't usable if you have already Overcharged this turn."
+          }
+        ]
+      },
+      {
+        "name": "WEAK COMPUTER",
+        "description": "The Skipper takes +1 Difficulty on all SYSTEMS Saves and Checks.",
+        "synergies": [{
+          "locations": ["systems","skill_check"],
+          "detail": "The Skipper receives +1 Difficulty on Systems checks and saves."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "Augmented Reaction System",
+      "description": "The Augmented Reaction System interlinks a pilot and their armor to a parity state, even beyond that of a traditional full subjectivity suite. When hooked up, there is no difference between pilot and machine. They move as one.",
+      "active_name": "ENGAGE ARS",
+      "active_effect": "Gain the following effects for the rest of the scene:<ul><li>1/round as a free action You may reduce your Overshield by 4 to clear any one condition that is not inflicted by your weapons, systems, and talents. You may instead reduce your Overshield by 8 to end the Stunned condition (ignoring the usual restriction of being unable to take actions while Stunned).</li><li>Whenever you voluntarily move, you may reduce your Overshield by 1 to move an additional 3 spaces.</li><li>Each enemy you hit with a CQB, Melee, or Rifle grants you 2 Overshield, up to your cap.</li></ul>",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "passive_name": "Precision over Power",
+      "passive_effect": "The Skipper critically hits on a 19+. Any natural 19s count as Natural 20s for any talents, systems and weapons."
+    }
+  },
+  {
+    "id": "mwc_stigmella",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "STIGMELLA",
+    "mechtype": ["Striker", "Controller"],
+    "image_url": "https://imgur.com/dEE8QL4.png",
+    "y_pos": 0,
+    "description": "Smith-Shimano has elegance and innovation at the core of its corporate philosophy, seeking still the best possible life for not only the Diaspora of the human race, but also stewardship of resource and reserve planets. In both regards, interstellar poachers were becoming a more pressing concern, especially when they were receiving backing from more short-term focused enterprises. The wilds and the people who lived there needed a warden that would not obstruct their lives. Something that, 95% percent of the time, would go unnoticed, even by the local trackers and fauna.<br><br>At the core is a fairly defenseless structure, more skeletonized and ephemeral than even some Mourning Cloak-pattern frames. But surrounding the core is a series of flexible panels and adjustable support beams, obscuring the core and holding it absolutely still. Waiting. Perfect in its patience.",
+    "mounts": ["Main", "Heavy"],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Is that a rock?",
+        "description": "Whenever the Stigmella is Immobilized, it is automatically Hidden, ignoring Engagement or Line of Sight requirements."
+      },
+      {
+        "name": "Well, that one has to be a rock.",
+        "description": "If the Stigmella is Immobilized, it can use a Quick Action to swap places with a piece of terrain or object the same Size or smaller within Sensors."
+      }
+    ],
+    "core_system": {
+      "name": "It was not, in fact, a rock.",
+      "description": "The core of the project is as follows: the mechanized chassis is a careful thing, with camouflage abilities that achieve better results than the famous Metal Mark, while being three times its size. A set of proprietary shock absorbers and hydraulics will allow this mech to go from a sprint to complete stillness in 0.00003 seconds.<br>All sensor tech on the field checks for movement of some kind, so we will just become the land they fight on. Until the time is right.",
+      "active_name": "I can't believe it wasn't a rock!",
+      "active_effect": "Until the end of the scene, Saves you force are made with +2 Difficulty and the first attack you make while Hidden in a turn deals +2d6 damage.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "passive_name": "Nah, totally a rock.",
+      "passive_actions": [
+        {
+          "name": "A Rock.",
+          "activation": "Protocol",
+          "detail": "Immobilize yourself until the start of your next turn. You become Hard Cover while this protocol is active."
+        }
+      ]
+    }
   },
   {
     "id": "mwc_zebra",
@@ -1571,7 +1761,7 @@
         {
           "name": "GAZE_UPON_THE_I",
           "activation": "Full Tech",
-          "detail": "Make a Tech Attack, if successful, you overload their central AI cores, Jamming and Impairing them until they take the Stabilize action. If a single character is affected by this action 3 times within a single scene, it is immediately reduced to 0 HP and 0 Structure. This Tech Action can be used upon and effect Biological targets."
+          "detail": "Make a Tech Attack, if successful, you overload the target's central AI cores, Jamming and Impairing them until they take the Stabilize action. If a single character is affected by this action 3 times within a single scene, it is immediately reduced to 0 HP and 0 Structure. This Tech Action can be used upon and effect Biological targets."
         }
       ]
     },
@@ -1752,7 +1942,7 @@
       "name": "Universal Projectile Astrogation Calculator",
       "description": "{I, the teacher of myth, brought up by radiant Apollo and keen-eyed Artemis, taught in the ways of medicine and poultice. Now I teach to you the only method of curing this universe of its ills -- <span class='horus--subtle'>amputation</span>. Unwavering, unflinching. A <span class='horus--subtle'>surgeon</span> must wield his implement with care and precision, and there are none more precise than I. Seek ye the path of the chirurgeon, thou mayfly in the glade? I shall teach you. And should you waver, my hand shall <span class='horus--subtle'>always</span> be there to steady yours.}",
       "active_name": "The Stars My Inspiration",
-      "active_effect": "You gain an Inspiration die that starts at 6. Whenever you make a ranged attack, you may reduce the value of the die and gain the following effect, depending on the final value of the die. When the die reaches 1, it is expended.<ul><li>5: +1 Accuracy.</li><li>4: +2 Accuracy.</li><li>3: +2 Accuracy. If the attack hits, it is automatically a Critical Hit.</li><li>2: +3 Accuracy. The attack automatically hits. If your attack roll would succeed anyway, it becomes a Critical Hit.</li><li>1: The attack automatically hits. The roll is set to a Natural result of 20 after accuracy and difficulty.</li></ul>",
+      "active_effect": "You gain an Inspiration die that starts at 6. Whenever you make a ranged attack, you may reduce the value of the die by 1 and gain the following effect, depending on the final value of the die. When the die reaches 1, it is expended.<ul><li>5: +1 Accuracy.</li><li>4: +2 Accuracy.</li><li>3: +2 Accuracy. If the attack hits, it is automatically a Critical Hit.</li><li>2: +3 Accuracy. The attack automatically hits. If your attack roll would succeed anyway, it becomes a Critical Hit.</li><li>1: The attack automatically hits, completely disregarding Invisibility and similar effects. The roll is set to a Natural result of 20 after Accuracy and Difficulty.</li></ul>",
       "activation": "Protocol",
       "use": "Encounter"
     },
@@ -1874,7 +2064,7 @@
     "name": "PHOENIX",
     "mechtype": ["Striker"],
     "y_pos": 25,
-    "image_url": "https://imgur.com/a/w6M4kpS.png",
+    "image_url": "https://imgur.com/thmoLAw.png",
     "description": "HORUS mech designers (and discoverers) come from all backgrounds and they approach creation from many directions. The Phoenix owes its creation to paracausal scientists and flash-printer engineers. Assembled in seconds and deployable anywhere from a remote blinkspace pocket, Phoenix pilots are never far from their frames. That is the extent of the frame’s bleeding-edge capabilities – once the rickety mech materializes onto the field its shortcomings are obvious and unending. Still-cooling weapons suffer from atrocious inaccuracy, materials suited for rapid printing make mediocre armor and terrifyingly inferior frame supports, and the only reactor that fits inside is champing at the bit to detonate at the first mechanical failure. Proponents of the Phoenix remain adamant: The ejection seat always works and a new frame is always waiting to replace the last. You can’t beat that new mech smell.",
     "mounts": ["Aux/Aux", "Main"],
     "stats": {
@@ -1917,7 +2107,7 @@
     ],
     "core_system": {
       "name": "Rapid Insertion Protocol",
-      "description": "The Glaucus Gang have conquered a metavault. At least that’s what they claim. A mighty Eidolon has been deposed of its throne. They say that this space-beyond space has been repurposed as a - defying printer. They say that time is extremely subjective inside the vault and that’s how orders are completed immediately. It’s not even hard to contact the Gang, some say. A cooperatively controlled metavault, if you can imagine that sort of thing. There’s a public donation omni address. Rumor has it that when intel, materials, krait, or even beer are donated in suitable amounts, you’ll be sent a remote targeting device. Also a copy of minutes from the last board meeting.",
+      "description": "The Glaucus Gang have conquered a metavault. At least that’s what they claim. A mighty Eidolon has been deposed of its throne. They say that this space-beyond space has been repurposed as a physics-defying printer. They say that time is extremely subjective inside the vault and that’s how orders are completed immediately. It’s not even hard to contact the Gang, some say. A cooperatively controlled metavault, if you can imagine that sort of thing. There’s a public donation omni address. Rumor has it that when intel, materials, krait, or even beer are donated in suitable amounts, you’ll be sent a remote targeting device. Also a copy of minutes from the last board meeting.",
       "active_name": "Mutually Assured Destruction",
       "active_effect": "Activate this core power only if the Phoenix is undergoing an Irreversible Meltdown. When destroyed due to reactor meltdown, characters within Burst 2 must succeed on an Agility save or take 8d6 Energy damage. On a success, they only take half damage. Afterwards, place a new Phoenix in a free space within Range 5 at full structure and stress, with all of its systems and weapon mounts, and powered up. Place the pilot within, mounted. The CP remains spent.",
       "use": "Encounter",
@@ -1962,7 +2152,7 @@
     "traits": [
       {
         "name": "LIQUID BODY",
-        "description": "The Ooze acts as Soft Cover to friendly characters. Other characters can freely move through and end their turn in spaces occupied by the Ooze, and as long as the Ooze occupies at least 2 free spaces it can end its turn overlapping obstructions, cover, or other characters. As long as the Ooze is sharing a space with an Ally, it moves whenever that Ally moves. If you or your ally become Prone, stunned, immobilized or destroyed, the ooze is desposited in a free space adjacent to the ally."
+        "description": "The Ooze acts as Soft Cover to friendly characters. Other characters can freely move through and end their turn in spaces occupied by the Ooze, and as long as the Ooze occupies at least 2 free spaces it can end its turn overlapping obstructions, cover, or other characters. As long as the Ooze is sharing a space with an Ally, it moves whenever that Ally moves. If you or your ally become Prone, stunned, immobilized or destroyed, the ooze is deposited in a free space adjacent to the ally."
       },
       {
         "name": "ABSORPTION",
@@ -1991,7 +2181,7 @@
         {
           "name": "Subdivide",
           "activation": "Quick",
-          "detail": "The Ooze splits in half, becoming two identical Oozes that are one size smaller. Each Ooze can move and be targetted independently, but are effectively one mech in every other way -- HP and heat are carried between them, and they may only make the usual number of actions per turn. Two adjacent Oozes of equal size may merge as a Free Action to become an Ooze of one size larger. Split Oozes retain the Subdivide ability, but cannot use it if they are Size 1/2."
+          "detail": "The Ooze splits in half, becoming two identical Oozes that are one size smaller. Each Ooze can move and be targeted independently, but are effectively one mech in every other way -- HP and heat are carried between them, and they may only make the usual number of actions per turn. Two adjacent Oozes of equal size may merge as a Free Action to become an Ooze of one size larger. Split Oozes retain the Subdivide ability, but cannot use it if they are Size 1/2."
         }
       ]
     },
@@ -2128,21 +2318,21 @@
     "traits": [
       {
         "name": "EARTHGLIDE",
-        "description": "The XORN treats Terrain, Objects and Cover as Intangible for the purposes of its movement. It can share its space with any number of other objects, parts of Terrain or Cover, so long as it is occupying two open spaces.",
+        "description": "The Xorn treats Terrain, Objects and Cover as Intangible for the purposes of its movement. It can share its space with any number of other objects, parts of Terrain or Cover, so long as it is occupying two open spaces.",
         "synergies": [
           {
             "locations": ["move"],
-            "detail": "The XORN treats Terrain, Objects and Cover as Intangible for the purposes of its movement. It can share its space with any number of other objects, parts of Terrain or Cover, so long as it is occupying two open spaces."
+            "detail": "The Xorn treats Terrain, Objects and Cover as Intangible for the purposes of its movement. It can share its space with any number of other objects, parts of Terrain or Cover, so long as it is occupying two open spaces."
           }
         ]
       },
       {
         "name": "STONESKIN",
-        "description": "While adjacent to Hard Cover, or sharing a space with Terrain or Cover with Earthglide, the XORN gains +1 Armor (To a Maximum of 4 Armor)."
+        "description": "While adjacent to Hard Cover, or sharing a space with Terrain or Cover with Earthglide, the Xorn gains +1 Armor (To a Maximum of 4 Armor)."
       },
       {
         "name": "RUBBLE",
-        "description": "When the XORN is destroyed or self destructs, it leaves nothing behind except a Size 1 piece of Hardcover with Evade 5, 2 Armor and HP equal to half the Xorn’s. The Pilot then appears adjacent to the Rubble in the nearest Free Space."
+        "description": "When the Xorn is destroyed or self destructs, it leaves nothing behind except a Size 1 piece of Hard Cover with 5 Evasion, 2 Armor, and HP equal to half the Xorn’s maximum. The Pilot then appears adjacent to the Rubble in the nearest Free Space."
       }
     ],
     "core_system": {
@@ -2161,6 +2351,55 @@
     },
     "data_type": "frame",
     "aptitude": {}
+  },
+  {
+    "id": "mwc_alaric",
+    "license_level": 2,
+    "source": "HA",
+    "name": "ALARIC",
+    "mechtype": ["Striker"],
+    "image_url": "",
+    "y_pos": 0,
+    "description": "What started off as a pair of buddies drinking together after splitting ways, one to work at IPS-N and the other to stay on Ras Shamra to work for Harrison Armory, eventually concluded that the Caliban Chassis could be optimized further. What ensued, spurred by IPS-N’s desire for greater efficiency and Harrison Armory’s attempts to break into the Near-Hardsuit miniaturization Chassis market, can only be described as if a demon walked straight out of Hell itself, claws burning white-hot, brimstone in its eyes.",
+    "mounts": ["Aux/Aux", "Flex", "Main/Aux"],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 7,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "LOCK/INCINERATE SUBSYSTEM",
+        "description": "The Alaric counts as size 3 for the purposes of grappling and can Boost while grappling. It ignores engagement from actors larger than itself, can share space with larger actors (even hostile ones) and move through their spaces unimpeded. While sharing space with any character, it gains soft cover, even from that character."
+      },
+      {
+        "name": "INSULATED",
+        "description": "The Alaric has Immunity to Burn."
+      },
+      {
+        "name": "SLOW",
+        "description": "The Alaric makes all Agility saves and checks at 1 difficulty."
+      }
+    ],
+    "core_system": {
+      "name": "Inferno MMLS",
+      "description": "The Inferno Multiple Missile Launch System is a backpack style attachment to the Alaric. The core of the system is a cold-core reactor modified to immediately overload and output lethal thermal energy until burnout, delivered by a high velocity rocket motor. Eighteen micro-missiles dispense a cloud of ClF3 which is promptly ignited by the reactor. When used inside a Starship, entire decks are neutralized from the shockwaves and heat. On a battlefield, it allows for objective neutralization, control, and defense.",
+      "active_name": "From The Heart of Hell",
+      "active_effect": "Create a Blast 3 within Range 20 and Line of Sight. Characters within that area must pass an Engineering Save or take 6 Burn, half on a success.<br>For the rest of the scene, the area becomes a burning patch of difficult terrain. Any character that starts their turn in the area or enters it for the first time on their turn takes 2 Burn.",
+      "activation": "Quick",
+      "use": "Encounter"
+    }
   },
   {
     "id": "mwc_alexandrov",
@@ -2401,7 +2640,7 @@
     "mechtype": ["Striker"],
     "image_url": "",
     "y_pos": 0,
-    "description": "Spy-Guy Mech",
+    "description": "All information on this frame is strictly top-secret. If you’re reading this, you’re fired.<br>Early thinking held that the so-called Molecular Cloaking Apparatus system was completely untenable. Even our most advanced metamaterials could not support the stresses imposed by such a device. This all changed with the discovery of the Null Sector of blinkspace, an aberrant “location” within the Blink that totally neutralized several types of adversarial factors on the Giap’s functionality, specifically memory, identity, and ego.<br>While aberrations are at an acceptable rate now - roughly one in one thousand pilots succumbing to ego death or similar - it is this researcher’s opinion that heavy usage can and will exacerbate the effects to a lethal degree. I recommend all frames utilizing this system be decommissioned and incinerated at the nearest Hazardous Materials Disposal Facility.<br>Or failing that, a star.",
     "mounts": ["Flex", "Main"],
     "stats": {
       "size": 0.5,
@@ -2437,7 +2676,7 @@
     ],
     "core_system": {
       "name": "KAIJU-Class Molecular Cloaking Apparatus",
-      "description": "Enough radiation can mask your presence from any form of sensor, even someone's eyes.",
+      "description": "Utilizing the Eidoloid principle of observation determining reality-subjectivity, the Kaiju MCA is capable of temporarily transforming and reforming a mech to any specification, though the fact that a single observer - the pilot - is always aware of this fact causes some difficulty.<br>Previously, Giap pilots were required to undergo heavy hypnotic conditioning to dismiss the existence of the MCA and indeed the mechanized chassis surrounding them, but this was unreliable at best. With the advent of the Null Blink connection, a brief gate into the Null Sector causes all interfering thought patterns to cease for up to an hour at a time. Due to the nature of blinkspace, location is no issue; the Null Sector can be accessed from anywhere in the observable universe.",
       "active_name": "Reactor Shield Override",
       "active_effect": "For the rest of the Scene, the Giap may Hide and end its turn Hidden even without cover, in addition, any enemies that start their turn or move adjacent to the Giap for the first time on a turn suffer 3 Heat.",
       "activation": "Protocol",
@@ -2477,37 +2716,37 @@
     "traits": [
       {
         "name": "UNREASONABLE DUELIST",
-        "description": "If it is Engaged the MUSASHI gains Soft Cover, and may apply the benefits of Soft Cover against melee attacks. If the Musashi is at 2 Structure or less, this becomes Hard Cover instead."
+        "description": "If it is Engaged the Musashi gains Soft Cover, and may apply the benefits of Soft Cover against melee attacks. If the Musashi is at 2 Structure or less, this becomes Hard Cover instead."
       },
       {
         "name": "SHIELDED SCABBARDS",
-        "description": "The MUSASHI can make Melee Attacks while Jammed.",
+        "description": "The Musashi can make Melee Attacks while Jammed.",
         "synergies": [
           {
             "locations": ["weapon"],
-            "detail": "The MUSASHI can make Melee Attacks while Jammed.",
+            "detail": "The Musashi can make Melee Attacks while Jammed.",
             "weapon_types": ["melee"]
           }
         ]
       },
       {
         "name": "NO TIME FOR RANGEFINDING",
-        "description": "The MUSASHI suffers an additional difficulty when using Ranged Attacks. In addition, all Ranged Weapons have their range, cone, or line values reduced by half.",
+        "description": "The Musashi suffers an additional difficulty when making Ranged Attacks. In addition, all Ranged Weapons have their range, cone, or line values reduced by half.",
         "synergies": [
           {
             "locations": ["weapon"],
-            "detail": "The MUSASHI suffers an additional difficulty when using Ranged Attacks. In addition, all Ranged Weapons have their range, cone, or line values reduced by half.",
+            "detail": "The Musashi suffers an additional difficulty when making Ranged Attacks. In addition, all Ranged Weapons have their range, cone, or line values reduced by half.",
             "weapon_types": ["cqb","rifle","nexus","launcher","cannon"]
           }
         ]
       },
       {
         "name": "EXPOSED REACTOR",
-        "description": "The MUSASHI suffers +1 Difficulty on ENGINEERING checks and saves.",
+        "description": "The Musashi suffers +1 Difficulty on ENGINEERING checks and saves.",
         "synergies": [
           {
             "locations": ["engineering","skill_check"],
-            "detail": "The MUSASHI suffers +1 Difficulty on ENGINEERING checks and saves."
+            "detail": "The Musashi suffers +1 Difficulty on ENGINEERING checks and saves."
           }
         ]
       }
@@ -2516,7 +2755,7 @@
       "name": "The Book Of Those Other Rings",
       "description": "“Do you really have to yell that every time?”<br>“Yes… shut up! It doesn’t work if you don’t yell that.”<br>“...Why would Talmath do that?”",
       "active_name": "Tengoku-Daichi  Kaimetsu",
-      "active_effect": "When you activate this, clear the Slowed and Immobilized Conditions, then move 10 spaces forward, attacking every enemy within threat with the Focused profile on the Masamune. This movement does not trigger Reactions, allows you to move through other Characters’ spaces, and ignores Engagement. Objects and Terrain that you pass within your Threat automatically take 40 AP Energy Damage.",
+      "active_effect": "When you activate this, clear the Slowed and Immobilized Conditions, then move 5+Agi spaces forward, attacking every enemy within threat with the Focused profile on the Masamune. This movement does not trigger Reactions, allows you to move through other Characters’ spaces, and ignores Engagement. Objects and Terrain that you pass within your Threat automatically take 40 AP Energy Damage.",
       "use": "Turn",
       "activation": "Full",
       "integrated": ["mwc_musashi_integrated_weapon"]
@@ -2558,16 +2797,16 @@
         "description": "The Pershing can fire Ordnance weapons if it has only moved a single space since the start of its turn. The final roll of the Pershing’s ranged attacks cannot be affected by Difficulty if it is still able to fire Ordnance weapons."
       },
       {
-        "name": "HEH HEH, CLICK-CLACK",
-        "description": "The Pershing can open and close the weapon bay doors on its arms as a Free Action. This has no mechanical purpose but looks cool and makes a funny noise."
-      },
-      {
         "name": "COLOSSUS",
         "description": "The Pershing has +1 Difficulty on Agility Checks and Saves, but allies can use it as Hard Cover.",
         "synergies": [{
           "locations": ["agility","skill_check"],
           "detail": "The Pershing receives +1 Difficulty on Agility checks and saves."
         }]
+      },
+      {
+        "name": "HEH HEH, CLICK-CLACK",
+        "description": "The Pershing can open and close the weapon bay doors on its arms as a Free Action. This has no mechanical purpose but looks cool and makes a funny noise."
       }
     ],
     "core_system": {
@@ -2649,7 +2888,7 @@
           "name": "Do A Barrel Roll",
           "activation": "Reaction",
           "frequency": "1/round",
-          "trigger": "You are targetted by an attack before it has been rolled.",
+          "trigger": "You are targeted by an attack before it has been rolled.",
           "detail": "You cause that attack to automatically miss and fly up to 3 spaces, ignoring Engagement without provoking reactions."
         }
       ]

@@ -101,7 +101,7 @@
     "license": "GIAP",
     "license_level": 2,
     "effect": "Choose a Non-Superheavy Ranged Weapon, when you fire this weapon and only target a single enemy, roll a d6. On an Auxiliary Weapon, do not roll. On a Main weapon, you lose Hidden on a result of a 1. On a Heavy weapon, you lose hidden on a 3 or less.",
-    "description": "fluff",
+    "description": "The Kinetic Neutralizer Device is, in so many words, a mech-scale suppressor. To hide such a round’s report from the sensors of modern technology, nearly all of the gasses and particulate are vented into a separate pressure canister, to be vented after combat. Some pilots treat “cracking the cans” as a post-victory fireworks show, with lights and noise to match.",
     "data_type": "mod",
     "aptitude": {},
     "tags": [],
@@ -117,6 +117,17 @@
     "license_level": 3,
     "effect": "Choose one Ranged or Melee weapon. This Weapon gains the following effects depending on your remaining Structure:<ul><li>4 or Less: The weapon can be fired while you are Jammed.</li><li>3 or Less: The weapon gains AP.</li><li>2 or Less: On Hit: Target must make a Hull Save or become Stunned. A target can only be Stunned this way 1/scene.</li><li>1 or Less: On Hit: Your weapon deals Maximum Damage.</li>",
     "description": "<i>“SALES@IPSNET: You think a LUCIFER pushes its pilots? Mechs equipped with an ICARUS have a 17% mission survival rate.</i><br><i>ENGINEERING@HA: That’s not something you should be bragging about :/”</i><br><i>- Email exchange referenced in the IPS-N Design Vs. Harrison Armory IP lawsuit.</i>"
+  },
+  {
+    "id": "ipsn_quick_cycle_magazine",
+    "name": "Quick Cycle Magazine",
+    "source": "IPS-N",
+    "license": "DECKEN",
+    "license_level": 2,
+    "sp": 2,
+    "tags": [{"id": "tg_unique"},{"id": "tg_limited","val": 3}],
+    "effect": "Select a Loading Weapon: If that weapon is unloaded, you may spend a charge of this mod as a Quick Action to reload it.",
+    "description": "In essence, the Decken is a scaled down Light Cruiser. The primary difference, however, is that while Cruisers are generally manned by no less than 10 people, a Decken only has one pilot. To compensate, most operations on a Decken are either semi or fully automated. The Quick-Cycle Magazine is one such automated system. While limited in use, it allows the automatic reload of the weapon it’s attached to without the necessity of activating another, potentially heat-generating system - looking at you, External Ammo Feeds - or taking time to perform a full mech stabilization."
   },
   {
 		"id": "mwc_kinetic_remuneration_ligaments",
