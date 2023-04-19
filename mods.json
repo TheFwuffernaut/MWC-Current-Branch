@@ -171,5 +171,31 @@
     "effect": "Choose one Ranged weapon: Its weapon type changes to Nexus instead of its former type(s).",
     "description": "<i>“This was a real fucker to get working right but a weapon system equipped with this lets any pilot who is skilled with Nexus weapons to take advantage of that with any primary weapon system.”</i>",
     "restricted_types": ["Melee"]
+  },
+  {
+    "id": "mwc_newtype_overslung_ordnance_ballistic_tube_mktwo",
+    "name": "Newtype Overslung Ordnance Ballistic Tube Mk. II (Adds Ordnance)",
+    "tags": [{"id": "tg_alt_mwc"}, {"id": "tg_unique"}],
+    "sp": 2,
+    "source": "HA",
+    "license": "DE GALE",
+    "license_level": 1,
+    "effect": "Choose one Ranged weapon: That weapon gains either Inaccurate or Ordnance (your choice, though you cannot select one if the weapon already has it) and you gain the ability to launch Grenades using its Range instead of the Grenade's base Thrown Range.<br>Grenades launched this way have the Arcing tag.",
+    "description": "",
+    "restricted_types": ["Melee"],
+    "added_tags": [{"id": "tg_ordnance"}]
+  },
+  {
+    "id": "mwc_newtype_overslung_ordnance_ballistic_tube_mktwo",
+    "name": "Newtype Overslung Ordnance Ballistic Tube Mk. II (Adds Inaccurate)",
+    "tags": [{"id": "tg_alt_mwc"}, {"id": "tg_unique"}],
+    "sp": 2,
+    "source": "HA",
+    "license": "DE GALE",
+    "license_level": 1,
+    "effect": "Choose one Ranged weapon: That weapon gains either Inaccurate or Ordnance (your choice, though you cannot select one if the weapon already has it) and you gain the ability to launch Grenades using its Range instead of the Grenade's base Thrown Range.<br>Grenades launched this way have the Arcing tag.",
+    "description": "",
+    "restricted_types": ["Melee"],
+    "added_tags": [{"id": "tg_inaccurate"}]
   }
 ]
