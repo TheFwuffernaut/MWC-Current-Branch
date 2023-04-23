@@ -866,7 +866,7 @@
         "range": [{"type": "Range","val": 8},{"type": "Blast","val": 1}],
         "damage": [{"type": "Explosive","val": "1d6"}],
         "tags": [{"id": "tg_arcing"}],
-        "on_attack": "You may choose to expend a charge from any Limited Grenade System in order to fire that system’s Grenade as well. The Grenade applies its effects as normal, but is treated as if it were fired from this weapon for the purposes of Talents, Core Bonuses, and valid targets."
+        "on_attack": "Whenever you attack with this weapon, you may choose to expend a charge from any Limited Grenade System in order to fire that system's Grenade as well. The Grenade applies its effects as normal, and is treated as targeting the center of this weapon's Blast."
     },
 	{
         "id": "mwc_swat_sultans_big_fellow",
@@ -879,8 +879,8 @@
         "range": [{"type": "Threat","val": 1}],
         "damage": [{"type": "Kinetic","val": "1d6+1"}],
         "tags": [{"id": "tg_ap"}],
-		"on_attack": "Place a Blast 1 area on the exact space you attacked.",
-        "on_hit": "This weapon deals 30 AP Explosive to all Objects and Terrain.",
+		"on_attack": "Place a Blast 1 area on the exact space you attacked. Targets within the area, other than you, take 1d6 AP Explosive damage.",
+        "on_hit": "You may expend a Charge from a mounted Limited System that provides a Grenade in order to immediately apply that Grenade's effects, with any Areas centered or beginning on the exact space you targeted. The deployed Grenade gains the AP tag, and you are Immune to any harmful effects of it.",
         "description": ""
     },
 	{

@@ -1882,12 +1882,14 @@
 				"name": "Shrapnel Spewer",
 				"activation": "Quick",
 				"range": [{"type": "Range", "val": 5}, {"type": "Blast", "val": 2}],
+				"damage": [{"type": "Kinetic", "val": "1d3+1"}],
 				"detail": "Throw a Shrapnel Spewer within Range 5. On impact, make a Ranged Attack using your Grit against all characters within Blast 2, dealing 1d3+1 Kinetic on a hit. Against Biological targets, this damage is Doubled and Impairs them until they make a successful Hull Check as a Quick Action."
 			},
 			{
 				"name": "Nerve Gas Dispenser",
 				"activation": "Quick",
 				"range": [{"type": "Range", "val": 5}, {"type": "Blast", "val": 2}],
+				"damage": [{"type": "Energy", "val": "1d3"}],
 				"detail": "Throw a Nerve Gas Dispenser within Range 5. On impact, this Grenade creates a cloud of Nerve Gas. Characters that enter the area for the first time in a round must pass an Engineering Save or take 1d3 Energy damage. Biological characters have +2 Difficulty on this Save, and additionally become Slowed until the end of their next turn on a failed Save. This area lasts until the end of the Scene."
 			}
 		],
@@ -1913,6 +1915,7 @@
 				"name": "Firecrackers",
 				"activation": "Quick",
 				"range": [{"type": "Range", "val": 5}, {"type": "Blast", "val": 1}],
+				"damage": [{"type": "Explosive", "val": "1d3+1"}, {"type": "Burn", "val": 2}],
 				"heat_cost": 1,
 				"detail": "This Grenade costs 1 Heat to deploy. Throw a Firecracker within Range 5.<br>On Impact, all characters within Blast 1 must make an Agility Save or take 1d3+1 Explosive damage and 2 Burn. On a successful Save they take half damage."
 			}
@@ -1939,7 +1942,7 @@
 		"name": "D.E.M.O. Munitions Augmentation Nexus",
 		"type": "AI",
 		"sp": 2,
-		"tags": [{"id": "tg_grenade"}, {"id": "tg_limited", "val": 3}, {"id": "tg_unique"}],
+		"tags": [{"id": "tg_ai"}, {"id": "tg_grenade"}, {"id": "tg_limited", "val": 3}, {"id": "tg_unique"}],
 		"source": "HA",
 		"effect": "D.E.M.O. counts as a Grenade System.<br>D.E.M.O. is not an NHP, and thus cannot enter Cascade.<br><br>When you expend a charge of any System to throw a Grenade, you may expend a charge from D.E.M.O. in order to augment that Grenade’s effects. Select one of the following:<ul><li>Increased Area: If a Grenade has a Blast Area, its Blast Area is increased by 1. If a Grenade has a Line, its Line is increased by 5. If a Grenade has both a Blast Area and a Line, select one of the above benefits. If a Grenade has neither a Blast Area nor a Line, it gains either Blast 1 or Line 5 (your choice).</li><li>Increased Yield: If a Grenade deals damage, it deals 50% more damage to enemies that fail the Save, or all enemies affected if it has no Save.</li><li>Increased Potency: If a Grenade forces a Save, all enemies have +1 Difficulty on it.</li></ul>",
 		"license": "DE GALE",
