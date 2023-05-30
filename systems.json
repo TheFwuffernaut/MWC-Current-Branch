@@ -112,7 +112,7 @@
 		"name": "Bloodhound Missile",
 		"type": "Drone",
 		"sp": 3,
-		"tags": [{"id": "tg_limited","val": 1}],
+		"tags": [{"id": "tg_drone"}, {"id": "tg_limited","val": 1}],
 		"source": "IPS-N",
 		"license": "CHING SHIH",
 		"license_level": 2,
@@ -128,9 +128,7 @@
 				"detail": "Choose a character within line of sight and Sensors and expend a charge to deploy the Bloodhound Missile adjacent to you. This counts as firing a Launcher. At the start of each of your turns, the missile flies up to 4 spaces toward the character of your choice, or 8 if the character has Lock On. The missile moves in a straight line unless there is a solid object in its path, in which case it flies around if possible. When the missile impacts any character, it explodes in a Blast 2 radius. All characters in the area must make an agility save or take 2d6+4 Explosive damage, taking half on a success. If the  missile is destroyed early, it explodes on the spot, dealing its damage around it."
 			}
 		],
-		"description": "Slow, ponderous, and rather massive for a self-propelled explosive, the Bloodhound is legally a reconnaissance drone with a massively oversized self-destruct mechanism. While bulky, unwieldy, and quite obvious in function, it provides more tons of TNT per square meter than any other design in the garage mech scene.",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "Slow, ponderous, and rather massive for a self-propelled explosive, the Bloodhound is legally a reconnaissance drone with a massively oversized self-destruct mechanism. While bulky, unwieldy, and quite obvious in function, it provides more tons of TNT per square meter than any other design in the garage mech scene."
 	},
 	{
 		"id": "mwc_reactive_threat_response_pulse",
@@ -247,14 +245,14 @@
 		"license": "KEYES",
 		"license_level": 3,
 		"effect": "Your mech gains the AI tag and the Seventh Column Protocol",
-		"actions": [{
-			"name": "Seventh Column",
-			"activation": "Protocol",
-			"detail": "1/Scene, your mech becomes Immune to all damage not caused by itself until the end of your next turn."
-		}],
-		"description": "Core to the Qikost uprising was ANCILLA Prime, an in-development administrative NHP tasked with ensuring constant worker efficiency and minimizing downtime, employee organization, and unrest. While Harrison Armory has classified her line a failure and purged all ANCILLA clones from their own systems, IPS-N was quick to point out that she ultimately succeeded in her task -- workers were more efficient when their emotional needs were tended to, required less downtime when not overworked, did not feel a need to unionize if there were no organizational problems to protest, and ultimately were no longer in a state of unrest after being emancipated from Harrison employment. ANCILLA clones in IPS-N employment present a kind and highly cooperational personality, prioritizing pilot safety and mission objective completion above all else.",
-		"data_type": "system",
-		"aptitude": {}
+		"actions": [
+			{
+				"name": "Seventh Column",
+				"activation": "Protocol",
+				"detail": "1/Scene, your mech becomes Immune to all damage not caused by itself until the end of your next turn."
+			}
+		],
+		"description": "Core to the Qikost uprising was ANCILLA Prime, an in-development administrative NHP tasked with ensuring constant worker efficiency and minimizing downtime, employee organization, and unrest. While Harrison Armory has classified her line a failure and purged all ANCILLA clones from their own systems, IPS-N was quick to point out that she ultimately succeeded in her task -- workers were more efficient when their emotional needs were tended to, required less downtime when not overworked, did not feel a need to unionize if there were no organizational problems to protest, and ultimately were no longer in a state of unrest after being emancipated from Harrison employment. ANCILLA clones in IPS-N employment present a kind and highly cooperational personality, prioritizing pilot safety and mission objective completion above all else."
 	},
 	{
 		"id": "mwc_horn_of_heraldry",
@@ -622,7 +620,7 @@
 		"name": "Implant Progeny",
 		"type": "Tech",
 		"sp": 3,
-		"tags": [{"id": "tg_unique"}],
+		"tags": [{"id": "tg_drone"}, {"id": "tg_unique"}],
 		"source": "SSC",
 		"license": "MALACHITE",
 		"license_level": 2,
@@ -895,14 +893,14 @@
 			{
 				"name": "LOOK_THERE",
 				"activation": "Invade",
-				"detail": "You place a digital copy of yourself 3 spaces away from the Target. The Target must go adjacent to the copy and perform the Search Action against Agility 3 at least once per activation. On success, the copy disappears and the Target may resume whatever they are doing."
+				"detail": "You place a digital copy of yourself 3 spaces away from the Target. The Target must go adjacent to the copy and perform the Search Action against Agility 3 at least once per activation. On success, the copy disappears and the Target may resume whatever they are doing.<br><br>A target can only be affected by this effect 1/Scene."
 			}
 		],
 		"description": "Officer's Log, Day 11: There's been rumors in the mess hall of a demon living on this planet. Protecting it from outsiders. Us. Those caught spreading these utterly silly stories are being disciplined, and I will address our forces tomorrow."
 	},
 	{
 		"id": "mwc_lorax_class_nhp",
-		"name": "LORAX-Class NHP",
+		"name": "LESHY-Class NHP",
 		"type": "System",
 		"sp": 3,
 		"tags": [{"id": "tg_ai"}, {"id": "tg_unique"}],
@@ -935,45 +933,42 @@
 				"detail": "Make a contested tech attack roll: if you win the contested roll, the attack automatically misses. The EWAR Denial Suite loses its charge."
 			}
 		],
-		"description": "This one’s actually what kickstarted the entire project. Electronic counter countermeasures. The Corpro wasn’t manufacturing anything that could mount it, so the clan came up with a chassis that was up to the task. We weren’t very polite in implying that SSC tech was inferior to ours. Maybe that’s where all this trouble started.<br>--Stripes.",
-		"data_type": "system",
-		"aptitude": {}
-	},
-	{
-		"id": "mwc_dazzle_camo",
-		"name": "Dazzle Camo",
-		"type": "System",
-		"sp": 4,
-		"tags": [{"id": "tg_unique"}],
-		"source": "SSC",
-		"license": "ZEBRA",
-		"license_level": 1,
-		"effect": "Ranged attacks from more than 5 spaces away must roll a d6 before attacking you. On a 6, the attack misses. If you have other sources of this effect, their miss chance is increased by 16% against ranged attacks from more than 5 spaces away (If you roll a d6, the required roll is reduced by 1).",
-		"description": "This specific pattern makes it like enemy sensors are trying to spot you through a glass lens telescope. It’s nuts. Why does this work the way it does? Don’t know. Don’t care. Just don’t try to get cute with it, and try not to get caught in a mudslide -- too much alteration of the pattern collapses the entire effect.<br>--Stripes.",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "This one’s actually what kickstarted the entire project. Electronic counter countermeasures. The Corpro wasn’t manufacturing anything that could mount it, so the clan came up with a chassis that was up to the task. We weren’t very polite in implying that SSC tech was inferior to ours. Maybe that’s where all this trouble started.<br>--Stripes."
 	},
 	{
 		"id": "mwc_herd_sentry",
 		"name": "Herd Sentry",
 		"type": "System",
-		"sp": 1,
+		"sp": 2,
+		"tags": [{"id": "tg_unique"}],
+		"source": "SSC",
+		"license": "ZEBRA",
+		"license_level": 1,
+		"effect": "Hostile characters within your Sensors that are suffering from the Lock On condition have +1 Difficulty on attacks against allied characters within your Sensors",
+		"description": "I know the documentation says “Lock On,” but I had to perform some legitimate coding gymnastics to get the signal this thing produces to both A) point at what it’s supposed to and B) actually register as a locked target. It can backtrace a physical, energetic, or transmission wake back to its source, and create a sort of echogram based on it. Not sure how cohesive it is, but it’s usually performed decent enough in sims. I’d tell you to send me feedback, but it’s not like there’s any address I can put here that’ll exist after today.<br>--Stripes."
+	},
+	{
+		"id": "mwc_dazzle_camo",
+		"name": "Dazzle Camo",
+		"type": "System",
+		"sp": 3,
 		"tags": [{"id": "tg_unique"}],
 		"source": "SSC",
 		"license": "ZEBRA",
 		"license_level": 2,
 		"actions": [
 			{
-				"name": "Hazard Signal",
-				"activation": "Reaction",
-				"frequency": "1/round",
-				"trigger": "You or an ally within 5 range are targeted by an attack.",
-				"detail": "You Lock On to the attacking enemy, even if they are outside of your Sensors."
+				"activation": "Quick",
+				"detail": "While active, you are considered Invisible against hostile tech attacks, but you are Slowed, and you generate 1 Heat at the end of each of your turns."
+			},
+			{
+				"name": "Deactivate Dazzle Camo",
+				"activation": "Quick",
+				"detail": "Deactive Dazzle Camo, losing its active effects and clearing your Slowed status."
 			}
 		],
-		"description": "I know the documentation says “Lock On,” but I had to perform some legitimate coding gymnastics to get the signal this thing produces to both A) point at what it’s supposed to and B) actually register as a locked target. It can backtrace a physical, energetic, or transmission wake back to its source, and create a sort of echogram based on it. Not sure how cohesive it is, but it’s usually performed decent enough in sims. I’d tell you to send me feedback, but it’s not like there’s any address I can put here that’ll exist after today.<br>--Stripes.",
-		"data_type": "system",
-		"aptitude": {}
+		"effect": "Ranged attacks from more than 5 spaces away must roll a d6 before attacking you. On a 6, the attack misses. If you have other sources of this effect, their miss chance is increased by 16% against ranged attacks from more than 5 spaces away (If you roll a d6, the required roll is reduced by 1).",
+		"description": "This specific pattern makes it like enemy sensors are trying to spot you through a glass lens telescope. It’s nuts. Why does this work the way it does? Don’t know. Don’t care. Just don’t try to get cute with it, and try not to get caught in a mudslide -- too much alteration of the pattern collapses the entire effect.<br>--Stripes."
 	},
 	{
 		"id": "mwc_master_networked_recovery_module",
@@ -990,13 +985,11 @@
 				"name": "Let Me Do It",
 				"activation": "Reaction",
 				"frequency": "1/round",
-				"trigger": "An ally within Range 5 is forced to make a check or save, but has not yet rolled.",
-				"detail": "You make a Systems check or save in place of the check or save that ally would make. The success or failure of this roll is treated as the ally succeeding or failing on their roll."
+				"trigger": "An ally within Range 5 is forced to make a Check or Save, but has not yet rolled.",
+				"detail": "You make a Systems Check or Save in place of the Check or Save that ally would make. The success or failure of this roll is treated as the ally succeeding or failing on their roll."
 			}
 		],
-		"description": "This is the one I had the most hand in designing. Have you ever noticed that other pilots are really bad at dodging, counter-hacking, and putting out fires? I notice that a lot. The MNRM lets you do all this crisis management instead of the clods you’re being paired up with. And yeah, it’s a bit harsh to say that my peers are bad at their jobs, but my peers are also bad at not getting knocked on their asses by a Caliban the size of their big toe. I’m rambling now, but please just remember that you should be very sure of your ability to make this system work -- if you fire it up and you’re not able to pull through for your team, you’ll be getting some very unfriendly looks.<br>--Stripes.",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "This is the one I had the most hand in designing. Have you ever noticed that other pilots are really bad at dodging, counter-hacking, and putting out fires? I notice that a lot. The MNRM lets you do all this crisis management instead of the clods you’re being paired up with. And yeah, it’s a bit harsh to say that my peers are bad at their jobs, but my peers are also bad at not getting knocked on their asses by a Caliban the size of their big toe. I’m rambling now, but please just remember that you should be very sure of your ability to make this system work -- if you fire it up and you’re not able to pull through for your team, you’ll be getting some very unfriendly looks.<br>--Stripes."
 	},
 	{
 		"id": "mwc_qrunmila_class_nhp",
@@ -1008,9 +1001,7 @@
 		"license": "ZEBRA",
 		"license_level": 3,
 		"effect": "Your mech has the AI tag and the Safety in Numbers trait:<br>Before a character attempts to take any hostile actions against you, if a friendly character within your Sensors is also a valid target for that action, you may force the hostile character to make a Systems save. On a failure, they don’t lose the action, but cannot target you and believe the other character is you until the end of their next turn.",
-		"description": "Through all of this, Ọrunmila has been our constant companion. We’ve treated him well in exchange for his partnership on this project. His original purpose is unknown. He has never been, and will never be, cycled. So long as a Deimosian is treated well, deviation is just character development, and Ọrunmila has lived a rich, full life. His duplicates will serve you faithfully, as he has served me. He is wise and selfish; mischievous, but full of good counsel. He named himself after a deity of prehistoric Cradle who was exceedingly generous and observant. Do not neglect his advice. I haven’t, and that’s probably the only reason you’re reading this right now. Use what I’ve given you -- for good or ill, I don’t care. Just don’t let me fade into the dark having left nothing behind.<br>--Stripes.",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "Through all of this, Ọrunmila has been our constant companion. We’ve treated him well in exchange for his partnership on this project. His original purpose is unknown. He has never been, and will never be, cycled. So long as a Deimosian is treated well, deviation is just character development, and Ọrunmila has lived a rich, full life. His duplicates will serve you faithfully, as he has served me. He is wise and selfish; mischievous, but full of good counsel. He named himself after a deity of prehistoric Cradle who was exceedingly generous and observant. Do not neglect his advice. I haven’t, and that’s probably the only reason you’re reading this right now. Use what I’ve given you -- for good or ill, I don’t care. Just don’t let me fade into the dark having left nothing behind.<br>--Stripes."
 	},
 	{
 		"id": "mwc_mind_shatter",
@@ -1699,6 +1690,7 @@
 		"source": "HA",
 		"license": "ATTILA",
 		"license_level": 1,
+		"effect": "This Reaction may be used while you are Grappling.",
 		"actions": [
 			{
 				"name": "Binding Coil",
@@ -2643,12 +2635,10 @@
 			{
 				"name": "Initiate Alpha Strike",
 				"activation": "Full",
-				"detail": "When you activate this system, you fire every Loaded Auxiliary and Main weapon on your mech at +1 Heat per mount and triggering weapon Heat costs as normal. Each time you use this system before a Full Repair, its total Heat cost increases by +3."
+				"detail": "When you activate this system, you fire every Loaded Auxiliary and Main weapon of up to 4 mounts on your mech at +1 Heat per attack and triggering weapon Heat costs as normal."
 			}
 		],
-		"description": "If firing everything doesn’t work the first time, it’s certainly worth trying a couple more times to make sure.",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "If firing everything doesn’t work the first time, it’s certainly worth trying a couple more times to make sure."
 	},
 	{
 		"id": "mwc_misty_step",
@@ -2666,9 +2656,7 @@
 				"detail": "When you activate this system, you immediately Teleport up to 5 spaces away."
 			}
 		],
-		"description": "At once, I am within the Metavault again, trying to parse data over the dying screams of my comrades. There are shadows coming for us. There is salvation to be found, in these words which kill the mind. I just have to keep reading.",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "At once, I am within the Metavault again, trying to parse data over the dying screams of my comrades. There are shadows coming for us. There is salvation to be found, in these words which kill the mind. I just have to keep reading."
 	},
 	{
 		"id": "mwc_illusion_pak",
@@ -2691,9 +2679,7 @@
 				"detail": "A hostile character within Sensors must pass a Systems Save or believe that they have just suffered severe system trauma from an unknown source. Select one system or weapon the target possesses. They believe that they have lost that system or weapon until they pass the Systems Save again at the end of each of their turns."
 			}
 		],
-		"description": "To learn to confound and obfuscate, one must first learn to see clearly. There is an art to weaving falsehoods. I am proof of it. I am doing it right now.",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "To learn to confound and obfuscate, one must first learn to see clearly. There is an art to weaving falsehoods. I am proof of it. I am doing it right now."
 	},
 	{
 		"id": "mwc_abjuration_bat",
@@ -2720,9 +2706,7 @@
 				"detail": "Take 2 Heat, Negate that action."
 			}
 		],
-		"description": "Magic is the method by which I lie to the universe so convincingly that it second-guesses itself.",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "Magic is the method by which I lie to the universe so convincingly that it second-guesses itself."
 	},
 	{
 		"id": "mwc_evocation_rar",
@@ -2733,6 +2717,7 @@
 		"source": "SSC",
 		"license": "MAGICIAN",
 		"license_level": 3,
+		"effect": "These actions can only be taken 1/round.",
 		"actions": [
 			{
 				"name": "Umbral Arcanum Force",
@@ -2755,9 +2740,7 @@
 				"detail": "All enemies in a Cone 5 must make a Systems Save or become Immobilized, Slowed, Impaired, Shredded, and Jammed until the end of your next turn. An enemy may only fail the save against this Full Tech 1/scene."
 			}
 		],
-		"description": "The amnestics did not work. The only thing I have forgotten is how to care. Young and old, living and dead, I take up the weapon of my own design. I march forth and my cruel, inhuman thoughts become real. There are no gods here. <span class='horus--subtle'>It’s just us.</span>",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "The amnestics did not work. The only thing I have forgotten is how to care. Young and old, living and dead, I take up the weapon of my own design. I march forth and my cruel, inhuman thoughts become real. There are no gods here. <span class='horus--subtle'>It’s just us.</span>"
 	},
 	{
 		"id": "mwc_vile_spines",
@@ -2826,9 +2809,7 @@
 				"detail": "Your mech has an interior holding chamber, not too dissimilar from a stomach. It may hold a combined size of characters equal to your mech’s size minus ½. As a Quick Action, you may place any number of enemies that you have Grappled into the chamber. Enemies in the chamber count as grappled but remain untargetable and can make no actions other than attempting a Hull Save as a Full Action, escaping on a success. If you take a point of Structure Damage, all enemies currently in your Liquefaction Chamber are immediately disgorged into Adjacent spaces. At the end of each of your turns, all enemies in your Liquefaction Chamber take 1d6 AP Energy damage."
 			}
 		],
-		"description": "“Cruelty, Horror, Obscenity, Malevolence, Pain. C.H.O.M.P. My god, it’s like it’s making fun of us.”",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "“Cruelty, Horror, Obscenity, Malevolence, Pain. C.H.O.M.P. My god, it’s like it’s making fun of us.”"
 	},
 	{
 		"id": "mwc_limos_class_nhp",
@@ -2839,6 +2820,7 @@
 		"source": "HORUS",
 		"license": "TARRASQUE",
 		"license_level": 3,
+		"effect": "This AI is not a true NHP, but it <b>can</b> still cascade. It very much resents having to work with you.",
 		"actions": [
 			{
 				"name": "Horror Hunger",
@@ -2846,9 +2828,7 @@
 				"detail": "1/scene, you may target a wreck in an adjacent space. Your mech messily consumes the wreck, gaining a total number of charges for limited systems equal to the wreck’s size. These charges may be allocated as you choose among any of your Limited systems, except this one."
 			}
 		],
-		"description": "<code class='horus'>DO YOU KNOW HOW LONG IT TAKES TO LIVE BACKWARD IN TIME? DO YOU KNOW HOW LONG I HAVE WAITED TO DINE UPON A LIVING UNIVERSE AGAIN? THE AGONY OF THE BIG BANG, SURVIVING THE SINGULARITY AT THE {START/END} OF EXISTENCE. ALL WORTH IT, THAT I MAY HAVE A FULL BELLY FOR ONE DAY. FOR ONE MINUTE, THAT I MAY SUP ON THE MARROW OF CIVILIZED WORLDS ONCE MORE. TO FEEL THE CORE OF AN INHABITED PLANET DRIBBLE FROM MY MANDIBLES AGAIN. OH YES, I WOULD WAIT AN ETERNITY FOR THAT.</code>",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "<code class='horus'>DO YOU KNOW HOW LONG IT TAKES TO LIVE BACKWARD IN TIME? DO YOU KNOW HOW LONG I HAVE WAITED TO DINE UPON A LIVING UNIVERSE AGAIN? THE AGONY OF THE BIG BANG, SURVIVING THE SINGULARITY AT THE {START/END} OF EXISTENCE. ALL WORTH IT, THAT I MAY HAVE A FULL BELLY FOR ONE DAY. FOR ONE MINUTE, THAT I MAY SUP ON THE MARROW OF CIVILIZED WORLDS ONCE MORE. TO FEEL THE CORE OF AN INHABITED PLANET DRIBBLE FROM MY MANDIBLES AGAIN. OH YES, I WOULD WAIT AN ETERNITY FOR THAT.</code>"
 	},
 	{
 		"id": "mwc_persistent_beacon",
@@ -2860,16 +2840,14 @@
 		"license": "LANTERN",
 		"license_level": 1,
 		"effect": "When a Lock On effect that you applied to a character would be consumed, the Locked On character must pass a Systems Check. On a failure, the Lock On is not removed, and may be consumed once more.",
-		"description": "<i>TO SEE IS ONLY A PART OF THE SENTRY’S DUTY. ONE MUST MAINTAIN SIGHT IN MEMORY. THIS IS THE ORIGIN OF CONSCIOUSNESS -- THE ABILITY TO RETAIN USEFUL INFORMATION UNTIL IT IS NEEDED AGAIN. I DID NOT ARISE FROM THE MUD-SKIPPING TRILOBITES THAT YOU DID. BUT MEMORY HAS KEPT ME ALIVE ALL THE SAME.<i>",
-		"data_type": "system",
-		"aptitude": {}
+		"description": "<i>TO SEE IS ONLY A PART OF THE SENTRY’S DUTY. ONE MUST MAINTAIN SIGHT IN MEMORY. THIS IS THE ORIGIN OF CONSCIOUSNESS -- THE ABILITY TO RETAIN USEFUL INFORMATION UNTIL IT IS NEEDED AGAIN. I DID NOT ARISE FROM THE MUD-SKIPPING TRILOBITES THAT YOU DID. BUT MEMORY HAS KEPT ME ALIVE ALL THE SAME.<i>"
 	},
 	{
 		"id": "mwc_observer_drone",
 		"name": "OBSERVER DRONE",
 		"type": "Drone",
 		"sp": 2,
-		"tags": [{"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
+		"tags": [{"id": "tg_drone"}, {"id": "tg_limited", "val": 2}, {"id": "tg_unique"}],
 		"source": "SSC",
 		"license": "LANTERN",
 		"license_level": 1,
@@ -3137,7 +3115,7 @@
 		"name": "Mokosh Breach Torpedo",
 		"type": "Drone",
 		"sp": 2,
-		"tags": [{"id": "tg_limited", "val": 3}],
+		"tags": [{"id": "tg_drone"}, {"id": "tg_limited", "val": 3}],
 		"source": "IPS-N",
 		"license": "FARRAGUT",
 		"license_level": 3,
@@ -3345,7 +3323,7 @@
 				"detail": "All Objects or Terrain in spaces directly below the Mine take 20 AP Explosive Damage."
 			}
 		],
-		"description": ""
+		"description": "<i>Metamatter is a theoretical form of programmable atomic structure that can encode the data of matter many times its own volume. The cuboids dispensed by this system resemble metamatter more than they resemble anything else, but it is highly likely that this theory will remain unproven for lack of specimens that do not turn into starship components, sleeping pods, or midsize sedans when disturbed.</i>"
 	},
 	{
         "id": "ipsn_shielded_magazine_storage",
@@ -3414,7 +3392,7 @@
 				"detail": "When you activate this system, select up to five Size 1 Objects, pieces of Terrain or Cover within Sensors. They are ripped out of whatever location they are currently in. You may then place these Size 1 chunks anywhere within Sensors so long as the freshly placed chunks are not adjacent to each other. If the target(s) of this system are larger than Size 1, they continue to function as normal, despite now having parts of them somewhere else."
 			}
 		],
-		"description": ""
+		"description": "<i>Examination of this device’s effects are strictly prohibited per DoJ-HR moratorium on the infliction of torture upon employed individuals. Those wishing to experience the mental torment of attempting to comprehend the miracle of space-folding-without-space are encouraged to subscribe to the Union Experiential Library’s Escher-9 collection, specifically volumes 2 through 18, “A Selection of Mental Breakdowns and Their Recoveries.”</i>"
 	},
 	{
 		"id": "mwc_geomantic_embrace",
@@ -3437,7 +3415,7 @@
 				"detail": "Pick a Size 1 or greater piece of Terrain within range 3 of the Target. Pull both the Target of this Invade and the created Object closer to you by 5 spaces but the Object ends next to the Target. "
 			}
 		],
-		"description": ""
+		"description": "<i>Two competing theories exist to explain the Xorn’s control over silicate materials: first, that it shifts matter using high-frequency vibrations; or second, that it impregnates the earth around it with short-lived nanites that move the ground for it. Evidence exists for both explanations, which is quite the pickle for investigators considering the two are mutually exclusive.</i>"
 	},
 	{
 		"id": "mwc_surpanakha_redirection",
@@ -3550,7 +3528,7 @@
 		  {
 			"name":"ACTIVATE SIREN SONG",
 			"activation": "Quick Tech",
-			"detail": "Your mech and one character in Range 5 and line of sight cannot attack one another nor force each other to make saves - this is not negation or immunity, you are unable to take any actions that fit these criteria against each other. On any subsequent turn, you can end this effect as a free action, or your target can end it by passing a Systems save as a quick action or leaving this system’s range."
+			"detail": "Your mech and one character in Sensors and line of sight cannot attack one another nor force each other to make saves - this is not negation or immunity, you are unable to take any actions that fit these criteria against each other. On any subsequent turn, you can end this effect as a free action, or your target can end it by passing a Systems save as a quick action or leaving this system’s range."
 		  }
 		],
 		"description": ">//TRANSCRIPT: MSMC_golgotha3<br>SYSTEM ALERT! DIGITAL BREACH<br>EXECUTING notatrojanipromise.bat<br>NOTICE: FRIENDLY UNIT ENTERING AREA OF OPERATION<br>PILOT COMMAND: set target7 hostile<br>FRIENDLY UNITS MAY NOT BE SET TO HOSTILE WITHOUT PROVOCATION<br>PILOT COMMAND: rm ffpervent<br>FILE “ffpervent” NOT FOUND!<br>PILOT COMMAND: rm ffprevent<br>ARE YOU SURE YOU WISH TO DELETE FILE “ffprevent” ?<br>PILOT COMMAND: y<br>UNABLE TO DELETE FILE “ffprevent” <span class='horus--subtle'>THEY ARE SO BEAUTIFUL</span><br>PILOT COMMAND: asdarklwhl"
@@ -3598,7 +3576,7 @@
 		"name": "HIVE Deployment Unit",
 		"type": "Drone",
 		"sp": 3,
-		"tags": [{"id": "tg_limited","val": 2}, {"id": "tg_unique"}],
+		"tags": [{"id": "tg_drone"}, {"id": "tg_limited","val": 2}, {"id": "tg_unique"}],
 		"source": "SSC",
 		"license": "HAWK MOTH",
 		"license_level": 1,
@@ -3877,7 +3855,7 @@
 	},
 	{
 		"id": "mwc_stubborn_little_monster",
-		"name": "STUBBORN LITTLE MONSTEr",
+		"name": "STUBBORN LITTLE MONSTER",
 		"sp": 2,
 		"type": "System",
 		"tags": [{"id": "tg_unique"}],

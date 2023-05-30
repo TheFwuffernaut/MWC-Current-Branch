@@ -529,13 +529,14 @@
 		"name": "Orisha Tether",
 		"mount": "Main",
 		"type": "Cannon",
+		"sp": 1,
 		"damage": [{"type": "Energy", "val": "1d3+1"}],
-		"range": [{"type": "Range", "val": 8}],
+		"range": [{"type": "Range", "val": 12}],
 		"tags": [{"id": "tg_ap"}, {"id": "tg_overshield"}, {"id": "tg_unique"}],
 		"source": "SSC",
 		"license": "ZEBRA",
 		"license_level": 2,
-		"effect": "This weapon may target an ally, it automatically hits the ally when used this way. You become Tethered to that ally instead of dealing damage. Upon tethering and at the start of each of your turns, the tethered ally gains Overshield equal to your Grit plus 1. If you fire the weapon again, or if either tethered character ends their turn outside of this weapon's range or line of sight to the other, the tether ends.",
+		"effect": "This weapon may target an ally, it automatically hits the ally when used this way. You become Tethered to that ally instead of dealing damage. Upon tethering and at the start of each of your turns, the tethered ally gains Overshield equal to your Grit plus 2. Overshield from this weapon may stack with itself, up to 12.<br>If you fire the weapon again, or if either tethered character ends their turn outside of this weapon's range or line of sight to the other, the tether ends.",
 		"description": "<i>I didn’t have anything else to put here, so I threw in the other big secret project. High energy draw, low range, and the tether snaps at the worst possible times. But the field’s biphasic, so it refreshes a hell of a lot faster than anything you could compare it to. Family didn’t want people to get shot with it, but I overrode that setting. Fuck the “intended use,” go with your heart.</i>"
 	},
 	{
@@ -1497,7 +1498,7 @@
     },
     {
         "id": "ipsn_lotara_sarrin",
-        "name": "Lotara Sarrin",
+        "name": "“Mobius” Gravity Harpoon",
         "source": "IPS-N",
         "license": "DECKEN",
         "license_level": 3,
@@ -1507,7 +1508,7 @@
         "damage": [{"type": "Kinetic","val": 12}],
         "tags": [{"id": "tg_loading"},{"id": "tg_ap"}],
         "effect": "This weapon may only ever be fired 1/round, and it can only ever affect a single target.",
-        "on_hit": "The target is impaled by a harpoon, Immobilizing and pinning them to the spot until it is removed as a Full Action.<br>While a character is impaled with this weapon's harpoon, the weapon gains the following effects:<ul><li>This weapon cannot be reloaded by any means.</li><li>As a Quick Action, you may pull the impaled character 10 Spaces directly towards you, or 20 Spaces as a Full Action.</li><li>If the impaled character is pulled adjacent to you by the effect of this weapon, the harpoon is removed from the character, they are freed from its effects, and this weapon is automatically reloaded.</li></ul>",
+        "on_hit": "The target is impaled by a harpoon, Immobilizing and pinning them to the spot until it is removed as a Full Action.<br>While a character is impaled with this weapon's harpoon, the weapon gains the following effects:<ul><li>This weapon cannot be reloaded by any means.</li><li>As a Quick Action, you may pull the impaled character 10 Spaces directly towards you, or 20 Spaces as a Full Action - including upwards.</li><li>If the impaled character is pulled adjacent to you by the effect of this weapon, the harpoon is removed from the character, they are freed from its effects, and this weapon is automatically reloaded.</li></ul>",
         "description": "“So, we already made Barby’s Apoc Rail look like a potato gun with the Terminus System, so we figured ‘why not go ahead and make the Siege Cannon look like one, too?’ So we devoted a hardpoint to a spinal mount on the Decken and gave it direct reactor draw. As the Decken’s reactor is comparable to a Patrol Vessel’s near-light engine, the power is completely absurd. With that, we laid out a plan on how to make the biggest goddamn harpoon gun ever employed in a military setting. Once we were done, we had a cannon the actual size of a Barbarossa mounted directly to the spine with the ability to fire 8 meter long tungsten spikes at near-orbital velocity via gravity sling. Said spikes were connected with a similarly constructed 200 meter long tungsten chain that could even hold the full thrust power of a capital ship. Effectively, we created a near-inescapable hook with which to fish indiscriminately. See if those pirate bastards escape with our cargo again.” - Theodore Sandesky, head scientist on Codename: Project Lotara."
     },
 	{
@@ -1522,7 +1523,7 @@
 		"damage": [{"type": "Kinetic", "val": "2d6"}],
 		"effect": "This weapon can only be reloaded by destroying two Size 1 portions of Adjacent Pieces of Cover, Terrain or Objects as Quick Action.",
 		"on_attack": "Place two SIZE 1 mounds of rock and debris in a free space adjacent to them. The mound is an object with EVASION 5 and 10 HP.",
-		"description": "<i></i>",
+		"description": "<i>Outwardly resembling a Karrakin twin-tube surface-to-surface missile launcher, the VMR functions more like a weaponized printer paired with a destructive lattice speed-scanner, while including identifiable components of neither.</i>",
 		"tags": [{"id": "tg_loading"}]
 	},
 	{
@@ -1536,7 +1537,7 @@
 		"range": [{"type": "Threat", "val": 2}],
 		"damage": [{"type": "Kinetic", "val": "1d6+1"}],
 		"on_attack": "If there is an Object or Piece of Cover or Terrain of at least size  Size 1 Adjacent to the target of this attack, you may destroy that Object or Terrain in order to deal 3 AP Explosive Damage in a Burst 1 around the target and the destroyed material. You are immune to these Bursts and a character can only be damaged by these Bursts once per Attack even if they would be hit by multiple Bursts.<br><br>After the attack has resolved, create a SIZE 1 piece of terrain that grants Hard Cover in a free, adjacent space. It has 10 HP and Evasion 5.",
-		"description": "<i></i>",
+		"description": "<i>Vibro-excavators are common on any world with even a minor stoneworking or quarrying industry. This unit’s existence violates several statutes regarding power draw, size, and vibration frequency. The latter specifically seems to have been the goal -- an onboard autotuner shifts the excavator’s vibrations on the fly to match the resonant frequency of nearby materials, causing them to shake themselves apart in spectacular fashion.</i>",
 		"tags": [{"id": "tg_unique"}]
 	},
 	{
@@ -1550,7 +1551,7 @@
 		"range": [{"type": "Cone", "val": 5}],
 		"damage": [{"type": "Kinetic", "val": "1d6+2"}],
 		"on_attack": "This weapon gains the Reliable 10 Tag against Terrain, Objects and pieces of Cover in its Cone. If this would destroy it, you may instead pull each Object and piece of Cover or Terrain that would be destroyed as close to you as possible.",
-		"description": "<i></i>",
+		"description": "<i>We shall not pay the devil reverence, for that would be indiscreet, but we can at least respect his talents.</i>",
 		"tags": [{"id": "tg_ap"}]
 	},
 	{

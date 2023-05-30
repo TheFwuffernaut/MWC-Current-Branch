@@ -310,7 +310,7 @@
         },
         {
             "name": "Ship-Class",
-            "description": "The Decken cannot mount Melee Weapons, and cannot make any Melee Attack except Ram. The Decken is a Size 4 mech, but does not have the standard shape of a mech its size. It instead controls a 1x5 Space area.",
+            "description": "The Decken cannot mount Melee Weapons, and cannot make any Melee Attack except Ram. The Decken is a Size 4 mech, but does not have the standard shape of a mech its size. It instead controls an area 1 space wide, 5 spaces long, and 3 spaces tall.",
             "synergies": [
                 {
                     "locations": ["improvised_attack","weapons"],
@@ -762,7 +762,7 @@
       "structure": 4,
       "stress": 4,
       "armor": 3,
-      "hp": 6,
+      "hp": 8,
       "repcap": 5,
       "evasion": 6,
       "speed": 2,
@@ -1525,10 +1525,10 @@
       },
       {
         "name": "VARIABLE SHIELD",
-        "description": "When the Skipper gains Heat, it may reduce its Overshield by that amount instead.",
+        "description": "When the Skipper gains Heat, it may reduce its Overshield by all of that amount instead.",
         "synergies": [{
           "locations": ["overshield"],
-          "detail": "When the Skipper gains Heat, it may reduce its Overshield by that amount instead."
+          "detail": "When the Skipper gains Heat, it may reduce its Overshield by all of that amount instead."
         }]
       },
       {
@@ -1635,20 +1635,20 @@
       "edef": 12,
       "heatcap": 4,
       "repcap": 3,
-      "sensor_range": 8,
+      "sensor_range": 15,
       "tech_attack": 2,
-      "save": 10,
+      "save": 11,
       "speed": 5,
       "sp": 8
     },
     "traits": [
       {
         "name": "SEA OF STRIPES",
-        "description": "Tech attacks made by other characters into and out of a Burst 3 area around the Zebra are made at +1 Difficulty. Friendly characters within this area have +1 Accuracy on saves against effects from tech actions, but any saves forced by their tech actions are also made with +1 Accuracy. The Zebra may toggle this trait on or off as a Protocol."
+        "description": "Adjacent Allied Characters may choose to, as a Reaction to being targeted with a Tech Attack by a Hostile Character, treat your E-Defense and bonus to Systems Saves as theirs."
       },
       {
         "name": "HERD IMMUNITY",
-        "description": "1/round as a reaction, the Zebra may choose to become the target of any tech action targeting a character within its Sensors."
+        "description": "Allied Characters within a Burst 3 of you have Immunity to any effects of Successful Saves."
       },
       {
         "name": "Paint Job Dilemma",
@@ -1658,13 +1658,13 @@
     "core_system": {
       "name": "STALLION ACTIVE PROBE",
       "description": "Every detection method you could think of is included in here. RADAR, LIDAR, seismography, blink-ripple, every kind of radiation under the sun. It vacuums the signal up and churns out the data at breakneck speed. The only problem is its range. All I’m going to say is that, in my grandfather’s day, mechs had to get a lot closer together to fight. I hacked in a temporary booster module, but there’s no way to get it to run for long without turning your cockpit into an omniwave pressure cooker. I’ve run the sims, and the best case scenario is you having to walk home. Worst case is you shutting down all computer systems on the hemisphere of the planet you’re on, and also dying horribly. --Stripes.",
+      "passive_name": "Herd Lookout",
+      "passive_effect": "When a Hostile Character targets an Allied Character within Sensors with a Tech Action, you may apply one of the following effects to them:<ul><li>They take 3 Heat.</li><li>They become Impaired</li><li>They become Locked On.</li></ul>",
       "active_name": "Stampede Override",
-      "active_effect": "Until the end of the scene, your Sensor range is doubled. You and all allies within your Sensors may each, 1/round, Lock On as a free action.",
+      "active_effect": "Until the end of the scene, your Sensor range is doubled, and whenever Herd Lookout triggers you may also redirect that Tech Action to yourself.",
       "activation": "Protocol",
       "use": "Encounter"
-    },
-    "data_type": "frame",
-    "aptitude": {}
+    }
   },
   {
     "id": "mwc_archdevil",
@@ -1710,9 +1710,7 @@
       "activation": "Protocol",
       "use": "Encounter",
       "integrated": ["mwc_archdevil_integrated"]
-    },
-    "data_type": "frame",
-    "aptitude": {}
+    }
   },
   {
     "id": "mwc_atropal",
@@ -1768,9 +1766,7 @@
           "detail": "Make a Tech Attack, if successful, you overload the target's central AI cores, Jamming and Impairing them until they take the Stabilize action. If a single character is affected by this action 3 times within a single scene, it is immediately reduced to 0 HP and 0 Structure. This Tech Action can be used upon and effect Biological targets."
         }
       ]
-    },
-    "data_type": "frame",
-    "aptitude": {}
+    }
   },
   {
     "id": "mwc_buer",
@@ -1801,7 +1797,7 @@
     "traits": [
       {
         "name": "ROLLING FRAME",
-        "description": "The Buer is immune to being knocked Prone. When it Boosts, it can pass freely through enemy spaces, and may jump horizontally up to its speed and vertically up to half its speed (in any combination). As a free action, it may Ram enemies whose space it passes through, once per enemy per Boost."
+        "description": "The Buer is immune to being knocked Prone and ignores Engagement. When it Boosts, it can pass freely through enemy spaces, and may jump horizontally up to its speed and vertically up to half its speed (in any combination). As a free action, it may Ram enemies whose space it passes through, once per enemy per Boost."
       },
       {
         "name": "CLAWED PADS",
@@ -1834,9 +1830,7 @@
           "detail": "You may immediately Boost as a free action."
         }
       ]
-    },
-    "data_type": "frame",
-    "aptitude": {}
+    }
   },
   {
     "id": "mwc_bulette",
@@ -1958,9 +1952,7 @@
         "max": 6,
         "min": 1
       }
-    ],
-    "data_type": "frame",
-    "aptitude": {}
+    ]
   },
   {
     "id": "mwc_hellknight",
@@ -2006,9 +1998,7 @@
       "active_effect": "Until the end of the scene, Swarm Shielding affects two damage types of your choice. In addition, Doom Dragoon also ignores enemy Immunities, and prevents affected enemies from reducing damage from any source, not just the Hellknight.",
       "activation": "Protocol",
       "use": "Encounter"
-    },
-    "data_type": "frame",
-    "aptitude": {}
+    }
   },
   {
     "id": "mwc_lycan",
@@ -2059,9 +2049,7 @@
       "active_effect": "You immediately gain any number of Mutations and until the end of the scene you may choose to not gain or lose any Mutations from changes in Structure or Stress.<br>You may activate or turn off any number of mutations as a protocol.",
       "activation": "Protocol",
       "integrated": ["mwc_lycan_integrated", "mwc_luna_class_nhp"]
-    },
-    "data_type": "frame",
-    "aptitude": {}
+    }
   },
   {
     "id": "mwc_mindflayer",
@@ -2362,7 +2350,7 @@
     "name": "XORN",
     "mechtype": ["Controller","Striker"],
     "image_url": "https://i.imgur.com/HoAgVwL.png",
-    "description": "",
+    "description": "The Xorn pattern group first appeared shortly after the broad usage of other HORUS elements became a common occurrence of the revolutionary Ungratefuls within Karrakin space and the dawnline shore, where it was observed leading other smaller pattern-groups fielding similar equipment, with cells being composed of high numbers of lower profile units organized around a central, towering Xorn. The reported usage of Xorn by Ungrateful cells was initially rather high, but has since dwindled in recent years. Union reporters communicating with Ungrateful sources ascribe this to the disproportionate amount of otherwise reclaimable assets lost to the pattern group’s routinely destructive methods.<br><br>These esoteric functions are nonetheless extremely efficient in their purpose, with most theaters entertained by Xorn having a post combat state that is entirely unrecognizable compared to what it may have looked like before. Entire chunks of construction, infrastructure, and terrain seemingly removed without a trace, with other pieces of matter present where none was before. Attempts to trace such matter back to surrounding elements have all failed, with all indications labeling them as entirely foriegn in source. This aspect of the pattern group makes them very favorable in campaigns of total warfare in which absolute destruction of enemy homeland is the primary objective. To see such operations in action is often traumatizing to onlookers, both civilian and military, and as such many accounted sightings of the Xorn are heavily disregarded by officials due to the possibility of the emotional state of the reporters obscuring the reality of the situation.<br><br>The mechanism by which the Xorn is able to perform such total reformation and displacement of matter is currently not well understood, with Union mathematicians and physicists scratching their heads as to how any technology could be able to destroy and break down matter while also having such a seemingly absent energy output; That is to say, the Xorn is able to seemingly bypass the typical law of conservation of energy in an unknown way. This technology is almost totally foreign to Union, with reports of the BEHEMOTH-PG being the only known source of similar technology, and it is thought by some that the two may share a similar point of origin. Headway into uncovering the mechanics of this technology has been negligible, due to there being not a single Xorn specimen ever recovered by Union or any collaborative bodies. Efforts to capture such a specimen have thus been unfruitful; It seems that upon destruction of its chassis, the Xorn itself seems to undergo a similar energy-deletion process and thus leaves only a pile of detritus that was found previously clinging to the mech’s surface.",
     "mounts": ["Main","Main","Heavy"],
     "stats": {
       "size": 2,
@@ -2632,7 +2620,7 @@
       },
       {
         "name": "SATURATION FIRE",
-        "description": "When the Churchill barrages, it may take 3 heat to select a non-superheavy weapon in its heavy mount a second time."
+        "description": "When the Churchill Barrages, it may take 3 Heat and increase its Overcharge by counter by 1 to select a non-superheavy ranged weapon in its heavy mount a second time."
       }
       
     ],
@@ -2640,11 +2628,9 @@
       "name": "WAVEFORM COLLAPSE TARGETING",
       "description": "The final peak in paracausal technological research is the ability to change the nature of the universe at a whim, to sculpt reality like unto a god. So far, the closest humankind has come to this lofty goal is Waveform tech, which is applicable only in relatively volatile scenarios, to objects no more than a kilogram in size, and with the assistance of a collapsing zero-point particle suspension system. By far the most experimental component in the Churchill’s arsenal, the WCT array is unique in that, if its calculated solution proves successful, it can reliably “uncollapse” itself and be reused. Unfortunately, if it finds itself overtaxed and out of alignment, resuspension procedures can take days or even weeks of delicate work to complete.",
       "active_name": "Deadeye Gambit",
-      "active_effect": "Your next ranged attack this turn automatically hits. If the first enemy it damages is destroyed before the end of your turn, you may use this protocol again without spending a CP. If this protocol is still usable at the end of a scene, you regain 1 CP.",
+      "active_effect": "Your next ranged attack roll this turn automatically hits. If the first enemy it damages is destroyed before the end of your turn, you may use this protocol again without spending a CP. If this protocol is still usable at the end of a scene, you regain 1 CP.",
       "activation": "Protocol"
-    },
-    "data_type": "frame",
-    "aptitude": {}
+    }
   },
   {
     "id": "mwc_de_gale",
@@ -2737,7 +2723,7 @@
         "name": "Heavy Swings",
         "description": "The Geronimo has two Heavy Mounts, but cannot mount Superheavy weapons. It can only attack with one Heavy Mount per turn."
       },
-  {
+      {
         "name": "LACERATE AND DISARM",
         "description": "When the Geronimo causes a character to take a point of Structure Damage, the Geronimo may force the character to not make a Structure Check, and instead suffer System Trauma. You may decide if a System or Weapon is destroyed, but the character still decides which one."
       },
@@ -2766,7 +2752,7 @@
     "image_url": "https://i.imgur.com/qA34Vsj.png",
     "y_pos": 0,
     "description": "All information on this frame is strictly top-secret. If you’re reading this, you’re fired.<br>Early thinking held that the so-called Molecular Cloaking Apparatus system was completely untenable. Even our most advanced metamaterials could not support the stresses imposed by such a device. This all changed with the discovery of the Null Sector of blinkspace, an aberrant “location” within the Blink that totally neutralized several types of adversarial factors on the Giap’s functionality, specifically memory, identity, and ego.<br>While aberrations are at an acceptable rate now - roughly one in one thousand pilots succumbing to ego death or similar - it is this researcher’s opinion that heavy usage can and will exacerbate the effects to a lethal degree. I recommend all frames utilizing this system be decommissioned and incinerated at the nearest Hazardous Materials Disposal Facility.<br>Or failing that, a star.",
-    "mounts": ["Flex", "Main"],
+    "mounts": ["Flex", "Flex", "Main"],
     "stats": {
       "size": 0.5,
       "armor": 2,
