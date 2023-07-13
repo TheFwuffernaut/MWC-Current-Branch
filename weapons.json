@@ -146,7 +146,7 @@
 		"source": "IPS-N",
 		"license": "KEYES",
 		"license_level": 3,
-		"effect": "You are Immune to the damage of this weapon. This weapon deals +4 Bonus Damage to targets in the center of the blast.",
+		"effect": "You are Immune to the damage of this weapon. This weapon deals +4 Damage to targets in the center of the blast.",
 		"description": "Only issued to J17 operators noted as “trustworthy” in the employee database, the Graviton Sledge uses highly experimental micro-whitehole technology to produce extreme repulsive force on impact. While the tool was meant to safely pulverize and split open valuable Detonite clusters, the Qikost Rebellion found it useful in doing the same thing to company property."
 	},
 	{
@@ -307,7 +307,7 @@
 		"source": "SSC",
 		"license": "MALACHITE",
 		"license_level": 3,
-		"effect": "This weapon does +4 Bonus Damage and gains the Accurate tag against Shredded targets.",
+		"effect": "This weapon does +4 Bonus Damage and gains the Accurate tag against Shredded and Stunned targets.",
 		"description": "<i>The [REDACTED] is a very messy eater. Biomass waste is rampant among existing populations, which are already selecting for more particular dining habits. If [REDACTED] is to be farmed for the project, alterations must be made so as not to cause untenable feed wastage.</i>"
 	},
 	{

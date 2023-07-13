@@ -199,7 +199,7 @@
 				"activation": "Quick",
 				"range": [{"type": "Range","val":5},{"type": "Blast","val":1}],
 				"damage": [{"type": "Energy","val":"1d6+3"}],
-				"detail": "Throw a Plasma Grenade within Range. If a character is targeted by this grenade, it must pass an Agility save or have the grenade attach to them, where it arms. If an object is targeted, it simply attaches. At the end of that character’s turn (or your next turn if you targeted a piece of terrain), all characters within the Blast area must pass an Agility save or take 3 Energy damage. A stuck character takes an additional 1d6 damage and has +1 difficulty on the save."
+				"detail": "Throw a Plasma Grenade within Range. If a character is targeted by this grenade, it must pass an Agility save or have the grenade attach to them, where it arms. If an object is targeted, it simply attaches. At the end of that character’s turn (or your next turn if you targeted a piece of terrain), all characters within the Blast area must pass an Agility save or take 3 Energy damage. A stuck character takes an additional 1d6 damage and has +1 Difficulty on the save."
 			}
 		],
 		"deployables": [
@@ -373,7 +373,7 @@
 				"activation": "Reaction",
 				"frequency": "1/Round",
 				"trigger": "An enemy hits you with an attack.",
-				"detail": "Roll a d6. On an odd result, you reduce the damage you take by the amount on the d6. On an even result, you may immediately make an attack against the attacking character with one of your weapons, made at half the amount on the d6 in accuracy, dealing half damage on a hit."
+				"detail": "Roll a d6. On an odd result, you reduce the damage you take by the amount on the d6. On an even result, you may immediately make an attack against the attacking character with one of your weapons, made at half the amount on the d6 in Accuracy, dealing half damage on a hit."
 			}
 		],
 		"description": "It takes a certain kind of insanity to become a space pirate. The privateers of old were alone on the open ocean with no land visible for months on end, but even they were not so isolated as these damned souls. To be a pirate in Union is to be unafraid of death. It is to welcome death wherever it may be found. And when death does not claim you, it is to laugh in the face of whoever tried to deliver it.",
@@ -593,7 +593,7 @@
 		"name": "FH-121 Direct System Interfacer",
 		"type": "Drone",
 		"sp": 2,
-		"tags": [{"id": "tg_drone"},{"id": "tg_unique"}],
+		"tags": [{"id": "tg_invisible"}, {"id": "tg_unique"}],
 		"source": "SSC",
 		"license": "MALACHITE",
 		"license_level": 1,
@@ -698,7 +698,7 @@
 				"detail": "You create a ring of swords in a Burst 2 area around your mech. Characters that start their turn in the area or enter the area for the first time on their turn take 2 AP Kinetic damage. The ring lasts until it has dealt damage three times, after which it disappears."
 			}
 		],
-		"description": "“And in the fulness of My glory shall I perfect all arts -- of sculpture and song and the shedding of blood. None shall be my equal in all Creation, and should I for a second encounter difficulty, I shall surpass it immediately. My Self shall prove the equivalent of any challenge, for how infinite is my capacity, how divine my apprehension, in worthiness, how like unto a God am I?”<br>-- Hedon’s Autode, Book MMMCMXCIX, Ch. 23",
+		"description": "“And in the fulness of My glory shall I perfect all arts -- of sculpture and song and the shedding of blood. None shall be my equal in all Creation, and should I for a second encounter Difficulty, I shall surpass it immediately. My Self shall prove the equivalent of any challenge, for how infinite is my capacity, how divine my apprehension, in worthiness, how like unto a God am I?”<br>-- Hedon’s Autode, Book MMMCMXCIX, Ch. 23",
 		"data_type": "system",
 		"aptitude": {}
 	},
@@ -850,7 +850,7 @@
 			{
 				"name": "Deploy Grass",
 				"activation": "Quick",
-				"detail": "You release a Burst 2 of dense camouflage that makes positions hard to ascertain. Until the end of the scene, the area provides Soft Cover, +1 Difficulty on Melee Attacks, and +2 difficulty on Search checks against any target in the area.<br>The camouflage is automatically destroyed if it is targeted by any amount of Burn damage, and all characters in the area must make an Agility save (versus your Save Target) or take the same amount of Burn.<br>You are Immune to Difficulty and Burn caused by this system."
+				"detail": "You release a Burst 2 of dense camouflage that makes positions hard to ascertain. Until the end of the scene, the area provides Soft Cover, +1 Difficulty on Melee Attacks, and +2 Difficulty on Search checks against any target in the area.<br>The camouflage is automatically destroyed if it is targeted by any amount of Burn damage, and all characters in the area must make an Agility save (versus your Save Target) or take the same amount of Burn.<br>You are Immune to Difficulty and Burn caused by this system."
 			}
 		],
 		"description": "Officer's Log, Day 1: We've just established a beachhead on a logging planet. Prospects are looking good that we'll seize the central compound before the week is out."
@@ -893,7 +893,7 @@
 			{
 				"name": "LOOK_THERE",
 				"activation": "Invade",
-				"detail": "You place a digital copy of yourself 3 spaces away from the Target. The Target must go adjacent to the copy and perform the Search Action against Agility 3 at least once per activation. On success, the copy disappears and the Target may resume whatever they are doing.<br><br>A target can only be affected by this effect 1/Scene."
+				"detail": "You place a digital copy of yourself 3 spaces away from the Target. The Target must go adjacent to the copy and perform the Search Action against Agility 3 at least once per activation. On success, the copy disappears and the Target may resume whatever they are doing.<br><br>A Target can only be affected by this effect 1/Scene."
 			}
 		],
 		"description": "Officer's Log, Day 11: There's been rumors in the mess hall of a demon living on this planet. Protecting it from outsiders. Us. Those caught spreading these utterly silly stories are being disciplined, and I will address our forces tomorrow."
@@ -1211,7 +1211,7 @@
 		"source": "HORUS",
 		"license": "BUER",
 		"license_level": 3,
-		"effect": "When you Boost, you may pull an adjacent willing character of your size or smaller with you as though you were grappling them. At the end of the boost, you may choose to propel them forward, causing them to fly up to your speed in a straight line. They start falling at the end of this flight.",
+		"effect": "When you Boost, you may pull an adjacent willing character of your size or smaller with you as though you were Grappling them. At the end of the boost, you may choose to propel them forward, causing them to fly up to your speed in a straight line. They start falling at the end of this flight.",
 		"description": "For some reason, the lyrics to a song by popular hard rock group Smash Twoscore, has been found embedded in Buer P-G software. The entire pattern collapses when this junk data is deleted, for no explainable reason.",
 		"data_type": "system",
 		"aptitude": {}
@@ -1559,7 +1559,7 @@
 				"name": "Execute System Purge",
 				"activation": "Quick",
 				"frequency": "1/round",
-				"detail": "The mech immediately takes AP Energy damage equal to its current Heat. It then clears all Heat, ends all Hostile Tech effects, and becomes Invisible until the end of your Next Turn."
+				"detail": "Your mech immediately takes AP Energy damage equal to its current Heat. It then clears all Heat, ends all Hostile Tech effects, and becomes Invisible until the end of your Next Turn."
 			}
 		],
 		"description": "Recognizing that Electronic Warfare is a prevalent defensive mechanism with coolant destabilizing attacks, the Djinn camouflage system dumps all heat into subsystems, damaging the frame but also rendering it almost perfectly invisible to sensors for a short period of time. The soft-reset cycle triggered by this system also provides a measure of protection against active hostile EWAR attacks."
@@ -1573,7 +1573,7 @@
 		"source": "HA",
 		"license": "ALARIC",
 		"license_level": 1,
-		"effect": "When you boost, you may take up to 3 Heat. For every Heat you take, you may move an additional 2 spaces. If you took 3 Heat from this system, your exhaust vents propel you with enough force that Objects and Terrain in the path of your Boost take 20 AP Kinetic damage.",
+		"effect": "When you Boost, you may take up to 3 Heat. For every Heat you take, you may move an additional 2 spaces. If you took 3 Heat from this system, your exhaust vents propel you with enough force that Objects and Terrain in the path of your Boost take 20 AP Kinetic damage.",
 		"description": "The corridors of a starship or bunker are labyrinthine and full of ambush points. The Firebat Pattern Assault system allows an equipped Frame to punch holes through bulkheads and walls, bypassing ambushes and obstacles. In an open environment, the system has enough power to allow for rapid movement and open up engagement opportunities."
 	},
 	{
@@ -1585,7 +1585,7 @@
 		"source": "HA",
 		"license": "ALARIC",
 		"license_level": 2,
-		"effect": "While Grappling a target, any Engineering Checks and Saves the target makes are made at +1 Difficulty",
+		"effect": "While Grappling a target, any Engineering Checks and Saves the target makes are made at +1 Difficulty.",
 		"description": "Onboard micro-grenade accelerant dispensers are designed to quickly burn any oxygen in a compartment onboard a ship and soften adjacent compartments through superheated atmospheric systems. Pilots have the choice of deploying them via Accelerant Injector or tasking a basic VI for dispersal."
 	},
 	{
@@ -1598,7 +1598,7 @@
 		"license": "ALARIC",
 		"license_level": 3,
 		"effect": "Your Grapple attempts are performed with an additional +1 Accuracy.",
-		"description": "An attachment and expansion on a frame’s hand and foot actuators, Boarding Claws make grappling and boarding a target much easier. This system was adapted from orbital use when attempting short-range boarding maneuvers in Zero-G conditions."
+		"description": "An attachment and expansion on a frame’s hand and foot actuators, Boarding Claws make Grappling and boarding a target much easier. This system was adapted from orbital use when attempting short-range boarding maneuvers in Zero-G conditions."
 	},
 	{
 		"id": "mwc_goading_booster",
@@ -1696,8 +1696,8 @@
 				"name": "Binding Coil",
 				"activation": "Reaction",
 				"frequency": "1/round",
-				"trigger": "You take Heat while grappling a character.",
-				"detail": "The grappled character takes an equal amount of Heat."
+				"trigger": "You take Heat while Grappling a character.",
+				"detail": "The Grappled character takes an equal amount of Heat."
 			}
 		],
 		"description": "I snatch my prey from the air, like a python grasping at passing birds. Bones snap between my fingers, flesh bruises like overripe fruit. This technique pains me greatly to use, but the results are infinitely more satisfying than the many alternatives I have learned. I imagine my victim’s ātman floating away on the wind. I cast the body aside and move on. I hunger.",
@@ -1768,7 +1768,7 @@
 			{
 				"name": "Initiate Finishing Blow!!!",
 				"activation": "Full",
-				"detail": "You may only activate this system if you have been Grappling a character since the end of your previous turn. You move the character to a point on the opposite side of your mech, dealing 30 AP Kinetic damage to all spaces of terrain directly underneath it. The target is no longer grappled, but takes 3d6+4 AP Kinetic Damage and is left Prone in the resulting crater.<br><br>You may spend 1 CP when you activate this system. If you do, you make a grapple attempt against an adjacent enemy if you are not already grappling a target. On a success, you carry the grappled character with you as you make a 10-space-high vertical jump, dealing 1d6 AP Kinetic damage for every 3 spaces you fall after reaching the height of that jump. Afterward, the target is no longer Grappled, but is left prone at the bottom of a Blast 5 hole 5 spaces deep. Your target takes falling damage as normal from that height, but you do not."
+				"detail": "You may only activate this system if you have been Grappling a character since the end of your previous turn. You move the character to a point on the opposite side of your mech, dealing 30 AP Kinetic damage to all spaces of terrain directly underneath it. The target is no longer Grappled, but takes 3d6+4 AP Kinetic Damage and is left Prone in the resulting crater.<br><br>You may spend 1 CP when you activate this system. If you do, you make a Grapple attempt against an adjacent enemy if you are not already Grappling a target. On a success, you carry the Grappled character with you as you make a 10-space-high vertical jump, dealing 1d6 AP Kinetic damage for every 3 spaces you fall after reaching the height of that jump. Afterward, the target is no longer Grappled, but is left prone at the bottom of a Blast 5 hole 5 spaces deep. Your target takes falling damage as normal from that height, but you do not."
 			}
 		],
 		"description": "Descend, like Wormwood the bitter star upon the field of Megiddo. You shall burn then, a coruscating, scintillant wonder in the night sky. All shall witness your immolant form, and all shall weep, for whatever death follows you, it shall be exquisite, both to deliver and to witness.",
@@ -1833,7 +1833,7 @@
 				"hp": 20,
 				"evasion": 5,
 				"edef": 10,
-				"detail": "This large metal loop can be deployed to a free space within Range 5. You may increase the range of any Ranged attack that passes through the accelerator loop by 5. Additionally, 1/round, you may grant a ranged attack that passes through the loop 1d6 bonus kinetic damage"
+				"detail": "This large metal loop can be deployed to a free space within Range 5. You may increase the range of any Ranged attack that passes through the accelerator loop by 5. Additionally, 1/round, you may grant a ranged attack that passes through the loop 1d6 bonus kinetic damage."
 			}
 		],
 		"description": "Often a feature of stationary emplacements like the famed Maginot orbital defense cannons, External Accelerator Loops are simply open-air mass driver arrays constructed outside of an intended weapon’s housing to magnify its stopping power and range. Portable versions are not nearly as powerful, as they run off of a relatively tiny internal power supply, but the augmented throughput they provide to all nearby friendly troops can prove invaluable against heavy armor.",
@@ -2806,7 +2806,7 @@
 			{
 				"name": "Swallow Whole",
 				"activation": "Quick",
-				"detail": "Your mech has an interior holding chamber, not too dissimilar from a stomach. It may hold a combined size of characters equal to your mech’s size minus ½. As a Quick Action, you may place any number of enemies that you have Grappled into the chamber. Enemies in the chamber count as grappled but remain untargetable and can make no actions other than attempting a Hull Save as a Full Action, escaping on a success. If you take a point of Structure Damage, all enemies currently in your Liquefaction Chamber are immediately disgorged into Adjacent spaces. At the end of each of your turns, all enemies in your Liquefaction Chamber take 1d6 AP Energy damage."
+				"detail": "Your mech has an interior holding chamber, not too dissimilar from a stomach. It may hold a combined size of characters equal to your mech’s size minus ½. As a Quick Action, you may place any number of enemies that you have Grappled into the chamber. Enemies in the chamber count as Grappled but remain untargetable and can make no actions other than attempting a Hull Save as a Full Action, escaping on a success. If you take a point of Structure Damage, all enemies currently in your Liquefaction Chamber are immediately disgorged into Adjacent spaces. At the end of each of your turns, all enemies in your Liquefaction Chamber take 1d6 AP Energy damage."
 			}
 		],
 		"description": "“Cruelty, Horror, Obscenity, Malevolence, Pain. C.H.O.M.P. My god, it’s like it’s making fun of us.”"
