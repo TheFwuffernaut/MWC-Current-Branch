@@ -1105,7 +1105,7 @@
     "image_url": "https://i.imgur.com/wAKf03Y.png",
     "y_pos": 0,
     "description": "Assuming: That the ability and form of Eidolons are, as we have recorded, dependent upon each individual viewer, and: That Metavaults, the origin point of the Eidolons, have an innate and vital connection to Blinkspace. Problem: Blinkspace must be explored and charted. This goal is mandated by Exotic Materials and cannot be countermanded. Solution, given available assumptions and resources: Construct an implement whose primary function is to observe all space in every direction, and impose that observed subjectivity upon selected systems so as to unify the waveform of Eidoloid observer-dependent opposition. Solution tentatively accepted. Begin task, designation: Project HELIOS.",
-    "mounts": ["Main/Aux"],
+    "mounts": ["Main", "Main/Aux"],
     "stats": {
       "size": 2,
       "structure": 4,
@@ -1113,9 +1113,9 @@
       "armor": 1,
       "hp": 8,
       "evasion": 8,
-      "edef": 8,
+      "edef": 10,
       "heatcap": 5,
-      "repcap": 3,
+      "repcap": 5,
       "sensor_range": 20,
       "tech_attack": 1,
       "save": 11,
@@ -1143,6 +1143,10 @@
             "detail": "1/round, the Lantern can target two characters at a time with the Lock On Quick Tech."
           }
         ]
+      },
+      {
+        "name": "BRIGHT DUST",
+        "description": "Characters with the Lock On Condition must roll twice when attacking the Lantern and use the lower roll."
       },
       {
         "name": "LÄMP",
